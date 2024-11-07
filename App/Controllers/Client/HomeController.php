@@ -10,7 +10,7 @@ use App\Views\Client\Layouts\Header;
 use App\Views\Client\Pages\Card;
 use App\Views\Client\Pages\Product\Products;
 use App\Views\Client\Pages\Contact;
-
+use App\Views\Client\Pages\Introduce;
 
 class HomeController
 {
@@ -31,6 +31,12 @@ class HomeController
     public static function contact(){
         Header::render();
         Contact::render();
+        Footer::render();
+    }
+
+    public static function introduce(): void{
+        Header::render();
+        Introduce::render();
         Footer::render();
     }
 }

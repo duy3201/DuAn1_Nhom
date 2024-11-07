@@ -26,6 +26,8 @@ Route::post('/register','App\Controllers\Client\AuthController@registerAction');
 Route::get('/login','App\Controllers\Client\AuthController@login');
 Route::get('/card','App\Controllers\Client\HomeController@card');
 Route::get('/contact','App\controllers\Client\HomeController@contact');
+Route::get('/introduce','App\controllers\Client\HomeController@introduce');
+
 
 
 

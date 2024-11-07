@@ -46,7 +46,7 @@ class Header extends BaseView
                                              </ul>
                                         </li>
                                         <li class="nav-item">
-                                             <a class="nav-link" href="#">Giới thiệu</a>
+                                             <a class="nav-link" href="/introduce">Giới thiệu</a>
                                         </li>
                                         <li class="nav-item">
                                              <a class="nav-link" href="#">Tin tức</a>
