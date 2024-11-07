@@ -1,0 +1,10 @@
+[07-Nov-2024 23:30:02 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Client\ProductController" not found in C:\Users\PC\Documents\GitHub\DuAn1_Nhom\App\Route.php:79
+Stack trace:
+#0 C:\Users\PC\Documents\GitHub\DuAn1_Nhom\index.php(56): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\PC\Documents\GitHub\DuAn1_Nhom\App\Route.php on line 79
+[07-Nov-2024 23:30:05 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Client\ProductController" not found in C:\Users\PC\Documents\GitHub\DuAn1_Nhom\App\Route.php:79
+Stack trace:
+#0 C:\Users\PC\Documents\GitHub\DuAn1_Nhom\index.php(56): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\PC\Documents\GitHub\DuAn1_Nhom\App\Route.php on line 79
