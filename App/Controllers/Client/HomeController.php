@@ -7,6 +7,7 @@ use App\Views\Client\Components\Notification;
 use App\Views\Client\Home;
 use App\Views\Client\Layouts\Footer;
 use App\Views\Client\Layouts\Header;
+use App\Views\Client\Pages\Product\Products;
 
 class HomeController
 {
@@ -15,6 +16,7 @@ class HomeController
     {
         Header::render();
         Home::render();
+        Products::render();
         Footer::render();
     }
 }

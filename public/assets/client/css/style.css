@@ -162,3 +162,129 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* Khoa */
+/* Đặt kiểu nền và font chung cho trang */
+.category-header {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Khung tổng của danh mục sản phẩm */
+.product-section {
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* Tiêu đề danh mục */
+.product-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Lưới chứa các thẻ sản phẩm */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột */
+  gap: 20px;
+}
+
+/* Thẻ sản phẩm */
+.product-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Ảnh sản phẩm */
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Tạo hiệu ứng khi hover lên ảnh */
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Lớp phủ và tên sản phẩm */
+.product-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng khi hover */
+.product-card:hover .product-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Trọng */
+.container-fluid {
+  display: flex;
+  width: 100vw;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.category-baner1, .category-baner2 {
+  width: 50%;
+  height: 100%;
+}
+
+.category-baner2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-overlay a {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
