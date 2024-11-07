@@ -40,9 +40,9 @@ class Header extends BaseView
                                                   Sản phẩm
                                              </a>
                                              <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="#">Sản phẩm nổi bật</a></li>
-                                                  <li><a class="dropdown-item" href="#">Phong cách đơn giản</a></li>
-                                                  <li><a class="dropdown-item" href="#">Thời trang cổ điển</a></li>
+                                                  <li><a class="dropdown-item" href="/products">Sản phẩm nổi bật</a></li>
+                                                  <li><a class="dropdown-item" href="/products">Phong cách đơn giản</a></li>
+                                                  <li><a class="dropdown-item" href="/products">Thời trang cổ điển</a></li>
                                              </ul>
                                         </li>
                                         <li class="nav-item">
