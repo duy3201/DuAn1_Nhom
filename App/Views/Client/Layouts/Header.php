@@ -61,7 +61,7 @@ class Header extends BaseView
                                              <a class="nav-link" href="/register">Đăng ký</a>
                                         </li>
                                         <li class="nav-icon">
-                                             <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                             <a class="nav-link" href="/card"><i class="fa-solid fa-cart-shopping"></i></a>
                                              <a class="nav-link" href="#"><i class="fa-regular fa-heart"></i></a>
                                         </li>
                                    </ul>
