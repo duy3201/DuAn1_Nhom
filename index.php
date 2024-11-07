@@ -28,6 +28,7 @@ Route::get('/card','App\Controllers\Client\HomeController@card');
 Route::get('/contact','App\controllers\Client\HomeController@contact');
 Route::get('/introduce','App\controllers\Client\HomeController@introduce');
 
+Route::get('/blogs','App\Controllers\Client\HomeController@blogs');
 
 
 

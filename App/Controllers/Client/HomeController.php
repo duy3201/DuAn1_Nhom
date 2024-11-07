@@ -8,6 +8,7 @@ use App\Views\Client\Home;
 use App\Views\Client\Layouts\Footer;
 use App\Views\Client\Layouts\Header;
 use App\Views\Client\Pages\Card;
+use App\Views\Client\Pages\Blogs;
 use App\Views\Client\Pages\Product\Products;
 use App\Views\Client\Pages\Contact;
 use App\Views\Client\Pages\Introduce;
@@ -20,6 +21,13 @@ class HomeController
         Header::render();
         Home::render();
         Products::render();
+        Blogs::render();
+        Footer::render();
+    }
+    public static function blogs()
+    {
+        Header::render();
+        Blogs::render();
         Footer::render();
     }
     public static function card(){
