@@ -36,9 +36,9 @@ class Footer extends BaseView
                     <div class="col">
                         <h4>Liên hệ</h4>
                         <nav></nav>
-                        <a href="#">: nguyenvanla@gmail.com</a>
-                        <a href="#">: 0329396779</a>
-                        <a href="#">: Đường số 22, Thường Thạnh, Cái Răng, Cần Thơ</a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i> : nguyenvanla@gmail.com</a>
+                        <a href="#"><i class="fa-solid fa-phone"></i> : 0329396779</a>
+                        <a href="#"><i class="fa-solid fa-location-dot"></i> : Đường số 22, Thường Thạnh, Cái Răng, Cần Thơ</a>
                     </div>
                     <div class="col">
                         <h4>Liên kết</h4>
@@ -55,10 +55,10 @@ class Footer extends BaseView
             <hr>
             <div class="container-footer3 ">
                 <div class="row justify-content-between">
-                    <div class="col-4">
+                    <div class="col-4 title">
                         Thiết kế bởi team Old Style
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 icon-footer">
                         <a href="#"><img src="/public/img/Visa.png" alt=""></a>
                         <a href="#"><img src="/public/img/Mastercard.png" alt=""></a>
                         <a href="#"><img src="/public/img/GooglePay.png" alt=""></a>

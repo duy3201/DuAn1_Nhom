@@ -14,7 +14,7 @@ class Header extends BaseView
                     <div class="container text-center">
                          <div class="row">
                               <div class="col-md-4 hi">Chào mừng bạn đên với shop của chúng tôi</div>
-                              <div class="col-md-4 offset-md-4 icon-header">
+                              <div class="col-md-2 offset-md-4 icon-header">
                                    <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
                                    <a class="nav-link" href="#"><i class="fa-brands fa-tiktok"></i></a>
                                    <a class="nav-link" href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -33,14 +33,14 @@ class Header extends BaseView
                               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                             <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                                             <a class="nav-link active" aria-current="page" href="/">Trang chủ</a>
                                         </li>
                                         <li class="nav-item dropdown">
                                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                   Sản phẩm
                                              </a>
                                              <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="#">Sản phẩm nổi bậc</a></li>
+                                                  <li><a class="dropdown-item" href="#">Sản phẩm nổi bật</a></li>
                                                   <li><a class="dropdown-item" href="#">Phong cách đơn giản</a></li>
                                                   <li><a class="dropdown-item" href="#">Thời trang cổ điển</a></li>
                                              </ul>
@@ -81,21 +81,21 @@ class Header extends BaseView
                                    <img src="/public/img/banner-header.jpeg" class="d-block w-100" alt="...">
                                    <div class="carousel-caption">
                                         <h1>Old Style</h1>
-                                        <p>Some representative placeholder content for the first slide.</p>
+                                        <p>Khám phá phong cách với những món đồ second-hand duy nhất!</p>
                                    </div>
                               </div>
                               <div class="carousel-item active">
                                    <img src="/public/img/banner-header.jpeg" class="d-block w-100" alt="...">
                                    <div class="carousel-caption">
                                         <h1>Old Style</h1>
-                                        <p>Some representative placeholder content for the first slide.</p>
+                                        <p>Khám phá phong cách với những món đồ second-hand duy nhất!</p>
                                    </div>
                               </div>
                               <div class="carousel-item active">
                                    <img src="/public/img/banner-header.jpeg" class="d-block w-100" alt="...">
                                    <div class="carousel-caption">
                                         <h1>Old Style</h1>
-                                        <p>Some representative placeholder content for the first slide.</p>
+                                        <p>Khám phá phong cách với những món đồ second-hand duy nhất!</p>
                                    </div>
                               </div>
                          </div>

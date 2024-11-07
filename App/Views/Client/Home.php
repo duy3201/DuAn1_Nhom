@@ -9,8 +9,9 @@ class Home extends BaseView
     public static function render($data = null)
     {
 ?>
-        
+
 <?php
     }
+
 }
 ?>
