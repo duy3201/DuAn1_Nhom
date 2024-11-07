@@ -57,8 +57,8 @@ class Header extends BaseView
                                    </ul>
                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li class="nav-login">
-                                             <a class="nav-link" href="#">Đăng nhập</a>
-                                             <a class="nav-link" href="#">Đăng ký</a>
+                                             <a class="nav-link" href="/login">Đăng nhập</a>
+                                             <a class="nav-link" href="/register">Đăng ký</a>
                                         </li>
                                         <li class="nav-icon">
                                              <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
