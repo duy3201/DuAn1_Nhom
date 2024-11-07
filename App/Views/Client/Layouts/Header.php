@@ -26,7 +26,7 @@ class Header extends BaseView
                <div class="menu">
                     <nav class="navbar navbar-expand-lg bg-body-tertiary">
                          <div class="container-fluid">
-                              <a class="navbar-brand" href="#"><img src="/nhom1_duan1/public/img/z5831525310638_5b89f4880e99ed7236cfe5f2de6b6927.jpg" width="25%" alt=""></a>
+                              <a class="navbar-brand" href="#"><img src="/public/img/z5831525310638_5b89f4880e99ed7236cfe5f2de6b6927.jpg" width="25%" alt=""></a>
                               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                    <span class="navbar-toggler-icon"></span>
                               </button>
@@ -78,21 +78,21 @@ class Header extends BaseView
                          </div>
                          <div class="carousel-inner">
                               <div class="carousel-item active">
-                                   <img src="/nhom1_duan1/public/img/banner-header.jpeg" class="d-block w-100" alt="...">
+                                   <img src="/public/img/banner-header.jpeg" class="d-block w-100" alt="...">
                                    <div class="carousel-caption">
                                         <h1>Old Style</h1>
                                         <p>Some representative placeholder content for the first slide.</p>
                                    </div>
                               </div>
                               <div class="carousel-item active">
-                                   <img src="/nhom1_duan1/public/img/banner-header.jpeg" class="d-block w-100" alt="...">
+                                   <img src="/public/img/banner-header.jpeg" class="d-block w-100" alt="...">
                                    <div class="carousel-caption">
                                         <h1>Old Style</h1>
                                         <p>Some representative placeholder content for the first slide.</p>
                                    </div>
                               </div>
                               <div class="carousel-item active">
-                                   <img src="/nhom1_duan1/public/img/banner-header.jpeg" class="d-block w-100" alt="...">
+                                   <img src="/public/img/banner-header.jpeg" class="d-block w-100" alt="...">
                                    <div class="carousel-caption">
                                         <h1>Old Style</h1>
                                         <p>Some representative placeholder content for the first slide.</p>

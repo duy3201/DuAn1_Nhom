@@ -10,6 +10,8 @@ use App\Route;
 
 require_once 'vendor/autoload.php';
 
+require_once 'App/Views/index.php';
+
 
 require_once 'config.php';
 
