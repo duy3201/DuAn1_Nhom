@@ -9,6 +9,8 @@ use App\Views\Client\Layouts\Footer;
 use App\Views\Client\Layouts\Header;
 use App\Views\Client\Pages\Card;
 use App\Views\Client\Pages\Product\Products;
+use App\Views\Client\Pages\Contact;
+
 
 class HomeController
 {
@@ -23,6 +25,12 @@ class HomeController
     public static function card(){
         Header::render();
         Card::render();
+    }
+
+    public static function contact(){
+        Header::render();
+        Contact::render();
         Footer::render();
     }
 }
+

@@ -52,7 +52,7 @@ class Header extends BaseView
                                              <a class="nav-link" href="#">Tin tức</a>
                                         </li>
                                         <li class="nav-item">
-                                             <a class="nav-link" href="#">Liên hệ</a>
+                                             <a class="nav-link" href="/contact">Liên hệ</a>
                                         </li>
                                    </ul>
                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
