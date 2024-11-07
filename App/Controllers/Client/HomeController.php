@@ -25,6 +25,7 @@ class HomeController
     public static function card(){
         Header::render();
         Card::render();
+        Footer::render();
     }
 
     public static function contact(){
