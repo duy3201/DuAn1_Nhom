@@ -65,7 +65,6 @@ class Products extends BaseView
                 echo '<div class="card-body p-3">';
                 echo '<h5 class="card-title fs-6 mb-2">' . htmlspecialchars($product['title']) . '</h5>';
                 echo '<p class="card-text text-warning fw-bold fs-5">' . htmlspecialchars($product['price']) . '</p>';
-                echo '<button class="btn btn-success">' . $product['btn'] . '</button>';
                 echo '</div>';
                 echo '</article>';
                 echo '</div>';
