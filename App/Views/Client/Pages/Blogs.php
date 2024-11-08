@@ -81,7 +81,7 @@ class Blogs extends BaseView
               <img src="/public/img/ao-thun-couple-gucci.jpg" class="card-img-top" alt="Tin tức 1">
               <div class="card-body">
                 <h5 class="card-title">Tiêu đề bài viết 1</h5>
-                <p class="card-text">Đoạn giới thiệu ngắn về bài viết 1. Nội dung sẽ được tóm tắt để thu hút sự chú ý của người đọc. Đọc tiếp để biết thêm chi tiết...</p>
+                Đoạn giới thiệu ngắn về bài viết 1. Nội dung sẽ được tóm tắt để thu hút sự chú ý của người đọc. Đọc tiếp để biết thêm chi tiết...
               </div>
               <div class="card-footer text-muted">
                 <small>Ngày đăng: 08/11/2024</small>
@@ -94,7 +94,8 @@ class Blogs extends BaseView
             <div class="card shadow-sm">
               <img src="/public/img/ao-thun-couple-gucci.jpg" class="card-img-top" alt="Tin tức 2">
               <div class="card-body">
-                <h5 class="card-title">Tiêu đề bài viết 2</h5> khác để cập nhật các tin tức mới. Nội dung sẽ được giới thiệu với cái nhìn tổng quan để lôi kéo người đọc tìm hiểu thêm.</p>
+                <h5 class="card-title">Tiêu đề bài viết 2</h5> 
+                khác để cập nhật các tin tức mới. Nội dung sẽ được giới thiệu với cái nhìn tổng quan để lôi kéo người đọc tìm hiểu thêm.</p>
               </div>
               <div class="card-footer text-muted">
                 <small>Ngày đăng: 07/11/2024</small>
@@ -108,7 +109,7 @@ class Blogs extends BaseView
               <img src="/public/img/ao-thun-couple-gucci.jpg" class="card-img-top" alt="Tin tức 3">
               <div class="card-body">
                 <h5 class="card-title">Tiêu đề bài viết 3</h5>
-                <p class="card-text">Đoạn tóm tắt bài viết, cung cấp những thông tin cơ bản về nội dung, mục đích và điểm nổi bật của bài viết. Khuyến khích người đọc bấm vào để xem chi tiết.</p>
+                Đoạn tóm tắt bài viết, cung cấp những thông tin cơ bản về nội dung, mục đích và điểm nổi bật của bài viết. Khuyến khích người đọc bấm vào để xem chi tiết.
               </div>
               <div class="card-footer text-muted">
                 <small>Ngày đăng: 06/11/2024</small>
@@ -122,7 +123,7 @@ class Blogs extends BaseView
               <img src="/public/img/ao-thun-couple-gucci.jpg" class="card-img-top" alt="Tin tức 4">
               <div class="card-body">
                 <h5 class="card-title">Tiêu đề bài viết 4</h5>
-                <p class="card-text">Cập nhật mới về xu hướng và những thay đổi trong ngành. Bài viết này giúp người đọc nắm bắt các thay đổi nhanh chóng và dễ dàng.</p>
+                Cập nhật mới về xu hướng và những thay đổi trong ngành. Bài viết này giúp người đọc nắm bắt các thay đổi nhanh chóng và dễ dàng.
               </div>
               <div class="card-footer text-muted">
                 <small>Ngày đăng: 05/11/2024</small>
@@ -136,7 +137,7 @@ class Blogs extends BaseView
               <img src="/public/img/ao-thun-couple-gucci.jpg" class="card-img-top" alt="Tin tức 5">
               <div class="card-body">
                 <h5 class="card-title">Tiêu đề bài viết 5</h5>
-                <p class="card-text">Một bài viết mới về các sự kiện nổi bật trong tuần, với nhiều hình ảnh minh họa và thông tin chi tiết hấp dẫn.</p>
+                Một bài viết mới về các sự kiện nổi bật trong tuần, với nhiều hình ảnh minh họa và thông tin chi tiết hấp dẫn.
               </div>
               <div class="card-footer text-muted">
                 <small>Ngày đăng: 04/11/2024</small>
@@ -149,7 +150,8 @@ class Blogs extends BaseView
             <div class="card shadow-sm">
               <img src="/public/img/ao-thun-couple-gucci.jpg" class="card-img-top" alt="Tin tức 6">
               <div class="card-body">
-                <h5 class="card-title">Tiêu đề bài viết 6</h5>/-strong/-heart:>:o:-((:-h <p class="card-text">Tin tức nóng hổi về một sự kiện đặc biệt vừa diễn ra. Nội dung bài viết cung cấp cái nhìn sâu sắc về diễn biến sự kiện này.</p>
+                <h5 class="card-title">Tiêu đề bài viết 6</h5>
+                Tin tức nóng hổi về một sự kiện đặc biệt vừa diễn ra. Nội dung bài viết cung cấp cái nhìn sâu sắc về diễn biến sự kiện này.
               </div>
               <div class="card-footer text-muted">
                 <small>Ngày đăng: 03/11/2024</small>

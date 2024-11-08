@@ -11,7 +11,7 @@ class Footer extends BaseView
      { ?>
           <footer>
             <div class="footer1">
-                Logo
+            <a class="navbar-brand" href="/"><img class="rounded-circle" src="/public/img/Second hand.png" width="25%" alt=""></a>
                 <p>Nâng tầm phong cách với quần áo chất lượng, giá hợp lý, và mỗi món đồ đều mang một câu chuyện riêng biệt.</p>
             </div>
             <hr>

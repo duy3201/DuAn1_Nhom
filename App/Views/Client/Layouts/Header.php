@@ -26,7 +26,7 @@ class Header extends BaseView
                <div class="menu">
                     <nav class="navbar navbar-expand-lg bg-body-tertiary">
                          <div class="container-fluid">
-                              <a class="navbar-brand" href="#"><img src="/public/img/z5831525310638_5b89f4880e99ed7236cfe5f2de6b6927.jpg" width="25%" alt=""></a>
+                              <a class="navbar-brand" href="/"><img class="rounded-circle" src="/public/img/Second hand.png" width="25%" alt=""></a>
                               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                    <span class="navbar-toggler-icon"></span>
                               </button>
