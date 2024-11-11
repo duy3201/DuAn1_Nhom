@@ -13,11 +13,20 @@ use App\Views\Client\Pages\Auth\Register;
 use App\Views\Client\Components\Notification;
 use App\Views\Client\Pages\Auth\ChangePassword;
 use App\Views\Client\Pages\Auth\Edit;
+
 use App\Views\Client\Pages\Auth\ForgotPassword;
 use App\Views\Client\Pages\Auth\ResetPassword;
 use App\Views\Client\Pages\Introduce\Introduce;
+use App\Views\Client\Pages\Product\Detail as ProductDetail;
 
 class AuthController {
+
+    public static function Detail() {
+        Header::render();
+        Notification::render();
+        ProductDetail::render();
+        Footer::render();
+    }
 
     public static function register() {
         Header::render();
@@ -25,6 +34,8 @@ class AuthController {
         Register::render();
         Footer::render();
     }
+
+   
 
     // public static function registerAction() {
     //     $is_valid = AuthValidation::register();

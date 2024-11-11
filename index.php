@@ -21,7 +21,7 @@ require_once 'config.php';
 // *** Client
 Route::get('/', 'App\Controllers\Client\HomeController@index');
 Route::get('/products', 'App\Controllers\Client\ProductController@index');
-Route::get('/products/{id}', 'App\Controllers\Client\ProductController@detail');
+// Route::get('/products/{id}', 'App\Controllers\Client\ProductController@detail');
 Route::get('/register','App\Controllers\Client\AuthController@register');
 Route::post('/register','App\Controllers\Client\AuthController@registerAction');
 Route::get('/login','App\Controllers\Client\AuthController@login');
@@ -30,6 +30,8 @@ Route::get('/contact','App\controllers\Client\HomeController@contact');
 Route::get('/introduce','App\controllers\Client\HomeController@introduce');
 
 Route::get('/blogs','App\Controllers\Client\HomeController@blogs');
+
+Route::get('/detail', 'App\Controllers\Client\ProductController@detail');
 
 
 
