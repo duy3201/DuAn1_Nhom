@@ -11,177 +11,347 @@ class Header extends BaseView
 
 ?>
         <!DOCTYPE html>
-        <html dir="ltr" lang="en">
+        <html lang="en">
 
         <head>
+            <!-- Required meta tags -->
             <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <!-- Tell the browser to be responsive to screen width -->
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Admin</title>
-            <!-- Favicon icon -->
-            <link rel="icon" type="image/png" sizes="16x16" href="<?= APP_URL ?>/public/assets/admin/images/favicon.png">
-            <!-- CSS -->
-            <link href="<?= APP_URL ?>/public/assets/admin/libs/flot/css/float-chart.css" rel="stylesheet">
-            <link rel="stylesheet" type="text/css" href="<?= APP_URL ?>/public/assets/admin/extra-libs/multicheck/multicheck.css">
-            <link href="<?= APP_URL ?>/public/assets/admin/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
-
-            <link rel="stylesheet" type="text/css" href="<?= APP_URL ?>/public/assets/admin/libs/select2/dist/css/select2.min.css">
-            <link rel="stylesheet" type="text/css" href="<?= APP_URL ?>/public/assets/admin/libs/jquery-minicolors/jquery.minicolors.css">
-            <link rel="stylesheet" type="text/css" href="<?= APP_URL ?>/public/assets/admin/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-            <link rel="stylesheet" type="text/css" href="<?= APP_URL ?>/public/assets/admin/libs/quill/dist/quill.snow.css">
-
-            <!-- Custom CSS -->
-            <link href="<?= APP_URL ?>/public/assets/admin/dist/css/style.min.css" rel="stylesheet">
-
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>Corona Admin</title>
+            <!-- plugins:css -->
+            <link rel="stylesheet" href="/public/assets/admin/vendors/mdi/css/materialdesignicons.min.css">
+            <link rel="stylesheet" href="/public/assets/admin/vendors/css/vendor.bundle.base.css">
+            <!-- endinject -->
+            <!-- Plugin css for this page -->
+            <link rel="stylesheet" href="/public/assets/admin/vendors/jvectormap/jquery-jvectormap.css">
+            <link rel="stylesheet" href="/public/assets/admin/vendors/flag-icon-css/css/flag-icon.min.css">
+            <link rel="stylesheet" href="/public/assets/admin/vendors/owl-carousel-2/owl.carousel.min.css">
+            <link rel="stylesheet" href="/public/assets/admin/vendors/owl-carousel-2/owl.theme.default.min.css">
+            <!-- End plugin css for this page -->
+            <!-- inject:css -->
+            <!-- endinject -->
+            <!-- Layout styles -->
+            <link rel="stylesheet" href="/public/assets/admin/css/style.css">
+            <!-- End layout styles -->
+            <link rel="shortcut icon" href="/public/assets/admin/images/favicon.png" />
         </head>
 
         <body>
-
-            <!-- ============================================================== -->
-            <!-- Main wrapper - style you can find in pages.scss -->
-            <!-- ============================================================== -->
-            <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full" data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
-                <!-- ============================================================== -->
-                <!-- Topbar header - style you can find in pages.scss -->
-                <!-- ============================================================== -->
-                <header class="topbar" data-navbarbg="skin5">
-                    <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-                        <div class="navbar-header" data-logobg="skin5">
-
-                            <!-- ============================================================== -->
-                            <!-- Logo -->
-                            <!-- ============================================================== -->
-                            <a class="navbar-brand" href="/admin">
-                                <!-- Logo icon -->
-                                <b class="logo-icon ps-2">
-                                    <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                                    <!-- Dark Logo icon -->
-                                    <img src="<?= APP_URL ?>/public/assets/admin/images/logo-icon.png" alt="homepage" class="light-logo" />
-
-                                </b>
-                                <!--End Logo icon -->
-                                <!-- Logo text -->
-                                <span class="logo-text">
-                                    <!-- dark Logo text -->
-                                    <img src="<?= APP_URL ?>/public/assets/admin/images/logo-text.png" alt="homepage" class="light-logo" />
-
-                                </span>
-                                <!-- Logo icon -->
-                                <!-- <b class="logo-icon"> -->
-                                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                                <!-- Dark Logo icon -->
-                                <!-- <img src="<?= APP_URL ?>/public/assets/admin/images/logo-text.png" alt="homepage" class="light-logo" /> -->
-
-                                <!-- </b> -->
-                                <!--End Logo icon -->
-                            </a>
-                            <!-- ============================================================== -->
-                            <!-- End Logo -->
-                            <!-- ============================================================== -->
-                            <!-- ============================================================== -->
-                            <!-- Toggle which is visible on mobile only -->
-                            <!-- ============================================================== -->
-                            <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
-                        </div>
-                        <!-- ============================================================== -->
-                        <!-- End Logo -->
-                        <!-- ============================================================== -->
-                        <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
-                            <!-- ============================================================== -->
-                            <!-- toggle and nav items -->
-                            <!-- ============================================================== -->
-                            <ul class="navbar-nav float-start me-auto">
-                                <li class="nav-item d-none d-lg-block"><a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a></li>
-                                <!-- ============================================================== -->
-                            </ul>
-                            <!-- ============================================================== -->
-                            <!-- Right side toggle and nav items -->
-                            <!-- ============================================================== -->
-                            <ul class="navbar-nav float-end">                
-                                <!-- ============================================================== -->
-                                <!-- User profile and search -->
-                                <!-- ============================================================== -->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="<?= APP_URL ?>/public/assets/admin/images/users/1.jpg" alt="user" class="rounded-circle" width="31">
+            <div class="container-scroller">
+                <!-- partial:../../partials/_sidebar.html -->
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                    <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+                        <a class="sidebar-brand brand-logo" href="/admin"><img src="/public/assets/admin/images/logo.svg" alt="logo" /></a>
+                        <a class="sidebar-brand brand-logo-mini" href="/admin"><img src="/public/assets/admin/images/logo-mini.svg" alt="logo" /></a>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item profile">
+                            <div class="profile-desc">
+                                <div class="profile-pic">
+                                    <div class="count-indicator">
+                                        <img class="img-xs rounded-circle " src="/public/assets/admin/images/faces/face15.jpg" alt="">
+                                        <span class="count bg-success"></span>
+                                    </div>
+                                    <div class="profile-name">
+                                        <h5 class="mb-0 font-weight-normal">Admin</h5>
+                                    </div>
+                                </div>
+                                <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                                    <a href="#" class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <div class="preview-icon bg-dark rounded-circle">
+                                                <i class="mdi mdi-settings text-primary"></i>
+                                            </div>
+                                        </div>
+                                        <div class="preview-item-content">
+                                            <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                                        </div>
                                     </a>
-                                    <ul class="dropdown-menu dropdown-menu-end user-dd animated" aria-labelledby="navbarDropdown">
-
-                                        <a class="dropdown-item" href=""><i class="fa fa-power-off me-1 ms-1"></i> Đăng xuất</a>
-                                    </ul>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <div class="preview-icon bg-dark rounded-circle">
+                                                <i class="mdi mdi-onepassword  text-info"></i>
+                                            </div>
+                                        </div>
+                                        <div class="preview-item-content">
+                                            <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <div class="preview-icon bg-dark rounded-circle">
+                                                <i class="mdi mdi-calendar-today text-success"></i>
+                                            </div>
+                                        </div>
+                                        <div class="preview-item-content">
+                                            <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-category">
+                            <span class="nav-link">Navigation</span>
+                        </li>
+                        <li class="nav-item menu-items">
+                            <a class="nav-link" href="/admin">
+                                <span class="menu-icon">
+                                    <i class="mdi mdi-speedometer"></i>
+                                </span>
+                                <span class="menu-title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item menu-items">
+                            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                                <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                </span>
+                                <span class="menu-title">Products</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="ui-basic">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="#">Product</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="#">Add products</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="#">Edit Category</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item menu-items">
+                            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                                <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                </span>
+                                <span class="menu-title">Categorys</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="ui-basic">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="#">Category</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="#">Add Category</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="#">Edit Category</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item menu-items">
+                            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                                <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                </span>
+                                <span class="menu-title">Users</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="ui-basic">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="#">User</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="#">Add User</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="#">Edit User</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- partial -->
+                <div class="container-fluid page-body-wrapper">
+                    <!-- partial:../../partials/_navbar.html -->
+                    <nav class="navbar p-0 fixed-top d-flex flex-row">
+                        <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+                            <a class="navbar-brand brand-logo-mini" href="/admin"><img src="/public/assets/admin/images/logo-mini.svg" alt="logo" /></a>
+                        </div>
+                        <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+                            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                                <span class="mdi mdi-menu"></span>
+                            </button>
+                            <ul class="navbar-nav w-100">
+                                <li class="nav-item w-100">
+                                    <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                                        <input type="text" class="form-control" placeholder="Search products">
+                                    </form>
                                 </li>
-                                <!-- ============================================================== -->
-                                <!-- User profile and search -->
-                                <!-- ============================================================== -->
                             </ul>
+                            <ul class="navbar-nav navbar-nav-right">
+                                <li class="nav-item dropdown d-none d-lg-block">
+                                    <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+                                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+                                        <h6 class="p-3 mb-0">Projects</h6>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-dark rounded-circle">
+                                                    <i class="mdi mdi-file-outline text-primary"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <p class="preview-subject ellipsis mb-1">Software Development</p>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-dark rounded-circle">
+                                                    <i class="mdi mdi-web text-info"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <p class="preview-subject ellipsis mb-1">UI Development</p>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-dark rounded-circle">
+                                                    <i class="mdi mdi-layers text-danger"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <p class="preview-subject ellipsis mb-1">Software Testing</p>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <p class="p-3 mb-0 text-center">See all projects</p>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-settings d-none d-lg-block">
+                                    <a class="nav-link" href="#">
+                                        <i class="mdi mdi-view-grid"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown border-left">
+                                    <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                                        <i class="mdi mdi-email"></i>
+                                        <span class="count bg-success"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                                        <h6 class="p-3 mb-0">Messages</h6>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <img src="/public/assets/admin/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <p class="preview-subject ellipsis mb-1">Mark send you a message</p>
+                                                <p class="text-muted mb-0"> 1 Minutes ago </p>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <img src="/public/assets/admin/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
+                                                <p class="text-muted mb-0"> 15 Minutes ago </p>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <img src="/public/assets/admin/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
+                                                <p class="text-muted mb-0"> 18 Minutes ago </p>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <p class="p-3 mb-0 text-center">4 new messages</p>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown border-left">
+                                    <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                                        <i class="mdi mdi-bell"></i>
+                                        <span class="count bg-danger"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                                        <h6 class="p-3 mb-0">Notifications</h6>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-dark rounded-circle">
+                                                    <i class="mdi mdi-calendar text-success"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <p class="preview-subject mb-1">Event today</p>
+                                                <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-dark rounded-circle">
+                                                    <i class="mdi mdi-settings text-danger"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <p class="preview-subject mb-1">Settings</p>
+                                                <p class="text-muted ellipsis mb-0"> Update dashboard </p>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-dark rounded-circle">
+                                                    <i class="mdi mdi-link-variant text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <p class="preview-subject mb-1">Launch Admin</p>
+                                                <p class="text-muted ellipsis mb-0"> New admin wow! </p>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <p class="p-3 mb-0 text-center">See all notifications</p>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                                        <div class="navbar-profile">
+                                            <img class="img-xs rounded-circle" src="/public/assets/admin/images/faces/face15.jpg" alt="">
+                                            <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+                                            <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                                        <h6 class="p-3 mb-0">Profile</h6>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-dark rounded-circle">
+                                                    <i class="mdi mdi-settings text-success"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <p class="preview-subject mb-1">Settings</p>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item preview-item">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-dark rounded-circle">
+                                                    <i class="mdi mdi-logout text-danger"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <p class="preview-subject mb-1">Log out</p>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <p class="p-3 mb-0 text-center">Advanced settings</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                                <span class="mdi mdi-format-line-spacing"></span>
+                            </button>
                         </div>
                     </nav>
-                </header>
-                <!-- ============================================================== -->
-                <!-- End Topbar header -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Left Sidebar - style you can find in sidebar.scss  -->
-                <!-- ============================================================== -->
-                <aside class="left-sidebar" data-sidebarbg="skin5">
-                    <!-- Sidebar scroll-->
-                    <div class="scroll-sidebar">
-                        <!-- Sidebar navigation-->
-                        <nav class="sidebar-nav">
-                            <ul id="sidebarnav" class="pt-4">
-                                <li class="sidebar-item">
-                                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/admin" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Thống kê</span></a>
-                                </li>
+            <?php
 
-                                <li class="sidebar-item">
-                                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Loại sản phẩm </span></a>
-                                    <ul aria-expanded="false" class="collapse  first-level">
-                                        <li class="sidebar-item">
-                                            <a href="/admin/categories" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Danh sách </span></a>
-                                        </li>
-                                        <li class="sidebar-item">
-                                            <a href="/admin/categories/create" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Thêm mới </span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Sản phẩm </span></a>
-                                    <ul aria-expanded="false" class="collapse  first-level">
-                                        <li class="sidebar-item">
-                                            <a href="/admin/products" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Danh sách </span></a>
-                                        </li>
-                                        <li class="sidebar-item">
-                                            <a href="/admin/products/create" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Thêm mới </span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Bình luận </span></a>
-                                    <ul aria-expanded="false" class="collapse  first-level">
-                                        <li class="sidebar-item">
-                                            <a href="/admin/comments" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Danh sách </span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="sidebar-item p-3">
-                                    <a href="https://github.com/wrappixel/matrix-admin-lite" target="_blank" class="w-100 btn btn-cyan d-flex align-items-center text-white"><i class="mdi mdi-cloud-download font-20 me-2"></i>Theme</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <!-- End Sidebar navigation -->
-                    </div>
-                    <!-- End Sidebar scroll-->
-                </aside>
-                <!-- ============================================================== -->
-                <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-
-        <?php
-
+        }
     }
-}
 
-        ?>
+            ?>
