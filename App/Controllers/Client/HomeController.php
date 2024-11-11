@@ -18,11 +18,9 @@ class HomeController
     // hiển thị danh sách
     public static function index()
     {
-        Header::render();
+         Header::render();
         Home::render();
-        Products::render();
-        Blogs::render();
-        Footer::render();
+         Footer::render();
     }
     public static function blogs()
     {

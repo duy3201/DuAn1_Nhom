@@ -6,68 +6,93 @@ use App\Views\BaseView;
 
 class Footer extends BaseView
 {
-
-     public static function render($data = null)
-     { ?>
-          <footer>
-            <div class="footer1">
-            <a class="navbar-brand" href="/"><img class="rounded-circle" src="/public/img/Second hand.png" width="25%" alt=""></a>
-                <p>Nâng tầm phong cách với quần áo chất lượng, giá hợp lý, và mỗi món đồ đều mang một câu chuyện riêng biệt.</p>
-            </div>
-            <hr>
-            <div class="container-footer text-center footer2">
+    public static function render($data = null)
+    { ?>
+        <!-- Phần Footer Bắt Đầu -->
+        <footer class="footer-section">
+            <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <h4>Về chúng tôi</h4>
-                        <nav></nav>
-                        <a href="#">Tổng quan cửa hàng</a>
-                        <a href="#">Tìm kiếm sản phẩm</a>
-                        <a href="#">Lịch sử cửa hàng</a>
-                        <a href="#">Tín tức mới nhất</a>
+                    <div class="col-lg-3">
+                        <div class="footer-left">
+                            <div class="footer-logo">
+                                <a href="#"><img src="/public/assets/client/img/logo2.png" alt="Logo"></a>
+                            </div>
+                            <ul>
+                                <li>Địa chỉ: Cái Răng, Cầ Thơ</li>
+                                <li>Điện thoại: 0949618553</li>
+                                <li>Email: oldstyle@gmail.com</li>
+                            </ul>
+                            <div class="footer-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <h4>Chính sách</h4>
-                        <nav></nav>
-                        <a href="#">Chính sách đổi trả</a>
-                        <a href="#">Chính sách khuyến mãi</a>
-                        <a href="#">Chính sách bảo mật</a>
-                        <a href="#">Chính sách giao hàng</a>
+                    <div class="col-lg-2 offset-lg-1">
+                        <div class="footer-widget">
+                            <h5>Thông Tin</h5>
+                            <ul>
+                                <li><a href="#">Về Chúng Tôi</a></li>
+                                <li><a href="#">Thanh Toán</a></li>
+                                <li><a href="#">Liên Hệ</a></li>
+                                <li><a href="#">Dịch Vụ</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col">
-                        <h4>Liên hệ</h4>
-                        <nav></nav>
-                        <a href="#"><i class="fa-solid fa-envelope"></i> : nguyenvanla@gmail.com</a>
-                        <a href="#"><i class="fa-solid fa-phone"></i> : 0329396779</a>
-                        <a href="#"><i class="fa-solid fa-location-dot"></i> : Đường số 22, Thường Thạnh, Cái Răng, Cần Thơ</a>
+                    <div class="col-lg-2">
+                        <div class="footer-widget">
+                            <h5>Tài Khoản</h5>
+                            <ul>
+                                <li><a href="#">Tài Khoản Của Tôi</a></li>
+                                <li><a href="#">Liên Hệ</a></li>
+                                <li><a href="#">Giỏ Hàng</a></li>
+                                <li><a href="#">Cửa Hàng</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col">
-                        <h4>Liên kết</h4>
-                        <nav></nav>
-                        <div class="icon-links">
-                            <a href="#"><img src="/public/img/fb.png" alt=""></a>
-                            <a href="#"><img src="/public/img/tt.png" alt=""></a>
-                            <a href="#"><img src="/public/img/insta.png" alt=""></a>
-                            <a href="#"><img src="/public/img/youtube.png" alt=""></a>
+                    <div class="col-lg-4">
+                        <div class="newslatter-item">
+                            <h5>Tham Gia Bản Tin Của Chúng Tôi</h5>
+                            <p>Nhận cập nhật qua email về cửa hàng và các ưu đãi đặc biệt của chúng tôi.</p>
+                            <form action="#" class="subscribe-form">
+                                <input type="text" placeholder="Nhập Email của bạn">
+                                <button type="button">Đăng Ký</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="container-footer3 ">
-                <div class="row justify-content-between">
-                    <div class="col-4 title">
-                        Thiết kế bởi team Old Style
-                    </div>
-                    <div class="col-4 icon-footer">
-                        <a href="#"><img src="/public/img/Visa.png" alt=""></a>
-                        <a href="#"><img src="/public/img/Mastercard.png" alt=""></a>
-                        <a href="#"><img src="/public/img/GooglePay.png" alt=""></a>
-                        <a href="#"><img src="/public/img/PayPal.png" alt=""></a>
-                        <a href="#"><img src="/public/img/ApplePay.png" alt=""></a>
+            <div class="copyright-reserved">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="copyright-text">
+                                <!-- Link về Colorlib không được xóa. Template được cấp phép theo CC BY 3.0. -->
+                                Bản quyền &copy;<script>document.write(new Date().getFullYear());</script> Tất cả các quyền được bảo lưu | Template này được thực hiện với <i class="fa fa-heart-o" aria-hidden="true"></i> bởi <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link về Colorlib không được xóa. Template được cấp phép theo CC BY 3.0. -->
+                            </div>
+                            <div class="payment-pic">
+                                <img src="/public/assets/client/img/payment-method.png" alt="Phương thức thanh toán">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
         </footer>
+        <script src="/public/assets/client/js/jquery-3.3.1.min.js"></script>
+        <script src="/public/assets/client/js/bootstrap.min.js"></script>
+        <script src="/public/assets/client/js/jquery-ui.min.js"></script>
+        <script src="/public/assets/client/js/jquery.countdown.min.js"></script>
+        <script src="/public/assets/client/js/jquery.nice-select.min.js"></script>
+        <script src="/public/assets/client/js/jquery.zoom.min.js"></script>
+        <script src="/public/assets/client/js/jquery.dd.min.js"></script>
+        <script src="/public/assets/client/js/jquery.slicknav.js"></script>
+        <script src="/public/assets/client/js/owl.carousel.min.js"></script>
+        <script src="/public/assets/client/js/main.js"></script>
+    </body>
+
+    </html>
 <?php }
 }

@@ -12,187 +12,196 @@ class Blogs extends BaseView
 
 
 
-
-    <style>
-      .card-img-top {
-        object-fit: cover;
-        height: 250px;
-      }
-
-      .card-body {
-        padding: 20px;
-      }
-
-      .card-title {
-        font-size: 1.75rem;
-        font-weight: bold;
-        color: #333;
-      }
-
-      .card-text {
-        font-size: 1.1rem;
-        color: #555;
-        line-height: 1.5;
-        height: 80px;
-        overflow: hidden;
-      }
-
-      .card-footer {
-        background-color: #f8f9fa;
-        text-align: right;
-        padding: 10px;
-        font-size: 0.9rem;
-        color: #999;
-      }
-
-      .card:hover {
-        transform: translateY(-10px);
-        transition: transform 0.3s ease-in-out;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      }
-
-      .card-deck .card {
-        border: none;
-        border-radius: 10px;
-      }
-
-      .pagination {
-        justify-content: center;
-      }
-    </style>
-    
-
-   
-
-      <!-- Hero Section -->
-
+    <!-- Breadcrumb Section Begin -->
+    <div class="breacrumb-section">
       <div class="container">
-        <h1 class="text-center">Trang Tin Tức </h1>
-      </div>
-
-
-      <!-- News Section -->
-      <div class="container py-5">
         <div class="row">
-
-          <!-- News Article 1 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card shadow-sm">
-              <img src="/public/img/ao-thun-couple-gucci.jpg" class="card-img-top" alt="Tin tức 1">
-              <div class="card-body">
-                <h5 class="card-title">Tiêu đề bài viết 1</h5>
-                Đoạn giới thiệu ngắn về bài viết 1. Nội dung sẽ được tóm tắt để thu hút sự chú ý của người đọc. Đọc tiếp để biết thêm chi tiết...
-              </div>
-              <div class="card-footer text-muted">
-                <small>Ngày đăng: 08/11/2024</small>
-              </div>
+          <div class="col-lg-12">
+            <div class="breadcrumb-text">
+              <a href="#"><i class="fa fa-home"></i> Trang chủ</a>
+              <span>Blog</span>
             </div>
           </div>
-
-          <!-- News Article 2 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card shadow-sm">
-              <img src="/public/img/ao-thun-couple-gucci.jpg" class="card-img-top" alt="Tin tức 2">
-              <div class="card-body">
-                <h5 class="card-title">Tiêu đề bài viết 2</h5> 
-                khác để cập nhật các tin tức mới. Nội dung sẽ được giới thiệu với cái nhìn tổng quan để lôi kéo người đọc tìm hiểu thêm.</p>
-              </div>
-              <div class="card-footer text-muted">
-                <small>Ngày đăng: 07/11/2024</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- News Article 3 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card shadow-sm">
-              <img src="/public/img/ao-thun-couple-gucci.jpg" class="card-img-top" alt="Tin tức 3">
-              <div class="card-body">
-                <h5 class="card-title">Tiêu đề bài viết 3</h5>
-                Đoạn tóm tắt bài viết, cung cấp những thông tin cơ bản về nội dung, mục đích và điểm nổi bật của bài viết. Khuyến khích người đọc bấm vào để xem chi tiết.
-              </div>
-              <div class="card-footer text-muted">
-                <small>Ngày đăng: 06/11/2024</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- News Article 4 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card shadow-sm">
-              <img src="/public/img/ao-thun-couple-gucci.jpg" class="card-img-top" alt="Tin tức 4">
-              <div class="card-body">
-                <h5 class="card-title">Tiêu đề bài viết 4</h5>
-                Cập nhật mới về xu hướng và những thay đổi trong ngành. Bài viết này giúp người đọc nắm bắt các thay đổi nhanh chóng và dễ dàng.
-              </div>
-              <div class="card-footer text-muted">
-                <small>Ngày đăng: 05/11/2024</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- News Article 5 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card shadow-sm">
-              <img src="/public/img/ao-thun-couple-gucci.jpg" class="card-img-top" alt="Tin tức 5">
-              <div class="card-body">
-                <h5 class="card-title">Tiêu đề bài viết 5</h5>
-                Một bài viết mới về các sự kiện nổi bật trong tuần, với nhiều hình ảnh minh họa và thông tin chi tiết hấp dẫn.
-              </div>
-              <div class="card-footer text-muted">
-                <small>Ngày đăng: 04/11/2024</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- News Article 6 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card shadow-sm">
-              <img src="/public/img/ao-thun-couple-gucci.jpg" class="card-img-top" alt="Tin tức 6">
-              <div class="card-body">
-                <h5 class="card-title">Tiêu đề bài viết 6</h5>
-                Tin tức nóng hổi về một sự kiện đặc biệt vừa diễn ra. Nội dung bài viết cung cấp cái nhìn sâu sắc về diễn biến sự kiện này.
-              </div>
-              <div class="card-footer text-muted">
-                <small>Ngày đăng: 03/11/2024</small>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
+    </div>
+    <!-- Breadcrumb Section End -->
 
-      <!-- Pagination -->
-      <nav aria-label="Page navigation example" class="container py-3">
-        <ul class="pagination justify-content-center">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item active" aria-current="page">
-            <a class="page-link" href="#">1</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">2</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">3</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <!-- Blog Section Begin -->
+    <section class="blog-section spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1">
+            <div class="blog-sidebar">
+              <div class="search-form">
+                <h4>Tìm kiếm</h4>
+                <form action="#">
+                  <input type="text" placeholder="Tìm kiếm . . .  ">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+              <div class="blog-catagory">
+                <h4>Danh mục</h4>
+                <ul>
+                  <li><a href="#">Thời trang</a></li>
+                  <li><a href="#">Du lịch</a></li>
+                  <li><a href="#">Dã ngoại</a></li>
+                  <li><a href="#">Mẫu</a></li>
+                </ul>
+              </div>
+              <div class="recent-post">
+                <h4>Bài viết gần đây</h4>
+                <div class="recent-blog">
+                  <a href="#" class="rb-item">
+                    <div class="rb-pic">
+                      <img src="/public/assets/client/img/blog/recent-1.jpg" alt="">
+                    </div>
+                    <div class="rb-text">
+                      <h6>Đặc điểm tính cách khiến mọi người hạnh phúc hơn...</h6>
+                      <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
+                    </div>
+                  </a>
+                  <a href="#" class="rb-item">
+                    <div class="rb-pic">
+                      <img src="/public/assets/client/img/blog/recent-2.jpg" alt="">
+                    </div>
+                    <div class="rb-text">
+                      <h6>Đặc điểm tính cách khiến mọi người hạnh phúc hơn...</h6>
+                      <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
+                    </div>
+                  </a>
+                  <a href="#" class="rb-item">
+                    <div class="rb-pic">
+                      <img src="/public/assets/client/img/blog/recent-3.jpg" alt="">
+                    </div>
+                    <div class="rb-text">
+                      <h6>Đặc điểm tính cách khiến mọi người hạnh phúc hơn...</h6>
+                      <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
+                    </div>
+                  </a>
+                  <a href="#" class="rb-item">
+                    <div class="rb-pic">
+                      <img src="/public/assets/client/img/blog/recent-4.jpg" alt="">
+                    </div>
+                    <div class="rb-text">
+                      <h6>Đặc điểm tính cách khiến mọi người hạnh phúc hơn...</h6>
+                      <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="blog-tags">
+                <h4>Tags sản phẩm</h4>
+                <div class="tag-item">
+                  <a href="#">Khăn tắm</a>
+                  <a href="#">Giày</a>
+                  <a href="#">Áo khoác</a>
+                  <a href="#">Váy</a>
+                  <a href="#">Quần</a>
+                  <a href="#">Mũ nam</a>
+                  <a href="#">Ba lô</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 order-1 order-lg-2">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <div class="blog-item">
+                  <div class="bi-pic">
+                    <img src="/public/assets/client/img/blog/blog-1.jpg" alt="">
+                  </div>
+                  <div class="bi-text">
+                    <a href="./blog-details.html">
+                      <h4>Đặc điểm tính cách khiến mọi người hạnh phúc hơn</h4>
+                    </a>
+                    <p>Du lịch <span>- 19 Tháng 5, 2019</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <div class="blog-item">
+                  <div class="bi-pic">
+                    <img src="/public/assets/client/img/blog/blog-2.jpg" alt="">
+                  </div>
+                  <div class="bi-text">
+                    <a href="./blog-details.html">
+                      <h4>Đây là một trong những ngày đầu tiên của chúng tôi ở Hawaii tuần trước.</h4>
+                    </a>
+                    <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <div class="blog-item">
+                  <div class="bi-pic">
+                    <img src="/public/assets/client/img/blog/blog-3.jpg" alt="">
+                  </div>
+                  <div class="bi-text">
+                    <a href="./blog-details.html">
+                      <h4>Tuần trước tôi có chuyến công tác đầu tiên trong năm đến Sonoma Valley</h4>
+                    </a>
+                    <p>Du lịch <span>- 19 Tháng 5, 2019</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <div class="blog-item">
+                  <div class="bi-pic">
+                    <img src="/public/assets/client/img/blog/blog-4.jpg" alt="">
+                  </div>
+                  <div class="bi-text">
+                    <a href="./blog-details.html">
+                      <h4>Chúc Mừng Năm Mới! Biết là tôi hơi trễ trong bài viết này</h4>
+                    </a>
+                    <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <div class="blog-item">
+                  <div class="bi-pic">
+                    <img src="/public/assets/client/img/blog/blog-5.jpg" alt="">
+                  </div>
+                  <div class="bi-text">
+                    <a href="./blog-details.html">
+                      <h4>Bộ sưu tập Absolue. Đội ngũ Lancome đã làm việc rất chăm chỉ...</h4>
+                    </a>
+                    <p>Mẫu <span>- 19 Tháng 5, 2019</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <div class="blog-item">
+                  <div class="bi-pic">
+                    <img src="/public/assets/client/img/blog/blog-6.jpg" alt="">
+                  </div>
+                  <div class="bi-text">
+                    <a href="./blog-details.html">
+                      <h4>Viết lách luôn là cách giúp tôi thư giãn</h4>
+                    </a>
+                    <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="loading-more">
+                  <i class="icon_loading"></i>
+                  <a href="#">
+                    Tải thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section End -->
 
 
 
-      <!-- Bootstrap JS -->
-
-
-  <?php
+<?php
   }
 }
-  ?>
+?>

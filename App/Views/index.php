@@ -1,28 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Fashi Template">
+    <meta name="keywords" content="Fashi, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC09129---ASM---Nguyễn Văn Lá</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/assets/client/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fashi | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/public/assets/client/css copy/style.css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/style.css" type="text/css">
+    
 </head>
 
-<body class="main d-flex flex-column justify-content-between">
-
-
+<body>
 
     <?php
     require_once "App/Route.php";
     ?>
+     <script src="/public/assets/client/js/jquery-3.3.1.min.js"></script>
+    <script src="/public/assets/client/js/bootstrap.min.js"></script>
+    <script src="/public/assets/client/js/jquery-ui.min.js"></script>
+    <script src="/public/assets/client/js/jquery.countdown.min.js"></script>
+    <script src="/public/assets/client/js/jquery.nice-select.min.js"></script>
+    <script src="/public/assets/client/js/jquery.zoom.min.js"></script>
+    <script src="/public/assets/client/js/jquery.dd.min.js"></script>
+    <script src="/public/assets/client/js/jquery.slicknav.js"></script>
+    <script src="/public/assets/client/js/owl.carousel.min.js"></script>
+    <script src="/public/assets/client/js/main.js"></script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
