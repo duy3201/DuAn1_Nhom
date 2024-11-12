@@ -86,7 +86,7 @@ class Products extends BaseView
                             </div>
                             <a href="#" class="filter-btn">Lọc</a>
                         </div>
-                        <div class="filter-widget">
+                        <!-- <div class="filter-widget">
                             <h4 class="fw-title">Màu sắc</h4>
                             <div class="fw-color-choose">
                                 <div class="cs-item">
@@ -114,8 +114,8 @@ class Products extends BaseView
                                     <label class="cs-green" for="cs-green">Xanh lá</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="filter-widget">
+                        </div> -->
+                        <!-- <div class="filter-widget">
                             <h4 class="fw-title">Kích thước</h4>
                             <div class="fw-size-choose">
                                 <div class="sc-item">
@@ -135,8 +135,8 @@ class Products extends BaseView
                                     <label for="xs-size">XS</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="filter-widget">
+                        </div> -->
+                        <!-- <div class="filter-widget">
                             <h4 class="fw-title">Thẻ</h4>
                             <div class="fw-tags">
                                 <a href="#">Khăn tắm</a>
@@ -147,11 +147,11 @@ class Products extends BaseView
                                 <a href="#">Mũ nam</a>
                                 <a href="#">Ba lô</a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="col-lg-9 order-1 order-lg-2">
-                        <div class="product-show-option">
+                        <!-- <div class="product-show-option">
                             <div class="row">
                                 <div class="col-lg-7 col-md-7">
                                     <div class="select-option">
@@ -167,7 +167,7 @@ class Products extends BaseView
                                     <p>Hiển thị 01-09 trong số 36 sản phẩm</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="product-list">
                             <div class="row">
@@ -405,12 +405,12 @@ class Products extends BaseView
 
                             </div>
                         </div>
-                        <div class="loading-more">
+                        <!-- <div class="loading-more">
                             <i class="icon_loading"></i>
                             <a href="#">
                                 Đang tải thêm
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@ class Blogs extends BaseView
           <div class="col-lg-12">
             <div class="breadcrumb-text">
               <a href="#"><i class="fa fa-home"></i> Trang chủ</a>
-              <span>Blog</span>
+              <span>Bài viết</span>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ class Blogs extends BaseView
                   </a>
                 </div>
               </div>
-              <div class="blog-tags">
+              <!-- <div class="blog-tags">
                 <h4>Tags sản phẩm</h4>
                 <div class="tag-item">
                   <a href="#">Khăn tắm</a>
@@ -101,7 +101,7 @@ class Blogs extends BaseView
                   <a href="#">Mũ nam</a>
                   <a href="#">Ba lô</a>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="col-lg-9 order-1 order-lg-2">
@@ -184,14 +184,14 @@ class Blogs extends BaseView
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12">
+              <!-- <div class="col-lg-12">
                 <div class="loading-more">
                   <i class="icon_loading"></i>
                   <a href="#">
                     Tải thêm
                   </a>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>

@@ -86,7 +86,7 @@ class Home extends BaseView
 
 
         <!-- Phần Banner Nữ Bắt Đầu -->
-        <section class="women-banner spad">
+        <!-- <section class="women-banner spad">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3">
@@ -199,7 +199,7 @@ class Home extends BaseView
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Phần Banner Nữ Kết Thúc -->
 
 
@@ -242,16 +242,19 @@ class Home extends BaseView
 
         <!-- Phần Banner Nam Bắt Đầu -->
         <section class="man-banner spad">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="filter-control">
-                            <ul>
+                            <!-- <ul>
                                 <li class="active">Trang phục</li>
                                 <li>Túi xách</li>
                                 <li>Giày</li>
                                 <li>Phụ kiện</li>
-                            </ul>
+                            </ul> -->
+                            <div class="section-title">
+                            <h2>Sản Phẩm Nổi Bậc</h2>
+                        </div>
                         </div>
                         <div class="product-slider owl-carousel">
                             <div class="product-item">
@@ -346,12 +349,12 @@ class Home extends BaseView
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 offset-lg-1">
+                    <!-- <div class="col-lg-3 offset-lg-1">
                         <div class="product-large set-bg m-large" data-setbg="/public/assets/client/img/products/man-large.jpg">
                             <h2>Nam</h2>
                             <a href="#">Khám Phá Thêm</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -405,7 +408,7 @@ class Home extends BaseView
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title">
-                            <h2>Từ Blog</h2>
+                            <h2>Bài Viết Mới</h2>
                         </div>
                     </div>
                 </div>
@@ -514,7 +517,6 @@ class Home extends BaseView
             </div>
         </section>
         <!-- Phần Blog Mới Nhất Kết Thúc -->
-
 
 <?php
     }

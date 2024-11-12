@@ -30,6 +30,10 @@
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
+.nav-menu .active > a {
+    color: #ffcc00; /* Màu vàng cho mục đang chọn */
+    font-weight: bold; /* Tùy chọn: chữ in đậm */
+}
 
 html,
 body {

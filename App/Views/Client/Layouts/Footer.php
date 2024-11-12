@@ -18,7 +18,7 @@ class Footer extends BaseView
                                 <a href="#"><img src="/public/assets/client/img/logo2.png" alt="Logo"></a>
                             </div>
                             <ul>
-                                <li>Địa chỉ: Cái Răng, Cầ Thơ</li>
+                                <li>Địa chỉ: Cái Răng, Cần Thơ</li>
                                 <li>Điện thoại: 0949618553</li>
                                 <li>Email: oldstyle@gmail.com</li>
                             </ul>

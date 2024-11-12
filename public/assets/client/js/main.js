@@ -9,6 +9,30 @@
 
 'use strict';
 
+// menu
+document.addEventListener('DOMContentLoaded', function () {
+    const currentPage = window.location.pathname;
+    const menuItems = document.querySelectorAll('.nav-menu a');
+
+    menuItems.forEach(item => {
+        const linkPath = item.getAttribute('href');
+
+        // Nếu là trang chủ, kiểm tra URL có phải trang chủ không
+        if (linkPath === '/' && (currentPage === '/' || currentPage === '/index.html')) {
+            item.parentElement.classList.add('active');
+        }
+        // Nếu là trang khác, kiểm tra khớp URL chính xác
+        else if (linkPath !== '/' && currentPage.includes(linkPath)) {
+            item.parentElement.classList.add('active');
+        } else {
+            // Nếu không khớp, bỏ dấu active
+            item.parentElement.classList.remove('active');
+        }
+    });
+});
+
+
+
 (function ($) {
 
     /*------------------

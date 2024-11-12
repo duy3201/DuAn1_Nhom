@@ -11,7 +11,7 @@ class Card extends BaseView
 
 ?>
 
-        <!-- Shopping Cart Section Begin -->
+        <!-- Bắt đầu phần giỏ hàng -->
         <section class="shopping-cart spad">
             <div class="container">
                 <div class="row">
@@ -20,11 +20,11 @@ class Card extends BaseView
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Image</th>
-                                        <th class="p-name">Product Name</th>
-                                        <th>Price</th>
-                                        <th>Quantity</th>
-                                        <th>Total</th>
+                                        <th>Hình ảnh</th>
+                                        <th class="p-name">Tên sản phẩm</th>
+                                        <th>Giá</th>
+                                        <th>Số lượng</th>
+                                        <th>Tổng cộng</th>
                                         <th><i class="ti-close"></i></th>
                                     </tr>
                                 </thead>
@@ -32,9 +32,9 @@ class Card extends BaseView
                                     <tr>
                                         <td class="cart-pic first-row"><img src="/public/assets/client/img/cart-page/product-1.jpg" alt=""></td>
                                         <td class="cart-title first-row">
-                                            <h5>Pure Pineapple</h5>
+                                            <h5>Dứa Tươi</h5>
                                         </td>
-                                        <td class="p-price first-row">$60.00</td>
+                                        <td class="p-price first-row">60.000 VNĐ</td>
                                         <td class="qua-col first-row">
                                             <div class="quantity">
                                                 <div class="pro-qty">
@@ -42,15 +42,15 @@ class Card extends BaseView
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="total-price first-row">$60.00</td>
+                                        <td class="total-price first-row">60.000 VNĐ</td>
                                         <td class="close-td first-row"><i class="ti-close"></i></td>
                                     </tr>
                                     <tr>
                                         <td class="cart-pic"><img src="/public/assets/client/img/cart-page/product-2.jpg" alt=""></td>
                                         <td class="cart-title">
-                                            <h5>American lobster</h5>
+                                            <h5>Tôm Hùm Mỹ</h5>
                                         </td>
-                                        <td class="p-price">$60.00</td>
+                                        <td class="p-price">60.000 VNĐ</td>
                                         <td class="qua-col">
                                             <div class="quantity">
                                                 <div class="pro-qty">
@@ -58,15 +58,15 @@ class Card extends BaseView
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="total-price">$60.00</td>
+                                        <td class="total-price">60.000 VNĐ</td>
                                         <td class="close-td"><i class="ti-close"></i></td>
                                     </tr>
                                     <tr>
                                         <td class="cart-pic"><img src="/public/assets/client/img/cart-page/product-3.jpg" alt=""></td>
                                         <td class="cart-title">
-                                            <h5>Guangzhou sweater</h5>
+                                            <h5>Áo Len Quảng Châu</h5>
                                         </td>
-                                        <td class="p-price">$60.00</td>
+                                        <td class="p-price">60.000 VNĐ</td>
                                         <td class="qua-col">
                                             <div class="quantity">
                                                 <div class="pro-qty">
@@ -74,33 +74,20 @@ class Card extends BaseView
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="total-price">$60.00</td>
+                                        <td class="total-price">60.000 VNĐ</td>
                                         <td class="close-td"><i class="ti-close"></i></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="cart-buttons">
-                                    <a href="#" class="primary-btn continue-shop">Continue shopping</a>
-                                    <a href="#" class="primary-btn up-cart">Update cart</a>
-                                </div>
-                                <div class="discount-coupon">
-                                    <h6>Discount Codes</h6>
-                                    <form action="#" class="coupon-form">
-                                        <input type="text" placeholder="Enter your codes">
-                                        <button type="submit" class="site-btn coupon-btn">Apply</button>
-                                    </form>
-                                </div>
-                            </div>
                             <div class="col-lg-4 offset-lg-4">
                                 <div class="proceed-checkout">
                                     <ul>
-                                        <li class="subtotal">Subtotal <span>$240.00</span></li>
-                                        <li class="cart-total">Total <span>$240.00</span></li>
+                                        <li class="subtotal">Tạm tính <span>240.000 VNĐ</span></li>
+                                        <li class="cart-total">Tổng cộng <span>240.000 VNĐ</span></li>
                                     </ul>
-                                    <a href="#" class="proceed-btn">PROCEED TO CHECK OUT</a>
+                                    <a href="#" class="proceed-btn">Thanh toán</a>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +95,7 @@ class Card extends BaseView
                 </div>
             </div>
         </section>
-        <!-- Shopping Cart Section End -->
+        <!-- Kết thúc phần giỏ hàng -->
 
 <?php
     }

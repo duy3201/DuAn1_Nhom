@@ -153,7 +153,7 @@ class Header extends BaseView
                                         </div>
                                     </div>
                                 </li>
-                                <li class="cart-price">$150.00</li>
+                                <!-- <li class="cart-price">$150.00</li> -->
                             </ul>
                         </div>
                     </div>
@@ -168,12 +168,8 @@ class Header extends BaseView
                             <ul class="depart-hover">
                                 <li class="active"><a href="#">Thời trang nữ</a></li>
                                 <li><a href="#">Thời trang nam</a></li>
-                                <li><a href="#">Đồ lót</a></li>
                                 <li><a href="#">Thời trang trẻ em</a></li>
-                                <li><a href="#">Thời trang thương hiệu</a></li>
-                                <li><a href="#">Phụ kiện/giày</a></li>
-                                <li><a href="#">Thương hiệu cao cấp</a></li>
-                                <li><a href="#">Thời trang ngoài trời thương hiệu</a></li>
+                                
                             </ul>
                         </div>
                     </div>
