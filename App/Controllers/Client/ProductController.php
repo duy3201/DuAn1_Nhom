@@ -14,6 +14,7 @@ use App\Views\Client\Layouts\Header;
 use App\Views\Client\Pages\Product\Detail;
 // use App\Views\Client\Pages\Product\Index;
 use App\Views\Client\Pages\Product\Products;
+use App\Views\Client\Pages\CheckOut;
 
 class ProductController
 {
@@ -27,6 +28,12 @@ class ProductController
     public static function detail(){
         Header::render();
         Detail::render();
+        Footer::render();
+    }
+
+    public static function CheckOut(){
+        Header::render();
+        CheckOut::render();
         Footer::render();
     }
 }

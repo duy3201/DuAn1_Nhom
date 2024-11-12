@@ -33,6 +33,8 @@ Route::get('/blogs','App\Controllers\Client\HomeController@blogs');
 
 Route::get('/detail', 'App\Controllers\Client\ProductController@detail');
 
+Route::get('/CheckOut', 'App\Controllers\Client\ProductController@CheckOut');
+
 
 
 // *** Admin

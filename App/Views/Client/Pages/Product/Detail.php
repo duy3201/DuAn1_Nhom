@@ -67,7 +67,7 @@ class Detail extends BaseView
                                     </div>
                                 </div>
                                 <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
-                                    data-min="33" data-max="98">
+                                    data-min="33" data-max="2500">
                                     <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
                                     <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
                                     <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
@@ -75,7 +75,7 @@ class Detail extends BaseView
                             </div>
                             <a href="#" class="filter-btn">Lọc</a>
                         </div>
-                        <div class="filter-widget">
+                        <!-- <div class="filter-widget">
                             <h4 class="fw-title">Màu</h4>
                             <div class="fw-color-choose">
                                 <div class="cs-item">
@@ -103,8 +103,8 @@ class Detail extends BaseView
                                     <label class="cs-green" for="cs-green">Xanh Lá</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="filter-widget">
+                        </div> -->
+                        <!-- <div class="filter-widget">
                             <h4 class="fw-title">Kích thước</h4>
                             <div class="fw-size-choose">
                                 <div class="sc-item">
@@ -124,8 +124,8 @@ class Detail extends BaseView
                                     <label for="xs-size">xs</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="filter-widget">
+                        </div> -->
+                        <!-- <div class="filter-widget">
                             <h4 class="fw-title">Thẻ</h4>
                             <div class="fw-tags">
                                 <a href="#">Khăn</a>
@@ -136,13 +136,13 @@ class Detail extends BaseView
                                 <a href="#">Mũ</a>
                                 <a href="#">Balo</a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-lg-9">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="product-pic-zoom">
-                                    <img class="product-big-img" src="img/product-single/product-1.jpg" alt="">
+                                    <img class="product-big-img" src="/public/assets/client/img/products/product-1.jpg" alt="">
                                     <div class="zoom-icon">
                                         <i class="fa fa-search-plus"></i>
                                     </div>
@@ -221,7 +221,7 @@ class Detail extends BaseView
                                         <div class="pro-qty">
                                             <input type="text" value="1">
                                         </div>
-                                        <a href="#" class="primary-btn pd-cart">Thêm giỏ hàngt</a>
+                                        <a href="#" class="primary-btn pd-cart">Thêm giỏ hàng</a>
                                     </div>
                                     <ul class="pd-tags">
                                         <li><span>THỂ LOẠI</span>: Thêm phụ kiện, ví & hộp đựng</li>

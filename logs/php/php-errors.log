@@ -81,3 +81,244 @@ Stack trace:
 #0 {main}
   thrown in D:\du_an1\index.php on line 11
 >>>>>>> 7112c63 ([admin]-update)
+[12-Nov-2024 19:31:37 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:31:52 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:32:13 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:35:07 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\CheckOut" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkOut()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:35:07 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\CheckOut" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkOut()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:35:07 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\CheckOut" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkOut()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:35:07 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\CheckOut" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkOut()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:35:07 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\CheckOut" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkOut()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:35:08 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\CheckOut" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkOut()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:35:08 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\CheckOut" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkOut()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:35:08 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\CheckOut" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkOut()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:35:08 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\CheckOut" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkOut()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:38:24 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\CheckOut" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:39:25 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::checkout() in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php:82
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
+[12-Nov-2024 19:39:25 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::checkout() in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php:82
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
+[12-Nov-2024 19:39:25 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::checkout() in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php:82
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
+[12-Nov-2024 19:39:31 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::detail() in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php:82
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
+[12-Nov-2024 19:42:53 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::checkout() in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php:82
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
+[12-Nov-2024 19:43:10 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\CheckOut" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:28 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:28 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:28 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:29 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:29 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:29 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:29 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:29 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:29 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:30 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:30 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:30 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:30 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:30 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:30 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:31 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:31 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:31 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:31 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:31 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:43:31 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[12-Nov-2024 19:44:09 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
+Stack trace:
+#0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
+#1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36

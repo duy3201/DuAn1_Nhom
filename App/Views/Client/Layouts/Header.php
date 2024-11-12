@@ -149,7 +149,7 @@ class Header extends BaseView
                                         </div>
                                         <div class="select-button">
                                             <a href="/card" class="primary-btn view-card">Xem giỏ hàng</a>
-                                            <a href="#" class="primary-btn checkout-btn">Thanh toán</a>
+                                            <a href="/CheckOut" class="primary-btn checkout-btn">Thanh toán</a>
                                         </div>
                                     </div>
                                 </li>

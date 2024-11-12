@@ -21,12 +21,12 @@ use App\Views\Client\Pages\Product\Detail as ProductDetail;
 
 class AuthController {
 
-    public static function Detail() {
-        Header::render();
-        Notification::render();
-        ProductDetail::render();
-        Footer::render();
-    }
+    // public static function Detail() {
+    //     Header::render();
+    //     Notification::render();
+    //     ProductDetail::render();
+    //     Footer::render();
+    // }
 
     public static function register() {
         Header::render();
