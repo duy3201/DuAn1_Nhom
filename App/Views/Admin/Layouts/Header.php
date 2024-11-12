@@ -34,6 +34,7 @@ class Header extends BaseView
             <link rel="stylesheet" href="/public/assets/admin/css/style.css">
             <!-- End layout styles -->
             <link rel="shortcut icon" href="/public/assets/admin/images/favicon.png" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         </head>
 
         <body>
@@ -41,7 +42,7 @@ class Header extends BaseView
                 <!-- partial:../../partials/_sidebar.html -->
                 <nav class="sidebar sidebar-offcanvas" id="sidebar">
                     <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-                        <a class="sidebar-brand brand-logo" href="/admin"><img src="/public/assets/admin/images/logo.svg" alt="logo" /></a>
+                        <a class="sidebar-brand brand-logo" href="/admin"><img src="/public/assets/admin/images/logo2.png" alt="logo" /></a>
                         <a class="sidebar-brand brand-logo-mini" href="/admin"><img src="/public/assets/admin/images/logo-mini.svg" alt="logo" /></a>
                     </div>
                     <ul class="nav">

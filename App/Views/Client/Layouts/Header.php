@@ -8,6 +8,38 @@ class Header extends BaseView
 {
     public static function render($data = null)
     { ?>
+    <!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fashi Template">
+    <meta name="keywords" content="Fashi, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Old Style Store</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <!-- Google Font -->
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/public/assets/client/css copy/style.css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/client/css copy/style.css" type="text/css">
+    
+</head>
+
+<body>
         <!-- Page Preloder -->
         <div id="preloder">
             <div class="loader"></div>
