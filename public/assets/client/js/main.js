@@ -9,6 +9,9 @@
 
 'use strict';
 
+$(document).ready(function() {
+    $('.dropdown-toggle').dropdown();
+});
 // menu
 document.addEventListener('DOMContentLoaded', function () {
     const currentPage = window.location.pathname;
@@ -170,8 +173,12 @@ document.addEventListener('DOMContentLoaded', function () {
     /* var timerdate = "2020/01/01"; */
 
 	$("#countdown").countdown(timerdate, function(event) {
-        $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Days</p> </div>" + "<div class='cd-item'><span>%H</span> <p>Hrs</p> </div>" + "<div class='cd-item'><span>%M</span> <p>Mins</p> </div>" + "<div class='cd-item'><span>%S</span> <p>Secs</p> </div>"));
+        $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Ngày</p> </div>" + 
+                                    "<div class='cd-item'><span>%H</span> <p>Giờ</p> </div>" + 
+                                    "<div class='cd-item'><span>%M</span> <p>Phút</p> </div>" + 
+                                    "<div class='cd-item'><span>%S</span> <p>Giây</p> </div>"));
     });
+    
 
         
     /*----------------------------------------------------

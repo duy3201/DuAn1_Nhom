@@ -13,6 +13,7 @@ class Home extends BaseView
 
 
         <!-- Phần Hero Bắt Đầu -->
+
         <section class="hero-section">
             <div class="hero-items owl-carousel">
                 <div class="single-hero-items set-bg" data-setbg="/public/assets/client/img/hero-1.jpg">
@@ -21,10 +22,10 @@ class Home extends BaseView
                             <div class="col-lg-5">
                                 <span>Túi xách, trẻ em</span>
                                 <h1>Black Friday</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore</p>
+                                <p>Hãy khám phá những sản phẩm tuyệt vời với mức giá ưu đãi trong dịp Black Friday.</p>
                                 <a href="#" class="primary-btn">Mua ngay</a>
                             </div>
+
                         </div>
                         <div class="off-card">
                             <h2>Giảm giá <span>50%</span></h2>
@@ -37,17 +38,16 @@ class Home extends BaseView
                             <div class="col-lg-5">
                                 <span>Túi xách, trẻ em</span>
                                 <h1>Black Friday</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore</p>
+                                <p>Khám phá những ưu đãi hấp dẫn và sản phẩm tuyệt vời dành cho bạn trong mùa Black Friday này.</p>
                                 <a href="#" class="primary-btn">Mua ngay</a>
                             </div>
-                        </div>
-                        <div class="off-card">
-                            <h2>Giảm giá <span>50%</span></h2>
+
+                            <div class="off-card">
+                                <h2>Giảm giá <span>50%</span></h2>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <!-- Phần Hero Kết Thúc -->
 
@@ -207,15 +207,15 @@ class Home extends BaseView
         <section class="deal-of-week set-bg spad" data-setbg="/public/assets/client/img/time-bg.jpg">
             <div class="container">
                 <div class="col-lg-6 text-center">
-                    <div class="section-title">
-                        <h2>Deal Của Tuần</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br /> do ipsum dolor sit amet,
-                            consectetur adipisicing elit </p>
-                        <div class="product-price">
-                            $35.00
-                            <span>/ Túi xách</span>
-                        </div>
-                    </div>
+                <div class="section-title">
+    <h2>Ưu Đãi Trong Tuần</h2>
+    <p>Khám phá những sản phẩm tuyệt vời với ưu đãi hấp dẫn trong tuần này. Đừng bỏ lỡ cơ hội sở hữu chúng!</p>
+    <div class="product-price">
+        350.000 VNĐ
+        <span>/ Túi xách</span>
+    </div>
+</div>
+
                     <div class="countdown-timer" id="countdown">
                         <div class="cd-item">
                             <span>56</span>
@@ -253,8 +253,8 @@ class Home extends BaseView
                                 <li>Phụ kiện</li>
                             </ul> -->
                             <div class="section-title">
-                            <h2>Sản Phẩm Nổi Bậc</h2>
-                        </div>
+                                <h2>Sản Phẩm Nổi Bậc</h2>
+                            </div>
                         </div>
                         <div class="product-slider owl-carousel">
                             <div class="product-item">
@@ -404,118 +404,119 @@ class Home extends BaseView
 
         <!-- Phần Blog Mới Nhất Bắt Đầu -->
         <section class="latest-blog spad">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <h2>Bài Viết Mới</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>Bài Viết Mới</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-latest-blog">
+                    <img src="/public/assets/client/img/latest-1.jpg" alt="">
+                    <div class="latest-text">
+                        <div class="tag-list">
+                            <div class="tag-item">
+                                <i class="fa fa-calendar-o"></i>
+                                4 Tháng 5, 2019
+                            </div>
+                            <div class="tag-item">
+                                <i class="fa fa-comment-o"></i>
+                                5
+                            </div>
+                        </div>
+                        <a href="#">
+                            <h4>Phong Cách Phố Xá Tốt Nhất Từ Tuần Lễ Thời Trang London</h4>
+                        </a>
+                        <p>Khám phá những phong cách nổi bật từ Tuần Lễ Thời Trang London, nơi những xu hướng mới nhất được trình diễn trên các con phố.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-latest-blog">
+                    <img src="/public/assets/client/img/latest-2.jpg" alt="">
+                    <div class="latest-text">
+                        <div class="tag-list">
+                            <div class="tag-item">
+                                <i class="fa fa-calendar-o"></i>
+                                4 Tháng 5, 2019
+                            </div>
+                            <div class="tag-item">
+                                <i class="fa fa-comment-o"></i>
+                                5
+                            </div>
+                        </div>
+                        <a href="#">
+                            <h4>Hướng Dẫn Của Vogue Về Giày Mùa Thu/Đông 2019</h4>
+                        </a>
+                        <p>Cùng khám phá những đôi giày mới nhất trong mùa Thu/Đông 2019 với hướng dẫn chi tiết từ Vogue, giúp bạn chọn lựa phù hợp.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-latest-blog">
+                    <img src="/public/assets/client/img/latest-3.jpg" alt="">
+                    <div class="latest-text">
+                        <div class="tag-list">
+                            <div class="tag-item">
+                                <i class="fa fa-calendar-o"></i>
+                                4 Tháng 5, 2019
+                            </div>
+                            <div class="tag-item">
+                                <i class="fa fa-comment-o"></i>
+                                5
+                            </div>
+                        </div>
+                        <a href="#">
+                            <h4>Cách Làm Sáng Tủ Quần Áo Với Một Chút Màu Chanh</h4>
+                        </a>
+                        <p>Thêm chút màu sắc tươi mới với màu chanh vào bộ sưu tập quần áo của bạn để tạo nên những bộ trang phục nổi bật và sành điệu hơn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="benefit-items">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-benefit">
+                        <div class="sb-icon">
+                            <img src="/public/assets/client/img/icon-1.png" alt="">
+                        </div>
+                        <div class="sb-text">
+                            <h6>Miễn Phí Vận Chuyển</h6>
+                            <p>Cho tất cả các đơn hàng trên 99$</p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-latest-blog">
-                            <img src="/public/assets/client/img/latest-1.jpg" alt="">
-                            <div class="latest-text">
-                                <div class="tag-list">
-                                    <div class="tag-item">
-                                        <i class="fa fa-calendar-o"></i>
-                                        4 Tháng 5, 2019
-                                    </div>
-                                    <div class="tag-item">
-                                        <i class="fa fa-comment-o"></i>
-                                        5
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <h4>Phong Cách Phố Xá Tốt Nhất Từ Tuần Lễ Thời Trang London</h4>
-                                </a>
-                                <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
-                            </div>
+                <div class="col-lg-4">
+                    <div class="single-benefit">
+                        <div class="sb-icon">
+                            <img src="/public/assets/client/img/icon-2.png" alt="">
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-latest-blog">
-                            <img src="/public/assets/client/img/latest-2.jpg" alt="">
-                            <div class="latest-text">
-                                <div class="tag-list">
-                                    <div class="tag-item">
-                                        <i class="fa fa-calendar-o"></i>
-                                        4 Tháng 5, 2019
-                                    </div>
-                                    <div class="tag-item">
-                                        <i class="fa fa-comment-o"></i>
-                                        5
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <h4>Hướng Dẫn Của Vogue Về Giày Mùa Thu/Đông 2019</h4>
-                                </a>
-                                <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-latest-blog">
-                            <img src="/public/assets/client/img/latest-3.jpg" alt="">
-                            <div class="latest-text">
-                                <div class="tag-list">
-                                    <div class="tag-item">
-                                        <i class="fa fa-calendar-o"></i>
-                                        4 Tháng 5, 2019
-                                    </div>
-                                    <div class="tag-item">
-                                        <i class="fa fa-comment-o"></i>
-                                        5
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <h4>Cách Làm Sáng Tủ Quần Áo Với Một Chút Màu Chanh</h4>
-                                </a>
-                                <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
-                            </div>
+                        <div class="sb-text">
+                            <h6>Giao Hàng Đúng Hẹn</h6>
+                            <p>Chúng tôi sẽ giao hàng đúng thời gian đã hứa</p>
                         </div>
                     </div>
                 </div>
-                <div class="benefit-items">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="single-benefit">
-                                <div class="sb-icon">
-                                    <img src="/public/assets/client/img/icon-1.png" alt="">
-                                </div>
-                                <div class="sb-text">
-                                    <h6>Miễn Phí Vận Chuyển</h6>
-                                    <p>Cho tất cả các đơn hàng trên 99$</p>
-                                </div>
-                            </div>
+                <div class="col-lg-4">
+                    <div class="single-benefit">
+                        <div class="sb-icon">
+                            <img src="/public/assets/client/img/icon-1.png" alt="">
                         </div>
-                        <div class="col-lg-4">
-                            <div class="single-benefit">
-                                <div class="sb-icon">
-                                    <img src="/public/assets/client/img/icon-2.png" alt="">
-                                </div>
-                                <div class="sb-text">
-                                    <h6>Giao Hàng Đúng Hẹn</h6>
-                                    <p>Chúng tôi sẽ giao hàng đúng thời gian đã hứa</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="single-benefit">
-                                <div class="sb-icon">
-                                    <img src="/public/assets/client/img/icon-1.png" alt="">
-                                </div>
-                                <div class="sb-text">
-                                    <h6>Thanh Toán An Toàn</h6>
-                                    <p>Thanh toán 100% an toàn</p>
-                                </div>
-                            </div>
+                        <div class="sb-text">
+                            <h6>Thanh Toán An Toàn</h6>
+                            <p>Thanh toán 100% an toàn</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
         <!-- Phần Blog Mới Nhất Kết Thúc -->
 
 <?php

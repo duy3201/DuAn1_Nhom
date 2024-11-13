@@ -57,7 +57,7 @@ class Detail extends BaseView
                                 </div>
                             </div>
                         </div>
-                        <div class="filter-widget">
+                        <!-- <div class="filter-widget">
                             <h4 class="fw-title">Giá</h4>
                             <div class="filter-range-wrap">
                                 <div class="range-slider">
@@ -74,7 +74,7 @@ class Detail extends BaseView
                                 </div>
                             </div>
                             <a href="#" class="filter-btn">Lọc</a>
-                        </div>
+                        </div> -->
                         <!-- <div class="filter-widget">
                             <h4 class="fw-title">Màu</h4>
                             <div class="fw-color-choose">
