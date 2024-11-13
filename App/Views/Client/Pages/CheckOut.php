@@ -83,7 +83,98 @@ class CheckOut extends BaseView
                                         <!-- <li class="fw-normal">Tổng cộng <span>250.000VNĐ</span></li> -->
                                         <li class="total-price">Tổng cộng <span>750.000VNĐ</span></li>
                                     </ul>
-                                    <div class="payment-check">
+
+                                   <H4 class="text-center"> Thanh toán Quốc Tế</H4>
+
+                                   <div class="container">
+    <div class="row justify-content-between align-items-center">
+        <div class="col-3">
+            <img src="/public/img/PayPal.png" class="img-fluid glow-toggle" alt="">
+        </div>
+        <div class="col-3">
+            <img src="/public/img/ApplePay.png" class="img-fluid glow-toggle" alt="">
+        </div>
+        <div class="col-3">
+            <img src="/public/img/Visa.png" class="img-fluid glow-toggle" alt="">
+        </div>
+        <div class="col-3">
+            <img src="/public/img/Mastercard.png" class="img-fluid glow-toggle" alt="">
+        </div>
+    </div>
+</div>
+
+<style>
+    .glow-toggle {
+        transition: filter 0.3s, transform 0.3s;
+    }
+    .glow-active {
+        filter: brightness(1.3); /* Tăng độ sáng */
+        transform: scale(1.05); /* Phóng to nhẹ */
+    }
+</style>
+
+<script>
+    // Lấy tất cả các ảnh có lớp 'glow-toggle'
+    const images = document.querySelectorAll(".glow-toggle");
+
+    // Thêm sự kiện click cho từng ảnh
+    images.forEach(image => {
+        image.addEventListener("click", function() {
+            // Loại bỏ lớp 'glow-active' khỏi tất cả các ảnh khác
+            images.forEach(img => img.classList.remove("glow-active"));
+            // Thêm lớp 'glow-active' vào ảnh được nhấn
+            this.classList.add("glow-active");
+        });
+    });
+</script>
+
+
+<H4 class="text-center m-4"> Phương thức thanh toán</H4>
+
+<!-- <div class="container">
+    <div class="row justify-content-between align-items-center">
+        <div class="col-3">
+            <img src="/public/img/Momo.jpg" class="img-fluid w-75" alt="">
+        </div>
+        <div class="col-3">
+            <img src="/public/img/jpg" class="img-fluid " alt="">
+        </div>
+        <div class="col-3">
+            <img src="/public/img/.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-3">
+            <img src="/public/img/.jpg" class="img-fluid" alt="">
+        </div>
+    </div>
+</div> -->
+
+<div class="payment-check m-4">
+    <div class="pc-item">
+        <label for="pc-check">
+            Thanh toán khi nhận hàng
+            <input type="radio" id="pc-check" name="payment-method">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+
+    <div class="pc-item">
+        <label for="pc-paypal">
+            Thẻ ATM nội địa / Internet Banking
+            <input type="radio" id="pc-paypal" name="payment-method">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+
+    <div class="pc-item">
+        <label for="pc-tem">
+            Thẻ tín dụng / Ghi nợ
+            <input type="radio" id="pc-tem" name="payment-method">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+</div>
+
+                                    <!-- <div class="payment-check">
                                         <div class="pc-item">
                                             <label for="pc-check">
                                            Thanh toán khi nhận hàng
@@ -97,11 +188,18 @@ class CheckOut extends BaseView
                                                 <input type="checkbox" id="pc-paypal">
                                                 <span class="checkmark"></span>
                                             </label>
-                                        </div>
+                                        </div> -->
                                     </div>
-                                    <div class="order-btn">
-                                        <button type="submit" class="site-btn place-btn">Đặt hàng</button>
-                                    </div>
+                                    <div class="text-center order-btn m-4">
+    <button type="button" class="site-btn place-btn" onclick="placeOrder()">Đặt hàng</button>
+</div>
+
+<script>
+    function placeOrder() {
+        alert("Đơn hàng của bạn đã được đặt thành công!");
+    }
+</script>
+
                                 </div>
                             </div>
                         </div>
