@@ -115,9 +115,8 @@ class Header extends BaseView
                             </a>
                             <div class="collapse" id="ui-basic">
                                 <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"> <a class="nav-link" href="#">Product</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="#">Add products</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="#">Edit Category</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/products">Product</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/products/create">Add products</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -131,9 +130,8 @@ class Header extends BaseView
                             </a>
                             <div class="collapse" id="ui-basic">
                                 <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"> <a class="nav-link" href="#">Category</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="#">Add Category</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="#">Edit Category</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/categories">Category</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/categories/create">Add Category</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -147,9 +145,8 @@ class Header extends BaseView
                             </a>
                             <div class="collapse" id="ui-basic">
                                 <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"> <a class="nav-link" href="#">User</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="#">Add User</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="#">Edit User</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/users">User</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/users/create">Add User</a></li>
                                 </ul>
                             </div>
                         </li>

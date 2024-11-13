@@ -7,11 +7,11 @@ use App\Models\Category;
 use App\Views\Admin\Layouts\Footer;
 use App\Views\Admin\Layouts\Header;
 use App\Views\Admin\Components\Notification;
-use App\Views\Admin\Pages\Category\Edit;
-use App\Views\Admin\Pages\Category\Index;
-use App\Views\Admin\Pages\Category\Create;
+use App\Views\Admin\Pages\Product\Create;
+use App\Views\Admin\Pages\Product\Edit;
+use App\Views\Admin\Pages\Product\Index;
 
-class CategoryController
+class ProductController
 {
 
 
@@ -22,17 +22,29 @@ class CategoryController
         $data = [
             [
                 'id' => 1,
-                'name' => 'Category 1',
+                'name' => 'Product 1',
+                'image' => 'sg-11134201-22100-depwyo3n0jiv89.jpg',
+                'price' => '800.000 VND',
+                'discount_price' => '600.000 VND',
+                'category_name' => 'Category 1',
                 'status' => 1
             ],
             [
                 'id' => 2,
-                'name' => 'Category 2',
+                'name' => 'Product 2',
+                'image' => 'sg-11134201-22100-depwyo3n0jiv89.jpg',
+                'price' => '800.000 VND',
+                'discount_price' => '600.000 VND',
+                'category_name' => 'Category 1',
                 'status' => 1
             ],
             [
                 'id' => 3,
-                'name' => 'Category 3',
+                'name' => 'Product 3',
+                'image' => 'sg-11134201-22100-depwyo3n0jiv89.jpg',
+                'price' => '800.000 VND',
+                'discount_price' => '600.000 VND',
+                'category_name' => 'Category 1',
                 'status' => 0
             ],
 
@@ -73,7 +85,7 @@ class CategoryController
         // giả sử data là mảng dữ liệu lấy được từ database
         $data = [
             'id' => $id,
-            'name' => 'Category 1',
+            'name' => 'Product 1',
             'status' => 1
         ];
         if ($data) {
@@ -82,7 +94,7 @@ class CategoryController
             Edit::render($data);
             Footer::render();
         } else {
-            header('location: /admin/categories');
+            header('location: /admin/products');
         }
     }
 
@@ -98,7 +110,7 @@ class CategoryController
     // thực hiện xoá
     public static function delete(int $id)
     {
-        header('location: /admin/categories');
+        header('location: /admin/products');
         
     }
 

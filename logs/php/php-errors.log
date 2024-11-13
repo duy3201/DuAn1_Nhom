@@ -322,3 +322,429 @@ Stack trace:
 #1 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\index.php(66): App\Route::dispatch()
 #2 {main}
   thrown in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php on line 36
+[13-Nov-2024 20:01:47 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Admin\CategoryController::edit() in D:\du_an1\App\Route.php:104
+Stack trace:
+#0 D:\du_an1\index.php(66): App\Route::dispatch()
+#1 {main}
+  thrown in D:\du_an1\App\Route.php on line 104
+[13-Nov-2024 20:01:50 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Admin\CategoryController::edit() in D:\du_an1\App\Route.php:104
+Stack trace:
+#0 D:\du_an1\index.php(66): App\Route::dispatch()
+#1 {main}
+  thrown in D:\du_an1\App\Route.php on line 104
+[13-Nov-2024 20:32:49 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Models\User" not found in D:\du_an1\App\Controllers\Admin\HomeController.php:18
+Stack trace:
+#0 D:\du_an1\App\Route.php(82): App\Controllers\Admin\HomeController::index()
+#1 D:\du_an1\index.php(83): App\Route::dispatch()
+#2 {main}
+  thrown in D:\du_an1\App\Controllers\Admin\HomeController.php on line 18
+[13-Nov-2024 20:38:53 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Admin\CategoryController" not found in D:\du_an1\App\Route.php:79
+Stack trace:
+#0 D:\du_an1\index.php(83): App\Route::dispatch()
+#1 {main}
+  thrown in D:\du_an1\App\Route.php on line 79
+[13-Nov-2024 20:38:59 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Admin\CategoryController" not found in D:\du_an1\App\Route.php:79
+Stack trace:
+#0 D:\du_an1\index.php(83): App\Route::dispatch()
+#1 {main}
+  thrown in D:\du_an1\App\Route.php on line 79
+[13-Nov-2024 20:39:28 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Admin\CategoryController" not found in D:\du_an1\App\Route.php:79
+Stack trace:
+#0 D:\du_an1\index.php(83): App\Route::dispatch()
+#1 {main}
+  thrown in D:\du_an1\App\Route.php on line 79
+[13-Nov-2024 20:40:40 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Admin\CategoryController" not found in D:\du_an1\App\Route.php:79
+Stack trace:
+#0 D:\du_an1\index.php(83): App\Route::dispatch()
+#1 {main}
+  thrown in D:\du_an1\App\Route.php on line 79
+[13-Nov-2024 20:41:26 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Admin\CategoryController" not found in D:\du_an1\App\Route.php:79
+Stack trace:
+#0 D:\du_an1\index.php(83): App\Route::dispatch()
+#1 {main}
+  thrown in D:\du_an1\App\Route.php on line 79
+[13-Nov-2024 20:41:34 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Controllers\Admin\CategoryController" not found in D:\du_an1\App\Route.php:79
+Stack trace:
+#0 D:\du_an1\index.php(83): App\Route::dispatch()
+#1 {main}
+  thrown in D:\du_an1\App\Route.php on line 79
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:50:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:50:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:51:00 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\du_an1\App\Views\Admin\Pages\Product\Create.php on line 76
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:51:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:53:48 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:55:45 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "else" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 95
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "image" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 71
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 20:56:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:07:56 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:20 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:09:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "discount_price" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 75
+[13-Nov-2024 21:11:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category_name" in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 76
+[13-Nov-2024 21:15:02 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in D:\du_an1\App\Views\Admin\Pages\Product\Index.php:74
+Stack trace:
+#0 D:\du_an1\App\Views\Admin\Pages\Product\Index.php(74): number_format()
+#1 D:\du_an1\App\Controllers\Admin\ProductController.php(55): App\Views\Admin\Pages\Product\Index::render()
+#2 D:\du_an1\App\Route.php(82): App\Controllers\Admin\ProductController::index()
+#3 D:\du_an1\index.php(83): App\Route::dispatch()
+#4 {main}
+  thrown in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:15:34 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in D:\du_an1\App\Views\Admin\Pages\Product\Index.php:74
+Stack trace:
+#0 D:\du_an1\App\Views\Admin\Pages\Product\Index.php(74): number_format()
+#1 D:\du_an1\App\Controllers\Admin\ProductController.php(55): App\Views\Admin\Pages\Product\Index::render()
+#2 D:\du_an1\App\Route.php(82): App\Controllers\Admin\ProductController::index()
+#3 D:\du_an1\index.php(83): App\Route::dispatch()
+#4 {main}
+  thrown in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 74
+[13-Nov-2024 21:17:47 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\du_an1\App\Views\Admin\Pages\Product\Create.php on line 76
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 71
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "username" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "email" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 76
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 71
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "username" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "email" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 76
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 71
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "username" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "email" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 76
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:22:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 71
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "username" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "email" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 76
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 71
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "username" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "email" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 76
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 71
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "username" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "email" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 76
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:22:05 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:26:25 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 71
+[13-Nov-2024 21:26:25 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:26:25 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:26:25 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 71
+[13-Nov-2024 21:26:25 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:26:25 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:26:25 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 71
+[13-Nov-2024 21:26:25 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:26:25 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:34:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 71
+[13-Nov-2024 21:34:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:34:45 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:34:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 71
+[13-Nov-2024 21:34:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:34:45 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:34:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 71
+[13-Nov-2024 21:34:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:34:45 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:35:19 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:35:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:35:19 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:35:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:35:19 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:35:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:37:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 53
+[13-Nov-2024 21:37:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "username" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 61
+[13-Nov-2024 21:37:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "email" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 65
+[13-Nov-2024 21:37:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 81
+[13-Nov-2024 21:37:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 85
+[13-Nov-2024 21:37:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 86
+[13-Nov-2024 21:37:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 87
+[13-Nov-2024 21:37:40 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:37:40 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:37:40 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:37:40 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:37:40 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:37:40 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:38:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:38:09 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:38:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:38:09 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:38:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:38:09 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:38:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:38:44 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:38:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:38:44 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:38:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:38:44 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:39:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 53
+[13-Nov-2024 21:39:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "username" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 61
+[13-Nov-2024 21:39:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "email" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 65
+[13-Nov-2024 21:39:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 81
+[13-Nov-2024 21:39:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 85
+[13-Nov-2024 21:39:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 86
+[13-Nov-2024 21:39:05 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 87
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product" in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 47
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 47
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product" in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 53
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 53
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product" in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 57
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 57
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product" in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 61
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 61
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product" in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 69
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 69
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product" in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 73
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 73
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product" in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 77
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 77
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "category" in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 84
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 84
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product" in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 98
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 98
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product" in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 99
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 99
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product" in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 107
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 107
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product" in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 108
+[13-Nov-2024 21:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\Product\Edit.php on line 108
+[13-Nov-2024 21:40:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:40:28 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:40:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:40:28 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:40:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:40:28 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:26 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:26 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:26 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:26 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:26 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:26 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:27 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:27 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:27 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:46 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:46 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:46 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:46 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:46 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:41:46 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:44:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:44:49 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:44:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:44:49 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:44:49 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:44:49 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:44:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 53
+[13-Nov-2024 21:44:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "username" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 61
+[13-Nov-2024 21:44:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "email" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 65
+[13-Nov-2024 21:44:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 81
+[13-Nov-2024 21:44:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 85
+[13-Nov-2024 21:44:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 86
+[13-Nov-2024 21:44:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 87
+[13-Nov-2024 21:45:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:45:44 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:45:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:45:44 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:45:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:45:44 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 81
+[13-Nov-2024 21:45:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 53
+[13-Nov-2024 21:45:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "username" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 61
+[13-Nov-2024 21:45:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "email" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 65
+[13-Nov-2024 21:45:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "avatar" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 81
+[13-Nov-2024 21:45:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 85
+[13-Nov-2024 21:45:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 86
+[13-Nov-2024 21:45:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 87

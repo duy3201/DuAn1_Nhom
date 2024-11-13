@@ -7,11 +7,11 @@ use App\Models\Category;
 use App\Views\Admin\Layouts\Footer;
 use App\Views\Admin\Layouts\Header;
 use App\Views\Admin\Components\Notification;
-use App\Views\Admin\Pages\Category\Edit;
-use App\Views\Admin\Pages\Category\Index;
-use App\Views\Admin\Pages\Category\Create;
+use App\Views\Admin\Pages\User\Edit;
+use App\Views\Admin\Pages\User\Index;
+use App\Views\Admin\Pages\User\Create;
 
-class CategoryController
+class UserController
 {
 
 
@@ -22,18 +22,30 @@ class CategoryController
         $data = [
             [
                 'id' => 1,
-                'name' => 'Category 1',
+                'name' => 'User 1',
+                'avatar' => 'sg-11134201-22100-depwyo3n0jiv89.jpg',
+                'username' => 'Admin',
+                'email' => 'Category 1',
+                'role' => 1,
                 'status' => 1
             ],
             [
                 'id' => 2,
-                'name' => 'Category 2',
+                'name' => 'User 2',
+                'avatar' => 'sg-11134201-22100-depwyo3n0jiv89.jpg',
+                'username' => 'Admin',
+                'email' => 'Category 1',
+                'role' => 1,
                 'status' => 1
             ],
             [
                 'id' => 3,
-                'name' => 'Category 3',
-                'status' => 0
+                'name' => 'User 3',
+                'avatar' => 'sg-11134201-22100-depwyo3n0jiv89.jpg',
+                'username' => 'Admin',
+                'email' => 'Category 1',
+                'role' => 0,
+                'status' => 1
             ],
 
         ];
@@ -73,7 +85,7 @@ class CategoryController
         // giả sử data là mảng dữ liệu lấy được từ database
         $data = [
             'id' => $id,
-            'name' => 'Category 1',
+            'name' => 'User 1',
             'status' => 1
         ];
         if ($data) {
@@ -82,7 +94,7 @@ class CategoryController
             Edit::render($data);
             Footer::render();
         } else {
-            header('location: /admin/categories');
+            header('location: /admin/users');
         }
     }
 
@@ -98,7 +110,7 @@ class CategoryController
     // thực hiện xoá
     public static function delete(int $id)
     {
-        header('location: /admin/categories');
+        header('location: /admin/users');
         
     }
 
