@@ -87,7 +87,7 @@ class Card extends BaseView
                                         <li class="subtotal">Tạm tính <span>240.000 VNĐ</span></li>
                                         <li class="cart-total">Tổng cộng <span>240.000 VNĐ</span></li>
                                     </ul>
-                                    <a href="#" class="proceed-btn">Thanh toán</a>
+                                    <a href="/CheckOut" class="proceed-btn">Thanh toán</a>
                                 </div>
                             </div>
                         </div>
