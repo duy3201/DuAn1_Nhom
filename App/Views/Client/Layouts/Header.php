@@ -36,6 +36,8 @@ class Header extends BaseView
             <link rel="stylesheet" href="/public/assets/client/css copy/jquery-ui.min.css" type="text/css">
             <link rel="stylesheet" href="/public/assets/client/css copy/slicknav.min.css" type="text/css">
             <link rel="stylesheet" href="/public/assets/client/css copy/style.css" type="text/css">
+          
+
 
         </head>
 
@@ -123,12 +125,17 @@ class Header extends BaseView
                                             </div>
                                         </div>
                                     </li>
-                                   <!-- tài khoản -->
-                                   <li class="heart-icon">
-                                        <a href="/login">
-                                        <i class="fa fa-user"></i> 
-                                       
+                                    <!-- tài khoản -->
+                                    <!-- Đăng nhập, đăng ký, đăng xuất -->
+                                    <li class="heart-icon dropdown">
+                                        <a href="/login" class="dropdown-toggle">
+                                            <img src="/public/assets/client/img/iconuser.png" alt="" width="25px" class="mb-1">
                                         </a>
+                                        <div class="dropdown-menu">
+                                            <a href="/login" class="dropdown-item">Đăng nhập</a>
+                                            <a href="/register" class="dropdown-item">Đăng ký</a>
+                                            <a href="/lotout" class="dropdown-item">Đăng xuất</a>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>

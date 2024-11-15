@@ -186,13 +186,13 @@ class Products extends BaseView
                                             </ul>
                                         </div>
                                         <div class="pi-text">
-                                            <div class="catagory-name">Khăn tắm</div>
+                                            <div class="catagory-name">Áo nữ</div>
                                             <a href="#">
-                                                <h5>Quả Dứa Nguyên Chất</h5>
+                                                <h5>Áo Len tay dài</h5>
                                             </a>
                                             <div class="product-price">
-                                                $14.00
-                                                <span>$35.00</span>
+                                                140.000 VNĐ
+                                                <span>350.000 VNĐ</span>
                                             </div>
                                         </div>
                                     </div>
@@ -212,13 +212,13 @@ class Products extends BaseView
                                             </ul>
                                         </div>
                                         <div class="pi-text">
-                                            <div class="catagory-name">Áo khoác</div>
+                                            <div class="catagory-name">Áo Nữ</div>
                                             <a href="#">
                                                 <h5>Áo len Guangzhou</h5>
                                             </a>
                                             <div class="product-price">
-                                                $13.00
-                                                <span>$35.00</span>
+                                                130.000 VNĐ
+                                                <span>350.00 VNĐ</span>
                                             </div>
                                         </div>
                                     </div>
@@ -238,13 +238,13 @@ class Products extends BaseView
                                             </ul>
                                         </div>
                                         <div class="pi-text">
-                                            <div class="catagory-name">Giày</div>
+                                            <div class="catagory-name">Áo nữ</div>
                                             <a href="#">
-                                                <h5>Áo len Guangzhou</h5>
+                                                <h5>Áo Jacket Nữ </h5>
                                             </a>
                                             <div class="product-price">
-                                                $34.00
-                                                <span>$35.00</span>
+                                                340.000 VNĐ
+                                                <span>350.000 VNĐ</span>
                                             </div>
                                         </div>
                                     </div>
@@ -263,13 +263,13 @@ class Products extends BaseView
                                             </ul>
                                         </div>
                                         <div class="pi-text">
-                                            <div class="catagory-name">Áo khoác</div>
+                                            <div class="catagory-name">Phụ kiện</div>
                                             <a href="#">
                                                 <h5>Khăn len Microfiber</h5>
                                             </a>
                                             <div class="product-price">
-                                                $64.00
-                                                <span>$35.00</span>
+                                                640.000 VNĐ
+                                                <span>350.000 VNĐ</span>
                                             </div>
                                         </div>
                                     </div>
@@ -289,13 +289,13 @@ class Products extends BaseView
                                             </ul>
                                         </div>
                                         <div class="pi-text">
-                                            <div class="catagory-name">Giày</div>
+                                            <div class="catagory-name">Phụ kiện</div>
                                             <a href="#">
                                                 <h5>Mũ sơn cho nam</h5>
                                             </a>
                                             <div class="product-price">
-                                                $44.00
-                                                <span>$35.00</span>
+                                                440.000 VNĐ
+                                                <span>350.000 VNĐ</span>
                                             </div>
                                         </div>
                                     </div>
@@ -314,13 +314,13 @@ class Products extends BaseView
                                             </ul>
                                         </div>
                                         <div class="pi-text">
-                                            <div class="catagory-name">Giày</div>
+                                            <div class="catagory-name">Áo nữ</div>
                                             <a href="#">
-                                                <h5>Giày Converse</h5>
+                                                <h5>Áo len sweater nữ</h5>
                                             </a>
                                             <div class="product-price">
-                                                $34.00
-                                                <span>$35.00</span>
+                                                340.000 VNĐ
+                                                <span>350.000 VNĐ</span>
                                             </div>
                                         </div>
                                     </div>
@@ -340,13 +340,13 @@ class Products extends BaseView
                                             </ul>
                                         </div>
                                         <div class="pi-text">
-                                            <div class="catagory-name">Khăn</div>
+                                            <div class="catagory-name">Phụ kiện</div>
                                             <a href="#">
-                                                <h5>Dứa nguyên chất</h5>
+                                                <h5>Ba lô leo núi</h5>
                                             </a>
                                             <div class="product-price">
-                                                $64.00
-                                                <span>$35.00</span>
+                                                640.000 VNĐ
+                                                <span>35.000 VNĐ</span>
                                             </div>
                                         </div>
                                     </div>
@@ -366,13 +366,13 @@ class Products extends BaseView
                                             </ul>
                                         </div>
                                         <div class="pi-text">
-                                            <div class="catagory-name">Áo khoác</div>
+                                            <div class="catagory-name">Áo nam</div>
                                             <a href="#">
-                                                <h5>Áo gió 2 lớp</h5>
+                                                <h5>Áo khoác dù</h5>
                                             </a>
                                             <div class="product-price">
-                                                $44.00
-                                                <span>$35.00</span>
+                                                444.000 VNĐ
+                                                <span>350.000 VNĐ</span>
                                             </div>
                                         </div>
                                     </div>
@@ -396,8 +396,8 @@ class Products extends BaseView
                                                 <h5>Giày Converse</h5>
                                             </a>
                                             <div class="product-price">
-                                                $34.00
-                                                <span>$35.00</span>
+                                                340.000 VNĐ
+                                                <span>350.000 VNĐ</span>
                                             </div>
                                         </div>
                                     </div>
