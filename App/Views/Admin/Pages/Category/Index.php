@@ -17,14 +17,6 @@ class Index extends BaseView
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
                         <h4 class="page-title">QUẢN LÝ LOẠI SẢN PHẨM</h4>
-                        <div class="ms-auto text-end">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="/admin">Trang chủ</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Danh sách loại sản phẩm</li>
-                                </ol>
-                            </nav>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -53,6 +45,7 @@ class Index extends BaseView
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>Tên</th>
+                                                    <th>Hình ảnh</th>
                                                     <th>Trạng thái</th>
                                                     <th></th>
                                                 </tr>
@@ -64,6 +57,7 @@ class Index extends BaseView
                                                     <tr>
                                                         <td><?= $item['id'] ?></td>
                                                         <td><?= $item['name'] ?></td>
+                                                        <td><img src="/public/assets/admin/img/<?=$item['img']?>" alt="" width="100px"></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hiển thị' : 'Ẩn' ?></td>
                                                         <td>
                                                             <a href="/admin/categories/<?= $item['id'] ?>" class="btn btn-primary ">Sửa</a>

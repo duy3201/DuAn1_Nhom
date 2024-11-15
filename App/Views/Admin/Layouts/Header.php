@@ -42,7 +42,7 @@ class Header extends BaseView
                 <!-- partial:../../partials/_sidebar.html -->
                 <nav class="sidebar sidebar-offcanvas" id="sidebar">
                     <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-                        <a class="sidebar-brand brand-logo" href="/admin"><img src="/public/assets/admin/images/logo2.png" alt="logo" /></a>
+                        <a class="sidebar-brand brand-logo" href="/admin"><img src="/public/assets/admin/images/logo2.png" alt="logo"/></a>
                         <a class="sidebar-brand brand-logo-mini" href="/admin"><img src="/public/assets/admin/images/logo-mini.svg" alt="logo" /></a>
                     </div>
                     <ul class="nav">
@@ -50,7 +50,7 @@ class Header extends BaseView
                             <div class="profile-desc">
                                 <div class="profile-pic">
                                     <div class="count-indicator">
-                                        <img class="img-xs rounded-circle " src="/public/assets/admin/images/faces/face15.jpg" alt="">
+                                    <i class="fa-solid fa-user"></i>
                                         <span class="count bg-success"></span>
                                     </div>
                                     <div class="profile-name">
@@ -153,7 +153,7 @@ class Header extends BaseView
                     </ul>
                 </nav>
                 <!-- partial -->
-                <div class="container-fluid page-body-wrapper">
+                <div class="container-fluid">
                     <!-- partial:../../partials/_navbar.html -->
                     <nav class="navbar p-0 fixed-top d-flex flex-row">
                         <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
@@ -247,7 +247,7 @@ class Header extends BaseView
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item preview-item">
                                             <div class="preview-thumbnail">
-                                                <img src="/public/assets/admin/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
+                                                <i class="fa-solid fa-user"></i>
                                             </div>
                                             <div class="preview-item-content">
                                                 <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
@@ -308,7 +308,7 @@ class Header extends BaseView
                                 <li class="nav-item dropdown">
                                     <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                                         <div class="navbar-profile">
-                                            <img class="img-xs rounded-circle" src="/public/assets/admin/images/faces/face15.jpg" alt="">
+                                        <i class="fa-solid fa-user"></i>
                                             <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
                                             <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                                         </div>

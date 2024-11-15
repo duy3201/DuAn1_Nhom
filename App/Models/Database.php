@@ -21,6 +21,7 @@ class Database
         $this->_password = $_ENV['DB_PASSWORD'] ;
         $this->_database = $_ENV['DB_NAME'];
     }
+    
     // public function connect()
     // {
 

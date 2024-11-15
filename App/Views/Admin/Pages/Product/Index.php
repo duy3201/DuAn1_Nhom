@@ -17,14 +17,6 @@ class Index extends BaseView
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
                         <h4 class="page-title">QUẢN LÝ SẢN PHẨM</h4>
-                        <div class="ms-auto text-end">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="/admin">Trang chủ</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Danh sách sản phẩm</li>
-                                </ol>
-                            </nav>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -40,7 +32,6 @@ class Index extends BaseView
                 <!-- ============================================================== -->
                 <div class="row">
                     <div class="col-12">
-
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Danh sách sản phẩm</h5>
@@ -55,7 +46,6 @@ class Index extends BaseView
                                                     <th>Hình ảnh</th>
                                                     <th>Tên</th>
                                                     <th>Giá</th>
-                                                    <th>Giá giảm</th>
                                                     <th>Loại</th>
                                                     <th>Trạng thái</th>
                                                     <th></th>
@@ -68,11 +58,10 @@ class Index extends BaseView
                                                     <tr>
                                                         <td><?= $item['id'] ?></td>
                                                         <td>
-                                                            <img src="<?=APP_URL?>/public/assets/admin/img/<?=$item['image']?>" alt="" width="100px">
+                                                            <img src="<?=APP_URL?>/public/assets/admin/img/<?=$item['img']?>" alt="" width="100px">
                                                         </td>
                                                         <td><?= $item['name'] ?></td>
                                                         <td><?= $item['price'] ?></td>
-                                                        <td><?= $item['discount_price'] ?></td>
                                                         <td><?= $item['category_name'] ?></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hiển thị' : 'Ẩn' ?></td>
                                                         <td>
@@ -85,20 +74,16 @@ class Index extends BaseView
                                                     </tr>
                                                 <?php
                                                 endforeach;
-
-
                                                 ?>
                                             </tbody>
                                         </table>
                                     </div>
                                 <?php
                                 else :
-
                                 ?>
                                     <h4 class="text-center text-danger">Không có dữ liệu</h4>
                                 <?php
                                 endif;
-
                                 ?>
                             </div>
                         </div>

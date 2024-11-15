@@ -13,6 +13,10 @@ require_once 'vendor/autoload.php';
 require_once 'App/Views/index.php';
 
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+
 
 require_once 'config.php';
 
@@ -61,6 +65,7 @@ Route::put('/admin/categories/{id}', 'App\Controllers\Admin\CategoryController@u
 Route::delete('/admin/categories/{id}', 'App\Controllers\Admin\CategoryController@delete');
 
 
+
 //  *** Product
 // GET /Products (lấy danh sách loại sản phẩm)
 Route::get('/admin/products', 'App\Controllers\Admin\ProductController@index');
@@ -79,6 +84,8 @@ Route::put('/admin/products/{id}', 'App\Controllers\Admin\ProductController@upda
 
 // DELETE /products/{id} (delete loại sản phẩm với id cụ thể)
 Route::delete('/admin/products/{id}', 'App\Controllers\Admin\ProductController@delete');
+
+
 
 //  *** Users
 // GET /users (lấy danh sách người dùng)

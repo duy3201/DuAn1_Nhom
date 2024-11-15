@@ -17,14 +17,6 @@ class Index extends BaseView
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
                         <h4 class="page-title">QUẢN LÝ BÌNH LUẬN</h4>
-                        <div class="ms-auto text-end">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="/admin">Trang chủ</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Danh sách loại sản phẩm</li>
-                                </ol>
-                            </nav>
-                        </div>
                     </div>
                 </div>
             </div>

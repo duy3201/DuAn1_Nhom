@@ -33,4 +33,14 @@ class Category extends BaseModel
     {
         return $this->getAllByStatus();
     }
+    
+
+    public function getOneCategoryByName($name)
+    {
+        return $this->getOneByName($name);
+    }
+
+    public function countTotalCategory(){
+        return $this->countTotal();
+    }
 }

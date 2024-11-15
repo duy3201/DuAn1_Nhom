@@ -30,10 +30,10 @@ class Register extends BaseView
                                 <label for="con-pass">Lưu mật khẩu *</label>
                                 <input type="text" id="con-pass">
                             </div>
-                            <button type="submit" class="site-btn register-btn">REGISTER</button>
+                            <button type="submit" class="site-btn register-btn">ĐĂNG KÝ</button>
                         </form>
                         <div class="switch-login">
-                            <a href="/login" class="or-login">Hoặc Đăng nhập</a>
+                            <a href="/login" class="or-login">Đăng nhập</a>
                         </div>
                     </div>
                 </div>

@@ -20,14 +20,6 @@ class Create extends BaseView
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
                         <h4 class="page-title">QUẢN LÝ LOẠI SẢN PHẨM</h4>
-                        <div class="ms-auto text-end">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="/admin">Trang chủ</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Thêm loại sản phẩm</li>
-                                </ol>
-                            </nav>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -51,6 +43,10 @@ class Create extends BaseView
                                     <div class="form-group">
                                         <label for="name">Tên*</label>
                                         <input type="text" class="form-control" id="name" placeholder="Nhập tên loại sản phẩm..." name="name" require>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="img">Hình ảnh</label>
+                                        <input type="file" class="form-control" id="img" placeholder="Thêm hình ảnh..." name="img" require>
                                     </div>
                                     <div class="form-group">
                                         <label for="status">Trạng thái*</label>

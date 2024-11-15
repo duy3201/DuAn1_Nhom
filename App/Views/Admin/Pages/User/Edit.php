@@ -20,14 +20,6 @@ class Edit extends BaseView
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
                         <h4 class="page-title">QUẢN LÝ NGƯỜI DÙNG</h4>
-                        <div class="ms-auto text-end">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="/admin">Trang chủ</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Sửa người dùng</li>
-                                </ol>
-                            </nav>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -54,7 +46,7 @@ class Edit extends BaseView
                                     </div>
                                     <div class="form-group">
                                         <label for="id">ID</label>
-                                        <input type="text" class="form-control" id="id" name="id" value="<?= $data['id'] ?>" disabled>
+                                        <input type="text" class="form-control text-dark" id="id" name="id" value="<?= $data['id'] ?>" disabled>
                                     </div>
                                     <div class="form-group">
                                         <label for="username">Tên đăng nhập</label>

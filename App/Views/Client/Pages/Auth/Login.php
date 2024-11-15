@@ -38,10 +38,10 @@ class Login extends BaseView
                                     <a href="#" class="forget-pass">Quên mật khẩu </a>
                                 </div>
                             </div>
-                            <button type="submit" class="site-btn login-btn">Đăng nhập</button>
+                            <button type="submit" class="site-btn login-btn">ĐĂNG NHẬP</button>
                         </form>
                         <div class="switch-login">
-                            <a href="/register" class="or-login">Hoặc đăng ký</a>
+                            <a href="/register" class="or-login">đăng ký</a>
                         </div>
                     </div>
                 </div>

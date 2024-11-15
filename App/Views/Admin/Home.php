@@ -20,7 +20,7 @@ class Home extends BaseView
                                         <div class="row">
                                             <div class="col-9">
                                                 <div class="d-flex align-items-center align-self-start">
-                                                    <h3 class="mb-0 text-white">12.34 VND</h3>
+                                                    <h3 class="mb-0 text-white">50.000.000đ</h3>
                                                     <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
                                                 </div>
                                             </div>
@@ -30,7 +30,7 @@ class Home extends BaseView
                                                 </div>
                                             </div>
                                         </div>
-                                        <h6 class="text-muted font-weight-normal">Tăng trưởng tiềm năng</h6>
+                                        <h6 class="text-muted font-weight-normal">Doanh thu tháng này</h6>
                                     </div>
                                 </div>
                             </div>
@@ -40,7 +40,7 @@ class Home extends BaseView
                                         <div class="row">
                                             <div class="col-9">
                                                 <div class="d-flex align-items-center align-self-start">
-                                                    <h3 class="mb-0 text-white">17.34 VND</h3>
+                                                    <h3 class="mb-0 text-white">17.080.000đ</h3>
                                                     <p class="text-success ml-2 mb-0 font-weight-medium">+11%</p>
                                                 </div>
                                             </div>
@@ -60,7 +60,7 @@ class Home extends BaseView
                                         <div class="row">
                                             <div class="col-9">
                                                 <div class="d-flex align-items-center align-self-start">
-                                                    <h3 class="mb-0 text-white">12.34 VND</h3>
+                                                    <h3 class="mb-0 text-white">300.000đ</h3>
                                                     <p class="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p>
                                                 </div>
                                             </div>
@@ -80,7 +80,7 @@ class Home extends BaseView
                                         <div class="row">
                                             <div class="col-9">
                                                 <div class="d-flex align-items-center align-self-start">
-                                                    <h3 class="mb-0 text-white">31.53 VND</h3>
+                                                    <h3 class="mb-0 text-white">31.530.000đ</h3>
                                                     <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
                                                 </div>
                                             </div>

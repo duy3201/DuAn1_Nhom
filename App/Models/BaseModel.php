@@ -11,6 +11,7 @@ abstract class BaseModel implements CrudInterface
     protected $_conn;
 
     protected $table;
+
     protected $id;
 
     const STATUS_ENABLE = 1;
@@ -125,8 +126,45 @@ abstract class BaseModel implements CrudInterface
 
     public function getAllByStatus()
     {
-        $sql = "SELECT * FROM $this->table WHERE status=" . self::STATUS_ENABLE;
-        $result = $this->_conn->MySQLi()->query($sql);
-        return $result->fetch_all(MYSQLI_ASSOC);
+        $result = [];
+        try {
+            $sql = "SELECT * FROM $this->table WHERE status=" . self::STATUS_ENABLE;
+            $result = $this->_conn->MySQLi()->query($sql);
+            return $result->fetch_all(MYSQLI_ASSOC);
+        } catch (\Throwable $th) {
+            error_log('Lỗi khi lấy sản phẩm bằng tên: ' . $th->getMessage());
+            return $result;
+        }
+    }
+
+    public function getOneByName($name)
+    {
+        $result = [];
+        try {
+            $sql = "SELECT * FROM $this->table WHERE name=?";
+            $conn = $this->_conn->MySQLi();
+            $stmt = $conn->prepare($sql);
+
+            $stmt->bind_param('s', $name);
+            $stmt->execute();
+            return $stmt->get_result()->fetch_assoc();
+        } catch (\Throwable $th) {
+            error_log('Lỗi khi lấy sản phẩm bằng tên: ' . $th->getMessage());
+            return $result;
+        }
+    }
+
+    //Điếm số lượng
+    public function countTotal()
+    {
+        $result = [];
+        try {
+            $sql = "SELECT COUNT(*) AS total FROM $this->table";
+            $result = $this->_conn->MySQLi()->query($sql);
+            return $result->fetch_assoc();
+        } catch (\Throwable $th) {
+            error_log('Lỗi khi count tất cả dữ liệu: ' . $th->getMessage());
+            return $result;
+        }
     }
 }
