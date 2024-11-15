@@ -20,14 +20,14 @@ class CheckOut extends BaseView
                             </div> -->
                             <h4>Chi tiết thanh toán</h4>
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-12">
                                     <label for="fir">Tên<span>*</span></label>
                                     <input type="text" id="fir">
                                 </div>
-                                <div class="col-lg-6">
+                                <!-- <div class="col-lg-6">
                                     <label for="last">Họ<span>*</span></label>
                                     <input type="text" id="last">
-                                </div>
+                                </div> -->
                                 <div class="col-lg-12">
                                     <label for="cun-name">Số điện thoại</label>
                                     <input type="text" id="cun-name">
@@ -57,16 +57,10 @@ class CheckOut extends BaseView
                                     <label for="phone">Phone<span>*</span></label>
                                     <input type="text" id="phone">
                                 </div> -->
-                                <div class="col-lg-12">
-                                    <div class="create-item">
-                                        <label for="acc-create">
-                                        Tạo tài khoản?
-                                            <input type="checkbox" id="acc-create">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
+                                <div class="col-4  ">
+                                <a href="/register"class="text-danger"> Tạo tài khoản?</a>
                                 </div>
-                            </div>
+                            </div> 
                         </div>
                         <!-- <div class="col-lg-6">
                             <div class="checkout-content">
