@@ -57,10 +57,21 @@ class Product extends BaseModel
         $result = [];
         try {
             // $sql = "SELECT * FROM $this->table";
-            $sql = "SELECT products.*,categories.name AS category_name 
-            FROM products 
-            INNER JOIN categories 
-            ON products.id_category = categories.id;";
+            $sql = "SELECT 
+    products.*, 
+    categories.name AS category_name, 
+    users.name AS user_name
+FROM 
+    products
+INNER JOIN 
+    categories 
+ON 
+    products.id_category = categories.id
+INNER JOIN 
+    users
+ON 
+    products.id_user = users.id;
+";
             $result = $this->_conn->MySQLi()->query($sql);
             return $result->fetch_all(MYSQLI_ASSOC);
         } catch (\Throwable $th) {

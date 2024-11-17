@@ -136,7 +136,7 @@ class AuthValidation {
             return false;
         }
         //nơi lưu hình ảnh
-        $target_dir='public/uploads/users/';
+        $target_dir='public/assets/admin/img/';
 
         //Kiểm tra loại file upload có hợp lệ không
         $imageFileType=strtolower(pathinfo(basename($_FILES['avatar']['name']), PATHINFO_EXTENSION));

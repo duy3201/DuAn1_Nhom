@@ -57,10 +57,6 @@ class Edit extends BaseView
                                         <input type="file" class="form-control" id="img" placeholder="Chọn hình sản phẩm..." name="img">
                                     </div>
                                     <div class="form-group">
-                                        <label for="price">Giá tiền*</label>
-                                        <input type="number" class="form-control" id="price" placeholder="Nhập giá sản phẩm..." name="price" value="<?= $data['product']['price'] ?>" require>
-                                    </div>
-                                    <div class="form-group">
                                         <label for="description">Mô tả</label>
                                         <textarea class="form-control" id="description" placeholder="Nhập mô tả sản phẩm..." name="description"><?= $data['product']['description'] ?></textarea>
                                     </div>
@@ -75,10 +71,21 @@ class Edit extends BaseView
                                             <?php
                                             endforeach;
                                             ?>
-
                                         </select>
                                     </div>
-
+                                    <div class="form-group">
+                                        <label for="id_user">Người thêm</label>
+                                        <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_user" name="id_user" require>
+                                            <option value="" selected disabled>Vui lòng chọn...</option>
+                                            <?php
+                                            foreach ($data['user'] as $item) :
+                                            ?>
+                                                <option value="<?= $item['id'] ?>" <?= ($item['id'] == $data['product']['id_user'])? 'selected' : ''?>><?= $item['name'] ?></option>
+                                            <?php
+                                            endforeach;
+                                            ?>
+                                        </select>
+                                    </div>
                                     <div class="form-group">
                                         <label for="is_featured">Nổi bậc*</label>
                                         <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="is_featured" name="is_featured" require>

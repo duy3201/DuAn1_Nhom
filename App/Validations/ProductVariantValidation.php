@@ -5,37 +5,34 @@ namespace App\Validations;
 
 use App\Helpers\NotificationHelper;
 
-class ProductValidation {
+class ProductVariantValidation {
     public static function create() : bool {
         $is_valid = true;
 
         //Tên loại
-        if (!isset($_POST['name']) || $_POST['name'] === '') {
-            NotificationHelper::error('name', 'Không để trống tên sản phẩm');
+        if (!isset($_POST['label']) || $_POST['label'] === '') {
+            NotificationHelper::error('label', 'Không để trống tên biến thể');
             $is_valid = false;
         }
 
-        //id loại sản phẩm
-        if (!isset($_POST['id_category']) || $_POST['id_category'] === '') {
-            NotificationHelper::error('id_category', 'Không để trống loại sản phẩm');
+        //giá tiền
+        if (!isset($_POST['price']) || $_POST['price'] === '') {
+            NotificationHelper::error('price', 'Không để trống giá tiền');
+            $is_valid = false;
+        } elseif((int) $_POST['price'] <= 0){
+            NotificationHelper::error('price', 'Giá tiền phải lớn hơn 0');
             $is_valid = false;
         }
 
-        //Người thêm
-        if (!isset($_POST['id_user']) || $_POST['id_user'] === '') {
-            NotificationHelper::error('id_user', 'Không để trống người thêm');
+        //id biến thể
+        if (!isset($_POST['id_product']) || $_POST['id_product'] === '') {
+            NotificationHelper::error('id_product', 'Không để trống loại biến thể');
             $is_valid = false;
         }
 
-        //nổi bậc
-        if (!isset($_POST['is_featured']) || $_POST['is_featured'] === '') {
-            NotificationHelper::error('is_featured', 'Không để trống nổi bậc');
-            $is_valid = false;
-        }
-
-        //trạng thái
-        if (!isset($_POST['status']) || $_POST['status'] === '') {
-            NotificationHelper::error('status', 'Không để trống trạng thái');
+        //Số lượng
+        if (!isset($_POST['quanlity']) || $_POST['quanlity'] === '') {
+            NotificationHelper::error('quanlity', 'Không để trống trạng thái');
             $is_valid = false;
         }
 

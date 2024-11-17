@@ -43,10 +43,10 @@ class Index extends BaseView
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Hình ảnh</th>
+                                                    <th class="col-2">Hình ảnh</th>
                                                     <th>Tên</th>
-                                                    <th>Giá</th>
                                                     <th>Loại</th>
+                                                    <th>Người thêm</th>
                                                     <th>Trạng thái</th>
                                                     <th></th>
                                                 </tr>
@@ -59,8 +59,8 @@ class Index extends BaseView
                                                                 <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="Hình sản phẩm" class="img-fluid">
                                                         </td>
                                                         <td><?= $item['name'] ?></td>
-                                                        <td><?= number_format($item['price'], 0, ',', '.') ?> VND</td>
                                                         <td><?= $item['category_name'] ?></td>
+                                                        <td><?= $item['user_name'] ?></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hiển thị' : 'Ẩn' ?></td>
                                                         <td>
                                                             <a href="/admin/products/<?= $item['id'] ?>" class="btn btn-primary">Sửa</a>

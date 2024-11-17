@@ -1,14 +1,13 @@
 <?php
 
-namespace App\Views\Admin\Pages\Category;
+namespace App\Views\Admin\Pages\Product\Variants;
 
 use App\Views\BaseView;
 
-class Create extends BaseView
+class CreateVariant extends BaseView
 {
     public static function render($data = null)
     {
-        $users = $data['users'] ?? [];
 ?>
 
         <!-- Page wrapper  -->
@@ -20,7 +19,7 @@ class Create extends BaseView
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">QUẢN LÝ LOẠI SẢN PHẨM</h4>
+                        <h4 class="page-title">QUẢN LÝ BIẾN THỂ</h4>
                     </div>
                 </div>
             </div>
@@ -37,40 +36,38 @@ class Create extends BaseView
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <form class="form-horizontal" action="/admin/categories" method="POST">
+                            <form class="form-horizontal" action="/admin/productvariants" method="POST" enctype="multipart/form-data">
                                 <div class="card-body">
-                                    <h4 class="card-title">Thêm loại sản phẩm</h4>
+                                    <h4 class="card-title">Thêm biến thể</h4>
                                     <input type="hidden" name="method" id="" value="POST">
                                     <div class="form-group">
-                                        <label for="name">Tên*</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Nhập tên loại sản phẩm..." name="name" require>
+                                        <label for="label">Tên</label>
+                                        <input type="text" class="form-control" id="label" placeholder="Nhập tên biến thể..." name="label" require>
                                     </div>
                                     <div class="form-group">
                                         <label for="img">Hình ảnh</label>
-                                        <input type="file" class="form-control" id="img" placeholder="Thêm hình ảnh..." name="img" require>
+                                        <input type="file" class="form-control" id="img" placeholder="Chọn hình biến thể..." name="img">
                                     </div>
                                     <div class="form-group">
-                                        <label for="id_user">Người thêm*</label>
-                                        <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_user" name="id_user" require>
-                                        <option value="" selected disabled>Vui lòng chọn...</option>
+                                        <label for="price">Giá tiền*</label>
+                                        <input type="number" class="form-control" id="price" placeholder="Nhập giá biến thể..." name="price" require>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="id_product">Loại biến thể*</label>
+                                        <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_product" name="id_product" require>
+                                            <option value="" selected disabled>Vui lòng chọn...</option>
                                             <?php
-                                            foreach($users as $user):
+                                            foreach ($data as $item) :
                                             ?>
-                                            <option value="<?= $user['id']?>"><?= $user['name'] ?></option>
+                                                 <option value="<?= $item['id']?>"><?= $item['id'] ?></option>
                                             <?php
                                             endforeach;
                                             ?>
-
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="status">Trạng thái*</label>
-                                        <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="status" name="status" require>
-                                            <option value="" selected disabled>Vui lòng chọn...</option>
-                                            <option value="1">Hiển thị</option>
-                                            <option value="0">Ẩn</option>
-
-                                        </select>
+                                        <label for="quanlity">Mô tả</label>
+                                        <input type="number" class="form-control" id="quanlity" placeholder="Nhập mô tả biến thể..." name="quanlity"></input>
                                     </div>
                                 </div>
                                 <div class="border-top">
@@ -81,26 +78,9 @@ class Create extends BaseView
                                 </div>
                             </form>
                         </div>
-
                     </div>
-
                 </div>
-
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
             </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
 
     <?php
     }

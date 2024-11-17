@@ -4,6 +4,7 @@ namespace App\Controllers\Admin;
 
 use App\Helpers\NotificationHelper;
 use App\Models\Category;
+use App\Models\User;
 use App\Validations\CategoryValidation;
 use App\Views\Admin\Layouts\Footer;
 use App\Views\Admin\Layouts\Header;
@@ -54,11 +55,18 @@ class CategoryController
     // hiển thị giao diện form thêm
     public static function create()
     {
+        $user = new User();
+
+        // Lấy tất cả danh mục và người dùng
+        $data = [
+            'users' => $user->getAllUser(),
+        ];
+
         Header::render();
         Notification::render();
         NotificationHelper::unset();
         // hiển thị form thêm
-        Create::render();
+        Create::render($data);
         Footer::render();
     }
 
@@ -94,6 +102,11 @@ class CategoryController
             'name' => $name,
             'status' => $status,
         ];
+
+        $is_upload = CategoryValidation::uploadimg();
+        if ($is_upload) {
+            $data['img'] = $is_upload;
+        }
 
         $result = $category->createCategory($data);
 
@@ -181,6 +194,11 @@ class CategoryController
             'name' => $name,
             'status' => $status,
         ];
+
+        $is_upload = CategoryValidation::uploadimg();
+        if ($is_upload) {
+            $data['img'] = $is_upload;
+        }
 
         $result = $category->updateCategory($id, $data);
 

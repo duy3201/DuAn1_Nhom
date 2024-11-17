@@ -95,14 +95,14 @@ class Header extends BaseView
                             </div>
                         </li>
                         <li class="nav-item nav-category">
-                            <span class="nav-link">Navigation</span>
+                            <span class="nav-link">Điều hướng</span>
                         </li>
                         <li class="nav-item menu-items">
                             <a class="nav-link" href="/admin">
                                 <span class="menu-icon">
                                     <i class="mdi mdi-speedometer"></i>
                                 </span>
-                                <span class="menu-title">Dashboard</span>
+                                <span class="menu-title">Chi tiết thống kê</span>
                             </a>
                         </li>
                         <li class="nav-item menu-items">
@@ -110,13 +110,13 @@ class Header extends BaseView
                                 <span class="menu-icon">
                                 <i class="fa-solid fa-clipboard-list"></i>
                                 </span>
-                                <span class="menu-title">Products</span>
+                                <span class="menu-title">Quản lý danh mục</span>
                                 <i class="menu-arrow"></i>
                             </a>
                             <div class="collapse" id="ui-basic">
                                 <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"> <a class="nav-link" href="/admin/products">Product</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="/admin/products/create">Add products</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/categories">Danh mục</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/categories/create">Thêm danh mục</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -125,13 +125,13 @@ class Header extends BaseView
                                 <span class="menu-icon">
                                 <i class="fa-solid fa-clipboard-list"></i>
                                 </span>
-                                <span class="menu-title">Categorys</span>
+                                <span class="menu-title">Quản lý biến thể</span>
                                 <i class="menu-arrow"></i>
                             </a>
                             <div class="collapse" id="ui-basic">
                                 <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"> <a class="nav-link" href="/admin/categories">Category</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="/admin/categories/create">Add Category</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/productvariants">Biến thể</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/productvariants/createvariant">Thêm biến thể</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -160,8 +160,23 @@ class Header extends BaseView
                             </a>
                             <div class="collapse" id="ui-basic">
                                 <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"> <a class="nav-link" href="/admin/users">User</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="/admin/users/create">Add User</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/products">Sản phẩm</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/products/create">Thêm sản phẩm</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item menu-items">
+                            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                                <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                </span>
+                                <span class="menu-title">Quản lý người dùng</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="ui-basic">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/users">Người dùng</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/users/create">Thêm người dùng</a></li>
                                 </ul>
                             </div>
                         </li>

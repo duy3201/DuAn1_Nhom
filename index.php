@@ -6,6 +6,7 @@ error_reporting(E_ALL);
 ini_set('log_errors', TRUE); 
 ini_set('error_log', './logs/php/php-errors.log');
 
+use App\Helpers\AuthHelper;
 use App\Route;
 
 require_once 'vendor/autoload.php';
@@ -16,7 +17,7 @@ require_once 'App/Views/index.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-
+// AuthHelper::middleware();
 
 require_once 'config.php';
 
@@ -100,6 +101,25 @@ Route::put('/admin/products/{id}', 'App\Controllers\Admin\ProductController@upda
 // DELETE /products/{id} (delete loại sản phẩm với id cụ thể)
 Route::delete('/admin/products/{id}', 'App\Controllers\Admin\ProductController@delete');
 
+
+//  *** Product Variants
+// GET /Products (lấy danh sách loại sản phẩm)
+Route::get('/admin/productvariants', 'App\Controllers\Admin\ProductVariantController@index');
+
+// GET /products/create (hiển thị form thêm loại sản phẩm)
+Route::get('/admin/productvariants/createvariant', 'App\Controllers\Admin\ProductVariantController@create');
+
+// POST /products (tạo mới một loại sản phẩm)
+Route::post('/admin/productvariants', 'App\Controllers\Admin\ProductVariantController@store');
+
+// GET /products/{id} (lấy chi tiết loại sản phẩm với id cụ thể)
+Route::get('/admin/productvariants/{id}', 'App\Controllers\Admin\ProductVariantController@edit');
+
+// PUT /products/{id} (update loại sản phẩm với id cụ thể)
+Route::put('/admin/productvariants/{id}', 'App\Controllers\Admin\ProductVariantController@update');
+
+// DELETE /products/{id} (delete loại sản phẩm với id cụ thể)
+Route::delete('/admin/productvariants/{id}', 'App\Controllers\Admin\ProductVariantController@delete');
 
 
 //  *** Users

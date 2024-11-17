@@ -8,6 +8,8 @@ class Create extends BaseView
 {
     public static function render($data = null)
     {
+        $categories = $data['categories'] ?? [];
+        $users = $data['users'] ?? [];
 ?>
 
         <!-- Page wrapper  -->
@@ -49,10 +51,6 @@ class Create extends BaseView
                                         <input type="file" class="form-control" id="img" placeholder="Chọn hình sản phẩm..." name="img">
                                     </div>
                                     <div class="form-group">
-                                        <label for="price">Giá tiền*</label>
-                                        <input type="number" class="form-control" id="price" placeholder="Nhập giá sản phẩm..." name="price" require>
-                                    </div>
-                                    <div class="form-group">
                                         <label for="description">Mô tả</label>
                                         <textarea class="form-control" id="description" placeholder="Nhập mô tả sản phẩm..." name="description"></textarea>
                                     </div>
@@ -61,16 +59,29 @@ class Create extends BaseView
                                         <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_category" name="id_category" require>
                                         <option value="" selected disabled>Vui lòng chọn...</option>
                                             <?php
-                                            foreach($data as $item):
+                                            foreach($categories as $category):
                                             ?>
-                                            <option value="<?= $item['id']?>"><?= $item['name'] ?></option>
+                                            <option value="<?= $category['id']?>"><?= $category['name'] ?></option>
                                             <?php
                                             endforeach;
                                             ?>
 
                                         </select>
                                     </div>
+                                    <div class="form-group">
+                                        <label for="id_user">Người thêm*</label>
+                                        <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_user" name="id_user" require>
+                                        <option value="" selected disabled>Vui lòng chọn...</option>
+                                            <?php
+                                            foreach($users as $user):
+                                            ?>
+                                            <option value="<?= $user['id']?>"><?= $user['name'] ?></option>
+                                            <?php
+                                            endforeach;
+                                            ?>
 
+                                        </select>
+                                    </div>
                                     <div class="form-group">
                                         <label for="is_featured">Nổi bậc*</label>
                                         <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="is_featured" name="is_featured" require>
@@ -80,7 +91,6 @@ class Create extends BaseView
 
                                         </select>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="status">Trạng thái*</label>
                                         <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="status" name="status" require>

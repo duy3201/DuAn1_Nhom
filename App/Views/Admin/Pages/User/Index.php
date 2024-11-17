@@ -44,7 +44,7 @@ class Index extends BaseView
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Ảnh đại diện</th>
+                                                    <th class="col-2">Ảnh đại diện</th>
                                                     <th>Tên đăng nhập</th>
                                                     <th>Họ tên</th>
                                                     <th>Email</th>
