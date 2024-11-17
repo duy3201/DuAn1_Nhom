@@ -126,6 +126,7 @@ class Header extends BaseView
                                         </div>
                                     </li>
                                     <!-- tài khoản -->
+                                    
                                     <!-- Đăng nhập, đăng ký, đăng xuất -->
                                     <li class="heart-icon dropdown">
                                         <a href="/login" class="dropdown-toggle">
@@ -134,7 +135,7 @@ class Header extends BaseView
                                         <div class="dropdown-menu">
                                             <a href="/login" class="dropdown-item">Đăng nhập</a>
                                             <a href="/register" class="dropdown-item">Đăng ký</a>
-                                            <a href="/lotout" class="dropdown-item">Đăng xuất</a>
+                                            <a href="/Logout" class="dropdown-item">Đăng xuất</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -183,5 +184,9 @@ class Header extends BaseView
             </header>
             <!-- Header End -->
 
-    <?php }
+            <?php
+
 }
+}
+
+?>

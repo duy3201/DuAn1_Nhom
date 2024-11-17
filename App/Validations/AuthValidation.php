@@ -26,6 +26,17 @@ class AuthValidation {
             }
         }
 
+
+        if (!isset($_POST['tel']) || $_POST['tel'] === '') {
+            NotificationHelper::error('tel', 'Không để trống số điện thoại');
+            $is_valid = false;
+        } else {
+            if (strlen($_POST['tel']) < 10) {
+                NotificationHelper::error('tel', 'Mật khẩu không dưới 9 ký tự');
+                $is_valid = false;
+            }
+        }
+
         // Nhập lại mật khẩu
         if (!isset($_POST['re_password']) || $_POST['re_password'] === '') {
             NotificationHelper::error('re_password', 'Không để trống phần nhập lại mật khẩu');
@@ -50,11 +61,31 @@ class AuthValidation {
             }
         }
 
-        // Họ và tên
-        if (!isset($_POST['name']) || $_POST['name'] === '') {
-            NotificationHelper::error('name', 'Không để trống họ và tên');
+        if (!isset($_POST['address']) || $_POST['address'] === '') {
+            NotificationHelper::error('address', 'Không để trống địa chỉ');
             $is_valid = false;
+        } else {
+            if ($_POST['address'] != $_POST['address']) {
+                NotificationHelper::error('address', 'Địa chỉ không đúng');
+                $is_valid = false;
+            }
         }
+
+        if (!isset($_POST['date_of_birth']) || $_POST['date_of_birth'] === '') {
+            NotificationHelper::error('date_of_birth', 'Không để trống ngày sinh ');
+            $is_valid = false;
+        } else {
+            if (strlen($_POST['date_of_birth']) < 3) {
+                NotificationHelper::error('date_of_birth', 'Không đúng ');
+                $is_valid = false;
+            }
+        }
+
+        // Họ và tên
+        // if (!isset($_POST['name']) || $_POST['name'] === '') {
+        //     NotificationHelper::error('name', 'Không để trống họ và tên');
+        //     $is_valid = false;
+        // }
 
         return $is_valid;
     }

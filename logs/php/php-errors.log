@@ -13,53 +13,6 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in D:\DUAN-1\DuAn1_Nhom\index.php on line 11
-<<<<<<< HEAD
-[11-Nov-2024 21:33:52 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::detail() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
-Stack trace:
-#0 D:\DUAN-1\DuAn1_Nhom\index.php(62): App\Route::dispatch()
-#1 {main}
-  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
-[11-Nov-2024 21:33:53 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::detail() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
-Stack trace:
-#0 D:\DUAN-1\DuAn1_Nhom\index.php(62): App\Route::dispatch()
-#1 {main}
-  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
-[11-Nov-2024 22:02:28 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::detail() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
-Stack trace:
-#0 D:\DUAN-1\DuAn1_Nhom\index.php(64): App\Route::dispatch()
-#1 {main}
-  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
-[11-Nov-2024 22:03:36 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::Detail() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
-Stack trace:
-#0 D:\DUAN-1\DuAn1_Nhom\index.php(64): App\Route::dispatch()
-#1 {main}
-  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
-[11-Nov-2024 22:03:37 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::Detail() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
-Stack trace:
-#0 D:\DUAN-1\DuAn1_Nhom\index.php(64): App\Route::dispatch()
-#1 {main}
-  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
-[11-Nov-2024 22:03:37 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::Detail() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
-Stack trace:
-#0 D:\DUAN-1\DuAn1_Nhom\index.php(64): App\Route::dispatch()
-#1 {main}
-  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
-[11-Nov-2024 22:03:38 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::Detail() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
-Stack trace:
-#0 D:\DUAN-1\DuAn1_Nhom\index.php(64): App\Route::dispatch()
-#1 {main}
-  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
-[11-Nov-2024 22:03:38 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::Detail() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
-Stack trace:
-#0 D:\DUAN-1\DuAn1_Nhom\index.php(64): App\Route::dispatch()
-#1 {main}
-  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
-[11-Nov-2024 22:03:51 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\ProductController::Detail() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
-Stack trace:
-#0 D:\DUAN-1\DuAn1_Nhom\index.php(64): App\Route::dispatch()
-#1 {main}
-  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
-=======
 [11-Nov-2024 08:51:09 UTC] PHP Warning:  require_once(vendor/autoload.php): Failed to open stream: No such file or directory in D:\du_an1\index.php on line 11
 [11-Nov-2024 08:51:09 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in D:\du_an1\index.php:11
 Stack trace:
@@ -80,7 +33,6 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in D:\du_an1\index.php on line 11
->>>>>>> 7112c63 ([admin]-update)
 [12-Nov-2024 19:31:37 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Product\Checkout" not found in C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Controllers\Client\ProductController.php:36
 Stack trace:
 #0 C:\Users\ADMIN\Desktop\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\ProductController::checkout()
@@ -868,6 +820,7 @@ Stack trace:
 [17-Nov-2024 12:46:13 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
 [17-Nov-2024 12:46:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
 [17-Nov-2024 12:46:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+<<<<<<< HEAD
 [17-Nov-2024 22:57:38 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
 [17-Nov-2024 23:15:16 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
 [17-Nov-2024 23:18:18 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
@@ -971,3 +924,76 @@ Stack trace:
 [18-Nov-2024 00:11:53 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
 [18-Nov-2024 00:11:53 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
 [18-Nov-2024 00:11:53 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+=======
+[17-Nov-2024 06:20:47 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [D:\DUAN-1\DuAn1_Nhom\.env]. in D:\DUAN-1\DuAn1_Nhom\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 D:\DUAN-1\DuAn1_Nhom\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 D:\DUAN-1\DuAn1_Nhom\index.php(17): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in D:\DUAN-1\DuAn1_Nhom\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[17-Nov-2024 13:29:03 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\AuthController::forgotPassword() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
+Stack trace:
+#0 D:\DUAN-1\DuAn1_Nhom\index.php(110): App\Route::dispatch()
+#1 {main}
+  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
+[17-Nov-2024 13:38:09 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\AuthController::forgotPasswordAction() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
+Stack trace:
+#0 D:\DUAN-1\DuAn1_Nhom\index.php(110): App\Route::dispatch()
+#1 {main}
+  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
+[17-Nov-2024 13:43:38 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\AuthController::forgotPasswordAction() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
+Stack trace:
+#0 D:\DUAN-1\DuAn1_Nhom\index.php(110): App\Route::dispatch()
+#1 {main}
+  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
+[17-Nov-2024 13:45:17 Asia/Ho_Chi_Minh] PHP Parse error:  Unclosed '{' on line 22 in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 312
+[17-Nov-2024 13:47:20 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\AuthController::forgotPasswordAction() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
+Stack trace:
+#0 D:\DUAN-1\DuAn1_Nhom\index.php(110): App\Route::dispatch()
+#1 {main}
+  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
+[17-Nov-2024 20:30:12 Asia/Ho_Chi_Minh] Lỗi khi hiển thị chi tiết dữ liệu: No connection could be made because the target machine actively refused it
+[17-Nov-2024 20:30:25 Asia/Ho_Chi_Minh] Lỗi khi hiển thị chi tiết dữ liệu: No connection could be made because the target machine actively refused it
+[17-Nov-2024 21:30:44 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\AuthController::register() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
+Stack trace:
+#0 D:\DUAN-1\DuAn1_Nhom\index.php(110): App\Route::dispatch()
+#1 {main}
+  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
+[17-Nov-2024 21:30:51 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\AuthController::register() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
+Stack trace:
+#0 D:\DUAN-1\DuAn1_Nhom\index.php(110): App\Route::dispatch()
+#1 {main}
+  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
+[17-Nov-2024 21:44:26 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'tel' doesn't have a default value
+[17-Nov-2024 21:58:09 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'tel' doesn't have a default value
+[17-Nov-2024 22:02:35 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'tel' doesn't have a default value
+[17-Nov-2024 22:07:59 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'tel' doesn't have a default value
+[17-Nov-2024 22:13:09 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'tel' doesn't have a default value
+[17-Nov-2024 22:25:10 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'tel' doesn't have a default value
+[17-Nov-2024 22:54:41 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 42
+[17-Nov-2024 22:54:41 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'tel' doesn't have a default value
+[17-Nov-2024 23:06:42 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 42
+[17-Nov-2024 23:06:55 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 42
+[17-Nov-2024 23:35:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "data_of_birth" in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 43
+[17-Nov-2024 23:35:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 46
+[17-Nov-2024 23:35:33 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Incorrect date value: '' for column 'date_of_birth' at row 1
+[17-Nov-2024 23:42:41 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "data_of_birth" in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 44
+[17-Nov-2024 23:42:41 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Incorrect date value: '' for column 'date_of_birth' at row 1
+[17-Nov-2024 23:51:30 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "data_of_birth" in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 44
+[17-Nov-2024 23:51:30 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Incorrect date value: '' for column 'date_of_birth' at row 1
+[17-Nov-2024 23:54:12 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'name' doesn't have a default value
+[18-Nov-2024 00:07:21 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
+[18-Nov-2024 01:13:59 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "}" in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 201
+[18-Nov-2024 01:17:50 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "}" in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 198
+[18-Nov-2024 01:17:51 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "}" in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 198
+[18-Nov-2024 01:17:54 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "}" in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 198
+[18-Nov-2024 01:17:56 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "}" in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 198
+[18-Nov-2024 01:21:02 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected token "}" in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 198
+[18-Nov-2024 01:24:13 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $is_login in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 129
+[18-Nov-2024 01:24:17 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $is_login in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 129
+[18-Nov-2024 01:25:13 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $is_login in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 129
+[18-Nov-2024 01:25:23 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $is_login in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 129
+[18-Nov-2024 01:25:26 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $is_login in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 129
+[18-Nov-2024 01:26:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $is_login in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 129
+[18-Nov-2024 01:33:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $is_login in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 129
+>>>>>>> d82be44 ([client]- add-error login- register)

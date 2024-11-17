@@ -29,6 +29,7 @@ Route::get('/products', 'App\Controllers\Client\ProductController@index');
 Route::get('/register','App\Controllers\Client\AuthController@register');
 Route::post('/register','App\Controllers\Client\AuthController@registerAction');
 Route::get('/login','App\Controllers\Client\AuthController@login');
+Route::post('/login','App\Controllers\Client\AuthController@loginAction');
 Route::get('/card','App\Controllers\Client\HomeController@card');
 Route::get('/contact','App\controllers\Client\HomeController@contact');
 Route::get('/introduce','App\controllers\Client\HomeController@introduce');
@@ -39,7 +40,8 @@ Route::get('/detail', 'App\Controllers\Client\ProductController@detail');
 
 Route::get('/CheckOut', 'App\Controllers\Client\ProductController@CheckOut');
 
-
+Route::get('/forgot-password','App\Controllers\Client\AuthController@forgotPassword');
+Route::post('/forgot-password','App\Controllers\Client\AuthController@forgotPasswordAction');
 
 // *** Admin
 

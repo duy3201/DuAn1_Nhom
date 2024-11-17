@@ -93,9 +93,8 @@ class AuthHelper {
         // Kiểm tra cookie "user"
         if (isset($_COOKIE['user'])) {
             $user = $_COOKIE['user'];
-            $user_data =  json_decode($user, true);
+            $user_data = (array) json_decode($user, true);
 
-            // var_dump($user_data);
             self::updateCookie($user_data['id']);
             // $_SESSION['user'] = (array) $user_data;
             return true;
