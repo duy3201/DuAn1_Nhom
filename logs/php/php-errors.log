@@ -748,3 +748,123 @@ Stack trace:
 [13-Nov-2024 21:45:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 85
 [13-Nov-2024 21:45:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 86
 [13-Nov-2024 21:45:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 87
+[16-Nov-2024 16:22:53 Asia/Ho_Chi_Minh] Lỗi khi count tất cả dữ liệu: No connection could be made because the target machine actively refused it
+[16-Nov-2024 16:22:55 Asia/Ho_Chi_Minh] Lỗi khi count tất cả dữ liệu: No connection could be made because the target machine actively refused it
+[16-Nov-2024 16:22:57 Asia/Ho_Chi_Minh] Lỗi khi count tất cả dữ liệu: No connection could be made because the target machine actively refused it
+[16-Nov-2024 16:22:59 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: No connection could be made because the target machine actively refused it
+[16-Nov-2024 16:23:01 Asia/Ho_Chi_Minh] Lỗi khi count tất cả dữ liệu: No connection could be made because the target machine actively refused it
+[16-Nov-2024 16:23:03 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: No connection could be made because the target machine actively refused it
+[16-Nov-2024 16:23:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "total" in D:\du_an1\App\Controllers\Admin\HomeController.php on line 35
+[16-Nov-2024 16:23:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "total" in D:\du_an1\App\Controllers\Admin\HomeController.php on line 36
+[16-Nov-2024 16:23:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "total" in D:\du_an1\App\Controllers\Admin\HomeController.php on line 37
+[16-Nov-2024 16:23:03 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "total" in D:\du_an1\App\Controllers\Admin\HomeController.php on line 38
+[16-Nov-2024 16:23:27 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
+[16-Nov-2024 16:27:01 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
+[16-Nov-2024 16:44:46 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Field 'tel' doesn't have a default value
+[16-Nov-2024 16:47:07 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
+[16-Nov-2024 16:50:37 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 70
+[16-Nov-2024 16:50:37 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[16-Nov-2024 16:50:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[16-Nov-2024 16:51:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 81
+[16-Nov-2024 16:51:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 82
+[16-Nov-2024 16:51:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 83
+[16-Nov-2024 16:51:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 70
+[16-Nov-2024 16:51:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[16-Nov-2024 16:51:51 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[16-Nov-2024 16:52:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Create.php on line 73
+[16-Nov-2024 16:52:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Create.php on line 74
+[16-Nov-2024 16:52:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Create.php on line 75
+[16-Nov-2024 16:52:47 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Create.php on line 73
+[16-Nov-2024 16:52:47 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Create.php on line 74
+[16-Nov-2024 16:52:47 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Create.php on line 75
+[16-Nov-2024 16:52:49 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Create.php on line 73
+[16-Nov-2024 16:52:49 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Create.php on line 74
+[16-Nov-2024 16:52:49 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Create.php on line 75
+[16-Nov-2024 16:53:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Create.php on line 73
+[16-Nov-2024 16:53:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Create.php on line 74
+[16-Nov-2024 16:53:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Create.php on line 75
+[16-Nov-2024 16:54:55 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 70
+[16-Nov-2024 16:54:55 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[16-Nov-2024 16:54:55 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[16-Nov-2024 16:56:21 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 81
+[16-Nov-2024 16:56:21 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 82
+[16-Nov-2024 16:56:21 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Edit.php on line 83
+[16-Nov-2024 16:56:42 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "role" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 70
+[16-Nov-2024 16:56:42 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[16-Nov-2024 16:56:42 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 75
+[16-Nov-2024 16:57:51 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 74
+[16-Nov-2024 16:57:51 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 74
+[16-Nov-2024 16:58:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 16:58:11 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:00:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:00:09 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:00:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:00:34 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:00:36 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:00:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:03:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:03:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:03:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:03:50 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:04:15 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:04:15 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:05:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:05:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:05:38 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:05:38 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:06:40 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:06:40 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:08:35 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:08:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:08:53 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:08:53 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:08:54 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:08:54 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:02 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:04 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:04 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:11 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:11 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:12 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:12 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:21 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:21 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:22 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:29 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:09:29 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:11:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:11:06 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:11:07 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:11:07 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:14:40 Asia/Ho_Chi_Minh] PHP Warning:  Undefined variable $data in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 16
+[16-Nov-2024 17:14:40 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in D:\du_an1\App\Views\Admin\Pages\Product\Index.php:16
+Stack trace:
+#0 D:\du_an1\vendor\composer\ClassLoader.php(576): include()
+#1 D:\du_an1\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}()
+#2 D:\du_an1\App\Controllers\Admin\ProductController.php(34): Composer\Autoload\ClassLoader->loadClass()
+#3 D:\du_an1\App\Route.php(82): App\Controllers\Admin\ProductController::index()
+#4 D:\du_an1\index.php(109): App\Route::dispatch()
+#5 {main}
+  thrown in D:\du_an1\App\Views\Admin\Pages\Product\Index.php on line 16
+[16-Nov-2024 17:15:31 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Admin\Pages\Product\Index" not found in D:\du_an1\App\Controllers\Admin\ProductController.php:34
+Stack trace:
+#0 D:\du_an1\App\Route.php(82): App\Controllers\Admin\ProductController::index()
+#1 D:\du_an1\index.php(109): App\Route::dispatch()
+#2 {main}
+  thrown in D:\du_an1\App\Controllers\Admin\ProductController.php on line 34
+[16-Nov-2024 17:18:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 76
+[16-Nov-2024 17:18:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 76
+[16-Nov-2024 17:19:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:19:06 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[16-Nov-2024 17:21:51 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
+[16-Nov-2024 17:22:32 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
+[16-Nov-2024 17:29:11 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
+[16-Nov-2024 17:32:10 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
+[17-Nov-2024 12:46:10 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
+[17-Nov-2024 12:46:10 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
+[17-Nov-2024 12:46:13 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[17-Nov-2024 12:46:13 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[17-Nov-2024 12:46:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[17-Nov-2024 12:46:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73

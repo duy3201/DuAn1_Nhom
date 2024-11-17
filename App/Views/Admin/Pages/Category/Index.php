@@ -40,7 +40,7 @@ class Index extends BaseView
                                 if (count($data)) :
                                 ?>
                                     <div class="table-responsive">
-                                        <table id="" class="table table-striped ">
+                                        <table id="" class="table table-striped">
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
@@ -50,14 +50,14 @@ class Index extends BaseView
                                                     <th></th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody class="text-white">
                                                 <?php
                                                 foreach ($data as $item) :
                                                 ?>
                                                     <tr>
                                                         <td><?= $item['id'] ?></td>
                                                         <td><?= $item['name'] ?></td>
-                                                        <td><img src="/public/assets/admin/img/<?=$item['img']?>" alt="" width="100px"></td>
+                                                        <td><img src="/public/assets/admin/img/<?=$item['img']?>" alt=""></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hiển thị' : 'Ẩn' ?></td>
                                                         <td>
                                                             <a href="/admin/categories/<?= $item['id'] ?>" class="btn btn-primary ">Sửa</a>

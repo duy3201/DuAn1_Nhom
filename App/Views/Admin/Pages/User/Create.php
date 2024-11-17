@@ -53,6 +53,10 @@ class Create extends BaseView
                                         <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên người dùng..." name="name" require>
                                     </div>
                                     <div class="form-group">
+                                        <label for="tel">Số điện thoại</label>
+                                        <input type="number" class="form-control" id="tel" placeholder="Nhập số điện thoại người dùng..." name="tel" require>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="password">Mật khẩu*</label>
                                         <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu..." name="password" require>
                                     </div>

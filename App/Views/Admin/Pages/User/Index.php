@@ -40,7 +40,7 @@ class Index extends BaseView
                                 if (count($data)) :
                                 ?>
                                     <div class="table-responsive">
-                                        <table id="" class="table table-striped ">
+                                        <table id="" class="table table-striped">
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
@@ -48,12 +48,12 @@ class Index extends BaseView
                                                     <th>Tên đăng nhập</th>
                                                     <th>Họ tên</th>
                                                     <th>Email</th>
-                                                    <th>Quyền</th>
+                                                    <th>Số điện thoại</th>
                                                     <th>Trạng thái</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody class="text-white">
                                                 <?php
                                                 foreach ($data as $item) :
                                                 ?>
@@ -65,7 +65,7 @@ class Index extends BaseView
                                                         <td><?= $item['username'] ?></td>
                                                         <td><?= $item['name'] ?></td>
                                                         <td><?= $item['email'] ?></td>
-                                                        <td><?= ($item['role'] == 1) ? 'Quản trị viên' : 'Khách hàng' ?></td>
+                                                        <td><?= $item['tel'] ?></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hoạt động' : 'Khóa' ?></td>
                                                         <td>
                                                             <a href="/admin/users/<?= $item['id'] ?>" class="btn btn-primary ">Sửa</a>

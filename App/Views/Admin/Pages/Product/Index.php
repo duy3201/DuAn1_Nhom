@@ -51,31 +51,28 @@ class Index extends BaseView
                                                     <th></th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <?php
-                                                foreach ($data as $item) :
-                                                ?>
+                                            <tbody class="text-white">
+                                                <?php foreach ($data as $item) : ?>
                                                     <tr>
                                                         <td><?= $item['id'] ?></td>
                                                         <td>
-                                                            <img src="<?=APP_URL?>/public/assets/admin/img/<?=$item['img']?>" alt="" width="100px">
+                                                                <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="Hình sản phẩm" class="img-fluid">
                                                         </td>
                                                         <td><?= $item['name'] ?></td>
-                                                        <td><?= $item['price'] ?></td>
+                                                        <td><?= number_format($item['price'], 0, ',', '.') ?> VND</td>
                                                         <td><?= $item['category_name'] ?></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hiển thị' : 'Ẩn' ?></td>
                                                         <td>
-                                                            <a href="/admin/products/<?= $item['id'] ?>" class="btn btn-primary ">Sửa</a>
+                                                            <a href="/admin/products/<?= $item['id'] ?>" class="btn btn-primary">Sửa</a>
                                                             <form action="/admin/products/<?= $item['id'] ?>" method="post" style="display: inline-block;" onsubmit="return confirm('Chắc chưa?')">
-                                                                <input type="hidden" name="method" value="DELETE" id="">
+                                                                <input type="hidden" name="method" value="DELETE">
                                                                 <button type="submit" class="btn btn-danger text-white">Xoá</button>
                                                             </form>
                                                         </td>
                                                     </tr>
-                                                <?php
-                                                endforeach;
-                                                ?>
+                                                <?php endforeach; ?>
                                             </tbody>
+
                                         </table>
                                     </div>
                                 <?php

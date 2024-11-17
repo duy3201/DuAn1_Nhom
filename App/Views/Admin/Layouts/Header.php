@@ -51,7 +51,7 @@ class Header extends BaseView
                                 <div class="profile-pic">
                                     <div class="count-indicator">
                                     <i class="fa-solid fa-user"></i>
-                                        <span class="count bg-success"></span>
+                                        <!-- <span class="count bg-success"></span> -->
                                     </div>
                                     <div class="profile-name">
                                         <h5 class="mb-0 font-weight-normal">Admin</h5>

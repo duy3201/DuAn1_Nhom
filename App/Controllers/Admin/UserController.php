@@ -72,6 +72,7 @@ class UserController
             'username' => $username,
             'email' => $_POST['email'],
             'name' => $_POST['name'],
+            'tel' => $_POST['tel'],
             'password' => password_hash($_POST['password'], PASSWORD_DEFAULT),
             'status' => $_POST['status'],
         ];
@@ -136,6 +137,7 @@ class UserController
 
         //Thực hiện cập nhật
         $data = [
+            'tel' => $_POST['tel'],
             'email' => $_POST['email'],
             'name' => $_POST['name'],
             'status' => $_POST['status'],
