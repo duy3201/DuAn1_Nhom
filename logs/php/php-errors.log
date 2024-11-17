@@ -868,3 +868,106 @@ Stack trace:
 [17-Nov-2024 12:46:13 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
 [17-Nov-2024 12:46:24 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "user" in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
 [17-Nov-2024 12:46:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\du_an1\App\Views\Admin\Pages\User\Index.php on line 73
+[17-Nov-2024 22:57:38 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
+[17-Nov-2024 23:15:16 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
+[17-Nov-2024 23:18:18 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown column 'comments.product_id' in 'on clause'
+[17-Nov-2024 23:22:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:23:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:23:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:44 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:44 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:44 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:44 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:44 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:55 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:55 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:55 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:55 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:55 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:55 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:55 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:55 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:55 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:23:55 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:24:11 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:24:38 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:24:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:24:43 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:24:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:25:38 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:25:40 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:25:43 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:26:21 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:26:31 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:26:32 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:27:11 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:27:18 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:18 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:18 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:18 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:18 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:18 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:18 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:18 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:18 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:18 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:23 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:23 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:23 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:23 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:23 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:23 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:23 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:23 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:23 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:23 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:27:31 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:27:47 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Category\Index.php on line 60
+[17-Nov-2024 23:29:08 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Admin\Pages\Blogs\Index" not found in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Admin\CategoryPostController.php:30
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Admin\CategoryPostController::index()
+#1 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(110): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Admin\CategoryPostController.php on line 30
+[17-Nov-2024 23:29:23 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Admin\Pages\CategoryPost\Index" not found in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Admin\CategoryPostController.php:29
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Admin\CategoryPostController::index()
+#1 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(110): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Admin\CategoryPostController.php on line 29
+[17-Nov-2024 23:29:24 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Admin\Pages\CategoryPost\Index" not found in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Admin\CategoryPostController.php:29
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Admin\CategoryPostController::index()
+#1 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(110): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Admin\CategoryPostController.php on line 29
+[17-Nov-2024 23:39:23 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Admin\CategoryPostController.php on line 59
+[17-Nov-2024 23:39:23 Asia/Ho_Chi_Minh] Lỗi khi thêm dữ liệu: Unknown column 'img' in 'field list'
+[17-Nov-2024 23:49:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\CategoryPost\Edit.php on line 53
+[17-Nov-2024 23:50:52 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Admin\CategoryController.php on line 164
+[17-Nov-2024 23:53:43 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Admin\CategoryController.php on line 164
+[17-Nov-2024 23:54:30 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Admin\CategoryController.php on line 164
+[17-Nov-2024 23:55:35 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:55:35 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:55:35 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:55:35 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:55:35 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:55:35 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:55:35 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:55:35 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:55:35 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[17-Nov-2024 23:55:35 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[18-Nov-2024 00:11:53 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[18-Nov-2024 00:11:53 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[18-Nov-2024 00:11:53 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[18-Nov-2024 00:11:53 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[18-Nov-2024 00:11:53 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[18-Nov-2024 00:11:53 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[18-Nov-2024 00:11:53 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[18-Nov-2024 00:11:53 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[18-Nov-2024 00:11:53 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62
+[18-Nov-2024 00:11:53 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Index.php on line 62

@@ -2926,6 +2926,17 @@ ol {
 .checkout-content input {
 	height: 56px !important;
 }
+.checkout-content option {
+	height: 56px !important;
+}
+
+
+
+.form-select-sm:focus {
+    border-color: #007bff; /* Màu viền khi chọn */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Bóng mờ khi focus */
+}
+
 
 .checkout-form h4 {
 	color: #252525;
@@ -2944,6 +2955,13 @@ ol {
 }
 
 .checkout-form input {
+	width: 100%;
+	height: 46px;
+	border: 2px solid #ebebeb;
+	margin-bottom: 25px;
+	padding-left: 15px;
+}
+.checkout-form .form-select-sm {
 	width: 100%;
 	height: 46px;
 	border: 2px solid #ebebeb;

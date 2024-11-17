@@ -64,7 +64,20 @@ Route::put('/admin/categories/{id}', 'App\Controllers\Admin\CategoryController@u
 // DELETE /categories/{id} (delete loại sản phẩm với id cụ thể)
 Route::delete('/admin/categories/{id}', 'App\Controllers\Admin\CategoryController@delete');
 
+// Blogs
+Route::get('/admin/categoriespost', 'App\Controllers\Admin\CategoryPostController@index');
+Route::get('/admin/categoriespost/create', 'App\Controllers\Admin\CategoryPostController@create');
+Route::post('/admin/categoriespost', 'App\Controllers\Admin\CategoryPostController@store');
+Route::get('/admin/categoriespost/{id}', 'App\Controllers\Admin\CategoryPostController@edit');
+Route::put('/admin/categoriespost/{id}', 'App\Controllers\Admin\CategoryPostController@update');
+Route::delete('/admin/categoriespost/{id}', 'App\Controllers\Admin\CategoryPostController@delete');
 
+Route::get('/admin/post', 'App\Controllers\Admin\PostController@index');
+Route::get('/admin/post/create', 'App\Controllers\Admin\PostController@create');
+Route::post('/admin/post', 'App\Controllers\Admin\PostController@store');
+Route::get('/admin/post/{id}', 'App\Controllers\Admin\PostController@edit');
+Route::put('/admin/post/{id}', 'App\Controllers\Admin\PostController@update');
+Route::delete('/admin/post/{id}', 'App\Controllers\Admin\PostController@delete');
 
 //  *** Product
 // GET /Products (lấy danh sách loại sản phẩm)
