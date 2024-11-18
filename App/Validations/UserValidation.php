@@ -64,6 +64,18 @@ class UserValidation
             $is_valid = false;
         }
 
+        //Đia chỉ
+        if (!isset($_POST['address']) || $_POST['address'] === '') {
+            NotificationHelper::error('address', 'Không để trống địa chỉ');
+            $is_valid = false;
+        }
+
+        //Ngày sinh
+        if (!isset($_POST['date_of_birth']) || $_POST['date_of_birth'] === '') {
+            NotificationHelper::error('date_of_birth', 'Không để trống ngày sinh');
+            $is_valid = false;
+        }
+
         return $is_valid;
     }
 
@@ -112,9 +124,22 @@ class UserValidation
             $is_valid = false;
         }
 
+
         //trạng thái
         if (!isset($_POST['status']) || $_POST['status'] === '') {
             NotificationHelper::error('status', 'Không để trống trạng thái');
+            $is_valid = false;
+        }
+
+        //Đia chỉ
+        if (!isset($_POST['address']) || $_POST['address'] === '') {
+            NotificationHelper::error('address', 'Không để trống địa chỉ');
+            $is_valid = false;
+        }
+
+        //Ngày sinh
+        if (!isset($_POST['date_of_birth']) || $_POST['date_of_birth'] === '') {
+            NotificationHelper::error('date_of_birth', 'Không để trống ngày sinh');
             $is_valid = false;
         }
 

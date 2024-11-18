@@ -2,9 +2,9 @@
   'use strict';
   $(function() {
     var body = $('body');
-    var contentWrapper = $('.content-wrapper');
-    var scroller = $('.container-scroller');
-    var footer = $('.footer');
+    // var contentWrapper = $('.content-wrapper');
+    // var scroller = $('.container-scroller');
+    // var footer = $('.footer');
     var sidebar = $('.sidebar');
 
     //Add active class to nav-link based on url dynamically
@@ -14,7 +14,7 @@
       if (current === "") {
         //for root url
         if (element.attr('href').indexOf("index.html") !== -1) {
-          element.parents('.nav-item').last().addClass('active');
+          element.parents('.nav-item',).last().addClass('active');
           if (element.parents('.sub-menu').length) {
             element.closest('.collapse').addClass('show');
             element.addClass('active');

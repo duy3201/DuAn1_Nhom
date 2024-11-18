@@ -144,19 +144,19 @@ ON
         }
     }
 
-    public function deleteCommentsByProductId(int $productId)
-    {
-        $conn = $this->_conn->MySQLi();
+    // public function deleteCommentsByProductId(int $productId)
+    // {
+    //     $conn = $this->_conn->MySQLi();
 
-        $sql = "DELETE FROM comments WHERE product_id = ?";
-        if ($stmt = $conn->prepare($sql)) {
-            $stmt->bind_param('i', $productId);
-            $result = $stmt->execute();
-            $stmt->close();
-            return $result;
-        } else {
-            error_log('Lỗi khi chuẩn bị truy vấn: ' . $conn->error);
-            return false;
-        }
-    }
+    //     $sql = "DELETE FROM products WHERE product_id = ?";
+    //     if ($stmt = $conn->prepare($sql)) {
+    //         $stmt->bind_param('i', $productId);
+    //         $result = $stmt->execute();
+    //         $stmt->close();
+    //         return $result;
+    //     } else {
+    //         error_log('Lỗi khi chuẩn bị truy vấn: ' . $conn->error);
+    //         return false;
+    //     }
+    // }
 }

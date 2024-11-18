@@ -190,9 +190,9 @@ class ProductController
     {
         $product = new Product();
 
-        $resultComments = $product->deleteCommentsByProductId($id);
+        // $resultComments = $product->deleteCommentsByProductId($id);
 
-        if ($resultComments) {
+        // if ($resultComments) {
             $resultProduct = $product->deleteProduct($id);
 
             if ($resultProduct) {
@@ -200,9 +200,9 @@ class ProductController
             } else {
                 NotificationHelper::error('delete', 'Xóa sản phẩm thất bại');
             }
-        } else {
-            NotificationHelper::error('delete', 'Xóa sản phẩm thất bại do không thể xóa các bình luận liên quan');
-        }
+        // } else {
+        //     NotificationHelper::error('delete', 'Xóa sản phẩm thất bại do không thể xóa các bình luận liên quan');
+        // }
 
         header('location: /admin/products');
         exit;

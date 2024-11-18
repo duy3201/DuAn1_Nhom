@@ -49,6 +49,9 @@ class Index extends BaseView
                                                     <th>Họ tên</th>
                                                     <th>Email</th>
                                                     <th>Số điện thoại</th>
+                                                    <th>Địa chỉ</th>
+                                                    <th>Ngày sinh</th>
+                                                    <th>Quyền</th>
                                                     <th>Trạng thái</th>
                                                     <th></th>
                                                 </tr>
@@ -66,6 +69,9 @@ class Index extends BaseView
                                                         <td><?= $item['name'] ?></td>
                                                         <td><?= $item['email'] ?></td>
                                                         <td><?= $item['tel'] ?></td>
+                                                        <td><?= $item['address'] ?></td>
+                                                        <td><?= $item['date_of_birth'] ?></td>
+                                                        <td><?= ($item['role'] == 1) ? 'Quản trị viên' : 'Khách hàng' ?></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hoạt động' : 'Khóa' ?></td>
                                                         <td>
                                                             <a href="/admin/users/<?= $item['id'] ?>" class="btn btn-primary ">Sửa</a>

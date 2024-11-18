@@ -42,14 +42,15 @@ class ProductVariant extends BaseModel
         $result = [];
         try {
             $sql = "SELECT 
-                        product_variants.*, 
-                        products.id AS id_product
-                    FROM 
-                        product_variants
-                    INNER JOIN
-                        products 
-                    ON 
-                        product_variants.id_product = products.id";
+            product_variants.*, 
+            products.id AS id_product, 
+            products.name AS product_name
+        FROM 
+            product_variants
+        INNER JOIN
+            products 
+        ON 
+            product_variants.id_product = products.id";
             $result = $this->_conn->MySQLi()->query($sql);
             return $result->fetch_all(MYSQLI_ASSOC);
         } catch (\Throwable $th) {

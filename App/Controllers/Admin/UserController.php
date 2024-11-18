@@ -52,7 +52,7 @@ class UserController
 
         if (!$is_valid) {
             NotificationHelper::error('store', 'Thêm người dùng thất bại');
-            header('location: /admin/users/create');
+            header('location: /admin/users/createuser');
             exit;
         }
 
@@ -63,7 +63,7 @@ class UserController
 
         if ($is_exits) {
             NotificationHelper::error('store', 'Tên người dùng đã tồn tại');
-            header('location: /admin/users/create');
+            header('location: /admin/users/createuser');
             exit;
         }
 
@@ -75,6 +75,9 @@ class UserController
             'tel' => $_POST['tel'],
             'password' => password_hash($_POST['password'], PASSWORD_DEFAULT),
             'status' => $_POST['status'],
+            'role' => $_POST['role'],
+            'address' => $_POST['address'],
+            'date_of_birth' => $_POST['date_of_birth'],
         ];
 
         $is_upload = UserValidation::uploadAvatar();
@@ -141,6 +144,9 @@ class UserController
             'email' => $_POST['email'],
             'name' => $_POST['name'],
             'status' => $_POST['status'],
+            'role' => $_POST['role'],
+            'address' => $_POST['address'],
+            'date_of_birth' => $_POST['date_of_birth'],
         ];
         if ($_POST['password'] !== '') {
             $data['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);

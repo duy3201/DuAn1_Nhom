@@ -38,7 +38,7 @@ class Header extends BaseView
                 <!-- partial:../../partials/_sidebar.html -->
                 <nav class="sidebar sidebar-offcanvas" id="sidebar">
                     <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-                        <a class="sidebar-brand brand-logo" href="/admin"><img src="/public/assets/admin/images/logo2.png" alt="logo"/></a>
+                        <a class="sidebar-brand brand-logo" href="/admin"><img src="/public/assets/admin/images/logo2.png" alt="logo" /></a>
                         <a class="sidebar-brand brand-logo-mini" href="/admin"><img src="/public/assets/admin/images/logo-mini.svg" alt="logo" /></a>
                     </div>
                     <ul class="nav">
@@ -46,7 +46,7 @@ class Header extends BaseView
                             <div class="profile-desc">
                                 <div class="profile-pic">
                                     <div class="count-indicator">
-                                    <i class="fa-solid fa-user"></i>
+                                        <i class="fa-solid fa-user"></i>
                                         <!-- <span class="count bg-success"></span> -->
                                     </div>
                                     <div class="profile-name">
@@ -102,77 +102,80 @@ class Header extends BaseView
                             </a>
                         </li>
                         <li class="nav-item menu-items">
-                            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                            <a class="nav-link" data-toggle="collapse" href="#product-category" aria-expanded="false" aria-controls="product-category">
                                 <span class="menu-icon">
-                                <i class="fa-solid fa-clipboard-list"></i>
+                                    <i class="fa-solid fa-clipboard-list"></i>
                                 </span>
-                                <span class="menu-title">Quản lý danh mục</span>
+                                <span class="menu-title">Danh mục sản phẩm</span>
                                 <i class="menu-arrow"></i>
                             </a>
-                            <div class="collapse" id="ui-basic">
+                            <div class="collapse" id="product-category">
                                 <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"> <a class="nav-link" href="/admin/categories">Danh mục</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="/admin/categories/create">Thêm danh mục</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/categoryproduct">Danh mục</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/categoryproduct/create">Thêm danh mục</a></li>
                                 </ul>
                             </div>
                         </li>
+
                         <li class="nav-item menu-items">
-                            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                            <a class="nav-link" data-toggle="collapse" href="#product-management" aria-expanded="false" aria-controls="product-management">
                                 <span class="menu-icon">
-                                <i class="fa-solid fa-clipboard-list"></i>
+                                    <i class="fa-solid fa-clipboard-list"></i>
                                 </span>
-                                <span class="menu-title">Quản lý biến thể</span>
+                                <span class="menu-title">Quản lý sản phẩm</span>
                                 <i class="menu-arrow"></i>
                             </a>
-                            <div class="collapse" id="ui-basic">
-                                <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"> <a class="nav-link" href="/admin/productvariants">Biến thể</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="/admin/productvariants/createvariant">Thêm biến thể</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item menu-items">
-                            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                                <span class="menu-icon">
-                                <i class="fa-solid fa-clipboard-list"></i>
-                                </span>
-                                <span class="menu-title">Blogs</span>
-                                <i class="menu-arrow"></i>
-                            </a>
-                            <div class="collapse" id="ui-basic">
-                                <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"> <a class="nav-link" href="/admin/categoriespost">CategoryBlog</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="/admin/categoriespost/create">Add CategoryBlog</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item menu-items">
-                            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                                <span class="menu-icon">
-                                <i class="fa-solid fa-clipboard-list"></i>
-                                </span>
-                                <span class="menu-title">Users</span>
-                                <i class="menu-arrow"></i>
-                            </a>
-                            <div class="collapse" id="ui-basic">
+                            <div class="collapse" id="product-management">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item"> <a class="nav-link" href="/admin/products">Sản phẩm</a></li>
                                     <li class="nav-item"> <a class="nav-link" href="/admin/products/create">Thêm sản phẩm</a></li>
                                 </ul>
                             </div>
                         </li>
+
                         <li class="nav-item menu-items">
-                            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                            <a class="nav-link" data-toggle="collapse" href="#variant-management" aria-expanded="false" aria-controls="variant-management">
                                 <span class="menu-icon">
-                                <i class="fa-solid fa-clipboard-list"></i>
+                                    <i class="fa-solid fa-clipboard-list"></i>
+                                </span>
+                                <span class="menu-title">Quản lý biến thể</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="variant-management">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/productvariants">Biến thể</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/productvariants/createvariant">Thêm biến thể</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item menu-items">
+                            <a class="nav-link" data-toggle="collapse" href="#post-category" aria-expanded="false" aria-controls="post-category">
+                                <span class="menu-icon">
+                                    <i class="fa-solid fa-clipboard-list"></i>
+                                </span>
+                                <span class="menu-title">Danh mục bài viết</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="post-category">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/categoriespost">Danh mục bài viết</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/categoriespost/create">Thêm danh mục bài viết</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item menu-items">
+                            <a class="nav-link" data-toggle="collapse" href="#user-management" aria-expanded="false" aria-controls="user-management">
+                                <span class="menu-icon">
+                                    <i class="fa-solid fa-clipboard-list"></i>
                                 </span>
                                 <span class="menu-title">Quản lý người dùng</span>
                                 <i class="menu-arrow"></i>
                             </a>
-                            <div class="collapse" id="ui-basic">
+                            <div class="collapse" id="user-management">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item"> <a class="nav-link" href="/admin/users">Người dùng</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="/admin/users/create">Thêm người dùng</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="/admin/users/createuser">Thêm người dùng</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -192,13 +195,13 @@ class Header extends BaseView
                             <ul class="navbar-nav w-100">
                                 <li class="nav-item w-100">
                                     <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                                        <input type="text" class="form-control" placeholder="Search products">
+                                        <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm">
                                     </form>
                                 </li>
                             </ul>
                             <ul class="navbar-nav navbar-nav-right">
                                 <li class="nav-item dropdown d-none d-lg-block">
-                                    <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+                                    <!-- <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a> -->
                                     <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
                                         <h6 class="p-3 mb-0">Projects</h6>
                                         <div class="dropdown-divider"></div>
@@ -334,8 +337,8 @@ class Header extends BaseView
                                 <li class="nav-item dropdown">
                                     <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                                         <div class="navbar-profile">
-                                        <i class="fa-solid fa-user"></i>
-                                            <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+                                            <i class="fa-solid fa-user"></i>
+                                            <p class="mb-0 d-none d-sm-block navbar-profile-name">Admin</p>
                                             <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                                         </div>
                                     </a>

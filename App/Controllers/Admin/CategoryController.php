@@ -79,12 +79,11 @@ class CategoryController
 
         if(!$is_valid){
             NotificationHelper::error('store', 'Thêm loại sản phẩm thất bại');
-            header('location: /admin/categories/create');
+            header('location: /admin/categoryproduct/create');
             exit;
         }
 
         $name = $_POST['name'];
-        $img = $_POST['img'];
         $status = $_POST['status'];
         //kiểm tra tên loại có tồn tại ch => không được trùng tên
         $category = new Category();
@@ -92,13 +91,12 @@ class CategoryController
 
         if($is_exits){
             NotificationHelper::error('store', 'Tên loại sản phẩm đã tồn tại');
-            header('location: /admin/categories/create');
+            header('location: /admin/categoryproduct/create');
             exit;
         }
 
         //thêm vào database
         $data = [
-            'img' => $img,
             'name' => $name,
             'status' => $status,
         ];
@@ -112,10 +110,10 @@ class CategoryController
 
         if($result){
             NotificationHelper::success('store', 'Thêm loại sản phẩm thành công');
-            header('location: /admin/categories');
+            header('location: /admin/categoryproduct');
         }else{
             NotificationHelper::error('store', 'Thêm loại sản phẩm thất bại');
-            header('location: /admin/categories');
+            header('location: /admin/categoryproduct');
         }
     }
 
@@ -140,7 +138,7 @@ class CategoryController
 
         if(!$data){
             NotificationHelper::error('edit', 'Không thể xem loại sản phẩm này');
-            header('location: /admin/categories');
+            header('location: /admin/categoryproduct');
             exit;
         }
             Header::render();
@@ -169,12 +167,11 @@ class CategoryController
 
         if(!$is_valid){
             NotificationHelper::error('update', 'Cập nhật loại sản phẩm thất bại');
-            header("location: /admin/categories/$id");
+            header("location: /admin/categoryproduct/$id");
             exit;
         }
 
         $name = $_POST['name'];
-        $img = $_POST['img'];
         $status = $_POST['status'];
         //kiểm tra tên loại có tồn tại ch => không được trùng tên
         $category = new Category();
@@ -183,14 +180,13 @@ class CategoryController
         if($is_exits){
             if($is_exits['id'] != $id){
                 NotificationHelper::error('update', 'Tên loại sản phẩm đã tồn tại');
-                header("location: /admin/categories/$id");
+                header("location: /admin/categoryproduct/$id");
                 exit;
             }
         }
 
         //Thực hiện cập nhật
         $data = [
-            'img' => $img,
             'name' => $name,
             'status' => $status,
         ];
@@ -204,10 +200,10 @@ class CategoryController
 
         if($result){
             NotificationHelper::success('update', 'Cập nhật loại sản phẩm thành công');
-            header('location: /admin/categories');
+            header('location: /admin/categoryproduct');
         }else{
             NotificationHelper::error('update', 'Cập nhật loại sản phẩm thất bại');
-            header("location: /admin/categories/$id");
+            header("location: /admin/categoryproduct/$id");
         }
 
     }
@@ -225,7 +221,7 @@ class CategoryController
         NotificationHelper::error('delete', 'Xóa loại sản phẩm thất bại');
        }
 
-       header('location: /admin/categories');
+       header('location: /admin/categoryproduct');
         
     }
 }

@@ -63,7 +63,6 @@ class Edit extends BaseView
                                     <div class="form-group">
                                         <label for="id_category">Loại sản phẩm*</label>
                                         <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_category" name="id_category" require>
-                                            <option value="" selected disabled>Vui lòng chọn...</option>
                                             <?php
                                             foreach ($data['category'] as $item) :
                                             ?>

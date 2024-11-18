@@ -44,8 +44,8 @@ class IndexVariant extends BaseView
                                                 <tr>
                                                     <th>ID</th>
                                                     <th class="col-2">Hình ảnh</th>
-                                                    <th>Tên</th>
-                                                    <th>Loại biến thể</th>
+                                                    <th>Tên biến thể</th>
+                                                    <th>Tên sản phẩm</th>
                                                     <th>Giá</th>
                                                     <th>Số lượng</th>
                                                     <th></th>
@@ -59,12 +59,11 @@ class IndexVariant extends BaseView
                                                             <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="Hình biến thể" class="img-fluid">
                                                         </td>
                                                         <td><?= $item['label'] ?></td>
-                                                        <td><?= $item['id_product'] ?></td>
+                                                        <td><?= $item['product_name'] ?></td>
                                                         <td><?= $item['price'] ?></td>
                                                         <td>
                                                             <?php echo isset($item['quanlity']) ? $item['quanlity'] : 'Hết hàng'; ?>
                                                         </td>
-
                                                         <td>
                                                             <a href="/admin/productvariants/<?= $item['id'] ?>" class="btn btn-primary">Sửa</a>
                                                             <form action="/admin/productvariants/<?= $item['id'] ?>" method="post" style="display: inline-block;" onsubmit="return confirm('Chắc chưa?')">
@@ -75,6 +74,7 @@ class IndexVariant extends BaseView
                                                     </tr>
                                                 <?php endforeach; ?>
                                             </tbody>
+
 
                                         </table>
                                     </div>

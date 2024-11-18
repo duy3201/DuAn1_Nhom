@@ -16,7 +16,7 @@ class Edit extends BaseView
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
-            <div class="page-breadcrumb">
+            <div class="page-breadcrumb ">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
                         <h4 class="page-title">QUẢN LÝ NGƯỜI DÙNG</h4>
@@ -37,12 +37,12 @@ class Edit extends BaseView
                     <div class="col-md-12">
                         <div class="card">
                             <form class="form-horizontal" action="/admin/users/<?= $data['id'] ?>" method="POST" enctype="multipart/form-data">
-                            <div class="card-body">
+                                <div class="card-body">
                                     <h4 class="card-title">Sửa người dùng</h4>
                                     <input type="hidden" name="method" id="" value="PUT">
 
                                     <div align="center">
-                                    <img src="<?=APP_URL?>/public/assets/admin/img/<?= $data['avatar'] ?>" alt="" width="300px">
+                                        <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $data['avatar'] ?>" alt="" width="300px">
                                     </div>
                                     <div class="form-group">
                                         <label for="id">ID</label>
@@ -58,7 +58,7 @@ class Edit extends BaseView
                                     </div>
                                     <div class="form-group">
                                         <label for="tel">Số điện thoại</label>
-                                        <input type="number" class="form-control" id="tel" placeholder="Nhập số điện thoại người dùng..." name="tel" require>
+                                        <input type="number" class="form-control" id="tel" placeholder="Nhập số điện thoại người dùng..." name="tel" value="<?= $data['tel'] ?>" require>
                                     </div>
                                     <div class="form-group">
                                         <label for="name">Họ và tên</label>
@@ -75,6 +75,22 @@ class Edit extends BaseView
                                     <div class="form-group">
                                         <label for="avatar">Ảnh đại diện</label>
                                         <input type="file" class="form-control" id="avatar" placeholder="Chọn ảnh đại diện..." name="avatar" value="<?= $data['avatar'] ?>" require>
+                                    </div>
+                                    <div class="group-input mb-3">
+                                        <label for="address">Địa chỉ*</label>
+                                        <input type="text" name="address" id="address" class="form-control mb-3" placeholder="Nhập địa chỉ" value="<?= $data['address'] ?>" require>
+                                    </div>
+                                    <div class="group-input mb-3">
+                                        <label for="date_of_birth">Năm sinh*</label>
+                                        <input type="date" name="date_of_birth" id="date_of_birth" class="form-control mb-3" placeholder="Nhập date_of_birth" value="<?= $data['date_of_birth'] ?>" require>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="role">Quyền</label>
+                                        <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="role" name="role" value="<?= $data['role'] ?>" require>
+                                            <option value="1" <?= ($data['role'] == 1 ? 'selected' : '') ?>>Quản trị viên</option>
+                                            <option value="0" <?= ($data['role'] == 0 ? 'selected' : '') ?>>Khách hàng</option>
+
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="status">Trạng thái*</label>

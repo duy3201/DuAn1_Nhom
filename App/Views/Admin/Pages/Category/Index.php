@@ -39,7 +39,7 @@ class Index extends BaseView
                                 <?php
                                 if (count($data)) :
                                 ?>
-                                    <div class="table-responsive">
+                                    <div class="table-striped">
                                         <table id="" class="table table-striped">
                                             <thead>
                                                 <tr>
@@ -60,8 +60,8 @@ class Index extends BaseView
                                                         <td><img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="Hình danh mục" class="img-fluid"></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hiển thị' : 'Ẩn' ?></td>
                                                         <td>
-                                                            <a href="/admin/categories/<?= $item['id'] ?>" class="btn btn-primary ">Sửa</a>
-                                                            <form action="/admin/categories/<?= $item['id'] ?>" method="post" style="display: inline-block;" onsubmit="return confirm('Chắc chưa?')">
+                                                            <a href="/admin/categoryproduct/<?= $item['id'] ?>" class="btn btn-primary ">Sửa</a>
+                                                            <form action="/admin/categoryproduct/<?= $item['id'] ?>" method="post" style="display: inline-block;" onsubmit="return confirm('Chắc chưa?')">
                                                                 <input type="hidden" name="method" value="DELETE" id="">
                                                                 <button type="submit" class="btn btn-danger text-white">Xoá</button>
                                                             </form>

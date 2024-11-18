@@ -53,22 +53,22 @@ Route::get('/admin', 'App\Controllers\Admin\HomeController@index');
 
 //  *** Category
 // GET /categories (lấy danh sách loại sản phẩm)
-Route::get('/admin/categories', 'App\Controllers\Admin\CategoryController@index');
+Route::get('/admin/categoryproduct', 'App\Controllers\Admin\CategoryController@index');
 
 // GET /categories/create (hiển thị form thêm loại sản phẩm)
-Route::get('/admin/categories/create', 'App\Controllers\Admin\CategoryController@create');
+Route::get('/admin/categoryproduct/create', 'App\Controllers\Admin\CategoryController@create');
 
 // POST /categories (tạo mới một loại sản phẩm)
-Route::post('/admin/categories', 'App\Controllers\Admin\CategoryController@store');
+Route::post('/admin/categoryproduct', 'App\Controllers\Admin\CategoryController@store');
 
 // GET /categories/{id} (lấy chi tiết loại sản phẩm với id cụ thể)
-Route::get('/admin/categories/{id}', 'App\Controllers\Admin\CategoryController@edit');
+Route::get('/admin/categoryproduct/{id}', 'App\Controllers\Admin\CategoryController@edit');
 
 // PUT /categories/{id} (update loại sản phẩm với id cụ thể)
-Route::put('/admin/categories/{id}', 'App\Controllers\Admin\CategoryController@update');
+Route::put('/admin/categoryproduct/{id}', 'App\Controllers\Admin\CategoryController@update');
 
 // DELETE /categories/{id} (delete loại sản phẩm với id cụ thể)
-Route::delete('/admin/categories/{id}', 'App\Controllers\Admin\CategoryController@delete');
+Route::delete('/admin/categoryproduct/{id}', 'App\Controllers\Admin\CategoryController@delete');
 
 // Blogs
 Route::get('/admin/categoriespost', 'App\Controllers\Admin\CategoryPostController@index');
@@ -130,7 +130,7 @@ Route::delete('/admin/productvariants/{id}', 'App\Controllers\Admin\ProductVaria
 Route::get('/admin/users', 'App\Controllers\Admin\UserController@index');
 
 // GET /users/create (hiển thị form thêm người dùng)
-Route::get('/admin/users/create', 'App\Controllers\Admin\UserController@create');
+Route::get('/admin/users/createuser', 'App\Controllers\Admin\UserController@create');
 
 // POST /users (tạo mới một người dùng)
 Route::post('/admin/users', 'App\Controllers\Admin\UserController@store');

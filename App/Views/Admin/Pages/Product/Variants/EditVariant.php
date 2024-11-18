@@ -57,27 +57,26 @@ class EditVariant extends BaseView
                                         <input type="file" class="form-control" id="img" placeholder="Chọn hình biến thể..." name="img">
                                     </div>
                                     <div class="form-group">
-                                        <label for="id_product">Loại biến thể*</label>
+                                        <label for="price">Giá*</label>
+                                        <input type="text" class="form-control" id="price" placeholder="Nhập giá loại biến thể..." name="price" value="<?= $data['productvariant']['price'] ?>" require>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="id_product">Tên sản phẩm*</label>
                                         <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_product" name="id_product" require>
-                                            <option value="" selected disabled>Vui lòng chọn...</option>
                                             <?php
                                             foreach ($data['product'] as $item) :
                                             ?>
-                                                <option value="<?= $item['id'] ?>" <?= ($item['id'] == $data['productvariant']['id_product']) ? 'selected' : '' ?>><?= $item['name'] ?></option>
-                                            <?php
+                                                <option value="<?= $item['id'] ?>" <?= ($item['id'] == $data['productvariant']['id_product'])? 'selected' : ''?>><?= $item['name'] ?></option>
+                                                <?php
                                             endforeach;
                                             ?>
                                         </select>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="price">Giá</label>
-                                        <input type="number" class="form-control" id="price" placeholder="Nhập mô tả biến thể..." name="price" value="<?= $data['productvariant']['price'] ?>">
-                                    </div>
+
                                     <div class="form-group">
                                         <label for="quanlity">Số lượng</label>
                                         <input type="number" class="form-control" id="quanlity" placeholder="Nhập số lượng biến thể..." name="quanlity" value="<?= $data['productvariant']['quanlity'] ?>">
                                     </div>
-
                                 </div>
                                 <div class="border-top">
                                     <div class="card-body">

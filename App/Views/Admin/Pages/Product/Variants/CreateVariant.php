@@ -49,24 +49,25 @@ class CreateVariant extends BaseView
                                         <input type="file" class="form-control" id="img" placeholder="Chọn hình biến thể..." name="img">
                                     </div>
                                     <div class="form-group">
-                                        <label for="price">Giá tiền*</label>
-                                        <input type="number" class="form-control" id="price" placeholder="Nhập giá biến thể..." name="price" require>
+                                        <label for="price">Giá</label>
+                                        <input type="number" class="form-control" id="price" placeholder="Nhập giá biến thể..." name="price">
                                     </div>
                                     <div class="form-group">
-                                        <label for="id_product">Loại biến thể*</label>
+                                        <label for="id_product">Tên sản phẩm*</label>
                                         <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_product" name="id_product" require>
                                             <option value="" selected disabled>Vui lòng chọn...</option>
                                             <?php
                                             foreach ($data as $item) :
                                             ?>
-                                                 <option value="<?= $item['id']?>"><?= $item['id'] ?></option>
+                                                <option value="<?= $item['id'] ?>"><?= $item['name'] ?></option>
                                             <?php
                                             endforeach;
                                             ?>
                                         </select>
                                     </div>
+
                                     <div class="form-group">
-                                        <label for="quanlity">Mô tả</label>
+                                        <label for="quanlity">Số lượng</label>
                                         <input type="number" class="form-control" id="quanlity" placeholder="Nhập mô tả biến thể..." name="quanlity"></input>
                                     </div>
                                 </div>

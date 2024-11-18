@@ -71,8 +71,8 @@ class ProductVariantController
         $data = [
             'label' => $name,
             'id_product' => $_POST['id_product'],
-            'price' => $_POST['price'],
             'quanlity' => $_POST['quanlity'],
+            'price' => $_POST['price'],
         ];
 
         $is_upload = ProductVariantValidation::uploadimg();
@@ -149,9 +149,9 @@ class ProductVariantController
         // Cập nhật thông tin biến thể
         $data = [
             'label' => $name,
-            'price' => $_POST['price'],
             'quanlity' => $_POST['quanlity'],
             'id_product' => $_POST['id_product'],
+            'price' => $_POST['price'],
         ];
 
         $is_upload = ProductVariantValidation::uploadimg();

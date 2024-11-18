@@ -64,9 +64,25 @@ class Create extends BaseView
                                         <label for="re_password">Nhập lại mật khẩu*</label>
                                         <input type="password" class="form-control" id="re_password" placeholder="Nhập lại mật khẩu..." name="re_password" require>
                                     </div>
+                                    <div class="group-input mb-3">
+                                        <label for="address">Địa chỉ*</label>
+                                        <input type="text" name="address" id="address" class="form-control mb-3" placeholder="Nhập địa chỉ">
+                                    </div>
+                                    <div class="group-input mb-3">
+                                        <label for="date_of_birth">Năm sinh*</label>
+                                        <input type="date" name="date_of_birth" id="date_of_birth" class="form-control mb-3" placeholder="Nhập date_of_birth">
+                                    </div>
                                     <div class="form-group">
                                         <label for="avatar">Ảnh đại diện</label>
-                                        <input type="file" class="form-control" id="avatar" placeholder="Chọn ảnh đại diện..." name="avatar" >
+                                        <input type="file" class="form-control" id="avatar" placeholder="Chọn ảnh đại diện..." name="avatar">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="role">Quyền*</label>
+                                        <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="role" name="role" require>
+                                            <option value="" selected disabled>Vui lòng chọn...</option>
+                                            <option value="1">Quản trị viên</option>
+                                            <option value="0">Khách hàng</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="status">Trạng thái*</label>
@@ -74,7 +90,6 @@ class Create extends BaseView
                                             <option value="" selected disabled>Vui lòng chọn...</option>
                                             <option value="1">Hiển thị</option>
                                             <option value="0">Ẩn</option>
-
                                         </select>
                                     </div>
                                 </div>
