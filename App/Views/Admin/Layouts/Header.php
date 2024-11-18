@@ -8,16 +8,12 @@ class Header extends BaseView
 {
     public static function render($data = null)
     {
-
+        $is_login = AuthHelper::checkLogin();
+        ?>
 ?>
-        <!DOCTYPE html>
-        <html lang="en">
-
-        <head>
+        
             <!-- Required meta tags -->
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <title>Corona Admin</title>
+        
             <!-- plugins:css -->
             <link rel="stylesheet" href="/public/assets/admin/vendors/mdi/css/materialdesignicons.min.css">
             <link rel="stylesheet" href="/public/assets/admin/vendors/css/vendor.bundle.base.css">
@@ -35,9 +31,9 @@ class Header extends BaseView
             <!-- End layout styles -->
             <link rel="shortcut icon" href="/public/assets/admin/images/favicon.png" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        </head>
+ 
 
-        <body>
+    
             <div class="container-scroller">
                 <!-- partial:../../partials/_sidebar.html -->
                 <nav class="sidebar sidebar-offcanvas" id="sidebar">

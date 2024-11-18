@@ -33,6 +33,7 @@ class Login extends BaseView
                                         placeholder="Nhập mật khẩu" required>
                                 </div>
                                 <div class="form-check">
+                                    <form action="/login" method="post"> 
                                 <input type="checkbox" name="remember" id="remember" class="form-check-input" checked>
                                 <label class="form-check-label" for="remember">
                                     Ghi nhớ mật khẩu

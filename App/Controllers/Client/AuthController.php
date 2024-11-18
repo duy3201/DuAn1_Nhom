@@ -78,31 +78,33 @@ class AuthController {
         Footer::render();
     }
 
-        public static function loginAction() {
-            $is_valid = AuthValidation::login();
+    public static function loginAction() {
+        
+        $is_valid = AuthValidation::login();
 
-            if (!$is_valid) {
-                NotificationHelper::error('login', 'Đăng nhập thất bại');
-                header('Location: /login');
-                exit();
-            }
-
-            $data = [
-                'username' => $_POST['username'],
-                'password' => $_POST['password'],
-                'remember' => isset($_POST['remember'])
-            ];
-
-            $result = AuthHelper::login($data);
-
-            if ($result) {
-                NotificationHelper::success('login', 'Đăng nhập thành công');
-                header('Location: /');
-            } else {
-                NotificationHelper::error('login', 'Đăng nhập thất bại');
-                header('Location: /login');
-            }
+        if (!$is_valid) {
+            NotificationHelper::error('login', 'Đăng nhập thất bại');
+            header('Location: /login');
+            exit();
         }
+
+        $data = [
+            'username' => $_POST['username'],
+            'password' => $_POST['password'],
+            'remember' => isset($_POST['remember'])
+        ];
+
+        $result = AuthHelper::login($data);
+
+        if ($result) {
+            //nếu đúng sẽ dẫn tới trang chủ
+            NotificationHelper::success('login', 'Đăng nhập thành công');
+            header( 'location: /');
+        } else {
+            NotificationHelper::error('login', 'Đăng nhập thất bại');
+            header('Location: /login');
+        }
+    }
 
 
     public static function logout(){
@@ -110,6 +112,10 @@ class AuthController {
         NotificationHelper::success('logout', 'Đăng xuất thành công');
         header('location: /');
     }
+
+    
+
+
 
     public static function edit($id){
         $result = AuthHelper::edit($id);

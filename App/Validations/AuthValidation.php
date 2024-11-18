@@ -32,7 +32,7 @@ class AuthValidation {
             $is_valid = false;
         } else {
             if (strlen($_POST['tel']) < 10) {
-                NotificationHelper::error('tel', 'Mật khẩu không dưới 9 ký tự');
+                NotificationHelper::error('tel', 'Số điện không dưới 9 ký tự');
                 $is_valid = false;
             }
         }
@@ -90,7 +90,7 @@ class AuthValidation {
         return $is_valid;
     }
 
-    public static function login(): bool {
+    public static function Login(): bool {
         $is_valid = true;
 
         if (!isset($_POST['username']) || $_POST['username'] === '') {

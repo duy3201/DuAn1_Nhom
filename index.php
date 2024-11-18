@@ -17,7 +17,10 @@ require_once 'App/Views/index.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-// AuthHelper::middleware();
+//phải giải phong ấn dòng code này để thức tỉnh bản năng
+// giải phong ấn
+
+AuthHelper::middleware();
 
 require_once 'config.php';
 

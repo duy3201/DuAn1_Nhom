@@ -2,21 +2,27 @@
 
 namespace App\Views\Client\Layouts;
 
+use App\Helpers\AuthHelper;
 use App\Views\BaseView;
 
 class Header extends BaseView
 {
     public static function render($data = null)
-    { ?>
-        <!DOCTYPE html>
-        <html lang="zxx">
+    {
+        $is_login = AuthHelper::checkLogin();
+        // unset($_SESSION['user']);
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="description" content="Fashi Template">
-            <meta name="keywords" content="Fashi, unica, creative, html">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    //    var_dump($_SESSION['user']);
+
+    //      var_dump(json_decode($_COOKIE['user']));
+
+        
+
+    
+
+        ?>
+   
+      
             <title>Old Style Store</title>
 
             <!-- Google Font -->
@@ -37,6 +43,10 @@ class Header extends BaseView
             <link rel="stylesheet" href="/public/assets/client/css copy/slicknav.min.css" type="text/css">
             <link rel="stylesheet" href="/public/assets/client/css copy/style.css" type="text/css">
           
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
         </head>
@@ -126,18 +136,26 @@ class Header extends BaseView
                                         </div>
                                     </li>
                                     <!-- tài khoản -->
-                                    
-                                    <!-- Đăng nhập, đăng ký, đăng xuất -->
-                                    <li class="heart-icon dropdown">
-                                        <a href="/login" class="dropdown-toggle">
-                                            <img src="/public/assets/client/img/iconuser.png" alt="" width="25px" class="mb-1">
-                                        </a>
-                                        <div class="dropdown-menu">
-                                            <a href="/login" class="dropdown-item">Đăng nhập</a>
-                                            <a href="/register" class="dropdown-item">Đăng ký</a>
-                                            <a href="/Logout" class="dropdown-item">Đăng xuất</a>
-                                        </div>
+                                  <?php
+                                  if($is_login) :
+                                  ?>
+                                  <li class="nav-item">
+                                    <a class="nav-link"href="/Logout">Đăng xuất</a>
                                     </li>
+                                    <?php
+                                    else :
+
+                                    ?>
+                                <li class="nav-item">
+                                     <a class="nav-link" href="/Login">Đăng nhập</a>
+                                     <a class="nav-link" href="/register">Đăng ký</a>
+                                    </li>
+                                    <?php
+                                    endif;
+                                   ?>
+                        </ul>
+
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -186,7 +204,10 @@ class Header extends BaseView
 
             <?php
 
+
 }
+
 }
+
 
 ?>

@@ -49,19 +49,14 @@ class AuthHelper {
             return false;
         }
 
-        // Kiểm tra lựa chọn "remember"
-        if (isset($data['remember']) && $data['remember']) {
-            // Lưu cookie và session
+        if ($data['remember']) {
             self::updateCookie($is_exist['id']);
-        } else {
-            // Lưu session
+        }else {
             self::updateSession($is_exist['id']);
         }
-
-        NotificationHelper::success('login', 'Đăng nhập thành công');
+        NotificationHelper::success('login','Đăng nhập thành công');
         return true;
     }
-
     public static function updateCookie(int $id) {
         $user = new User();
         $result = $user->getOneUser($id);
@@ -219,11 +214,11 @@ class AuthHelper {
         $admin = $admin[1];
 
         if($admin=='admin'){
-            if(!isset($_SESSION['user']) || $_SESSION['user']['role'] != 1){
-                NotificationHelper::error('admin', 'Tài khoản này không có quyền truy cập');
-                header('location: /login');
-                exit;
-            }
+            // if(!isset($_SESSION['user']) || $_SESSION['user']['role'] != 1){
+            //     NotificationHelper::error('admin', 'Tài khoản này không có quyền truy cập');
+            //     header('location: /login');
+            //     exit;
+            // }
 
             if(!isset($_SESSION['user'])){
                 NotificationHelper::error('admin', 'Vui lòng đăng nhập');
