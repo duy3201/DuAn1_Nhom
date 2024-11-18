@@ -30,7 +30,6 @@ class HomeController
        $comment_by_product = $comment->countCommentByProduct();
 
 
-
        $data = [
            'total_user' => $total_user['total'],
            'total_category' => $total_category['total'],

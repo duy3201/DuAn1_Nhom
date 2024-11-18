@@ -4,7 +4,7 @@ namespace App\Models;
 
 class CategoryPost extends BaseModel
 {
-    protected $table = 'categoriesc_post';
+    protected $table = 'categories_post';
     protected $id = 'id';
 
     public function getAllCategoryPost()

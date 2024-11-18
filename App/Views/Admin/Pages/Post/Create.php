@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Views\Admin\Pages\Product;
+namespace App\Views\Admin\Pages\Post;
 
 use App\Views\BaseView;
 
@@ -8,6 +8,8 @@ class Create extends BaseView
 {
     public static function render($data = null)
     {
+        $categories = $data['categories'] ?? [];
+        $users = $data['users'] ?? [];
 ?>
 
         <!-- Page wrapper  -->
@@ -19,7 +21,7 @@ class Create extends BaseView
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">QUẢN LÝ SẢN PHẨM</h4>
+                        <h4 class="page-title">QUẢN LÝ BÀI VIẾT</h4>
                     </div>
                 </div>
             </div>
@@ -36,51 +38,49 @@ class Create extends BaseView
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <form class="form-horizontal" action="/admin/products" method="POST" enctype="multipart/form-data">
+                            <form class="form-horizontal" action="/admin/post" method="POST" enctype="multipart/form-data">
                                 <div class="card-body">
-                                    <h4 class="card-title">Thêm sản phẩm</h4>
+                                    <h4 class="card-title">Thêm bài viết</h4>
                                     <input type="hidden" name="method" id="" value="POST">
                                     <div class="form-group">
-                                        <label for="name">Tên*</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Nhập tên sản phẩm..." name="name" require>
+                                        <label for="title">Tiêu đè*</label>
+                                        <input type="text" class="form-control" id="title" placeholder="Nhập tiêu đề bài viết..." name="title" require>
                                     </div>
                                     <div class="form-group">
                                         <label for="img">Hình ảnh</label>
                                         <input type="file" class="form-control" id="img" placeholder="Chọn hình sản phẩm..." name="img">
                                     </div>
                                     <div class="form-group">
-                                        <label for="price">Giá tiền*</label>
-                                        <input type="number" class="form-control" id="price" placeholder="Nhập giá sản phẩm..." name="price" require>
+                                        <label for="content">Nội dung</label>
+                                        <textarea class="form-control" id="content" placeholder="Nhập nội dung bài viết..." name="content"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label for="description">Mô tả</label>
-                                        <textarea class="form-control" id="description" placeholder="Nhập mô tả sản phẩm..." name="description"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="id_category">Loại sản phẩm*</label>
-                                        <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_category" name="id_category" require>
+                                        <label for="id_categories_post">Loại bài viết*</label>
+                                        <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_categories_post" name="id_categories_post" require>
                                         <option value="" selected disabled>Vui lòng chọn...</option>
                                             <?php
-                                            foreach($data as $item):
+                                            foreach($categories as $category):
                                             ?>
-                                            <option value="<?= $item['id']?>"><?= $item['name'] ?></option>
+                                            <option value="<?= $category['id']?>"><?= $category['name'] ?></option>
+                                            <?php
+                                            endforeach;
+                                            ?>
+
+                                        </select>
+                                    <div class="form-group mt-3">
+                                        <label for="id_user">Người thêm*</label>
+                                        <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_user" name="id_user" require>
+                                        <option value="" selected disabled>Vui lòng chọn...</option>
+                                            <?php
+                                            foreach($users as $user):
+                                            ?>
+                                            <option value="<?= $user['id']?>"><?= $user['name'] ?></option>
                                             <?php
                                             endforeach;
                                             ?>
 
                                         </select>
                                     </div>
-
-                                    <div class="form-group">
-                                        <label for="is_featured">Nổi bậc*</label>
-                                        <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="is_featured" name="is_featured" require>
-                                            <option value="" selected disabled>Vui lòng chọn...</option>
-                                            <option value="1">Nổi bậc</option>
-                                            <option value="0">Bình thường</option>
-
-                                        </select>
-                                    </div>
-
                                     <div class="form-group">
                                         <label for="status">Trạng thái*</label>
                                         <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="status" name="status" require>

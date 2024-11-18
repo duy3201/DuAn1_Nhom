@@ -43,7 +43,7 @@ class Index extends BaseView
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Hình ảnh</th>
+                                                    <th class="col-2">Hình ảnh</th>
                                                     <th>Tiêu đề</th>
                                                     <th>Nội dung</th>
                                                     <th>Loại</th>
@@ -55,12 +55,12 @@ class Index extends BaseView
                                                 <?php foreach ($data as $item) : ?>
                                                     <tr>
                                                         <td><?= $item['id'] ?></td>
-                                                        <td>
-                                                                <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="Hình sản phẩm" class="img-fluid">
+                                                        <td >
+                                                                <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="Hình bài viết" class="img-fluid ">
                                                         </td>
                                                         <td><?= $item['title'] ?></td>
                                                         <td><?= $item['content'] ?></td>
-                                                       <td><?= $item['category_post'] ?></td>
+                                                       <td><?= $item['categories_post_name'] ?></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hiển thị' : 'Ẩn' ?></td>
                                                         <td>
                                                             <a href="/admin/post/<?= $item['id'] ?>" class="btn btn-primary">Sửa</a>
@@ -72,7 +72,6 @@ class Index extends BaseView
                                                     </tr>
                                                 <?php endforeach; ?>
                                             </tbody>
-
                                         </table>
                                     </div>
                                 <?php

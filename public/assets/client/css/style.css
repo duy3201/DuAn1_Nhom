@@ -1,0 +1,300 @@
+.carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.carousel-caption {
+  color: #ffffff;
+  z-index: 2;
+  position: absolute;
+  top: 60%;
+  transform: translate(-15%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.carousel-caption h1 {
+  font-size: 6rem;
+  font-family: "Cormorant Garamond", serif;
+  color: #F9A000;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar-collapse {
+  font-family: "Inter", sans-serif;
+}
+
+.nav-login {
+  display: flex;
+}
+
+.nav-icon {
+  display: flex;
+}
+
+.hi {
+  margin-left: 30px;
+}
+
+.tab-bar {
+  background-color: #3C4043;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.icon-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.icon-header .nav-link {
+  float: right;
+  color: #fff;
+  font-size: 1rem;
+  margin-left: 22px;
+}
+
+.icon-header .nav-link:first-child {
+  margin-left: 190px;
+}
+
+.icon-header .nav-link:hover {
+  color: #ccc;
+}
+
+footer {
+  padding: 20px 195px;
+  background-color: #3C3F43;
+  color: white;
+}
+
+.footer1 {
+  width: 40%;
+}
+
+.footer2 nav{
+  background-color: #D9D9D9;
+  width: 40px;
+  height: 6px;
+  border-radius: 5px;
+  margin: 5px 0px 10px 0px;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.container-footer .row {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.container-footer .row .col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container-footer .row .col h4 {
+  margin-bottom: 10px;
+  color: #F9A000;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.container-footer .row .col a {
+  margin: 5px 0;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.container-footer .row .col a:hover {
+  color: #ccc;
+}
+
+.container-footer .row .col .icon-links {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+
+.container-footer .row .col .icon-links img {
+  width: 45px;
+  height: 45px;
+}
+
+.container-footer .row .col a:last-child {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Khoa */
+/* Đặt kiểu nền và font chung cho trang */
+.category-header {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Khung tổng của danh mục sản phẩm */
+.product-section {
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* Tiêu đề danh mục */
+.product-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Lưới chứa các thẻ sản phẩm */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột */
+  gap: 20px;
+}
+
+/* Thẻ sản phẩm */
+.product-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Ảnh sản phẩm */
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Tạo hiệu ứng khi hover lên ảnh */
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Lớp phủ và tên sản phẩm */
+.product-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng khi hover */
+.product-card:hover .product-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Trọng */
+.container-fluid {
+  display: flex;
+  width: 100%;
+  max-height: 650px;
+}
+
+.category-baner1, .category-baner2 {
+  width: 50%;
+}
+
+.category-baner2 {
+  display: flex;
+  flex-direction: column;
+ 
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.text-overlay a{
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.login-container {
+  background-color: white;
+  border-radius: 10px;
+  /* box-shadow:  0 0 40px rgba(0, 255, 0, 0.5); */
+  box-shadow:  0 0 400px gray;
+  
+  padding: 40px;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}

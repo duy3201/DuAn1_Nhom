@@ -102,7 +102,7 @@ class Header extends BaseView
                                                             <td class="si-pic"><img src="/public/assets/client/img/select-product-1.jpg" alt=""></td>
                                                             <td class="si-text">
                                                                 <div class="product-selected">
-                                                                    <p>$60.00 x 1</p>
+                                                                    <p>60.000 VNĐ x 1</p>
                                                                     <h6>Bàn cạnh giường Kabino</h6>
                                                                 </div>
                                                             </td>
@@ -114,7 +114,7 @@ class Header extends BaseView
                                                             <td class="si-pic"><img src="/public/assets/client/img/select-product-2.jpg" alt=""></td>
                                                             <td class="si-text">
                                                                 <div class="product-selected">
-                                                                    <p>$60.00 x 1</p>
+                                                                    <p>60.00 VNĐ x 1</p>
                                                                     <h6>Bàn cạnh giường Kabino</h6>
                                                                 </div>
                                                             </td>
@@ -127,7 +127,7 @@ class Header extends BaseView
                                             </div>
                                             <div class="select-total">
                                                 <span>Tổng cộng:</span>
-                                                <h5>$120.00</h5>
+                                                <h5>120.000 VNĐ</h5>
                                             </div>
                                             <div class="select-button">
                                                 <a href="/card" class="primary-btn view-card">Xem giỏ hàng</a>

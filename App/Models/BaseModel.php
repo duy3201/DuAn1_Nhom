@@ -153,6 +153,22 @@ abstract class BaseModel implements CrudInterface
             return $result;
         }
     }
+    public function getOneByTitle($title)
+    {
+        $result = [];
+        try {
+            $sql = "SELECT * FROM $this->table WHERE title=?";
+            $conn = $this->_conn->MySQLi();
+            $stmt = $conn->prepare($sql);
+
+            $stmt->bind_param('s', $title);
+            $stmt->execute();
+            return $stmt->get_result()->fetch_assoc();
+        } catch (\Throwable $th) {
+            error_log('Lỗi khi tiêu đề: ' . $th->getMessage());
+            return $result;
+        }
+    }
 
     //Điếm số lượng
     public function countTotal()
