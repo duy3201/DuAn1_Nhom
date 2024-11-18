@@ -79,7 +79,7 @@ class CategoryController
 
         if(!$is_valid){
             NotificationHelper::error('store', 'Thêm loại sản phẩm thất bại');
-            header('location: /admin/categoryproduct/create');
+            header('location: /admin/categoryproduct/createcategory');
             exit;
         }
 
@@ -91,7 +91,7 @@ class CategoryController
 
         if($is_exits){
             NotificationHelper::error('store', 'Tên loại sản phẩm đã tồn tại');
-            header('location: /admin/categoryproduct/create');
+            header('location: /admin/categoryproduct/createcategory');
             exit;
         }
 

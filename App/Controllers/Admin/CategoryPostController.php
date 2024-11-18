@@ -51,7 +51,7 @@ class CategoryPostController
 
         if(!$is_valid){
             NotificationHelper::error('store', 'Thêm loại bài viết thất bại');
-            header('location: /admin/categoriespost/create');
+            header('location: /admin/categoryiespost/createcategorypost');
             exit;
         }
 
@@ -63,7 +63,7 @@ class CategoryPostController
 
         if($is_exits){
             NotificationHelper::error('store', 'Tên loại sản phẩm đã tồn tại');
-            header('location: /admin/categories/create');
+            header('location: /admin/categoryiespost/createcategorypost');
             exit;
         }
 
@@ -77,10 +77,10 @@ class CategoryPostController
 
         if($result){
             NotificationHelper::success('store', 'Thêm loại bài viết thành công');
-            header('location: /admin/categoriespost');
+            header('location: /admin/categoryiespost');
         }else{
             NotificationHelper::error('store', 'Thêm loại bài viết thất bại');
-            header('location: /admin/categoriespost');
+            header('location: /admin/categoryiespost');
         }
     }
 
@@ -105,7 +105,7 @@ class CategoryPostController
 
         if(!$data){
             NotificationHelper::error('edit', 'Không thể xem loại sản phẩm này');
-            header('location: /admin/categoriespost');
+            header('location: /admin/categoryiespost');
             exit;
         }
             Header::render();
@@ -134,7 +134,7 @@ class CategoryPostController
 
         if(!$is_valid){
             NotificationHelper::error('update', 'Cập nhật loại bài viết thất bại');
-            header("location: /admin/categories/$id");
+            header("location: /admin/categoryiespost/$id");
             exit;
         }
 
@@ -148,7 +148,7 @@ class CategoryPostController
         if($is_exits){
             if($is_exits['id'] != $id){
                 NotificationHelper::error('update', 'Tên loại sản phẩm đã tồn tại');
-                header("location: /admin/categoriespost/$id");
+                header("location: /admin/categoryiespost/$id");
                 exit;
             }
         }
@@ -163,10 +163,10 @@ class CategoryPostController
 
         if($result){
             NotificationHelper::success('update', 'Cập nhật loại bài viết thành công');
-            header('location: /admin/categoriespost');
+            header('location: /admin/categoryiespost');
         }else{
             NotificationHelper::error('update', 'Cập nhật loại bài viết thất bại');
-            header("location: /admin/categoriespost/$id");
+            header("location: /admin/categoryiespost/$id");
         }
 
     }
@@ -184,7 +184,7 @@ class CategoryPostController
         NotificationHelper::error('delete', 'Xóa loại bài viết thất bại');
        }
 
-       header('location: /admin/categoriespost');
+       header('location: /admin/postcategoryies');
         
     }
 }

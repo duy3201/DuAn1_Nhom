@@ -58,7 +58,7 @@ class ProductController
 
         if (!$is_valid) {
             NotificationHelper::error('store', 'Thêm sản phẩm thất bại');
-            header('location: /admin/products/create');
+            header('location: /admin/products/createproduct');
             exit;
         }
 
@@ -70,7 +70,7 @@ class ProductController
 
         if ($is_exits) {
             NotificationHelper::error('store', 'Tên sản phẩm đã tồn tại');
-            header('location: /admin/products/create');
+            header('location: /admin/products/createproduct');
             exit;
         }
 

@@ -56,7 +56,7 @@ Route::get('/admin', 'App\Controllers\Admin\HomeController@index');
 Route::get('/admin/categoryproduct', 'App\Controllers\Admin\CategoryController@index');
 
 // GET /categories/create (hiển thị form thêm loại sản phẩm)
-Route::get('/admin/categoryproduct/create', 'App\Controllers\Admin\CategoryController@create');
+Route::get('/admin/categoryproduct/createcategory', 'App\Controllers\Admin\CategoryController@create');
 
 // POST /categories (tạo mới một loại sản phẩm)
 Route::post('/admin/categoryproduct', 'App\Controllers\Admin\CategoryController@store');
@@ -71,26 +71,26 @@ Route::put('/admin/categoryproduct/{id}', 'App\Controllers\Admin\CategoryControl
 Route::delete('/admin/categoryproduct/{id}', 'App\Controllers\Admin\CategoryController@delete');
 
 // Blogs
-Route::get('/admin/categoriespost', 'App\Controllers\Admin\CategoryPostController@index');
-Route::get('/admin/categoriespost/create', 'App\Controllers\Admin\CategoryPostController@create');
-Route::post('/admin/categoriespost', 'App\Controllers\Admin\CategoryPostController@store');
-Route::get('/admin/categoriespost/{id}', 'App\Controllers\Admin\CategoryPostController@edit');
-Route::put('/admin/categoriespost/{id}', 'App\Controllers\Admin\CategoryPostController@update');
-Route::delete('/admin/categoriespost/{id}', 'App\Controllers\Admin\CategoryPostController@delete');
+Route::get('/admin/categoryiespost', 'App\Controllers\Admin\CategoryPostController@index');
+Route::get('/admin/categoryiespost/createcategorypost', 'App\Controllers\Admin\CategoryPostController@create');
+Route::post('/admin/categoryiespost', 'App\Controllers\Admin\CategoryPostController@store');
+Route::get('/admin/categoryiespost/{id}', 'App\Controllers\Admin\CategoryPostController@edit');
+Route::put('/admin/categoryiespost/{id}', 'App\Controllers\Admin\CategoryPostController@update');
+Route::delete('/admin/categoryiespost/{id}', 'App\Controllers\Admin\CategoryPostController@delete');
 
-Route::get('/admin/post', 'App\Controllers\Admin\PostController@index');
-Route::get('/admin/post/create', 'App\Controllers\Admin\PostController@create');
-Route::post('/admin/post', 'App\Controllers\Admin\PostController@store');
-Route::get('/admin/post/{id}', 'App\Controllers\Admin\PostController@edit');
-Route::put('/admin/post/{id}', 'App\Controllers\Admin\PostController@update');
-Route::delete('/admin/post/{id}', 'App\Controllers\Admin\PostController@delete');
+Route::get('/admin/posts', 'App\Controllers\Admin\PostController@index');
+Route::get('/admin/posts/createpost', 'App\Controllers\Admin\PostController@create');
+Route::post('/admin/posts', 'App\Controllers\Admin\PostController@store');
+Route::get('/admin/posts/{id}', 'App\Controllers\Admin\PostController@edit');
+Route::put('/admin/posts/{id}', 'App\Controllers\Admin\PostController@update');
+Route::delete('/admin/posts/{id}', 'App\Controllers\Admin\PostController@delete');
 
 //  *** Product
 // GET /Products (lấy danh sách loại sản phẩm)
 Route::get('/admin/products', 'App\Controllers\Admin\ProductController@index');
 
 // GET /products/create (hiển thị form thêm loại sản phẩm)
-Route::get('/admin/products/create', 'App\Controllers\Admin\ProductController@create');
+Route::get('/admin/products/createproduct', 'App\Controllers\Admin\ProductController@create');
 
 // POST /products (tạo mới một loại sản phẩm)
 Route::post('/admin/products', 'App\Controllers\Admin\ProductController@store');

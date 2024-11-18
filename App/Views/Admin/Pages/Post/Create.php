@@ -38,7 +38,7 @@ class Create extends BaseView
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <form class="form-horizontal" action="/admin/post" method="POST" enctype="multipart/form-data">
+                            <form class="form-horizontal" action="/admin/posts" method="POST" enctype="multipart/form-data">
                                 <div class="card-body">
                                     <h4 class="card-title">Thêm bài viết</h4>
                                     <input type="hidden" name="method" id="" value="POST">

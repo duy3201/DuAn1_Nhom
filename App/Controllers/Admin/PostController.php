@@ -65,7 +65,7 @@ class PostController
  
          if (!$is_valid) {
              NotificationHelper::error('store', 'Thêm bài viết thất bại rồi');
-             header('location: /admin/post/create');
+             header('location: /admin/posts/createpost');
              exit;
          }
  
@@ -77,7 +77,7 @@ class PostController
  
          if ($is_exits) {
              NotificationHelper::error('store', 'Tên bài viết đã tồn tại');
-             header('location: /admin/posts/create');
+             header('location: /admin/posts/createpost');
              exit;
          }
  
@@ -100,10 +100,10 @@ class PostController
  
          if ($result) {
              NotificationHelper::success('store', 'Thêm bài viết thành công');
-             header('location: /admin/post');
+             header('location: /admin/posts');
          } else {
              NotificationHelper::error('store', 'Thêm bài viết thất bại');
-             header('location: /admin/post');
+             header('location: /admin/posts');
          }
      }
  
@@ -121,7 +121,7 @@ class PostController
  
          if (!$data_post) {
              NotificationHelper::error('edit', 'Không thể xem bài viết này');
-             header('location: /admin/post');
+             header('location: /admin/posts');
              exit;
          }
  
@@ -147,7 +147,7 @@ class PostController
 
         if (!$is_valid) {
             NotificationHelper::error('update', 'Cập nhật bài viết bại rồi');
-            header("location: /admin/post/$id");
+            header("location: /admin/posts/$id");
             exit;
         }
 
@@ -161,7 +161,7 @@ class PostController
         if ($is_exits) {
             if ($is_exits['id'] != $id) {
                 NotificationHelper::error('update', 'Tiêu đề đã tồn tại');
-                header("location: /admin/post/$id");
+                header("location: /admin/posts/$id");
                 exit;
             }
         }
@@ -186,10 +186,10 @@ class PostController
 
         if ($result) {
             NotificationHelper::success('update', 'Cập nhật bài viết thành công');
-            header('location: /admin/post');
+            header('location: /admin/posts');
         } else {
             NotificationHelper::error('update', 'Cập nhật bài viết thất bại');
-            header("location: /admin/post/$id");
+            header("location: /admin/posts/$id");
         }
     }
 

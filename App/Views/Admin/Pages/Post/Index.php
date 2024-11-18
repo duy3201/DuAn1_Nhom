@@ -63,8 +63,8 @@ class Index extends BaseView
                                                        <td><?= $item['categories_post_name'] ?></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hiển thị' : 'Ẩn' ?></td>
                                                         <td>
-                                                            <a href="/admin/post/<?= $item['id'] ?>" class="btn btn-primary">Sửa</a>
-                                                            <form action="/admin/post/<?= $item['id'] ?>" method="post" style="display: inline-block;" onsubmit="return confirm('Chắc chưa?')">
+                                                            <a href="/admin/posts/<?= $item['id'] ?>" class="btn btn-primary">Sửa</a>
+                                                            <form action="/admin/posts/<?= $item['id'] ?>" method="post" style="display: inline-block;" onsubmit="return confirm('Chắc chưa?')">
                                                                 <input type="hidden" name="method" value="DELETE">
                                                                 <button type="submit" class="btn btn-danger text-white">Xoá</button>
                                                             </form>
