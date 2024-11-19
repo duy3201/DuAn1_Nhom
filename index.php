@@ -21,7 +21,7 @@ $dotenv->load();
 // giải phong ấn
 
 AuthHelper::middleware();
-
+ 
 require_once 'config.php';
 
 
@@ -34,6 +34,14 @@ Route::get('/register','App\Controllers\Client\AuthController@register');
 Route::post('/register','App\Controllers\Client\AuthController@registerAction');
 Route::get('/login','App\Controllers\Client\AuthController@login');
 Route::post('/login','App\Controllers\Client\AuthController@loginAction');
+
+Route::get('/logout','App\Controllers\Client\AuthController@logout');
+
+Route::get('/users/{id}','App\Controllers\Client\AuthController@edit');
+Route::put('/users/{id}','App\Controllers\Client\AuthController@update');
+
+
+
 Route::get('/card','App\Controllers\Client\HomeController@card');
 Route::get('/contact','App\controllers\Client\HomeController@contact');
 Route::get('/introduce','App\controllers\Client\HomeController@introduce');

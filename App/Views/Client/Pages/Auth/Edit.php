@@ -16,18 +16,18 @@ class Edit extends BaseView
                     <?php
                         if ($data && $data['avatar']):
                     ?>
-                    <img src="<?= APP_URL ?>/public/uploads/users/<?= $data['avatar'] ?>" alt="" width="100%" class="border border-primary">
+                    <img src="<?= APP_URL ?>/public/uploads/users/<?= $data['avatar'] ?>" alt="" width="100%" >
                     <?php
                         else:
                     ?>
-                    <img src="<?= APP_URL ?>/public/uploads/users/user.webp" alt="" width="100%" class=" border border-primary">
+                    <img src="<?= APP_URL ?>/public/uploads/users/user1.jpeg" alt="" width="100%" >
                     <?php
                         endif;
                     ?>
                 </div>
                 <div class="col-md-7">
                     <div class="card card-body shadow">
-                        <h4 class="text-center text-primary">Tài khoản</h4>
+                        <h4 class="text-center text-primary">Thông tin Tài khoản</h4>
                         <form action="/users/<?= $data['id'] ?>" method="post" enctype="multipart/form-data">
                             <input type="hidden" name="method" value="PUT">
                             <div class="form-group">

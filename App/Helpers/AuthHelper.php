@@ -83,24 +83,18 @@ class AuthHelper {
         }
     }
 
-    public static function checkLogin() {
-
-        // Kiểm tra cookie "user"
-        if (isset($_COOKIE['user'])) {
+   public static function checkLogin():bool{
+        if (isset($_COOKIE['user'])){
             $user = $_COOKIE['user'];
-            $user_data = (array) json_decode($user, true);
+            $user_data = json_decode($user);
 
-            self::updateCookie($user_data['id']);
-            // $_SESSION['user'] = (array) $user_data;
+            $_SESSION['user'] = (array) $user_data;
+
             return true;
         }
-
-        // Kiểm tra session "user"
-        if (isset($_SESSION['user'])) {
-            self::updateSession($_SESSION['user']['id']);
+        if (isset($_SESSION['user'])){
             return true;
         }
-
         return false;
     }
 

@@ -12,41 +12,43 @@ class Header extends BaseView
         $is_login = AuthHelper::checkLogin();
         // unset($_SESSION['user']);
 
-    //    var_dump($_SESSION['user']);
+        //    var_dump($_SESSION['user']);
 
-    //      var_dump(json_decode($_COOKIE['user']));
+        //      var_dump(json_decode($_COOKIE['user']));
 
-        
 
-    
+
+
 
         ?>
-   
-      
-            <title>Old Style Store</title>
 
-            <!-- Google Font -->
-            <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-            <!-- Css Styles -->
-            <!-- Google Font -->
+        <title>Old Style Store</title>
 
-            <!-- Css Styles -->
-            <link rel="stylesheet" href="/public/assets/client/css copy/style.css">
-            <link rel="stylesheet" href="/public/assets/client/css copy/bootstrap.min.css" type="text/css">
-            <link rel="stylesheet" href="/public/assets/client/css copy/font-awesome.min.css" type="text/css">
-            <link rel="stylesheet" href="/public/assets/client/css copy/themify-icons.css" type="text/css">
-            <link rel="stylesheet" href="/public/assets/client/css copy/elegant-icons.css" type="text/css">
-            <link rel="stylesheet" href="/public/assets/client/css copy/owl.carousel.min.css" type="text/css">
-            <link rel="stylesheet" href="/public/assets/client/css copy/nice-select.css" type="text/css">
-            <link rel="stylesheet" href="/public/assets/client/css copy/jquery-ui.min.css" type="text/css">
-            <link rel="stylesheet" href="/public/assets/client/css copy/slicknav.min.css" type="text/css">
-            <link rel="stylesheet" href="/public/assets/client/css copy/style.css" type="text/css">
-          
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Bootstrap JavaScript -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Google Font -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet"> -->
+
+        <!-- Css Styles -->
+        <!-- Google Font -->
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="/public/assets/client/css copy/style.css">
+        <link rel="stylesheet" href="/public/assets/client/css copy/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/public/assets/client/css copy/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="/public/assets/client/css copy/themify-icons.css" type="text/css">
+        <link rel="stylesheet" href="/public/assets/client/css copy/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="/public/assets/client/css copy/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="/public/assets/client/css copy/nice-select.css" type="text/css">
+        <link rel="stylesheet" href="/public/assets/client/css copy/jquery-ui.min.css" type="text/css">
+        <link rel="stylesheet" href="/public/assets/client/css copy/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="/public/assets/client/css copy/style.css" type="text/css">
+
+        <!-- jQuery -->
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
         </head>
@@ -99,7 +101,9 @@ class Header extends BaseView
                                                 <table>
                                                     <tbody>
                                                         <tr>
-                                                            <td class="si-pic"><img src="/public/assets/client/img/select-product-1.jpg" alt=""></td>
+                                                            <td class="si-pic"><img
+                                                                    src="/public/assets/client/img/select-product-1.jpg" alt="">
+                                                            </td>
                                                             <td class="si-text">
                                                                 <div class="product-selected">
                                                                     <p>60.000 VNĐ x 1</p>
@@ -111,7 +115,9 @@ class Header extends BaseView
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="si-pic"><img src="/public/assets/client/img/select-product-2.jpg" alt=""></td>
+                                                            <td class="si-pic"><img
+                                                                    src="/public/assets/client/img/select-product-2.jpg" alt="">
+                                                            </td>
                                                             <td class="si-text">
                                                                 <div class="product-selected">
                                                                     <p>60.00 VNĐ x 1</p>
@@ -136,26 +142,56 @@ class Header extends BaseView
                                         </div>
                                     </li>
                                     <!-- tài khoản -->
-                                  <?php
-                                  if($is_login) :
-                                  ?>
-                                  <li class="nav-item">
-                                    <a class="nav-link"href="/Logout">Đăng xuất</a>
-                                    </li>
                                     <?php
-                                    else :
+                                    if ($is_login):
+                                        ?>
+                                        <body>
+    <nav class="navbar navbar-expand-lg navbar- ms-auto">
+        <!-- <a class="navbar-brand" href="#">Tài khoản</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-danger-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item -danger dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button " 
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <img src="/public/assets/client/img/iconuser.png" alt="" width="25px" class="mb-1">
+                       <!-- Tài khoản     -->
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="/users/<?= $_SESSION['user']['id'] ?>">Hi,<?= $_SESSION['user']['username'] ?></a>   
+                        <a class="dropdown-item" href="/logout">Đăng Xuất</a>
+                    </div>
+                </li>   
+            </ul>
+        </div>
+    </nav>
 
-                                    ?>
-                                <li class="nav-item">
-                                     <a class="nav-link" href="/Login">Đăng nhập</a>
-                                     <a class="nav-link" href="/register">Đăng ký</a>
+
+
+                                            <?php
+                                    else:
+
+                                        ?>
+                                            <li class="heart-icon dropdown">
+                                        <a href="/login" class="dropdown-toggle">
+                                            <img src="/public/assets/client/img/iconuser.png" alt="" width="25px" class="mb-1">
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a href="/login" class="dropdown-item">Đăng nhập</a>
+                                            <a href="/register" class="dropdown-item">Đăng ký</a>
+                                            <!-- <a href="/Logout" class="dropdown-item">Đăng xuất</a> -->
+                                        </div>
                                     </li>
-                                    <?php
+                                            <?php
                                     endif;
-                                   ?>
-                        </ul>
+                                    ?>
+                                </ul>
 
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -205,7 +241,7 @@ class Header extends BaseView
             <?php
 
 
-}
+    }
 
 }
 
