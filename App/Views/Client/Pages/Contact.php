@@ -85,7 +85,7 @@ class Contact extends BaseView
               <div class="leave-comment">
                 <h4>Để Lại Lời Nhắn</h4>
                 <p>Nhân viên của chúng tôi sẽ gọi lại sau và trả lời câu hỏi của bạn.</p>
-                <form action="#" class="comment-form">
+                <!-- <form action="#" class="comment-form">
                   <div class="row">
                     <div class="col-lg-6">
                       <input type="text" placeholder="Tên của bạn">
@@ -98,7 +98,42 @@ class Contact extends BaseView
                       <button type="submit" class="site-btn">Gửi Tin Nhắn</button>
                     </div>
                   </div>
-                </form>
+                </form> -->
+                <form method="post" id="contactForm" name="contactForm" class="contactForm " action="">
+											<input type="hidden" name="method" value="POST">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-group border-success">
+														<label class="label " for="name">Họ và tên</label>
+														<input type="text" class="form-control" name="name" id="name" placeholder="Họ và tên">
+													</div>
+												</div>
+												<div class="col-md-6"> 
+													<div class="form-group">
+														<label class="label" for="email">Địa chỉ email</label>
+														<input type="text" class="form-control" name="email" id="email" placeholder="Địa chỉ email">
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="form-group">
+														<label class="label" for="phone">Số điện thoại</label>
+														<input type="text" class="form-control" name="phone" id="phone" placeholder="phone">
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="form-group">
+														<label class="label" for="message">Nội dung</label>
+														<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Nội dung liên hệ"></textarea>
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="form-group">
+														<button class="btn btn-primary d-grid w-100" type="submit">Gửi</button>
+														<div class="submitting"></div>
+													</div>
+												</div>
+											</div>
+										</form>
               </div>
             </div>
           </div>

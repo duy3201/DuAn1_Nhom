@@ -43,7 +43,10 @@ Route::put('/users/{id}','App\Controllers\Client\AuthController@update');
 
 
 Route::get('/card','App\Controllers\Client\HomeController@card');
-Route::get('/contact','App\controllers\Client\HomeController@contact');
+
+Route::get('/contact','App\controllers\Client\PostController@Contact');
+Route::post('/contact','App\controllers\Client\PostController@PostContact');
+
 Route::get('/introduce','App\controllers\Client\HomeController@introduce');
 
 Route::get('/blogs','App\Controllers\Client\HomeController@blogs');
