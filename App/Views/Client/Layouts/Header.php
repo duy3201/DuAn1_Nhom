@@ -20,7 +20,7 @@ class Header extends BaseView
 
 
 
-        ?>
+?>
 
 
         <title>Old Style Store</title>
@@ -42,14 +42,11 @@ class Header extends BaseView
         <link rel="stylesheet" href="/public/assets/client/css copy/jquery-ui.min.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/slicknav.min.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/style.css" type="text/css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- jQuery -->
-
-
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 
         </head>
 
@@ -144,54 +141,47 @@ class Header extends BaseView
                                     <!-- tài khoản -->
                                     <?php
                                     if ($is_login):
-                                        ?>
-                                        <body>
-    <nav class="navbar navbar-expand-lg navbar- ms-auto">
-        <!-- <a class="navbar-brand" href="#">Tài khoản</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-danger-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item -danger dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button " 
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       <img src="/public/assets/client/img/iconuser.png" alt="" width="25px" class="mb-1">
-                       <!-- Tài khoản     -->
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="/users/<?= $_SESSION['user']['id'] ?>">Hi,<?= $_SESSION['user']['username'] ?></a>   
-                        <a class="dropdown-item" href="/logout">Đăng Xuất</a>
-                    </div>
-                </li>   
-            </ul>
-        </div>
-    </nav>
-
-
-
-                                            <?php
-                                    else:
-
-                                        ?>
-                                            <li class="heart-icon dropdown">
-                                        <a href="/login" class="dropdown-toggle">
-                                            <img src="/public/assets/client/img/iconuser.png" alt="" width="25px" class="mb-1">
-                                        </a>
-                                        <div class="dropdown-menu">
-                                            <a href="/login" class="dropdown-item">Đăng nhập</a>
-                                            <a href="/register" class="dropdown-item">Đăng ký</a>
-                                            <!-- <a href="/Logout" class="dropdown-item">Đăng xuất</a> -->
-                                        </div>
-                                    </li>
-                                            <?php
-                                    endif;
                                     ?>
-                                </ul>
+                                        <nav class="navbar navbar-expand-lg navbar-ms-auto">
+                                            <!-- <a class="navbar-brand" href="#">Tài khoản</a> -->
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                                                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-danger-icon"></span>
+                                            </button>
+                                            <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
+                                                <ul class="navbar-nav">
+                                                    <li class="nav-item -danger dropdown ">
+                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button "
+                                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <img src="/public/assets/client/img/iconuser.png" alt="" width="25px" class="mb-1">
+                                                            <!-- Tài khoản     -->
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                            <a class="dropdown-item" href="#">Action</a>
+                                                            <a class="dropdown-item" href="/users/<?= $_SESSION['user']['id'] ?>">Hi,<?= $_SESSION['user']['username'] ?></a>
+                                                            <a class="dropdown-item" href="/logout">Đăng Xuất</a>
+                                                        </div>
+                                                    </li>
+                                                <?php
+                                            else:
 
-
+                                                ?>
+                                                    <li class="heart-icon dropdown">
+                                                        <a href="/login" class="dropdown-toggle">
+                                                            <img src="/public/assets/client/img/iconuser.png" alt="" width="25px" class="mb-1">
+                                                        </a>
+                                                        <div class="dropdown-menu">
+                                                            <a href="/login" class="dropdown-item">Đăng nhập</a>
+                                                            <a href="/register" class="dropdown-item">Đăng ký</a>
+                                                            <!-- <a href="/Logout" class="dropdown-item">Đăng xuất</a> -->
+                                                        </div>
+                                                    </li>
+                                                <?php
+                                            endif;
+                                                ?>
+                                                </ul>
+                                            </div>
+                                        </nav>
                                 </ul>
                             </div>
                         </div>
@@ -207,7 +197,6 @@ class Header extends BaseView
                                     <li class="active"><a href="#">Thời trang nữ</a></li>
                                     <li><a href="#">Thời trang nam</a></li>
                                     <li><a href="#">Thời trang trẻ em</a></li>
-
                                 </ul>
                             </div>
                         </div>
@@ -238,12 +227,11 @@ class Header extends BaseView
             </header>
             <!-- Header End -->
 
-            <?php
+    <?php
 
 
     }
-
 }
 
 
-?>
+    ?>

@@ -16,7 +16,7 @@ class IndexVariant extends BaseView
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">QUẢN LÝ biến thể</h4>
+                        <h4 class="page-title">QUẢN LÝ BIẾN THỂ</h4>
                     </div>
                 </div>
             </div>
