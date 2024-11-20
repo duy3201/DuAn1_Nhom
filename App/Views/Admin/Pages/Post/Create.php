@@ -57,46 +57,46 @@ class Create extends BaseView
                                     <div class="form-group">
                                         <label for="id_categories_post">Loại bài viết*</label>
                                         <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_categories_post" name="id_categories_post" require>
-                                        <option value="" selected disabled>Vui lòng chọn...</option>
-                                            <?php
-                                            foreach($categories as $category):
-                                            ?>
-                                            <option value="<?= $category['id']?>"><?= $category['name'] ?></option>
-                                            <?php
-                                            endforeach;
-                                            ?>
-
-                                        </select>
-                                    <div class="form-group mt-3">
-                                        <label for="id_user">Người thêm*</label>
-                                        <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_user" name="id_user" require>
-                                        <option value="" selected disabled>Vui lòng chọn...</option>
-                                            <?php
-                                            foreach($users as $user):
-                                            ?>
-                                            <option value="<?= $user['id']?>"><?= $user['name'] ?></option>
-                                            <?php
-                                            endforeach;
-                                            ?>
-
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="status">Trạng thái*</label>
-                                        <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="status" name="status" require>
                                             <option value="" selected disabled>Vui lòng chọn...</option>
-                                            <option value="1">Hiển thị</option>
-                                            <option value="0">Ẩn</option>
+                                            <?php
+                                            foreach ($categories as $category):
+                                            ?>
+                                                <option value="<?= $category['id'] ?>"><?= $category['name'] ?></option>
+                                            <?php
+                                            endforeach;
+                                            ?>
 
                                         </select>
+                                        <div class="form-group mt-3">
+                                            <label for="id_user">Người thêm*</label>
+                                            <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="id_user" name="id_user" require>
+                                                <option value="" selected disabled>Vui lòng chọn...</option>
+                                                <?php
+                                                foreach ($users as $user):
+                                                ?>
+                                                    <option value="<?= $user['id'] ?>"><?= $user['name'] ?></option>
+                                                <?php
+                                                endforeach;
+                                                ?>
+
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="status">Trạng thái*</label>
+                                            <select class="select2 form-select shadow-none" style="width: 100%; height:36px;" id="status" name="status" require>
+                                                <option value="" selected disabled>Vui lòng chọn...</option>
+                                                <option value="1">Hiển thị</option>
+                                                <option value="0">Ẩn</option>
+
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="border-top">
-                                    <div class="card-body">
-                                        <button type="reset" class="btn btn-danger text-white" name="">Làm lại</button>
-                                        <button type="submit" class="btn btn-primary" name="">Thêm</button>
+                                    <div class="border-top">
+                                        <div class="card-body">
+                                            <button type="reset" class="btn btn-danger text-white" name="">Làm lại</button>
+                                            <button type="submit" class="btn btn-primary" name="">Thêm</button>
+                                        </div>
                                     </div>
-                                </div>
                             </form>
                         </div>
 
@@ -119,6 +119,26 @@ class Create extends BaseView
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
             <!-- ============================================================== -->
+            <script src="https://cdn.ckeditor.com/ckeditor5/38.0.1/classic/ckeditor.js"></script>
+            <script>
+                ClassicEditor
+                    .create(document.querySelector('#content'), {
+                        simpleUpload: {
+                            uploadUrl: '/admin/upload',
+                            headers: {
+                                'X-CSRF-TOKEN': 'your-csrf-token'
+                            }
+                        },
+                        height: '500px',
+                        fontColor: 'black',
+                    })
+                    .then(editor => {
+                        console.log('Editor initialized successfully', editor);
+                    })
+                    .catch(error => {
+                        console.error('Error initializing CKEditor:', error);
+                    });
+            </script>
 
     <?php
     }

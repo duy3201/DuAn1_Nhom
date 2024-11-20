@@ -42,7 +42,7 @@ class Edit extends BaseView
                                     <input type="hidden" name="method" id="" value="PUT">
 
                                     <div align="center">
-                                        <img src="<?=APP_URL?>/public/assets/admin/img/<?= $data['post']['img']?>" alt="" width="300px">
+                                        <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $data['post']['img'] ?>" alt="" width="300px">
                                     </div>
                                     <div class="form-group">
                                         <label for="id">ID</label>
@@ -67,7 +67,7 @@ class Edit extends BaseView
                                             <?php
                                             foreach ($data['categories_post'] as $item) :
                                             ?>
-                                                <option value="<?= $item['id'] ?>" <?= ($item['id'] == $data['post']['id_categories_post'])? 'selected' : ''?>><?= $item['name'] ?></option>
+                                                <option value="<?= $item['id'] ?>" <?= ($item['id'] == $data['post']['id_categories_post']) ? 'selected' : '' ?>><?= $item['name'] ?></option>
                                             <?php
                                             endforeach;
                                             ?>
@@ -80,7 +80,7 @@ class Edit extends BaseView
                                             <?php
                                             foreach ($data['user'] as $item) :
                                             ?>
-                                                <option value="<?= $item['id'] ?>" <?= ($item['id'] == $data['post']['id_user'])? 'selected' : ''?>><?= $item['name'] ?></option>
+                                                <option value="<?= $item['id'] ?>" <?= ($item['id'] == $data['post']['id_user']) ? 'selected' : '' ?>><?= $item['name'] ?></option>
                                             <?php
                                             endforeach;
                                             ?>
@@ -93,7 +93,7 @@ class Edit extends BaseView
                                             <?php
                                             foreach ($data['user'] as $item) :
                                             ?>
-                                                <option value="<?= $item['id'] ?>" <?= ($item['id'] == $data['post']['id_user'])? 'selected' : ''?>><?= $item['name'] ?></option>
+                                                <option value="<?= $item['id'] ?>" <?= ($item['id'] == $data['post']['id_user']) ? 'selected' : '' ?>><?= $item['name'] ?></option>
                                             <?php
                                             endforeach;
                                             ?>
@@ -137,6 +137,26 @@ class Edit extends BaseView
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
             <!-- ============================================================== -->
+            <script src="https://cdn.ckeditor.com/ckeditor5/38.0.1/classic/ckeditor.js"></script>
+            <script>
+                ClassicEditor
+                    .create(document.querySelector('#content'), {
+                        simpleUpload: {
+                            uploadUrl: '/admin/upload',
+                            headers: {
+                                'X-CSRF-TOKEN': 'your-csrf-token'
+                            }
+                        },
+                        height: '500px',
+                        fontColor: 'black',
+                    })
+                    .then(editor => {
+                        console.log('Editor initialized successfully', editor);
+                    })
+                    .catch(error => {
+                        console.error('Error initializing CKEditor:', error);
+                    });
+            </script>
 
     <?php
     }

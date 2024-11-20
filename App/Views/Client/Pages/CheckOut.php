@@ -63,8 +63,8 @@ class CheckOut extends BaseView
                                 </div>
                             </div>
                         </div>
-                         <div class="col-lg-6">
-                            <!-- <div class="checkout-content">
+                         <!-- <div class="col-lg-6">
+                            <div class="checkout-content">
                                 <input type="text" placeholder="Enter Your Coupon Code">
                             </div>  -->
                         <div class="place-order mx-5">
