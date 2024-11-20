@@ -16,7 +16,7 @@ class Contact extends BaseView
         <div class="row">
           <div class="col-lg-12">
             <div class="breadcrumb-text">
-              <a href="#"><i class="fa fa-home"></i> Trang Chủ</a>
+              <a href="/"><i class="fa fa-home"></i> Trang Chủ</a>
               <span>Liên Hệ</span>
             </div>
           </div>
@@ -85,20 +85,6 @@ class Contact extends BaseView
               <div class="leave-comment">
                 <h4>Để Lại Lời Nhắn</h4>
                 <p>Nhân viên của chúng tôi sẽ gọi lại sau và trả lời câu hỏi của bạn.</p>
-                <!-- <form action="#" class="comment-form">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <input type="text" placeholder="Tên của bạn">
-                    </div>
-                    <div class="col-lg-6">
-                      <input type="text" placeholder="Email của bạn">
-                    </div>
-                    <div class="col-lg-12">
-                      <textarea placeholder="Tin nhắn của bạn"></textarea>
-                      <button type="submit" class="site-btn">Gửi Tin Nhắn</button>
-                    </div>
-                  </div>
-                </form> -->
                 <form method="post" id="contactForm" name="contactForm" class="contactForm " action="">
 											<input type="hidden" name="method" value="POST">
 											<div class="row">
@@ -117,7 +103,7 @@ class Contact extends BaseView
 												<div class="col-md-12">
 													<div class="form-group">
 														<label class="label" for="phone">Số điện thoại</label>
-														<input type="text" class="form-control" name="phone" id="phone" placeholder="phone">
+														<input type="text" class="form-control" name="phone" id="phone" placeholder="Nhập số điện thoại của bạn">
 													</div>
 												</div>
 												<div class="col-md-12">

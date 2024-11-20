@@ -2,18 +2,14 @@
 
 namespace App\Controllers\Client;
 
-use App\Models\User;
-use App\Views\Client\Pages\Auth\Login;
 use App\Views\Client\Layouts\Footer;
 use App\Views\Client\Layouts\Header;
-use App\Helpers\AuthHelper;
 use App\Validations\AuthValidation;
 use App\Helpers\NotificationHelper;
 use App\Models\Post;
 
 use App\Views\Client\Components\Notification;
 use App\Views\Client\Pages\Contact;
-use App\Views\Client\Pages\Post\index;
 
 use Google\Service\CloudSearch\EmailAddress;
 use PHPMailer\PHPMailer\PHPMailer;
@@ -58,8 +54,25 @@ class PostController
         NotificationHelper::success('contact_success', 'Gửi liên hệ thành công');
         header('Location: /');
         ob_end_flush();
-        
-        
     }
+    public static function DetailContact(){
+        ob_start();  
+        $is_valid = AuthValidation::detailForm();
+        if (!$is_valid) {
+            NotificationHelper::error('contact_valid', 'Gửi liên hệ thất bại');
+            header('Location: /detail');
+            exit();
+        }
+        $data = [
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'message' => $_POST['message'],
+        ];
+        $phpEmail= EmailController::sendEmail( $data['message'], $data['email'], $data['name']);       
+        NotificationHelper::success('contact_success', 'Gửi liên hệ thành công');
+        header('Location: /detail');
+        ob_end_flush();
+    }
+    
    
 }

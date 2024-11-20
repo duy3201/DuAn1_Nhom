@@ -9,7 +9,7 @@ class Detail extends BaseView
     public static function render($data = null)
     {
         // var_dump($_SESSION);
-        ?>
+?>
 
 
         <section class="product-shop spad page-details">
@@ -25,118 +25,31 @@ class Detail extends BaseView
                             </ul>
                         </div>
                         <div class="filter-widget">
-                            <h4 class="fw-title">Thương hiệu</h4>
+                            <h4 class="fw-title">Chất lượng</h4>
                             <div class="fw-brand-check">
                                 <div class="bc-item">
                                     <label for="bc-calvin">
-                                        Calvin Klein
+                                        New Like
                                         <input type="checkbox" id="bc-calvin">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="bc-item">
                                     <label for="bc-diesel">
-                                        Diesel
+                                        Good
                                         <input type="checkbox" id="bc-diesel">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="bc-item">
                                     <label for="bc-polo">
-                                        Polo
+                                        Acceptable
                                         <input type="checkbox" id="bc-polo">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="bc-item">
-                                    <label for="bc-tommy">
-                                        Tommy Hilfiger
-                                        <input type="checkbox" id="bc-tommy">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="filter-widget">
-                            <h4 class="fw-title">Giá</h4>
-                            <div class="filter-range-wrap">
-                                <div class="range-slider">
-                                    <div class="price-input">
-                                        <input type="text" id="minamount">
-                                        <input type="text" id="maxamount">
-                                    </div>
-                                </div>
-                                <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
-                                    data-min="33" data-max="2500">
-                                    <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
-                                    <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
-                                    <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
-                                </div>
-                            </div>
-                            <a href="#" class="filter-btn">Lọc</a>
-                        </div> -->
-                        <!-- <div class="filter-widget">
-                            <h4 class="fw-title">Màu</h4>
-                            <div class="fw-color-choose">
-                                <div class="cs-item">
-                                    <input type="radio" id="cs-black">
-                                    <label class="cs-black" for="cs-black">Đen</label>
-                                </div>
-                                <div class="cs-item">
-                                    <input type="radio" id="cs-violet">
-                                    <label class="cs-violet" for="cs-violet">Tím</label>
-                                </div>
-                                <div class="cs-item">
-                                    <input type="radio" id="cs-blue">
-                                    <label class="cs-blue" for="cs-blue">Xanh</label>
-                                </div>
-                                <div class="cs-item">
-                                    <input type="radio" id="cs-yellow">
-                                    <label class="cs-yellow" for="cs-yellow">Vàng</label>
-                                </div>
-                                <div class="cs-item">
-                                    <input type="radio" id="cs-red">
-                                    <label class="cs-red" for="cs-red">Đỏ</label>
-                                </div>
-                                <div class="cs-item">
-                                    <input type="radio" id="cs-green">
-                                    <label class="cs-green" for="cs-green">Xanh Lá</label>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <div class="filter-widget">
-                            <h4 class="fw-title">Kích thước</h4>
-                            <div class="fw-size-choose">
-                                <div class="sc-item">
-                                    <input type="radio" id="s-size">
-                                    <label for="s-size">s</label>
-                                </div>
-                                <div class="sc-item">
-                                    <input type="radio" id="m-size">
-                                    <label for="m-size">m</label>
-                                </div>
-                                <div class="sc-item">
-                                    <input type="radio" id="l-size">
-                                    <label for="l-size">l</label>
-                                </div>
-                                <div class="sc-item">
-                                    <input type="radio" id="xs-size">
-                                    <label for="xs-size">xs</label>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <div class="filter-widget">
-                            <h4 class="fw-title">Thẻ</h4>
-                            <div class="fw-tags">
-                                <a href="#">Khăn</a>
-                                <a href="#">Giày</a>
-                                <a href="#">Áo khoác</a>
-                                <a href="#">Váy</a>
-                                <a href="#">Quần Dài</a>
-                                <a href="#">Mũ</a>
-                                <a href="#">Balo</a>
-                            </div>
-                        </div> -->
                     </div>
                     <div class="col-lg-9">
                         <div class="row">
@@ -172,7 +85,7 @@ class Detail extends BaseView
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star"></i>
                                         <span>(5)</span>
                                     </div>
                                     <div class="pd-desc">
@@ -181,41 +94,6 @@ class Detail extends BaseView
                                             điều quan trọng là sự ủng hộ của nhà phát triển sẽ được theo đuổi, nhưng tôi sẽ cho
                                             nó thời gian</p>
                                         <h4>495.000.VNĐ <span>629.000.VNĐ</span></h4>
-                                    </div>
-                                    <div class="pd-color">
-                                        <h6>Màu</h6>
-                                        <div class="pd-color-choose">
-                                            <div class="cc-item">
-                                                <input type="radio" id="cc-black">
-                                                <label for="cc-black"></label>
-                                            </div>
-                                            <div class="cc-item">
-                                                <input type="radio" id="cc-yellow">
-                                                <label for="cc-yellow" class="cc-yellow"></label>
-                                            </div>
-                                            <div class="cc-item">
-                                                <input type="radio" id="cc-violet">
-                                                <label for="cc-violet" class="cc-violet"></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pd-size-choose">
-                                        <div class="sc-item">
-                                            <input type="radio" id="sm-size">
-                                            <label for="sm-size">s</label>
-                                        </div>
-                                        <div class="sc-item">
-                                            <input type="radio" id="md-size">
-                                            <label for="md-size">m</label>
-                                        </div>
-                                        <div class="sc-item">
-                                            <input type="radio" id="lg-size">
-                                            <label for="lg-size">l</label>
-                                        </div>
-                                        <div class="sc-item">
-                                            <input type="radio" id="xl-size">
-                                            <label for="xl-size">xs</label>
-                                        </div>
                                     </div>
                                     <div class="quantity">
                                         <div class="pro-qty">
@@ -387,17 +265,28 @@ class Detail extends BaseView
                                             </div>
                                             <div class="leave-comment">
                                                 <h4>Để lại một bình luận</h4>
-                                                <form action="#" class="comment-form">
+                                                <form method="post" id="detailForm" name="detailForm" action="" class="detailForm">
+                                                    <input type="hidden" name="method" value="POST">
                                                     <div class="row">
                                                         <div class="col-lg-6">
-                                                            <input type="text" placeholder="Name">
+                                                            <div class="form-group border-success">
+                                                                <label class="label " for="name">Họ và tên</label>
+                                                                <input type="text" class="form-control" name="name" id="name" placeholder="Họ và tên">
+                                                            </div>
                                                         </div>
                                                         <div class="col-lg-6">
-                                                            <input type="text" placeholder="Email">
+                                                            <div class="form-group">
+                                                                <label class="label" for="email">Địa chỉ email</label>
+                                                                <input type="text" class="form-control" name="email" id="email" placeholder="Địa chỉ email">
+                                                            </div>
                                                         </div>
                                                         <div class="col-lg-12">
-                                                            <textarea placeholder="Messages"></textarea>
+                                                            <div class="form-group">
+                                                                <label class="label" for="message">Nội dung</label>
+                                                                <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Nội dung liên hệ"></textarea>
+                                                            </div>
                                                             <button type="submit" class="site-btn">Gửi</button>
+                                                            <div class="submitting"></div>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -413,7 +302,7 @@ class Detail extends BaseView
         </section>
 
 
-        <?php
+<?php
 
     }
 }

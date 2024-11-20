@@ -32,7 +32,7 @@ class EmailController
 
             //Content
             $mail->isHTML(true);
-            $mail->Subject = 'thu phan hoi cua WinCanTho';
+            $mail->Subject = 'Thư phản hồi của OldStyle Store';
             $mail->Body    = " <p>Kính gửi <strong>$name</strong>,</p>
             <p>Cảm ơn quý vị đã gửi thư và thông tin phản hồi. Tôi rất trân trọng sự quan tâm và đóng góp của quý vị. Những ý kiến của quý vị sẽ giúp chúng tôi cải thiện và nâng cao chất lượng dịch vụ hơn nữa.</p>
             <p>Về vấn đề mà quý vị đã nêu ra, chúng tôi xin chân thành xin lỗi về sự bất tiện đã gây ra. Chúng tôi đã xem xét và sẽ có những điều chỉnh cần thiết để đảm bảo tình trạng tương tự không xảy ra trong tương lai.</p>
@@ -40,7 +40,7 @@ class EmailController
             <p>Nếu có bất kỳ câu hỏi hoặc yêu cầu nào khác, xin đừng ngần ngại liên hệ lại với chúng tôi. Chúng tôi rất mong có cơ hội tiếp tục phục vụ quý vị trong tương lai.</p>
             <p>Chân thành cảm ơn sự hợp tác và hỗ trợ của quý vị.</p>
             <p>Trân trọng,</p>
-            <p>WineCanTho</p>";
+            <p>OldStyle Store</p>";
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
             $mail->send();

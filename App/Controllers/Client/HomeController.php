@@ -34,12 +34,6 @@ class HomeController
         Footer::render();
     }
 
-    public static function contact(){
-        Header::render();
-        Contact::render();
-        Footer::render();
-    }
-
     public static function introduce(): void{
         Header::render();
         Introduce::render();

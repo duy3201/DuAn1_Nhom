@@ -9,20 +9,6 @@ class Products extends BaseView
     public static function render($data = null)
     {
 ?>
-        <!-- // $products = [
-        //     ["image" => "vdcs.jpg","btn" => "Thêm vào giỏ hàng", "title" => "SHEIN Áo khoác denim", "price" => "508.000₫"],
-        //     ["image" => "vdcs.jpg","btn" => "Thêm vào giỏ hàng", "title" => "Product 2", "price" => "600.000₫"],
-        //     ["image" => "vdcs.jpg","btn" => "Thêm vào giỏ hàng", "title" => "Product 3", "price" => "700.000₫"],
-        //     ["image" => "vdcs.jpg","btn" => "Thêm vào giỏ hàng", "title" => "Product 4", "price" => "800.000₫"],
-        //     ["image" => "vdcs.jpg","btn" => "Thêm vào giỏ hàng", "title" => "Product 5", "price" => "900.000₫"],
-        //     ["image" => "vdcs.jpg","btn" => "Thêm vào giỏ hàng", "title" => "Product 6", "price" => "1.000.000₫"],
-        //     ["image" => "vdcs.jpg","btn" => "Thêm vào giỏ hàng", "title" => "Product 7", "price" => "1.100.000₫"],
-        //     ["image" => "vdcs.jpg","btn" => "Thêm vào giỏ hàng", "title" => "Product 8", "price" => "1.200.000₫"],
-        // ];
-    
-        // // Split the array into two rows of 4 items each
-        // $chunks = array_chunk($products, 4); -->
-
         <!-- Product Shop Section Begin -->
         <section class="product-shop spad">
             <div class="container">
@@ -37,33 +23,26 @@ class Products extends BaseView
                             </ul>
                         </div>
                         <div class="filter-widget">
-                            <h4 class="fw-title">Thương hiệu</h4>
+                            <h4 class="fw-title">Chất lượng</h4>
                             <div class="fw-brand-check">
                                 <div class="bc-item">
                                     <label for="bc-calvin">
-                                        Calvin Klein
+                                        New Like
                                         <input type="checkbox" id="bc-calvin">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="bc-item">
                                     <label for="bc-diesel">
-                                        Diesel
+                                        Good
                                         <input type="checkbox" id="bc-diesel">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="bc-item">
                                     <label for="bc-polo">
-                                        Polo
+                                        Acceptable
                                         <input type="checkbox" id="bc-polo">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="bc-item">
-                                    <label for="bc-tommy">
-                                        Tommy Hilfiger
-                                        <input type="checkbox" id="bc-tommy">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
