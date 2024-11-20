@@ -39,7 +39,8 @@ class Login extends BaseView
                                     Ghi nhớ mật khẩu
                                 </label>
                             </div>
-                                <button type="submit" class="site-btn login-btn m-3">Đăng nhập</button>
+                                
+                                <button type="submit" class="site-btn login-btn">ĐĂNG NHẬP</button>
                             </form>
                             <div class="switch-login">
                                 <a href="./register" class="or-login">Hoặc đăng ký</a>

@@ -31,7 +31,9 @@ class HomeController
             'products' => $products,
         ];
          Header::render();
-         Home::render($data);
+         Notification::render();
+         NotificationHelper::unset();
+        Home::render();
          Footer::render();
 
 

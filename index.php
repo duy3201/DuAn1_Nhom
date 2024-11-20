@@ -55,6 +55,9 @@ Route::get('/blogs','App\Controllers\Client\HomeController@blogs');
 Route::get('/detail', 'App\Controllers\Client\ProductController@detail');
 Route::post('/detail', 'App\Controllers\Client\PostController@DetailContact');
 
+Route::get('/edit','App\Controllers\Client\AuthController@edit');
+
+
 Route::get('/CheckOut', 'App\Controllers\Client\ProductController@CheckOut');
 
 Route::get('/forgot-password','App\Controllers\Client\AuthController@forgotPassword');
