@@ -33,7 +33,7 @@ class HomeController
          Header::render();
          Notification::render();
          NotificationHelper::unset();
-        Home::render();
+        Home::render($data);
          Footer::render();
 
 
