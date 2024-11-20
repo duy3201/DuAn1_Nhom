@@ -39,7 +39,7 @@ class Index extends BaseView
                                 <?php
                                 if (count($data)) :
                                 ?>
-                                    <div class="table-responsive">
+                                    <div class="table-responsive ">
                                         <table id="" class="table table-striped">
                                             <thead>
                                                 <tr>

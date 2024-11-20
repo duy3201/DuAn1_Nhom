@@ -18,9 +18,11 @@ class HomeController
     // hiển thị danh sách
     public static function index()
     {
-         Header::render();
+        Header::render();
+        Notification::render();
+        NotificationHelper::unset();
         Home::render();
-         Footer::render();
+        Footer::render();
     }
     public static function blogs()
     {
@@ -28,16 +30,24 @@ class HomeController
         Blogs::render();
         Footer::render();
     }
-    public static function card(){
+    public static function card()
+    {
         Header::render();
         Card::render();
         Footer::render();
     }
 
-    public static function introduce(): void{
+    public static function contact()
+    {
+        Header::render();
+        Contact::render();
+        Footer::render();
+    }
+
+    public static function introduce(): void
+    {
         Header::render();
         Introduce::render();
         Footer::render();
     }
 }
-

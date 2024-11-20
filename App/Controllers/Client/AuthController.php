@@ -39,9 +39,9 @@ class AuthController {
         $username = $_POST['username'];
         $password = $_POST['password'];
         $hash_password = password_hash($password, PASSWORD_DEFAULT);
-        $tel = $_POST['tel'] ?? '0000000000'; // Giá trị mặc định
+        $tel = $_POST['tel'] ?? '0000000000';
         $address = $_POST['address'];
-        $date_of_birth = $_POST['date_of_birth'] ?? null; // Lấy ngày sinh từ form, hoặc để null nếu không có
+        $date_of_birth = $_POST['date_of_birth'] ?? null;
         $name = $_POST['name'] ?? null;
         $name = $_POST['name'] ?? 'Anonymous';
         if (empty($date_of_birth)) {

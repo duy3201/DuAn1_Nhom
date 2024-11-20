@@ -158,6 +158,13 @@ class Edit extends BaseView
                     });
             </script>
 
+            <style>
+                .ck-editor__editable {
+                    height: 500px !important;
+                    color: black;
+                }
+            </style>
+
     <?php
     }
 }

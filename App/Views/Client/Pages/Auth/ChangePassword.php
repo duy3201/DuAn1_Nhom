@@ -11,6 +11,7 @@ class ChangePassword  extends BaseView
     {
 
 ?>
+
         <!-- code giao dien -->
         <div class="container mt-5">
             <div class="row">
@@ -18,11 +19,11 @@ class ChangePassword  extends BaseView
                     <?php
                     if ($data && $data['avatar']) :
                     ?>
-                        <img src="<?= APP_URL ?>/public/uploads/users/<?= $data['avatar'] ?>" alt="" width="100%">
+                        <img src="<?= APP_URL ?>/public/assets/client/img/<?= $data['avatar'] ?>" alt="" width="100%">
                     <?php
                     else :
                     ?>
-                        <img src="<?= APP_URL ?>/public/uploads/users/user.webp" alt="" width="100%">
+                        <img src="<?= APP_URL ?>/public/assets/client/img/Old Style (3).png" alt="" width="100%">
                     <?php
                     endif;
                     ?>

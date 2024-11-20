@@ -45,7 +45,6 @@ class Index extends BaseView
                                                     <th>ID</th>
                                                     <th class="col-2">Hình ảnh</th>
                                                     <th>Tiêu đề</th>
-                                                    <th>Nội dung</th>
                                                     <th>Loại</th>
                                                     <th>Trạng thái</th>
                                                     <th></th>
@@ -59,7 +58,6 @@ class Index extends BaseView
                                                                 <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="Hình bài viết" class="img-fluid ">
                                                         </td>
                                                         <td><?= $item['title'] ?></td>
-                                                        <td><?= $item['content'] ?></td>
                                                        <td><?= $item['categories_post_name'] ?></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hiển thị' : 'Ẩn' ?></td>
                                                         <td>

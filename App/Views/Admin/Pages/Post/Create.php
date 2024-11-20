@@ -52,7 +52,7 @@ class Create extends BaseView
                                     </div>
                                     <div class="form-group">
                                         <label for="content">Nội dung</label>
-                                        <textarea class="form-control" id="content" placeholder="Nhập nội dung bài viết..." name="content"></textarea>
+                                        <textarea class="form-control" id="content" name="content"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="id_categories_post">Loại bài viết*</label>
@@ -139,7 +139,6 @@ class Create extends BaseView
                         console.error('Error initializing CKEditor:', error);
                     });
             </script>
-
     <?php
     }
 }
