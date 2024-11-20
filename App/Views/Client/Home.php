@@ -4,6 +4,7 @@ namespace App\Views\Client;
 
 use App\Views\BaseView;
 
+
 class Home extends BaseView
 {
     public static function render($data = null)
@@ -16,6 +17,7 @@ class Home extends BaseView
 
         <section class="hero-section">
             <div class="hero-items owl-carousel">
+                <!-- <div class="single-hero-items set-bg" data-setbg="/public/assets/client/img/hero-1.jpg"> -->
                 <div class="single-hero-items set-bg" data-setbg="/public/assets/client/img/hero-1.jpg">
                     <div class="container">
                         <div class="row">
@@ -243,7 +245,9 @@ class Home extends BaseView
         <!-- Phần Banner Nam Bắt Đầu -->
         <section class="man-banner spad">
             <div class="container">
+           
                 <div class="row">
+               
                     <div class="col-lg-12">
                         <div class="filter-control">
                             <!-- <ul>
@@ -256,97 +260,42 @@ class Home extends BaseView
                                 <h2>Sản Phẩm Nổi Bậc</h2>
                             </div>
                         </div>
+                       
+                        <?php if (count($data) && count($data['products'])) : ?>
+                        
                         <div class="product-slider owl-carousel">
+                        <?php foreach ($data['products'] as $item) : ?>
                             <div class="product-item">
                                 <div class="pi-pic">
-                                    <img src="/public/assets/client/img/products/man-1.jpg" alt="">
-                                    <div class="sale">Giảm giá</div>
+                               
+                                    <img src=" <?= APP_URL ?>/public/assets/client/img/products/<?= $item['img'] ?>" alt="">
+                                    <!-- <div class="sale">Giảm giá</div> -->
                                     <div class="icon">
                                         <i class="icon_heart_alt"></i>
                                     </div>
                                     <ul>
                                         <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                        <li class="quick-view"><a href="#">+ Xem nhanh</a></li>
+                                        <li class="quick-view"><a href="/products/<?= $item['id'] ?>">+ Xem nhanh</a></li>
                                         <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="pi-text">
-                                    <div class="catagory-name">Áo khoác</div>
+                                    <div class="catagory-name"><?= $item['category_name'] ?></div>
                                     <a href="#">
-                                        <h5>Pure Pineapple</h5>
+                                        <h5><?= $item['name'] ?></h5>
                                     </a>
                                     <div class="product-price">
-                                        $14.00
-                                        <span>$35.00</span>
+                                    <?= $item['product_price'] ?> VNĐ
+                                        
                                     </div>
                                 </div>
+                               
                             </div>
-                            <div class="product-item">
-                                <div class="pi-pic">
-                                    <img src="/public/assets/client/img/products/man-2.jpg" alt="">
-                                    <div class="icon">
-                                        <i class="icon_heart_alt"></i>
-                                    </div>
-                                    <ul>
-                                        <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                        <li class="quick-view"><a href="#">+ Xem nhanh</a></li>
-                                        <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="pi-text">
-                                    <div class="catagory-name">Giày</div>
-                                    <a href="#">
-                                        <h5>Áo len Guangzhou</h5>
-                                    </a>
-                                    <div class="product-price">
-                                        $13.00
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <div class="pi-pic">
-                                    <img src="/public/assets/client/img/products/man-3.jpg" alt="">
-                                    <div class="icon">
-                                        <i class="icon_heart_alt"></i>
-                                    </div>
-                                    <ul>
-                                        <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                        <li class="quick-view"><a href="#">+ Xem nhanh</a></li>
-                                        <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="pi-text">
-                                    <div class="catagory-name">Khăn</div>
-                                    <a href="#">
-                                        <h5>Pure Pineapple</h5>
-                                    </a>
-                                    <div class="product-price">
-                                        $34.00
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <div class="pi-pic">
-                                    <img src="/public/assets/client/img/products/man-4.jpg" alt="">
-                                    <div class="icon">
-                                        <i class="icon_heart_alt"></i>
-                                    </div>
-                                    <ul>
-                                        <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                        <li class="quick-view"><a href="#">+ Xem nhanh</a></li>
-                                        <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="pi-text">
-                                    <div class="catagory-name">Khăn</div>
-                                    <a href="#">
-                                        <h5>Giày Converse</h5>
-                                    </a>
-                                    <div class="product-price">
-                                        $34.00
-                                    </div>
-                                </div>
-                            </div>
+                            <?php endforeach; ?>
+                           
+                            <?php else : ?>
+                        <h3 class="text-center text-danger">Không có sản phẩm</h3>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <!-- <div class="col-lg-3 offset-lg-1">
@@ -359,7 +308,17 @@ class Home extends BaseView
             </div>
         </section>
         <!-- Phần Banner Nam Kết Thúc -->
-
+         <div class="container-fulid">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="<?= APP_URL ?>/public/uploads/products/bg_breadcrumb1.jpg" class="d-block w-100" alt="...">
+            </div>
+            
+        </div>
+    </div>
+   
+    
 
         <!-- Phần Instagram Bắt Đầu -->
         <div class="instagram-photo">

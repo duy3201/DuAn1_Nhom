@@ -70,7 +70,7 @@ class Footer extends BaseView
                         <div class="col-lg-12">
                             <div class="copyright-text">
                                 <!-- Link về Colorlib không được xóa. Template được cấp phép theo CC BY 3.0. -->
-                                Bản quyền &copy;<script>document.write(new Date().getFullYear());</script> Tất cả các quyền được bảo lưu | Template này được thực hiện với <i class="fa fa-heart-o" aria-hidden="true"></i> bởi <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                Bản quyền &copy;<script>document.write(new Date().getFullYear());</script> Tất cả các quyền được bảo lưu | Được thực hiện với bởi nhóm dự án 1 old style và<a href="https://colorlib.com" target="_blank"> Colorlib</a>
                                 <!-- Link về Colorlib không được xóa. Template được cấp phép theo CC BY 3.0. -->
                             </div>
                             <div class="payment-pic">

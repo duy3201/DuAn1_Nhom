@@ -38,11 +38,11 @@ class Introduce extends BaseView
             <section class="py-5">
                 <h2 class="text-center text-warning mb-4">Giá Trị Cốt Lõi</h2>
                 <p class="lead text-center mx-auto" style="max-width: 800px;">Chúng tôi xây dựng Secondhand Chic Boutique không chỉ đơn thuần là một nơi bán hàng, mà là một cộng đồng yêu thích sự bền vững và thời trang. Những giá trị cốt lõi mà chúng tôi theo đuổi bao gồm:</p>
-                <ul class="lead mx-auto" style="max-width: 800px;">
-                    <li><strong>Bền vững:</strong> Mỗi sản phẩm đều mang lại giá trị lâu dài, không chỉ trong chất lượng mà còn trong việc bảo vệ môi trường.</li>
-                    <li><strong>Cá nhân hóa:</strong> Chúng tôi cung cấp những sản phẩm độc đáo, giúp bạn thể hiện phong cách riêng biệt của mình.</li>
-                    <li><strong>Cộng đồng:</strong> Chúng tôi luôn khuyến khích sự gắn kết giữa các tín đồ yêu thích đồ secondhand, tạo dựng một cộng đồng bền vững.</li>
-                </ul>
+                <div class="lead mx-auto" style="max-width: 800px;">
+                    <p><strong>Bền vững:</strong> Mỗi sản phẩm đều mang lại giá trị lâu dài, không chỉ trong chất lượng mà còn trong việc bảo vệ môi trường.</p>
+                    <p><strong>Cá nhân hóa:</strong> Chúng tôi cung cấp những sản phẩm độc đáo, giúp bạn thể hiện phong cách riêng biệt của mình.</p>
+                    <p><strong>Cộng đồng:</strong> Chúng tôi luôn khuyến khích sự gắn kết giữa các tín đồ yêu thích đồ secondhand, tạo dựng một cộng đồng bền vững.</p>
+                </div>
             </section>
 
             <!-- Commitment Section -->

@@ -2,12 +2,15 @@
 
 namespace App\Views\Client\Pages\Product;
 
+use App\Helpers\AuthHelper;
 use App\Views\BaseView;
+use App\Views\Client\Components\Category;
 
 class Detail extends BaseView
 {
     public static function render($data = null)
     {
+        // $is_login = AuthHelper::checkLogin();
         // var_dump($_SESSION);
 ?>
 
@@ -17,11 +20,11 @@ class Detail extends BaseView
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="filter-widget">
-                            <h4 class="fw-title">Thể loại</h4>
+                            <h4 class="fw-title">Danh mục</h4>
                             <ul class="filter-catagories">
-                                <li><a href="#">Nam</a></li>
-                                <li><a href="#">Phụ nữ</a></li>
-                                <li><a href="#">Trẻ em</a></li>
+                            <?php
+                            Category::render($data['categories']);
+                            ?>
                             </ul>
                         </div>
                         <div class="filter-widget">
@@ -55,7 +58,8 @@ class Detail extends BaseView
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="product-pic-zoom">
-                                    <img class="product-big-img" src="/public/assets/client/img/products/product-1.jpg" alt="">
+                              
+                                    <img class="product-big-img" src="<?= APP_URL ?>/public/assets/client/img/products/<?= $data['products']['img'] ?>" alt="">
                                     <div class="zoom-icon">
                                         <i class="fa fa-search-plus"></i>
                                     </div>
@@ -63,13 +67,13 @@ class Detail extends BaseView
                                 <div class="product-thumbs">
                                     <div class="product-thumbs-track ps-slider owl-carousel">
                                         <div class="pt active" data-imgbigurl="/public/assets/client/img/products/product-1.jpg"><img
-                                                src="/public/assets/client/img/products/product-1.jpg" alt=""></div>
+                                                src="<?= APP_URL ?>/public/assets/client/img/products/<?= $data['products']['img'] ?>" alt=""></div>
                                         <div class="pt" data-imgbigurl="/public/assets/client/img/products/product-1.jpg"><img
-                                                src="/public/assets/client/img/products/product-1.jpg" alt=""></div>
+                                                src="<?= APP_URL ?>/public/assets/client/img/products/<?= $data['products']['img'] ?>" alt=""></div>
                                         <div class="pt" data-imgbigurl="/public/assets/client/img/products/product-1.jpg"><img
-                                                src="/public/assets/client/img/products/product-1.jpg" alt=""></div>
+                                                src="<?= APP_URL ?>/public/assets/client/img/products/<?= $data['products']['img'] ?>" alt=""></div>
                                         <div class="pt" data-imgbigurl="/public/assets/client/img/products/product-1.jpg"><img
-                                                src="/public/assets/client/img/products/product-1.jpg" alt=""></div>
+                                                src="<?= APP_URL ?>/public/assets/client/img/products/<?= $data['products']['img'] ?>" alt=""></div>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +81,7 @@ class Detail extends BaseView
                                 <div class="product-details">
                                     <div class="pd-title">
                                         <!-- <span>oranges</span> -->
-                                        <h3>Pure Pineapple</h3>
+                                        <h3><?= $data['products']['name'] ?></h3>
                                         <a href="#" class="heart-icon"><i class="icon_heart_alt"></i></a>
                                     </div>
                                     <div class="pd-rating">
@@ -89,11 +93,9 @@ class Detail extends BaseView
                                         <span>(5)</span>
                                     </div>
                                     <div class="pd-desc">
-                                        <p>Điều quan trọng là phải kiên nhẫn, được bệnh nhân theo dõi, nhưng đồng thời tôi cũng
-                                            chỉ là một bệnh nhân
-                                            điều quan trọng là sự ủng hộ của nhà phát triển sẽ được theo đuổi, nhưng tôi sẽ cho
-                                            nó thời gian</p>
-                                        <h4>495.000.VNĐ <span>629.000.VNĐ</span></h4>
+                                        <p><?= $data['products']['description'] ?></p>
+                                        <h4><?= $data['products']['product_price'] ?> VNĐ</h4>
+                                       
                                     </div>
                                     <div class="quantity">
                                         <div class="pro-qty">
@@ -102,11 +104,10 @@ class Detail extends BaseView
                                         <a href="#" class="primary-btn pd-cart">Thêm giỏ hàng</a>
                                     </div>
                                     <ul class="pd-tags">
-                                        <li><span>THỂ LOẠI</span>: Thêm phụ kiện, ví & hộp đựng</li>
-                                        <li><span>THẺ</span>:Quần áo, Áo thun, Phụ nữ</li>
+                                        <li><span>LOẠI: </span><?= $data['products']['category_name'] ?></li>
                                     </ul>
                                     <div class="pd-share">
-                                        <div class="p-code">Mã : 00012</div>
+                                        <div class="p-code">Mã : <?= $data['products']['id'] ?></div>
                                         <div class="pd-social">
                                             <a href="#"><i class="ti-facebook"></i></a>
                                             <a href="#"><i class="ti-twitter-alt"></i></a>
@@ -136,20 +137,8 @@ class Detail extends BaseView
                                         <div class="product-content">
                                             <div class="row">
                                                 <div class="col-lg-7">
-                                                    <h5>Giới thiệu</h5>
-                                                    <p>Việc có bệnh nhân là rất quan trọng nhưng tôi sẽ phải trả tiền cho việc
-                                                        đó
-                                                        Lúc đó họ lâm vào tình trạng chuyển dạ và đau đớn tột độ. Vì điều đó
-                                                        Tôi sẽ đến ít nhất, ai có thể thực hành bất kỳ loại công việc nào ngoại
-                                                        trừ việc đó
-                                                        một số trong đó là hữu ích. Đừng vội vào nhà </p>
-                                                    <h5>Giới Thiệu</h5>
-                                                    <p>Việc có bệnh nhân là rất quan trọng nhưng tôi sẽ phải trả tiền cho việc
-                                                        đó
-                                                        Lúc đó họ lâm vào tình trạng chuyển dạ và đau đớn tột độ. Vì điều đó
-                                                        Tôi sẽ đến ít nhất, ai có thể thực hành bất kỳ loại công việc nào ngoại
-                                                        trừ việc đó
-                                                        một số trong đó là hữu ích. Đừng vội vào nhà </p>
+                                                   
+                                                    <p><?= $data['products']['description'] ?></p>
                                                 </div>
                                                 <div class="col-lg-5">
                                                     <img src="img/product-single/tab-desc.jpg" alt="">
@@ -300,7 +289,66 @@ class Detail extends BaseView
                 </div>
             </div>
         </section>
+        <style>
+          
 
+.product-quality h6,
+.product-sizes h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.quality-item span {
+    font-size: 14px;
+    color: #555;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.size-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.size-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.size-item input[type="radio"] {
+    display: none;
+}
+
+.size-item label {
+    font-size: 14px;
+    color: #555;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.size-item input[type="radio"]:checked + label {
+    background-color: #4CAF50;
+    color: #fff;
+    border-color: #4CAF50;
+    font-weight: bold;
+}
+
+.size-item label:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+        </style>
 
 <?php
 
