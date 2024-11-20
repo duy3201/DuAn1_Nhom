@@ -52,7 +52,7 @@ class PostController
         ];
         $phpEmail= EmailController::sendEmail( $data['message'], $data['email'], $data['name']);       
         NotificationHelper::success('contact_success', 'Gửi liên hệ thành công');
-        header('Location: /');
+        header('Location: /contact');
         ob_end_flush();
     }
     public static function DetailContact(){

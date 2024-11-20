@@ -32,7 +32,7 @@ class EmailController
 
             //Content
             $mail->isHTML(true);
-            $mail->Subject = 'Thư phản hồi của OldStyle Store';
+            $mail->Subject = 'Thu phan hoi cua OldStyle Store';
             $mail->Body    = " <p>Kính gửi <strong>$name</strong>,</p>
             <p>Cảm ơn quý vị đã gửi thư và thông tin phản hồi. Tôi rất trân trọng sự quan tâm và đóng góp của quý vị. Những ý kiến của quý vị sẽ giúp chúng tôi cải thiện và nâng cao chất lượng dịch vụ hơn nữa.</p>
             <p>Về vấn đề mà quý vị đã nêu ra, chúng tôi xin chân thành xin lỗi về sự bất tiện đã gây ra. Chúng tôi đã xem xét và sẽ có những điều chỉnh cần thiết để đảm bảo tình trạng tương tự không xảy ra trong tương lai.</p>
