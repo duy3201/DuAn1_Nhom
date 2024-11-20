@@ -30,6 +30,16 @@
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
+.footer-section a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #e7ab3c;
+    transform: translateY(-2px);
+}
 .nav-menu .active > a {
     color: #ffcc00; /* Màu vàng cho mục đang chọn */
     font-weight: bold; /* Tùy chọn: chữ in đậm */

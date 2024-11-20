@@ -76,7 +76,7 @@ class Index extends BaseView
                                         <div class="product-item">
                                             <div class="pi-pic">
 
-                                                <img src="  <?= APP_URL ?>/public/assets/client/img/products/<?= $item['img'] ?>" alt="">
+                                                <img src="  <?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="">
                                                 <!-- <div class="sale pp-sale">Giảm giá</div> -->
                                                 <!-- <div class="icon">
                                                 <i class="icon_heart_alt"></i>

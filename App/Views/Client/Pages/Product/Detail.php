@@ -59,21 +59,21 @@ class Detail extends BaseView
                             <div class="col-lg-6">
                                 <div class="product-pic-zoom">
                               
-                                    <img class="product-big-img" src="<?= APP_URL ?>/public/assets/client/img/products/<?= $data['products']['img'] ?>" alt="">
+                                    <img class="product-big-img" src="<?= APP_URL ?>/public/assets/admin/img/<?= $data['products']['img'] ?>" alt="">
                                     <div class="zoom-icon">
                                         <i class="fa fa-search-plus"></i>
                                     </div>
                                 </div>
                                 <div class="product-thumbs">
                                     <div class="product-thumbs-track ps-slider owl-carousel">
-                                        <div class="pt active" data-imgbigurl="/public/assets/client/img/products/product-1.jpg"><img
-                                                src="<?= APP_URL ?>/public/assets/client/img/products/<?= $data['products']['img'] ?>" alt=""></div>
-                                        <div class="pt" data-imgbigurl="/public/assets/client/img/products/product-1.jpg"><img
-                                                src="<?= APP_URL ?>/public/assets/client/img/products/<?= $data['products']['img'] ?>" alt=""></div>
-                                        <div class="pt" data-imgbigurl="/public/assets/client/img/products/product-1.jpg"><img
-                                                src="<?= APP_URL ?>/public/assets/client/img/products/<?= $data['products']['img'] ?>" alt=""></div>
-                                        <div class="pt" data-imgbigurl="/public/assets/client/img/products/product-1.jpg"><img
-                                                src="<?= APP_URL ?>/public/assets/client/img/products/<?= $data['products']['img'] ?>" alt=""></div>
+                                        <div class="pt active" data-imgbigurl="/public/assets/admin/img/product-1.jpg"><img
+                                                src="<?= APP_URL ?>/public/assets/admin/img/<?= $data['products']['img'] ?>" alt=""></div>
+                                        <div class="pt" data-imgbigurl="/public/assets/admin/img/product-1.jpg"><img
+                                                src="<?= APP_URL ?>/public/assets/admin/img/<?= $data['products']['img'] ?>" alt=""></div>
+                                        <div class="pt" data-imgbigurl="/public/assets/admin/img/product-1.jpg"><img
+                                                src="<?= APP_URL ?>/public/assets/admin/img/<?= $data['products']['img'] ?>" alt=""></div>
+                                        <div class="pt" data-imgbigurl="/public/assets/admin/img/product-1.jpg"><img
+                                                src="<?= APP_URL ?>/public/assets/admin/img/<?= $data['products']['img'] ?>" alt=""></div>
                                     </div>
                                 </div>
                             </div>
