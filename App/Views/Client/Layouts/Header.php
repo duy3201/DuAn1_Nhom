@@ -194,7 +194,7 @@ class Header extends BaseView
                     <div class="nav-depart">
                         <div class="depart-btn">
                             <i class="ti-menu"></i>
-                            <span>Danh mục sản phẩm <span>/ <ul class="depart-hover">
+                            <span>Danh mục sản phẩm <span><ul class="depart-hover">
                                         <li class="active"><a href="#">Thời trang nữ</a></li>
                                         <li><a href="#">Thời trang nam</a></li>
                                         <li><a href="#">Thời trang trẻ em</a></li>

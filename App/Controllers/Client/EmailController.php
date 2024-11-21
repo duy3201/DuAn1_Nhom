@@ -49,4 +49,46 @@ class EmailController
         }
         return true;
     }
+    public static function sendEmailToAdmin($name, $email, $message)
+    {
+        $mail = new PHPMailer();
+
+        try {
+            // Server settings
+            $mail->SMTPDebug = SMTP::DEBUG_OFF;
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'huynhvuduykg2005@gmail.com';
+            $mail->Password = 'mwld dcxk jwhw cqem'; // Thay bằng mật khẩu email
+            $mail->SMTPSecure = 'tls';
+            $mail->Port = 587;
+
+            // Recipients
+            $mail->setFrom('huynhvuduykg2005@gmail.com', 'OldStyle Store');
+            $mail->addAddress('huynhvuduykg2005@gmail.com', 'Admin OldStyle'); // Email admin nhận thông báo
+            $mail->addReplyTo($email, $name);
+
+            // Content
+            $mail->isHTML(true);
+            $mail->Subject = 'Phản hồi từ khách hàng: ' . $name;
+            $mail->Body = "
+                <p>Kính gửi Admin,</p>
+                <p>Khách hàng <strong>$name</strong> đã gửi phản hồi qua form liên hệ.</p>
+                <p>Email: $email</p>
+                <p>Nội dung:</p>
+                <blockquote>$message</blockquote>
+                <p>Vui lòng kiểm tra và phản hồi sớm nhất.</p>
+                <p>Trân trọng,</p>
+                <p>Hệ thống OldStyle Store</p>
+            ";
+            $mail->AltBody = "Khách hàng $name đã gửi phản hồi: $message (Email: $email)";
+
+            $mail->send();
+            return true;
+        } catch (Exception $e) {
+            echo "Không thể gửi email đến admin. Lỗi: {$mail->ErrorInfo}";
+            return false;
+        }
+    }
 }

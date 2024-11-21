@@ -36,25 +36,55 @@ class PostController
         Contact::render();
         Footer::render();
     }
-    public static function PostContact(){
-        ob_start();  
-        $is_valid = AuthValidation::contactForm();
-        if (!$is_valid) {
-            NotificationHelper::error('contact_valid', 'Gửi liên hệ thất bại');
-            header('Location: /contact');
-            exit();
-        }
-        $data = [
-            'name' => $_POST['name'],
-            'email' => $_POST['email'],
-            'phone' => $_POST['phone'],
-            'message' => $_POST['message'],
-        ];
-        $phpEmail= EmailController::sendEmail( $data['message'], $data['email'], $data['name']);       
-        NotificationHelper::success('contact_success', 'Gửi liên hệ thành công');
+    public static function PostContact()
+{
+    ob_start();
+
+    // Kiểm tra tính hợp lệ của form thông qua AuthValidation
+    $is_valid = AuthValidation::contactForm();
+    if (!$is_valid) {
+        NotificationHelper::error('contact_valid', 'Gửi liên hệ thất bại');
         header('Location: /contact');
-        ob_end_flush();
+        exit();
     }
+
+    // Lấy dữ liệu từ form
+    $data = [
+        'name' => $_POST['name'],       // Tên khách hàng
+        'email' => $_POST['email'],     // Email khách hàng
+        'phone' => $_POST['phone'],     // Số điện thoại khách hàng
+        'message' => $_POST['message']  // Nội dung liên hệ
+    ];
+
+    // Gửi email cho admin
+    $sendToAdmin = EmailController::sendEmailToAdmin(
+        $data['name'],
+        'huynhvuduykg2005@gmail.com', // Thay bằng email admin nhận phản hồi
+          $data['message']         // Tên hiển thị của admin
+    );
+
+    // Nếu gửi email tới admin thành công, gửi email cảm ơn tới khách hàng
+    if ($sendToAdmin) {
+        $sendThankYou = EmailController::sendEmail(
+            "Cảm ơn bạn đã liên hệ với chúng tôi! Nội dung bạn gửi: {$data['message']}",
+            $data['email'],           // Gửi đến email khách hàng
+            $data['name']             // Tên khách hàng
+        );
+
+        if ($sendThankYou) {
+            NotificationHelper::success('contact_success', 'Gửi liên hệ thành công');
+        } else {
+            NotificationHelper::error('contact_thankyou_failed', 'Gửi liên hệ thành công, nhưng không thể gửi email cảm ơn.');
+        }
+    } else {
+        NotificationHelper::error('contact_admin_failed', 'Không thể gửi email liên hệ tới admin.');
+    }
+
+    // Chuyển hướng về trang liên hệ
+    header('Location: /contact');
+    ob_end_flush();
+}
+
     public static function DetailContact(){
         ob_start();  
         $is_valid = AuthValidation::detailForm();

@@ -165,7 +165,7 @@ class Detail extends BaseView
                                                 <tr>
                                                     <td class="p-catagory">Giá</td>
                                                     <td>
-                                                        <div class="p-price">495.000.VNĐ</div>
+                                                        <div class="p-price"><?= $data['products']['product_price'] ?>VNĐ</div>
                                                     </td>
                                                 </tr>
                                                 <tr>
