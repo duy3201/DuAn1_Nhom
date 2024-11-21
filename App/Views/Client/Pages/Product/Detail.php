@@ -22,9 +22,9 @@ class Detail extends BaseView
                         <div class="filter-widget">
                             <h4 class="fw-title">Danh mục</h4>
                             <ul class="filter-catagories">
-                            <?php
-                            Category::render($data['categories']);
-                            ?>
+                                <?php
+                                Category::render($data['categories']);
+                                ?>
                             </ul>
                         </div>
                         <div class="filter-widget">
@@ -58,7 +58,7 @@ class Detail extends BaseView
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="product-pic-zoom">
-                              
+
                                     <img class="product-big-img" src="<?= APP_URL ?>/public/assets/admin/img/<?= $data['products']['img'] ?>" alt="">
                                     <div class="zoom-icon">
                                         <i class="fa fa-search-plus"></i>
@@ -95,7 +95,7 @@ class Detail extends BaseView
                                     <div class="pd-desc">
                                         <p><?= $data['products']['description'] ?></p>
                                         <h4><?= $data['products']['product_price'] ?> VNĐ</h4>
-                                       
+
                                     </div>
                                     <div class="quantity">
                                         <div class="pro-qty">
@@ -103,6 +103,41 @@ class Detail extends BaseView
                                         </div>
                                         <a href="#" class="primary-btn pd-cart">Thêm giỏ hàng</a>
                                     </div>
+
+                                    <div class="product-options">
+                                        <!-- Phần Chất lượng -->
+                                        <div class="product-quality">
+                                            <h6>Chất lượng:</h6>
+                                            <div class="quality-item mb-2">
+                                                <span><?= $data['products']['product_quality'] ?>: <?= $data['products']['product_quanlity'] ?>%</span> 
+                                            </div>
+                                        </div>
+
+                                        <!-- Phần Size -->
+                                        <div class="product-sizes">
+                                            <h6>Size:</h6>
+                                            <div class="size-options">
+                                                <div class="size-item">
+                                                    <input type="radio" id="size-s" name="size">
+                                                    <label for="size-s">S</label>
+                                                </div>
+                                                <div class="size-item">
+                                                    <input type="radio" id="size-m" name="size">
+                                                    <label for="size-m">M</label>
+                                                </div>
+                                                <div class="size-item">
+                                                    <input type="radio" id="size-l" name="size">
+                                                    <label for="size-l">L</label>
+                                                </div>
+                                                <div class="size-item">
+                                                    <input type="radio" id="size-xl" name="size">
+                                                    <label for="size-xl">XL</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                     <ul class="pd-tags">
                                         <li><span>LOẠI: </span><?= $data['products']['category_name'] ?></li>
                                     </ul>
@@ -137,7 +172,7 @@ class Detail extends BaseView
                                         <div class="product-content">
                                             <div class="row">
                                                 <div class="col-lg-7">
-                                                   
+
                                                     <p><?= $data['products']['description'] ?></p>
                                                 </div>
                                                 <div class="col-lg-5">
@@ -290,64 +325,61 @@ class Detail extends BaseView
             </div>
         </section>
         <style>
-          
+            .product-quality h6,
+            .product-sizes h6 {
+                font-size: 16px;
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 10px;
+            }
 
-.product-quality h6,
-.product-sizes h6 {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
+            .quality-item span {
+                font-size: 14px;
+                color: #555;
+                background-color: #e0e0e0;
+                padding: 5px 10px;
+                border-radius: 4px;
+                display: inline-block;
+            }
 
-.quality-item span {
-    font-size: 14px;
-    color: #555;
-    background-color: #e0e0e0;
-    padding: 5px 10px;
-    border-radius: 4px;
-    display: inline-block;
-}
+            .size-options {
+                display: flex;
+                gap: 10px;
+                margin-top: 10px;
+            }
 
-.size-options {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
+            .size-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
 
-.size-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
+            .size-item input[type="radio"] {
+                display: none;
+            }
 
-.size-item input[type="radio"] {
-    display: none;
-}
+            .size-item label {
+                font-size: 14px;
+                color: #555;
+                padding: 5px 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
 
-.size-item label {
-    font-size: 14px;
-    color: #555;
-    padding: 5px 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+            .size-item input[type="radio"]:checked+label {
+                background-color: #4CAF50;
+                color: #fff;
+                border-color: #4CAF50;
+                font-weight: bold;
+            }
 
-.size-item input[type="radio"]:checked + label {
-    background-color: #4CAF50;
-    color: #fff;
-    border-color: #4CAF50;
-    font-weight: bold;
-}
-
-.size-item label:hover {
-    background-color: #f0f0f0;
-    border-color: #bbb;
-}
-
+            .size-item label:hover {
+                background-color: #f0f0f0;
+                border-color: #bbb;
+            }
         </style>
 
 <?php

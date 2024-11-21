@@ -161,7 +161,8 @@ ON
             $sql = "
              SELECT 
             products.*, 
-            product_variants.quality as product_quality, 
+            product_variants.quality as product_quality,
+            product_variants.quanlity as product_quanlity, 
             product_variants.price as product_price,
             categories.name AS category_name
                 FROM 
