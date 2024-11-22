@@ -31,19 +31,18 @@ Route::get('/', 'App\Controllers\Client\HomeController@index');
 Route::get('/products', 'App\Controllers\Client\ProductController@index');
 Route::get('/products/{id}', 'App\Controllers\Client\ProductController@detail');
 Route::get('/products/categories/{id}', 'App\Controllers\Client\ProductController@getProductByCategory');
+
 Route::get('/register','App\Controllers\Client\AuthController@register');
 Route::post('/register','App\Controllers\Client\AuthController@registerAction');
 Route::get('/login','App\Controllers\Client\AuthController@login');
 Route::post('/login','App\Controllers\Client\AuthController@loginAction');
-
 Route::get('/logout','App\Controllers\Client\AuthController@logout');
-
 Route::get('/users/{id}','App\Controllers\Client\AuthController@edit');
 Route::put('/users/{id}','App\Controllers\Client\AuthController@update');
 
 
 
-Route::get('/card','App\Controllers\Client\HomeController@card');
+Route::get('/cart','App\Controllers\Client\HomeController@cart');
 
 Route::get('/contact','App\controllers\Client\PostController@Contact');
 Route::post('/contact','App\controllers\Client\PostController@PostContact');

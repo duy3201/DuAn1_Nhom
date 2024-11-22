@@ -4,6 +4,7 @@ namespace App\Views\Client\Layouts;
 
 use App\Helpers\AuthHelper;
 use App\Views\BaseView;
+use App\Views\Client\Components\Category as ComponentsCategory;
 
 class Header extends BaseView
 {
@@ -20,7 +21,7 @@ class Header extends BaseView
 
 
 
-        ?>
+?>
 
 
         <title>Old Style Store</title>
@@ -128,7 +129,7 @@ class Header extends BaseView
                                             <h5>120.000 VNĐ</h5>
                                         </div>
                                         <div class="select-button">
-                                            <a href="/card" class="primary-btn view-card">Xem giỏ hàng</a>
+                                            <a href="/cart" class="primary-btn view-card">Xem giỏ hàng</a>
                                             <a href="/CheckOut" class="primary-btn checkout-btn">Thanh toán</a>
                                         </div>
                                     </div>
@@ -136,49 +137,49 @@ class Header extends BaseView
                                 <!-- Tài khoản -->
                                 <?php
                                 if ($is_login):
-                                    ?>
+                                ?>
                                     <li>
                                         <nav class="navbar navbar-expand-lg p-0">
                                             <!-- <div class="collapse  navbar-collapse justify-content-end" id=""> -->
-                                                <ul class="navbar-nav">
-                                                    <li class="dropdown m-0">
-                                                        <a class="btn dropdown-toggle p-0 " style="height: 30px;"
-                                                            href="#" id="" role="button  " data-toggle="dropdown"
-                                                            aria-haspopup="true" aria-expanded="false"> <i
-                                                                class="fa-regular fa-user"></i>
-                                                        </a>
-                                                        <div class="dropdown-menu" aria-labelledby="">
-                                                            <!-- <a class="dropdown-item" href="#">Action</a> -->
-                                                            <a class="dropdown-item"
-                                                                href="/users/<?= $_SESSION['user']['id'] ?>">Hi,<?= $_SESSION['user']['name'] ?></a>
-                                                            <a class="dropdown-item" href="/logout">Đăng Xuất</a>
-                                                        </div>
-                                                    </li>
-                                                </ul>
+                                            <ul class="navbar-nav">
+                                                <li class="dropdown m-0">
+                                                    <a class="btn dropdown-toggle p-0 " style="height: 30px;"
+                                                        href="#" id="" role="button  " data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false"> <i
+                                                            class="fa-regular fa-user"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="">
+                                                        <!-- <a class="dropdown-item" href="#">Action</a> -->
+                                                        <a class="dropdown-item"
+                                                            href="/users/<?= $_SESSION['user']['id'] ?>">Hi,<?= $_SESSION['user']['name'] ?></a>
+                                                        <a class="dropdown-item" href="/logout">Đăng Xuất</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                             <!-- </div> -->
                                         </nav>
                                     </li>
-                            </div>
+                        </div>
 
-                            <?php
+                    <?php
                                 else:
 
-                                    ?>
-                            <li class="heart-icon dropdown">
-                                <a href="/login" class="dropdown-toggle">
-                                    <i class="fa-regular fa-user"></i>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="/login" class="dropdown-item">Đăng nhập</a>
-                                    <a href="/register" class="dropdown-item">Đăng ký</a>
-                                    <!-- <a href="/Logout" class="dropdown-item">Đăng xuất</a> -->
-                                </div>
-                            </li>
-                            
-                            <?php
+                    ?>
+                        <li class="heart-icon dropdown">
+                            <a href="/login" class="dropdown-toggle">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="/login" class="dropdown-item">Đăng nhập</a>
+                                <a href="/register" class="dropdown-item">Đăng ký</a>
+                                <!-- <a href="/Logout" class="dropdown-item">Đăng xuất</a> -->
+                            </div>
+                        </li>
+
+                    <?php
                                 endif;
-                                ?>
-                        </ul>
+                    ?>
+                    </ul>
                     </div>
 
 
@@ -194,10 +195,14 @@ class Header extends BaseView
                     <div class="nav-depart">
                         <div class="depart-btn">
                             <i class="ti-menu"></i>
-                            <span>Danh mục sản phẩm <span><ul class="depart-hover">
-                                        <li class="active"><a href="#">Thời trang nữ</a></li>
+                            <span>Danh mục sản phẩm <span>
+                                    <ul class="depart-hover">
+                                        <?php
+                                        ComponentsCategory::render($data['categories']);
+                                        ?>
+                                        <!-- <li class="active"><a href="#">Thời trang nữ</a></li>
                                         <li><a href="#">Thời trang nam</a></li>
-                                        <li><a href="#">Thời trang trẻ em</a></li>
+                                        <li><a href="#">Thời trang trẻ em</a></li> -->
 
                                     </ul>
                         </div>
@@ -229,11 +234,10 @@ class Header extends BaseView
         </header>
         <!-- Header End -->
 
-        <?php
+<?php
 
 
     }
-
 }
 
 

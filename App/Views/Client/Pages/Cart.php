@@ -4,7 +4,7 @@ namespace App\Views\Client\Pages;
 
 use App\Views\BaseView;
 
-class Card extends BaseView
+class Cart extends BaseView
 {
     public static function render($data = null)
     {

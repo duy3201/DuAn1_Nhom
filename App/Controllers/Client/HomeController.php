@@ -8,7 +8,7 @@ use App\Views\Client\Components\Notification;
 use App\Views\Client\Home;
 use App\Views\Client\Layouts\Footer;
 use App\Views\Client\Layouts\Header;
-use App\Views\Client\Pages\Card;
+use App\Views\Client\Pages\Cart;
 use App\Views\Client\Pages\Blogs;
 use App\Views\Client\Pages\Product\Products;
 use App\Views\Client\Pages\Contact;
@@ -45,12 +45,13 @@ class HomeController
         Blogs::render();
         Footer::render();
     }
-    public static function card()
+    public static function cart()
     {
         Header::render();
-        Card::render();
+        Cart::render();
         Footer::render();
     }
+    
 
     public static function contact()
     {

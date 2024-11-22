@@ -89,4 +89,11 @@ class ProductController
         ProductCategory::render($data);
         Footer::render();
     }
+    public static function CheckOut()
+    {
+        Header::render();
+        CheckOut::render();
+        Footer::render();
+    }
+
 }

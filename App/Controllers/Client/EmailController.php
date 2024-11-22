@@ -71,7 +71,7 @@ class EmailController
 
             // Content
             $mail->isHTML(true);
-            $mail->Subject = 'Phản hồi từ khách hàng: ' . $name;
+            $mail->Subject = 'Phan hoi tu khach hang: ' . $name;
             $mail->Body = "
                 <p>Kính gửi Admin,</p>
                 <p>Khách hàng <strong>$name</strong> đã gửi phản hồi qua form liên hệ.</p>
