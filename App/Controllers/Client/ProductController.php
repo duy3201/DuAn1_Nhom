@@ -23,22 +23,29 @@ class ProductController
     {
         $category = new Category();
         $categories = $category->getAllCategoryByStatus();
+        $categoriesmenu = $category->getAllCategoryByStatus();
 
         $product = new Product;
         $products = $product->getAllProductByStatus();
 
         $data = [
             'products' => $products,
-            'categories' => $categories
+            'categories' => $categories,
+            'categoriesmenu' => $categoriesmenu
         ];
-        Header::render();
+        Header::render($data);
         Notification::render();
         NotificationHelper::unset();
         Index::render($data);
         Footer::render();
     }
     public static function detail($id)
-    {
+{
+    $categories = new Category();
+    $categories = $categories->getAllCategoryByStatus();
+    $product = new Product();
+    $product_detail = $product->getOneProductByStatus($id);
+    $product_quality = $product->getOneProductByQuality($id);
 
         $categories = new Category();
         $categories = $categories->getAllCategoryByStatus();
@@ -67,7 +74,24 @@ class ProductController
         NotificationHelper::unset();
         Detail::render($data);
         Footer::render();
-    }
+    
+
+    // Đảm bảo rằng product_quality và categories là mảng (trường hợp không có dữ liệu)
+    $data = [
+        'products' => $product_detail,
+        'quality' => $product_quality ?? [], // Gán mảng rỗng nếu không có dữ liệu
+        'categories' => $categories ?? [] // Gán mảng rỗng nếu không có dữ liệu
+    ];
+
+    Header::render($data);
+    Notification::render();
+    NotificationHelper::unset();
+    Detail::render($data);
+    Footer::render();
+
+    
+}
+
 
     public static function getProductByCategory($id)
     {
@@ -82,7 +106,7 @@ class ProductController
             'categories' => $categories
         ];
 
-        Header::render();
+        Header::render($data);
         ProductCategory::render($data);
         Footer::render();
     }

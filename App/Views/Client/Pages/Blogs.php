@@ -49,7 +49,7 @@ class Blogs extends BaseView
                   <li><a href="#">Mẫu</a></li>
                 </ul>
               </div>
-              <div class="recent-post">
+              <!-- <div class="recent-post">
                 <h4>Bài viết gần đây</h4>
                 <div class="recent-blog">
                   <a href="#" class="rb-item">
@@ -89,7 +89,7 @@ class Blogs extends BaseView
                     </div>
                   </a>
                 </div>
-              </div>
+              </div> -->
               <!-- <div class="blog-tags">
                 <h4>Tags sản phẩm</h4>
                 <div class="tag-item">

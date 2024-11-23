@@ -5,6 +5,7 @@ namespace App\Views\Client\Layouts;
 use App\Helpers\AuthHelper;
 use App\Views\BaseView;
 use App\Views\Client\Components\Category as ComponentsCategory;
+use App\Views\Client\Components\CategoryMenu;
 
 class Header extends BaseView
 {
@@ -16,10 +17,6 @@ class Header extends BaseView
         //    var_dump($_SESSION['user']);
 
         //      var_dump(json_decode($_COOKIE['user']));
-
-
-
-
 
 ?>
 
@@ -70,8 +67,8 @@ class Header extends BaseView
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-7 col-md-7">
-                            <div class="advanced-search">
+                        <div class="col-lg-9 col-md-7 d-flex justify-content-center align-items-center">
+                            <div class="advanced-search w-75">
                                 <button type="button" class="category-btn">Sản phẩm mới</button>
                                 <form action="/products" method="GET" class="input-group">
                                     <input type="text" name="search" placeholder="Bạn cần gì?"
@@ -82,9 +79,9 @@ class Header extends BaseView
                                     </button>
                                 </form>
                             </div>
-                        </div>
 
-                        <div class="col-lg-3 col-md-3">
+                        </div>
+                        <div class="col-lg-1 col-md-3 d-flex justify-content-center align-items-center">
                             <ul class="nav-right d-flex justify-content-start">
                                 <!-- Yêu thích -->
                                 <li class="heart-icon">
@@ -203,19 +200,16 @@ class Header extends BaseView
                     <div class="nav-depart">
                         <div class="depart-btn">
                             <i class="ti-menu"></i>
+
                             <span>Danh mục sản phẩm <span>
                                     <ul class="depart-hover">
                                         <?php
-                                        ComponentsCategory::render($data['categories']);
+                                        CategoryMenu::render($data['categories']);
                                         ?>
-                                        <!--<span>Danh mục sản phẩm <span> <ul class="depart-hover">
-                                        <li class="active"><a href="#">Thời trang nữ</a></li>
-                                        <li><a href="#">Thời trang nam</a></li>
-                                        <li><a href="#">Thời trang trẻ em</a></li> -->
-
                                     </ul>
                         </div>
                     </div>
+
                     <nav class="nav-menu mobile-menu">
                         <ul>
                             <li class="active"><a href="/">Trang chủ</a></li>

@@ -25,29 +25,61 @@ class HomeController
     // hiển thị danh sách
     public static function index()
     {
+        $category = new Category();
+        $categories = $category->getAllCategoryByStatus();
+        $categoriesmenu = $category->getAllCategoryByStatus();
+
         $product = new Product();
         $products = $product->getAllProductByIsfeature();
+
         $data = [
             'products' => $products,
+            'categories' => $categories,
+            'categoriesmenu' => $categoriesmenu
         ];
-         Header::render();
+         Header::render($data);
          Notification::render();
          NotificationHelper::unset();
-        Home::render($data);
+         Home::render($data);
          Footer::render();
+        
 
 
 
     }
     public static function blogs()
     {
-        Header::render();
+        $category = new Category();
+        $categories = $category->getAllCategoryByStatus();
+        $categoriesmenu = $category->getAllCategoryByStatus();
+
+        $product = new Product;
+        $products = $product->getAllProductByStatus();
+
+        $data = [
+            'products' => $products,
+            'categories' => $categories,
+            'categoriesmenu' => $categoriesmenu
+        ];
+        Header::render($data);
         Blogs::render();
         Footer::render();
     }
     public static function cart()
     {
-        Header::render();
+        $category = new Category();
+        $categories = $category->getAllCategoryByStatus();
+        $categoriesmenu = $category->getAllCategoryByStatus();
+
+        $product = new Product;
+        $products = $product->getAllProductByStatus();
+
+        $data = [
+            'products' => $products,
+            'categories' => $categories,
+            'categoriesmenu' => $categoriesmenu
+        ];
+        Header::render($data);
         Cart::render();
         Footer::render();
     }
@@ -55,14 +87,38 @@ class HomeController
 
     public static function contact()
     {
-        Header::render();
+        $category = new Category();
+        $categories = $category->getAllCategoryByStatus();
+        $categoriesmenu = $category->getAllCategoryByStatus();
+
+        $product = new Product;
+        $products = $product->getAllProductByStatus();
+
+        $data = [
+            'products' => $products,
+            'categories' => $categories,
+            'categoriesmenu' => $categoriesmenu
+        ];
+        Header::render($data);
         Contact::render();
         Footer::render();
     }
 
     public static function introduce(): void
     {
-        Header::render();
+        $category = new Category();
+        $categories = $category->getAllCategoryByStatus();
+        $categoriesmenu = $category->getAllCategoryByStatus();
+
+        $product = new Product;
+        $products = $product->getAllProductByStatus();
+
+        $data = [
+            'products' => $products,
+            'categories' => $categories,
+            'categoriesmenu' => $categoriesmenu
+        ];
+        Header::render($data);
         Introduce::render();
         Footer::render();
     }

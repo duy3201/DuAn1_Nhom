@@ -6,6 +6,7 @@ class Route
 {
 
     private static $routes = [];
+
     public static function get($url, $controllerMethod)
     {
         if ($_SERVER['REQUEST_METHOD'] == 'GET')
@@ -13,6 +14,7 @@ class Route
     }
     public static function post($url, $controllerMethod)
     {
+
         if (isset($_POST['method']))
             if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['method'] == 'POST')
                 self::$routes[$url] = $controllerMethod;

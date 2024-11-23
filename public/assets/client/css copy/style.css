@@ -769,8 +769,7 @@ ol {
 
 .nav-item .nav-depart .depart-btn .depart-hover li a {
 	display: block;
-	font-size: 16px;
-	color: #000000;
+	color:rgba(51, 51, 51);
 	padding-left: 40px;
 	padding-top: 16px;
 	padding-right: 30px;
@@ -1971,9 +1970,9 @@ ol {
 .filter-widget .fw-size-choose .sc-item label {
 	font-size: 16px;
 	color: #252525;
-	font-weight: 700;
+	/* font-weight: 700; */
 	height: 40px;
-	width: 47px;
+	padding: 0px 5px ;
 	border: 1px solid #ebebeb;
 	text-align: center;
 	line-height: 40px;

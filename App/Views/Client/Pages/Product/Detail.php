@@ -28,7 +28,7 @@ class Detail extends BaseView
                                 ?>
                             </ul>
                         </div>
-                        <div class="filter-widget">
+                        <!-- <div class="filter-widget">
                             <h4 class="fw-title">Chất lượng</h4>
                             <div class="fw-brand-check">
                                 <div class="bc-item">
@@ -53,7 +53,7 @@ class Detail extends BaseView
                                     </label>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="col-lg-9">
                         <div class="row">
@@ -61,9 +61,9 @@ class Detail extends BaseView
                                 <div class="product-pic-zoom">
 
                                     <img class="product-big-img" src="<?= APP_URL ?>/public/assets/admin/img/<?= $data['products']['img'] ?>" alt="">
-                                    <div class="zoom-icon">
+                                    <!-- <div class="zoom-icon">
                                         <i class="fa fa-search-plus"></i>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="product-thumbs">
                                     <div class="product-thumbs-track ps-slider owl-carousel">
@@ -93,11 +93,13 @@ class Detail extends BaseView
                                         <i class="fa fa-star"></i>
                                         <span>(5)</span>
                                     </div>
-                                    <div class="pd-desc">
-                                        <p><?= $data['products']['description'] ?></p>
-                                        <h4><?= $data['products']['product_price'] ?> VNĐ</h4>
+                                    <p><?= $data['products']['description'] ?></p>
+                                    <!-- Hiển thị giá sản phẩm -->
+                                    <div class="pd-desc p-price">
 
+                                        <h4 id="priceDisplay"><?= number_format($data['products']['product_price'], 0, ',', '.') ?> VNĐ </h4>
                                     </div>
+
                                     <div class="quantity">
                                         <div class="pro-qty">
                                             <input type="text" value="1">
@@ -105,39 +107,31 @@ class Detail extends BaseView
                                         <a href="#" class="primary-btn pd-cart">Thêm giỏ hàng</a>
                                     </div>
 
-                                    <div class="product-options">
-                                        <!-- Phần Chất lượng -->
-                                        <div class="product-quality">
-                                            <h6>Chất lượng:</h6>
-                                            <div class="quality-item mb-2">
-                                                <span><?= $data['products']['product_quality'] ?>: <?= $data['products']['product_quanlity'] ?>%</span>
-                                            </div>
+                                    <div class="filter-widget">
+                                        <h4 class="fw-title">Chọn chất lượng sản phẩm:</h4>
+                                        <div class="fw-size-choose">
+                                            <?php if (!empty($data['quality'])): ?>
+                                                <?php foreach ($data['quality'] as $index => $item): ?>
+                                                    <div class="sc-item">
+                                                        <input
+                                                            type="radio"
+                                                            id="quality-<?= htmlspecialchars($index) ?>"
+                                                            name="product_quality"
+                                                            value="<?= htmlspecialchars($item['product_quality']) ?>"
+                                                            <?= $index === 0 ? 'checked' : '' ?>>
+                                                        <label for="quality-<?= htmlspecialchars($index) ?>"><?= htmlspecialchars($item['product_quality']) ?></label>
+                                                    </div>
+                                                <?php endforeach; ?>
+                                            <?php else: ?>
+                                                <p class="text-danger">Không có chất lượng nào để chọn</p>
+                                            <?php endif; ?>
                                         </div>
-
-                                        <!-- Phần Size -->
-                                        <div class="product-sizes">
-                                            <h6>Size:</h6>
-                                            <div class="size-options">
-                                                <div class="size-item">
-                                                    <input type="radio" id="size-s" name="size">
-                                                    <label for="size-s">S</label>
-                                                </div>
-                                                <div class="size-item">
-                                                    <input type="radio" id="size-m" name="size">
-                                                    <label for="size-m">M</label>
-                                                </div>
-                                                <div class="size-item">
-                                                    <input type="radio" id="size-l" name="size">
-                                                    <label for="size-l">L</label>
-                                                </div>
-                                                <div class="size-item">
-                                                    <input type="radio" id="size-xl" name="size">
-                                                    <label for="size-xl">XL</label>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <!-- Dữ liệu ẩn chứa danh sách giá -->
+                                        <input
+                                            type="hidden"
+                                            id="quality-prices"
+                                            value='<?= json_encode($data['quality'], JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP) ?>'>
                                     </div>
-
 
                                     <ul class="pd-tags">
                                         <li><span>LOẠI: </span><?= $data['products']['category_name'] ?></li>
@@ -210,33 +204,33 @@ class Detail extends BaseView
                                                         <div class="cart-add">+ Thêm giỏ hàng</div>
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                                <!-- <tr>
                                                     <td class="p-catagory">sẵn có</td>
                                                     <td>
                                                         <div class="p-stock">22 trong kho</div>
                                                     </td>
-                                                </tr>
+                                                </tr> -->
                                                 <tr>
                                                     <td class="p-catagory">Cân nặng</td>
                                                     <td>
                                                         <div class="p-weight">1,3kg</div>
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                                <!-- <tr>
                                                     <td class="p-catagory">Kích thước</td>
                                                     <td>
                                                         <div class="p-size">Xxl</div>
                                                     </td>
-                                                </tr>
-                                                <tr>
+                                                </tr> -->
+                                                <!-- <tr>
                                                     <td class="p-catagory">Màu</td>
                                                     <td><span class="cs-color"></span></td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="p-catagory">Mã</td>
-                                                    <td>
-                                                        <div class="p-code">00012</div>
-                                                    </td>
+                                                <tr> -->
+                                                <td class="p-catagory">Mã</td>
+                                                <td>
+                                                    <div class="p-code"><?= $data['products']['id'] ?></div>
+                                                </td>
                                                 </tr>
                                             </table>
                                         </div>
@@ -331,64 +325,6 @@ class Detail extends BaseView
                 </div>
             </div>
         </section>
-        <style>
-            .product-quality h6,
-            .product-sizes h6 {
-                font-size: 16px;
-                font-weight: bold;
-                color: #333;
-                margin-bottom: 10px;
-            }
-
-            .quality-item span {
-                font-size: 14px;
-                color: #555;
-                background-color: #e0e0e0;
-                padding: 5px 10px;
-                border-radius: 4px;
-                display: inline-block;
-            }
-
-            .size-options {
-                display: flex;
-                gap: 10px;
-                margin-top: 10px;
-            }
-
-            .size-item {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 5px;
-            }
-
-            .size-item input[type="radio"] {
-                display: none;
-            }
-
-            .size-item label {
-                font-size: 14px;
-                color: #555;
-                padding: 5px 10px;
-                border: 1px solid #ddd;
-                border-radius: 4px;
-                cursor: pointer;
-                transition: all 0.3s ease;
-            }
-
-            .size-item input[type="radio"]:checked+label {
-                background-color: #4CAF50;
-                color: #fff;
-                border-color: #4CAF50;
-                font-weight: bold;
-            }
-
-            .size-item label:hover {
-                background-color: #f0f0f0;
-                border-color: #bbb;
-            }
-        </style>
-
 <?php
 
     }

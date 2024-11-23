@@ -6,8 +6,9 @@ use App\Views\Client\Layouts\Footer;
 use App\Views\Client\Layouts\Header;
 use App\Validations\AuthValidation;
 use App\Helpers\NotificationHelper;
+use App\Models\Category;
 use App\Models\Post;
-
+use App\Models\Product;
 use App\Views\Client\Components\Notification;
 use App\Views\Client\Pages\Contact;
 
@@ -30,7 +31,20 @@ class PostController
     }
 
     public static function Contact(){
-        Header::render();
+        $category = new Category();
+        $categories = $category->getAllCategoryByStatus();
+        $categoriesmenu = $category->getAllCategoryByStatus();
+
+        $product = new Product();
+        $products = $product->getAllProductByStatus();
+
+        $data = [
+            'products' => $products,
+            'categories' => $categories,
+            'categoriesmenu' => $categoriesmenu
+        ];
+
+        Header::render($data);
         Notification::render();
         NotificationHelper::unset(); 
         Contact::render();

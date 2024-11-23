@@ -5,6 +5,8 @@ namespace App\Controllers\Client;
 
 use App\Helpers\AuthHelper;
 use App\Helpers\NotificationHelper;
+use App\Models\Category;
+use App\Models\Product;
 use App\Validations\AuthValidation;
 use App\Views\Client\Layouts\Footer;
 use App\Views\Client\Layouts\Header;
@@ -19,9 +21,20 @@ use App\Views\Client\Pages\Auth\ResetPassword;
 class AuthController
 {
 
-    public static function register()
-    {
-        Header::render();
+    public static function register() {
+        $category = new Category();
+        $categories = $category->getAllCategoryByStatus();
+        $categoriesmenu = $category->getAllCategoryByStatus();
+
+        $product = new Product();
+        $products = $product->getAllProductByStatus();
+
+        $data = [
+            'products' => $products,
+            'categories' => $categories,
+            'categoriesmenu' => $categoriesmenu
+        ];
+        Header::render($data);
         Notification::render();
         NotificationHelper::unset();
         Register::render();
@@ -73,9 +86,20 @@ class AuthController
         }
     }
 
-    public static function login()
-    {
-        Header::render();
+    public static function login() {
+        $category = new Category();
+        $categories = $category->getAllCategoryByStatus();
+        $categoriesmenu = $category->getAllCategoryByStatus();
+
+        $product = new Product;
+        $products = $product->getAllProductByStatus();
+
+        $data = [
+            'products' => $products,
+            'categories' => $categories,
+            'categoriesmenu' => $categoriesmenu
+        ];
+        Header::render($data);
         Notification::render();
         NotificationHelper::unset();
         Login::render();

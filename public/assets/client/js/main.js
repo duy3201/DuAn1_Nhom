@@ -34,6 +34,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//Lấy tiền theo chất lượng sản phẩm
+document.querySelectorAll('input[name="product_quality"]').forEach((radio) => {
+    radio.addEventListener('change', function() {
+        // Lấy giá trị của chất lượng được chọn
+        const selectedQuality = this.value;
+
+        // Lấy danh sách giá từ input ẩn
+        const prices = JSON.parse(document.getElementById('quality-prices').value);
+
+        // Tìm giá tương ứng với chất lượng được chọn
+        const selectedProduct = prices.find(item => item.product_quality === selectedQuality);
+        const price = selectedProduct ? selectedProduct.product_price : 0;
+
+        // Cập nhật giá hiển thị
+        document.getElementById('priceDisplay').innerText = `${Number(price).toLocaleString()} VNĐ`;
+       
+    });
+});
+
 
 
 (function ($) {
