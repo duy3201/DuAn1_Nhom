@@ -43,6 +43,13 @@ class Header extends BaseView
         <link rel="stylesheet" href="/public/assets/client/css copy/jquery-ui.min.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/slicknav.min.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/style.css" type="text/css">
+
+        <script src="/path-to-your-project/sweetalert2.min.js"></script>
+
+        <script src="dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+
+
         </head>
 
 
@@ -232,6 +239,9 @@ class Header extends BaseView
                     <div id="mobile-menu-wrap"></div>
                 </div>
             </div>
+            
+            <script src="/path-to-your-project/sweetalert2.min.js"></script>
+
         </header>
         <!-- Header End -->
 

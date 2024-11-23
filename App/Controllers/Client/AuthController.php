@@ -43,14 +43,14 @@ class AuthController
         $password = $_POST['password'];
         $hash_password = password_hash($password, PASSWORD_DEFAULT);
         $tel = $_POST['tel'] ?? '0000000000';
-        $address = $_POST['address'];
-        $date_of_birth = $_POST['date_of_birth'] ?? null;
+        // $address = $_POST['address'];
+        // $date_of_birth = $_POST['date_of_birth'] ?? null;
         $name = $_POST['name'] ?? null;
         $name = $_POST['name'] ?? 'Anonymous';
         if (empty($date_of_birth)) {
             die("Ngày sinh không được để trống");
         }
-
+        
         $email = $_POST['email'];
 
 
@@ -58,8 +58,8 @@ class AuthController
             'username' => $username,
             'password' => $hash_password,
             'tel' => $tel,
-            'address' => $address,
-            'date_of_birth' => $date_of_birth,
+            // 'address' => $address,
+            // 'date_of_birth' => $date_of_birth,
             'email' => $email,
             'name' => $name,
 
@@ -182,9 +182,8 @@ class AuthController
         }
 
         $data = [
-            'tel' => $_POST['tel'],
-            'email' => $_POST['email'],
             'name' => $_POST['name'],
+            'email' => $_POST['email'],
         ];
 
         //kiểm tra có upload hình ảnh không, nếu có: kiểm tra xem nó có hợp lệ không

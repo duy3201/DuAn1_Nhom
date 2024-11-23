@@ -61,25 +61,25 @@ class AuthValidation {
             }
         }
 
-        if (!isset($_POST['address']) || $_POST['address'] === '') {
-            NotificationHelper::error('address', 'Không để trống địa chỉ');
-            $is_valid = false;
-        } else {
-            if ($_POST['address'] != $_POST['address']) {
-                NotificationHelper::error('address', 'Địa chỉ không đúng');
-                $is_valid = false;
-            }
-        }
+        // if (!isset($_POST['address']) || $_POST['address'] === '') {
+        //     NotificationHelper::error('address', 'Không để trống địa chỉ');
+        //     $is_valid = false;
+        // } else {
+        //     if ($_POST['address'] != $_POST['address']) {
+        //         NotificationHelper::error('address', 'Địa chỉ không đúng');
+        //         $is_valid = false;
+        //     }
+        // }
 
-        if (!isset($_POST['date_of_birth']) || $_POST['date_of_birth'] === '') {
-            NotificationHelper::error('date_of_birth', 'Không để trống ngày sinh ');
-            $is_valid = false;
-        } else {
-            if (strlen($_POST['date_of_birth']) < 3) {
-                NotificationHelper::error('date_of_birth', 'Không đúng ');
-                $is_valid = false;
-            }
-        }
+        // if (!isset($_POST['date_of_birth']) || $_POST['date_of_birth'] === '') {
+        //     NotificationHelper::error('date_of_birth', 'Không để trống ngày sinh ');
+        //     $is_valid = false;
+        // } else {
+        //     if (strlen($_POST['date_of_birth']) < 3) {
+        //         NotificationHelper::error('date_of_birth', 'Không đúng ');
+        //         $is_valid = false;
+        //     }
+        // }
 
         // Họ và tên
         // if (!isset($_POST['name']) || $_POST['name'] === '') {
@@ -90,7 +90,7 @@ class AuthValidation {
         return $is_valid;
     }
 
-    public static function Login(): bool {
+    public static function login(): bool {
         $is_valid = true;
 
         if (!isset($_POST['username']) || $_POST['username'] === '') {
@@ -127,6 +127,27 @@ class AuthValidation {
             NotificationHelper::error('name', 'Không để trống họ và tên');
             $is_valid = false;
         }
+
+        if (!isset($_POST['address']) || $_POST['address'] === '') {
+            NotificationHelper::error('address', 'Không để trống địa chỉ');
+            $is_valid = false;
+        } else {
+            if ($_POST['address'] != $_POST['address']) {
+                NotificationHelper::error('address', 'Địa chỉ không đúng');
+                $is_valid = false;
+            }
+        }
+
+        if (!isset($_POST['date_of_birth']) || $_POST['date_of_birth'] === '') {
+            NotificationHelper::error('date_of_birth', 'Không để trống ngày sinh ');
+            $is_valid = false;
+        } else {
+            if (strlen($_POST['date_of_birth']) < 3) {
+                NotificationHelper::error('date_of_birth', 'Không đúng ');
+                $is_valid = false;
+            }
+        }
+        
 
         return $is_valid;
     }
