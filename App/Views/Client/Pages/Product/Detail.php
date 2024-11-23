@@ -54,7 +54,11 @@ class Detail extends BaseView
                                 </div>
                             </div>
                         </div>-->
+                        <<<<<<< HEAD
+                            </div>
+                            =======
                     </div>
+                    >>>>>>> 187b35d ([client]Chất-Lượng-Theo-Giá-Chỉnh-Sổ-Menu)
                     <div class="col-lg-9">
                         <div class="row">
                             <div class="col-lg-6">

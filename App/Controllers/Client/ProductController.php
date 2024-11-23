@@ -90,6 +90,27 @@ class ProductController
     Footer::render();
 
     
+
+    if (!$product_detail) {
+        NotificationHelper::error('product_detail', 'Không thể xem sản phẩm này');
+        header('location: /products');
+        exit;
+    }
+
+    // Đảm bảo rằng product_quality và categories là mảng (trường hợp không có dữ liệu)
+    $data = [
+        'products' => $product_detail,
+        'quality' => $product_quality ?? [], // Gán mảng rỗng nếu không có dữ liệu
+        'categories' => $categories ?? [] // Gán mảng rỗng nếu không có dữ liệu
+    ];
+
+    Header::render($data);
+    Notification::render();
+    NotificationHelper::unset();
+    Detail::render($data);
+    Footer::render();
+
+    
 }
 
 
