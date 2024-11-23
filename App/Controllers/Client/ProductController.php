@@ -4,10 +4,7 @@ namespace App\Controllers\Client;
 
 // use App\Helpers\AuthHelper;
 use App\Helpers\NotificationHelper;
-// use App\Models\Category;
-// use App\Models\Comment;
-// // use App\Models\Product;
-// use App\Views\Client\Components\Notification;
+use App\Models\Comment;
 use App\Models\Category;
 use App\Models\Product;
 use App\Views\Client\Components\Notification;
@@ -54,13 +51,13 @@ class ProductController
             exit;
         }
 
-        // $comment = new Comment();
-        // $comments = $comment->get5CommentNewestByProductAndStatus($id);
+        $comment = new Comment();
+        $comments = $comment->get5CommentNewestByProductAndStatus($id);
 
         $data = [
             'products' => $product_detail,
-            'categories' => $categories
-            // 'comments' => $comments
+            'categories' => $categories,
+            'comments' => $comments
         ];
 
         //  $view_result = ViewProductHelper::cookieView($id, $product_detail['view']);
@@ -95,5 +92,4 @@ class ProductController
         CheckOut::render();
         Footer::render();
     }
-
 }

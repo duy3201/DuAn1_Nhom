@@ -52,7 +52,7 @@ class Index extends BaseView
                                                     <th></th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody class="text-white">
                                                 <?php
                                                 foreach ($data as $item) :
                                                 ?>
@@ -67,7 +67,6 @@ class Index extends BaseView
                                                             <a href="/admin/comments/<?= $item['id'] ?>" class="btn btn-primary ">Sửa</a>
                                                             <form action="/admin/comments/<?= $item['id'] ?>" method="post" style="display: inline-block;" onsubmit="return confirm('Chắc chưa?')">
                                                                 <input type="hidden" name="method" value="DELETE" id="">
-                                                                <button type="submit" class="btn btn-danger text-white">Xoá</button>
                                                             </form>
                                                         </td>
                                                     </tr>

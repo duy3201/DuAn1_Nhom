@@ -82,26 +82,26 @@ class AuthController
         Footer::render();
     }
 
-        // // Khi người dùng đăng nhập
-        // public static function handleUserLogin()
-        // {
-        //     // Kiểm tra xem id_user đã có trong cart_detail chưa
-        //     $query = "SELECT COUNT(*) as count FROM carts_detail WHERE id_user = ?";
-        //     $db = $_SESSION['user'];
-        //     $stmt = $db->prepare($query);
-        //     $stmt->bind_param("i",$_SESSION['user']['id']);
-        //     $stmt->execute();
-        //     $result = $stmt->get_result();
-        //     $row = $result->fetch_assoc();
-    
-        //     // Nếu chưa tồn tại, thêm mới vào cart_detail
-        //     if ($row['count'] == 0) {
-        //         $insertQuery = "INSERT INTO carts_detail (id_user, created_at) VALUES (?, NOW())";
-        //         $insertStmt = $db->prepare($insertQuery);
-        //         $insertStmt->bind_param("i", $db['id']);
-        //         $insertStmt->execute();
-        //     }
-        // }
+    // // Khi người dùng đăng nhập
+    // public static function handleUserLogin()
+    // {
+    //     // Kiểm tra xem id_user đã có trong cart_detail chưa
+    //     $query = "SELECT COUNT(*) as count FROM carts_detail WHERE id_user = ?";
+    //     $db = $_SESSION['user'];
+    //     $stmt = $db->prepare($query);
+    //     $stmt->bind_param("i",$_SESSION['user']['id']);
+    //     $stmt->execute();
+    //     $result = $stmt->get_result();
+    //     $row = $result->fetch_assoc();
+
+    //     // Nếu chưa tồn tại, thêm mới vào cart_detail
+    //     if ($row['count'] == 0) {
+    //         $insertQuery = "INSERT INTO carts_detail (id_user, created_at) VALUES (?, NOW())";
+    //         $insertStmt = $db->prepare($insertQuery);
+    //         $insertStmt->bind_param("i", $db['id']);
+    //         $insertStmt->execute();
+    //     }
+    // }
 
     public static function loginAction()
     {
@@ -171,7 +171,7 @@ class AuthController
         Footer::render();
     }
 
-    public static function update($id)
+    public static function update(int $id)
     {
         $is_valid = AuthValidation::edit();
 
@@ -182,8 +182,9 @@ class AuthController
         }
 
         $data = [
-            'name' => $_POST['name'],
+            'tel' => $_POST['tel'],
             'email' => $_POST['email'],
+            'name' => $_POST['name'],
         ];
 
         //kiểm tra có upload hình ảnh không, nếu có: kiểm tra xem nó có hợp lệ không
@@ -342,5 +343,4 @@ class AuthController
             header('location: /reset-password');
         }
     }
-
 }

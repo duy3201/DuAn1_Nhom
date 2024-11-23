@@ -62,6 +62,12 @@ Route::get('/CheckOut', 'App\Controllers\Client\ProductController@CheckOut');
 Route::get('/forgot-password','App\Controllers\Client\AuthController@forgotPassword');
 Route::post('/forgot-password','App\Controllers\Client\AuthController@forgotPasswordAction');
 
+
+// *** Comment 
+Route::post('/comments', 'App\Controllers\Client\CommentController@store');
+Route::put('/comments/{id}', 'App\Controllers\Client\CommentController@update');
+Route::delete('/comments/{id}', 'App\Controllers\Client\CommentController@delete');
+
 // *** Admin
 
 Route::get('/admin', 'App\Controllers\Admin\HomeController@index');
@@ -99,6 +105,7 @@ Route::post('/admin/posts', 'App\Controllers\Admin\PostController@store');
 Route::get('/admin/posts/{id}', 'App\Controllers\Admin\PostController@edit');
 Route::put('/admin/posts/{id}', 'App\Controllers\Admin\PostController@update');
 Route::delete('/admin/posts/{id}', 'App\Controllers\Admin\PostController@delete');
+
 
 //  *** Product
 // GET /Products (lấy danh sách loại sản phẩm)
@@ -139,6 +146,19 @@ Route::put('/admin/productvariants/{id}', 'App\Controllers\Admin\ProductVariantC
 // DELETE /products/{id} (delete loại sản phẩm với id cụ thể)
 Route::delete('/admin/productvariants/{id}', 'App\Controllers\Admin\ProductVariantController@delete');
 
+//  *** Comment
+// GET /Comment (lấy danh sách bình luận)
+Route::get('/admin/comments', 'App\Controllers\Admin\CommentController@index');
+
+// GET /Comment/{id} (lấy chi tiết bình luận với id cụ thể)
+Route::get('/admin/comments/{id}', 'App\Controllers\Admin\CommentController@edit');
+
+// PUT /Comment/{id} (update bình luận với id cụ thể)
+Route::put('/admin/comments/{id}', 'App\Controllers\Admin\CommentController@update');
+
+// DELETE /Comment/{id} (delete bình luận với id cụ thể)
+Route::delete('/admin/comments/{id}', 'App\Controllers\Admin\CommentController@delete');
+
 
 //  *** Users
 // GET /users (lấy danh sách người dùng)
@@ -161,46 +181,4 @@ Route::delete('/admin/users/{id}', 'App\Controllers\Admin\UserController@delete'
 
 Route::dispatch($_SERVER['REQUEST_URI']);
 
-// *** Client
-Route::get('/', 'App\Controllers\Client\HomeController@index');
-Route::get('/products', 'App\Controllers\Client\ProductController@index');
-Route::get('/products/{id}', 'App\Controllers\Client\ProductController@detail');
-Route::get('/products/categories/{id}', 'App\Controllers\Client\ProductController@getProductByCategory');
-// *** Comment 
-Route::post('/comments', 'App\Controllers\Client\CommentController@store');
-Route::put('/comments/{id}', 'App\Controllers\Client\CommentController@update');
-Route::delete('/comments/{id}', 'App\Controllers\Client\CommentController@delete');
-
-// *** Register
-Route::get('/register', 'App\Controllers\Client\AuthController@register');
-Route::post('/register', 'App\Controllers\Client\AuthController@registerAction');
-
-// *** Login
-Route::get('/login', 'App\Controllers\Client\AuthController@login');
-Route::post('/login', 'App\Controllers\Client\AuthController@loginAction');
-
-// *** Logout
-
-Route::get('/logout', 'App\Controllers\Client\AuthController@logout');
-
-
-// *** edit
-
-Route::get('/users/{id}', 'App\Controllers\Client\AuthController@edit');
-Route::put('/users/{id}', 'App\Controllers\Client\AuthController@update');
-
-// *** change password
-
-Route::get('/change-password', 'App\Controllers\Client\AuthController@changePassword');
-Route::put('/change-password', 'App\Controllers\Client\AuthController@changePasswordAction');
-
-// *** Forgot password
-
-Route::get('/forgot-password', 'App\Controllers\Client\AuthController@forgotPassword');
-Route::post('/forgot-password', 'App\Controllers\Client\AuthController@forgotPasswordAction');
-
-// *** Reset password
-
-Route::get('/reset-password', 'App\Controllers\Client\AuthController@resetPassword');
-Route::put('/reset-password', 'App\Controllers\Client\AuthController@resetPasswordAction');
 

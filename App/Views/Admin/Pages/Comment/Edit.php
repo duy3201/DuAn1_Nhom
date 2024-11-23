@@ -46,19 +46,19 @@ class Edit extends BaseView
                                     </div>
                                     <div class="form-group">
                                         <label for="username">Tài khoản</label>
-                                        <input type="text" class="form-control" id="username" name="username" value="<?= $data['username'] ?>" disabled>
+                                        <input type="text" class="form-control text-dark" id="username" name="username" value="<?= $data['username'] ?>" disabled>
                                     </div>
                                     <div class="form-group">
                                         <label for="product_name">Sản phẩm</label>
-                                        <input type="text" class="form-control" id="product_name" name="product_name" value="<?= $data['product_name'] ?>" disabled>
+                                        <input type="text" class="form-control text-dark" id="product_name" name="product_name" value="<?= $data['product_name'] ?>" disabled>
                                     </div>
                                     <div class="form-group">
                                         <label for="content">Nội dung</label>
-                                        <textarea class="form-control" name="content" id="content" rows="3" disabled><?= $data['content'] ?></textarea>
+                                        <textarea class="form-control text-dark" name="content" id="content" rows="3" disabled><?= $data['content'] ?></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="date">Thời gian</label>
-                                        <input type="text" class="form-control" id="date" name="date" value="<?= $data['date'] ?>" disabled>
+                                        <input type="text" class="form-control text-dark" id="date" name="date" value="<?= $data['date'] ?>" disabled>
                                     </div>
                                     <div class="form-group">
                                         <label for="status">Trạng thái*</label>

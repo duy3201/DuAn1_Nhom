@@ -89,7 +89,7 @@ class Footer extends BaseView
         <script src="/public/assets/client/js/jquery.zoom.min.js"></script>
         <script src="/public/assets/client/js/jquery.dd.min.js"></script>
         <script src="/public/assets/client/js/jquery.slicknav.js"></script>
-        <script src="/public/assets/client/js/owl.carousel.min.js"></script>
+        <!-- <script src="/public/assets/client/js/owl.carousel.min.js"></script> -->
         <script src="/public/assets/client/js/main.js"></script>
     </body>
 

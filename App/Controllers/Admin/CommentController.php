@@ -38,7 +38,7 @@ class CommentController
 
         if(!$data){
             NotificationHelper::error('edit', 'Không thể xem loại sản phẩm này');
-            header('location: /admin/comments');
+            header('location: /admin/comments/');
             exit;
         }
             Header::render();

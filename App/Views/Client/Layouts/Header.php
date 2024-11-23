@@ -200,7 +200,8 @@ class Header extends BaseView
                                         <?php
                                         ComponentsCategory::render($data['categories']);
                                         ?>
-                                        <!-- <li class="active"><a href="#">Thời trang nữ</a></li>
+                                        <!--<span>Danh mục sản phẩm <span> <ul class="depart-hover">
+                                        <li class="active"><a href="#">Thời trang nữ</a></li>
                                         <li><a href="#">Thời trang nam</a></li>
                                         <li><a href="#">Thời trang trẻ em</a></li> -->
 

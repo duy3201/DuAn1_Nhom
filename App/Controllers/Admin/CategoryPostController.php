@@ -184,7 +184,7 @@ class CategoryPostController
         NotificationHelper::error('delete', 'Xóa loại bài viết thất bại');
        }
 
-       header('location: /admin/postcategoryies');
+       header('location: /admin/categoryiespost');
         
     }
 }

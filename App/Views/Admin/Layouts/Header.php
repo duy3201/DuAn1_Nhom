@@ -183,6 +183,20 @@ class Header extends BaseView
                         </div>
                     </li>
                     <li class="nav-item menu-items">
+                        <a class="nav-link" data-toggle="collapse" href="#comments" aria-expanded="false" aria-controls="comments">
+                            <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </span>
+                            <span class="menu-title">Quản lý bình luận</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="comments">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="/admin/comments">Danh sách bình luận</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item menu-items">
                         <a class="nav-link" data-toggle="collapse" href="#user-management" aria-expanded="false" aria-controls="user-management">
                             <span class="menu-icon">
                                 <i class="fa-solid fa-clipboard-list"></i>

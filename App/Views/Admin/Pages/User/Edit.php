@@ -42,7 +42,7 @@ class Edit extends BaseView
                                     <input type="hidden" name="method" id="" value="PUT">
 
                                     <div align="center">
-                                        <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $data['avatar'] ?>" alt="" width="300px">
+                                        <img src="<?= APP_URL ?>/public/assets/client/img/<?= $data['avatar'] ?>" alt="" width="300px">
                                     </div>
                                     <div class="form-group">
                                         <label for="id">ID</label>

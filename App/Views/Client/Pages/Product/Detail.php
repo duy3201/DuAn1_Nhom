@@ -11,7 +11,20 @@ class Detail extends BaseView
     public static function render($data = null)
     {
         $is_login = AuthHelper::checkLogin();
-        var_dump($_COOKIE['view']);
+        // var_dump($is_login);
+        // Kiểm tra cookie 'user'
+        if (isset($_COOKIE['user'])) {
+            $user_data = json_decode($_COOKIE['user'], true); // Giải mã JSON thành mảng
+            if ($user_data) {
+                echo "ID: " . ($user_data['id'] ?? 'Không có') . "<br>";
+                echo "Username: " . ($user_data['username'] ?? 'Không có') . "<br>";
+                echo "Email: " . ($user_data['email'] ?? 'Không có') . "<br>";
+            } else {
+                echo "Cookie 'user' không chứa dữ liệu hợp lệ.";
+            }
+        } else {
+            echo "Cookie 'user' không tồn tại.";
+        }
 ?>
 
 
@@ -109,7 +122,7 @@ class Detail extends BaseView
                                         <div class="product-quality">
                                             <h6>Chất lượng:</h6>
                                             <div class="quality-item mb-2">
-                                                <span><?= $data['products']['product_quality'] ?>: <?= $data['products']['product_quanlity'] ?>%</span> 
+                                                <span><?= $data['products']['product_quality'] ?>: <?= $data['products']['product_quanlity'] ?>%</span>
                                             </div>
                                         </div>
 
@@ -242,78 +255,84 @@ class Detail extends BaseView
                                     </div>
                                     <div class="tab-pane fade" id="tab-3" role="tabpanel">
                                         <div class="customer-review-option">
-                                            <h4>2 Comments</h4>
-                                            <div class="comment-option">
-                                                <div class="co-item">
-                                                    <div class="avatar-pic">
-                                                        <img src="img/product-single/avatar-1.png" alt="">
-                                                    </div>
-                                                    <div class="avatar-text">
-                                                        <div class="at-rating">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
+                                            <div class="row d-flex justify-content-center mt-4 mb-4">
+                                                <div class="col-lg-12">
+                                                    <div class="card">
+                                                        <div class="card-header bg-light text-white text-center d-flex align-items-center justify-content-center" style="height: 100px;">
+                                                            <h4 class="card-title m-0">Bình luận mới nhất</h4>
                                                         </div>
-                                                        <h5>Trung Khoa <span>27 tháng11 năm 2024</span></h5>
-                                                        <div class="at-reply">Tuyệt !</div>
+
+                                                        <div class="card-body comment-widgets">
+                                                            <!-- Hiển thị danh sách bình luận -->
+                                                            <?php if (isset($data['comments']) && $data['comments']) : ?>
+                                                                <?php foreach ($data['comments'] as $item) : ?>
+                                                                    <div class="d-flex flex-row comment-row my-3 p-2 border-bottom">
+                                                                        <div class="p-2">
+                                                                            <img src="<?= $item['avatar'] ? APP_URL . '/public/assets/client/img/' . $item['avatar'] : APP_URL . '/public/assets/client/img/banner-1.jpg' ?>"
+                                                                                alt="user" height="45" width="50" class="rounded-circle">
+                                                                        </div>
+                                                                        <div class="comment-text w-100">
+                                                                            <h6 class="font-medium"><?= htmlspecialchars($item['name']) ?> (<?= htmlspecialchars($item['username']) ?>)</h6>
+                                                                            <p class="m-b-15"><?= htmlspecialchars($item['content']) ?></p>
+                                                                            <div class="comment-footer d-flex justify-content-between">
+                                                                                <span class="text-muted"><?= $item['date'] ?></span>
+                                                                                <?php if ($is_login && $_SESSION['user']['id'] == $item['id_user']) : ?>
+                                                                                    <div>
+                                                                                        <!-- Nút sửa -->
+                                                                                        <button type="button" class="btn btn-warning btn-sm" data-toggle="collapse"
+                                                                                            data-target="#editComment<?= $item['id'] ?>">Sửa</button>
+
+                                                                                        <!-- Nút xóa -->
+                                                                                        <form action="/comments/<?= $item['id'] ?>" method="post"
+                                                                                            onsubmit="return confirm('Bạn chắc chắn muốn xóa bình luận này?')"
+                                                                                            style="display:inline-block">
+                                                                                            <input type="hidden" name="method" value="DELETE">
+                                                                                            <input type="hidden" name="id_product" value="<?= $data['products']['id'] ?>">
+                                                                                            <button type="submit" class="btn btn-danger btn-sm">Xoá</button>
+                                                                                        </form>
+                                                                                    </div>
+                                                                                <?php endif; ?>
+                                                                            </div>
+
+                                                                            <!-- Form sửa bình luận -->
+                                                                            <div class="collapse mt-2" id="editComment<?= $item['id'] ?>">
+                                                                                <form action="/comments/<?= $item['id'] ?>" method="post">
+                                                                                    <input type="hidden" name="method" value="PUT">
+                                                                                    <input type="hidden" name="id_product" value="<?= $data['products']['id'] ?>">
+                                                                                    <textarea class="form-control" name="content" rows="3"><?= htmlspecialchars($item['content']) ?></textarea>
+                                                                                    <button type="submit" class="btn btn-success btn-sm mt-2">Cập nhật</button>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                <?php endforeach; ?>
+                                                            <?php else : ?>
+                                                                <p class="text-center text-danger">Chưa có bình luận nào</p>
+                                                            <?php endif; ?>
+
+                                                            <?php if ($is_login && isset($_SESSION['user']['id'])) : ?>
+                                                                <div class="d-flex flex-row comment-row mt-4">
+                                                                    <div class="p-2">
+                                                                        <img src="<?= $_SESSION['user']['avatar'] ? APP_URL . '/public/assets/client/img/' . $_SESSION['user']['avatar'] : APP_URL . '/public/assets/admin/img/default.png' ?>"
+                                                                            alt="user" height="45" width="50" class="rounded-circle">
+                                                                    </div>
+                                                                    <div class="comment-text w-100">
+                                                                        <form action="/comments/" method="post">
+                                                                            <input type="hidden" name="method" value="POST">
+                                                                            <input type="hidden" name="id_product" value="<?= htmlspecialchars($data['products']['id']) ?>">
+                                                                            <input type="hidden" name="id_user" value="<?= htmlspecialchars($_SESSION['user']['id']) ?>">
+                                                                            <textarea class="form-control rounded-0" name="content" rows="3" placeholder="Nhập bình luận..." required></textarea>
+                                                                            <button type="submit" class="btn btn-primary btn-sm mt-2">Gửi</button>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            <?php else : ?>
+                                                                <p class="text-center text-danger">Vui lòng đăng nhập để bình luận</p>
+                                                            <?php endif; ?>
+
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="co-item">
-                                                    <div class="avatar-pic">
-                                                        <img src="img/product-single/avatar-2.png" alt="">
-                                                    </div>
-                                                    <div class="avatar-text">
-                                                        <div class="at-rating">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                        </div>
-                                                        <h5>Trung Khoa <span>27 tháng11 năm 2024</span></h5>
-                                                        <div class="at-reply">Tuyệt !</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="personal-rating">
-                                                <h6>Tôi</h6>
-                                                <div class="rating">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                </div>
-                                            </div>
-                                            <div class="leave-comment">
-                                                <h4>Để lại một bình luận</h4>
-                                                <form method="post" id="detailForm" name="detailForm" action="" class="detailForm">
-                                                    <input type="hidden" name="method" value="POST">
-                                                    <div class="row">
-                                                        <div class="col-lg-6">
-                                                            <div class="form-group border-success">
-                                                                <label class="label " for="name">Họ và tên</label>
-                                                                <input type="text" class="form-control" name="name" id="name" placeholder="Họ và tên">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-6">
-                                                            <div class="form-group">
-                                                                <label class="label" for="email">Địa chỉ email</label>
-                                                                <input type="text" class="form-control" name="email" id="email" placeholder="Địa chỉ email">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="form-group">
-                                                                <label class="label" for="message">Nội dung</label>
-                                                                <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Nội dung liên hệ"></textarea>
-                                                            </div>
-                                                            <button type="submit" class="site-btn">Gửi</button>
-                                                            <div class="submitting"></div>
-                                                        </div>
-                                                    </div>
-                                                </form>
                                             </div>
                                         </div>
                                     </div>

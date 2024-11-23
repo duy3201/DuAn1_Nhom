@@ -3,17 +3,13 @@
 namespace App\Controllers\Admin;
 
 use App\Helpers\NotificationHelper;
-use App\Models\Category;
 use App\Models\CategoryPost;
 use App\Models\Post;
 use App\Models\User;
-use App\Validations\CategoryValidation;
 use App\Validations\PostValidation;
 use App\Views\Admin\Layouts\Footer;
-use App\Views\Admin\Layouts\Header;
 use App\Views\Admin\Components\Notification;
-use App\Views\Admin\Pages\Category\Create as CategoryCreate;
-
+use App\Views\Admin\Layouts\Header;
 use App\Views\Admin\Pages\Post\Edit;
 use App\Views\Admin\Pages\Post\Index;
 use App\Views\Admin\Pages\post\Create as postCreate;
@@ -213,7 +209,7 @@ class PostController
         NotificationHelper::error('delete', 'Xóa loại bài viết thất bại');
        }
 
-       header('location: /admin/post');
+       header('location: /admin/posts');
         
     }
 }
