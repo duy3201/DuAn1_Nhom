@@ -10,8 +10,8 @@ class Detail extends BaseView
 {
     public static function render($data = null)
     {
-        // $is_login = AuthHelper::checkLogin();
-        // var_dump($_SESSION);
+        $is_login = AuthHelper::checkLogin();
+        var_dump($_COOKIE['view']);
 ?>
 
 

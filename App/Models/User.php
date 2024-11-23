@@ -43,6 +43,7 @@ class User extends BaseModel
             $sql = "SELECT * FROM users WHERE username=?";
             $conn = $this->_conn->MySQLi();
             $stmt = $conn->prepare($sql);
+            
 
             $stmt->bind_param('s', $username);
             $stmt->execute();
