@@ -13,18 +13,6 @@ class Detail extends BaseView
         $is_login = AuthHelper::checkLogin();
         // var_dump($is_login);
         // Kiểm tra cookie 'user'
-        if (isset($_COOKIE['user'])) {
-            $user_data = json_decode($_COOKIE['user'], true); // Giải mã JSON thành mảng
-            if ($user_data) {
-                echo "ID: " . ($user_data['id'] ?? 'Không có') . "<br>";
-                echo "Username: " . ($user_data['username'] ?? 'Không có') . "<br>";
-                echo "Email: " . ($user_data['email'] ?? 'Không có') . "<br>";
-            } else {
-                echo "Cookie 'user' không chứa dữ liệu hợp lệ.";
-            }
-        } else {
-            echo "Cookie 'user' không tồn tại.";
-        }
 ?>
 
 

@@ -73,17 +73,17 @@ class Header extends BaseView
                         <div class="col-lg-7 col-md-7">
                             <div class="advanced-search">
                                 <button type="button" class="category-btn">Sản phẩm mới</button>
-                                <div class="input-group">
-                                    <input type="text" placeholder="Bạn cần gì?">
-                                    <button type="button"><i class="ti-search"></i></button>
-                                </div>
+                                <form action="/products" method="GET" class="input-group">
+                                    <input type="text" name="search" placeholder="Bạn cần gì?"
+                                        value="<?= isset($_GET['search']) ? htmlspecialchars($_GET['search']) : '' ?>"
+                                        class="form-control">
+                                    <button type="submit">
+                                        <i class="ti-search"></i>
+                                    </button>
+                                </form>
                             </div>
-
-                            <body>
-
-
-
                         </div>
+
                         <div class="col-lg-3 col-md-3">
                             <ul class="nav-right d-flex justify-content-start">
                                 <!-- Yêu thích -->
@@ -191,8 +191,8 @@ class Header extends BaseView
                     </div>
 
 
-
                 </div>
+            </div>
 
             </div>
             </div>
@@ -240,7 +240,7 @@ class Header extends BaseView
                     <div id="mobile-menu-wrap"></div>
                 </div>
             </div>
-            
+
             <script src="/path-to-your-project/sweetalert2.min.js"></script>
 
         </header>
