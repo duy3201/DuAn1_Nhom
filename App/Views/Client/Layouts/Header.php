@@ -202,7 +202,7 @@ class Header extends BaseView
                             <i class="ti-menu"></i>
 
                             <span>Danh mục sản phẩm <span>
-                                    <ul class="depart-hover">
+                            <ul class="depart-hover">
                                         <?php
                                         CategoryMenu::render($data['categories']);
                                         ?>

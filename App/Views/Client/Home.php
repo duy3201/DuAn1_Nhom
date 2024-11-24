@@ -14,7 +14,6 @@ class Home extends BaseView
 
 
         <!-- Phần Hero Bắt Đầu -->
-
         <section class="hero-section">
             <div class="hero-items owl-carousel">
                 <!-- <div class="single-hero-items set-bg" data-setbg="/public/assets/client/img/hero-1.jpg"> -->

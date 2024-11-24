@@ -47,11 +47,6 @@ class ProductController
     $product_detail = $product->getOneProductByStatus($id);
     $product_quality = $product->getOneProductByQuality($id);
 
-        $categories = new Category();
-        $categories = $categories->getAllCategoryByStatus();
-        $product = new Product();
-        $product_detail = $product->getOneProductByStatus($id);
-
         if (!$product_detail) {
             NotificationHelper::error('product_detail', 'Không thể xem sản phẩm này');
             header('location: /products');
@@ -64,51 +59,18 @@ class ProductController
         $data = [
             'products' => $product_detail,
             'categories' => $categories,
+            'quality' => $product_quality ?? [],
             'comments' => $comments
         ];
 
         //  $view_result = ViewProductHelper::cookieView($id, $product_detail['view']);
 
-        Header::render();
+        Header::render($data);
         Notification::render();
         NotificationHelper::unset();
         Detail::render($data);
         Footer::render();
     
-
-    // Đảm bảo rằng product_quality và categories là mảng (trường hợp không có dữ liệu)
-    $data = [
-        'products' => $product_detail,
-        'quality' => $product_quality ?? [], // Gán mảng rỗng nếu không có dữ liệu
-        'categories' => $categories ?? [] // Gán mảng rỗng nếu không có dữ liệu
-    ];
-
-    Header::render($data);
-    Notification::render();
-    NotificationHelper::unset();
-    Detail::render($data);
-    Footer::render();
-
-    
-
-    if (!$product_detail) {
-        NotificationHelper::error('product_detail', 'Không thể xem sản phẩm này');
-        header('location: /products');
-        exit;
-    }
-
-    // Đảm bảo rằng product_quality và categories là mảng (trường hợp không có dữ liệu)
-    $data = [
-        'products' => $product_detail,
-        'quality' => $product_quality ?? [], // Gán mảng rỗng nếu không có dữ liệu
-        'categories' => $categories ?? [] // Gán mảng rỗng nếu không có dữ liệu
-    ];
-
-    Header::render($data);
-    Notification::render();
-    NotificationHelper::unset();
-    Detail::render($data);
-    Footer::render();
 
     
 }
