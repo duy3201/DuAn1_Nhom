@@ -48,20 +48,20 @@ class Edit extends BaseView
                             </div>
                             <div class="group-input mb-3">
                                 <label for="address">Địa chỉ*</label>
-                                <input type="text" name="address" id="address" class="form-control mb-3" placeholder="Nhập địa chỉ">
+                                <input type="text" name="address" id="address" class="form-control mb-3" placeholder="Nhập địa chỉ" value="<?= $data['address'] ?>" required>
                                 <span style="display: none;" id="address-title" class="text-danger">Vui lòng nhập địa chỉ</span>
                             </div>
                             <div class="group-input mb-3">
                                 <label for="date_of_birth">Năm sinh*</label>
-                                <input type="date" name="date_of_birth" id="date_of_birth" class="form-control mb-3">
+                                <input type="date" name="date_of_birth" id="date_of_birth" class="form-control mb-3" value="<?= $data['date_of_birth'] ?>" required>
                                 <span style="display: none;" id="date_of_birth-title" class="text-danger">Vui lòng nhập năm sinh</span>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group mb-3">
                                 <label for="avatar" class="form-label">Ảnh đại diện</label>
                                 <input type="file" name="avatar" id="avatar" class="form-control mb-3" accept="image/*">
                                 <span style="display: none;" id="avatar-error" class="text-danger">Vui lòng chọn ảnh hợp lệ (PNG, JPG, JPEG, kích thước nhỏ hơn 2MB).</span>
                             </div>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between mb-3">
                                 <button type="reset" class="btn btn-outline-danger">Nhập lại</button>
                                 <button type="submit" class="btn btn-warning">Cập nhật</button>
                             </div>

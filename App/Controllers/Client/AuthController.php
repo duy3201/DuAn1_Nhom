@@ -105,7 +105,7 @@ class AuthController
 
     public static function loginAction()
     {
-
+        
         $is_valid = AuthValidation::login();
 
         if (!$is_valid) {
@@ -124,7 +124,7 @@ class AuthController
 
         if ($result) {
             //nếu đúng sẽ dẫn tới trang chủ
-            NotificationHelper::success('login', 'Đăng nhập thành công');
+            NotificationHelper::success('login', 'Chào mừng bạn quay trở lại. Chúc bạn một ngày tốt lành.');
             // $db = $_SESSION['user'];
             // self::handleUserLogin($db['id'], $db);
             header('location: /');
@@ -138,7 +138,7 @@ class AuthController
     public static function logout()
     {
         AuthHelper::logout();
-        NotificationHelper::success('logout', 'Đăng xuất thành công');
+        NotificationHelper::success('logout', 'Đăng xuất thành công.<br> Mong sớm gặp lại bạn!');
         header('location: /');
     }
 
@@ -180,7 +180,7 @@ class AuthController
             header("location: /users/$id");
             exit;
         }
-
+        // đưa dữ liệu vào 
         $data = [
             'name' => $_POST['name'],
             'email' => $_POST['email'],

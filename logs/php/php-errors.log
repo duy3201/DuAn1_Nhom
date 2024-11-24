@@ -997,3 +997,943 @@ Stack trace:
 [22-Nov-2024 00:58:58 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product_quantily" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Product\Detail.php on line 112
 [22-Nov-2024 00:59:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product_quatily" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Product\Detail.php on line 112
 [22-Nov-2024 00:59:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "product_quantily" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Product\Detail.php on line 112
+[23-Nov-2024 20:23:08 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 20:23:08 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 20:23:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 20:23:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 20:23:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 20:23:32 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 20:23:42 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 20:23:42 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 20:23:45 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 20:23:45 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 20:23:50 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 20:23:50 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 20:32:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 20:32:57 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 20:33:03 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 20:33:03 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 20:33:07 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 20:33:07 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 20:33:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 20:33:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 21:22:11 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 21:22:11 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 21:36:03 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 21:36:03 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 21:36:16 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 21:36:16 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 21:36:18 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 21:36:18 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 21:36:34 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 21:36:34 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 21:36:39 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 21:36:39 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 21:36:42 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 21:36:42 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:39:50 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:39:50 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:40:21 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:40:21 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:40:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:40:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:40:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:40:32 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:40:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:40:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:40:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:40:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:40:39 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:40:39 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:40:43 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:40:43 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:40:45 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:40:45 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:41:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:41:00 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:41:29 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:41:29 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:41:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:41:32 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:41:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:41:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:41:38 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:41:38 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:43:56 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:43:56 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:44:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:44:00 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:46:05 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:46:05 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:46:13 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:46:13 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:46:44 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:46:44 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:51:53 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:51:53 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:52:04 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:52:04 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:52:23 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:52:23 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:52:26 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:52:26 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:52:29 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:52:29 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:52:31 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:52:31 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:52:34 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:52:34 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:52:38 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:52:38 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:55:22 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:55:22 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:55:25 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:55:25 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:55:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:55:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:55:42 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:55:42 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:55:47 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:55:47 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:55:53 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:55:53 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:56:21 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:56:21 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:56:26 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:56:26 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:56:30 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:56:30 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:56:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:56:36 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:58:51 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:58:51 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:58:56 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:58:56 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:59:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:59:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:59:30 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:59:30 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:59:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:59:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:59:38 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:59:38 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:59:43 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:59:43 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 22:59:51 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 22:59:51 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:04:28 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:04:28 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:04:30 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:04:30 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:04:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:04:32 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:04:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type bool in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 130
+[23-Nov-2024 23:04:36 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 130
+[23-Nov-2024 23:04:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:04:36 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:05:03 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:05:03 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:05:05 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:05:05 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:05:08 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:05:08 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:05:12 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:05:12 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:05:20 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:05:20 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:05:22 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:05:22 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:05:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:05:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:05:30 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:05:30 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:05:53 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:05:53 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:05:59 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:05:59 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:08:15 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:08:15 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:08:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:08:19 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:08:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:08:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:08:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:08:37 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:08:43 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:08:43 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:08:46 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:08:46 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:10:51 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:10:51 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[23-Nov-2024 23:10:55 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 208
+[23-Nov-2024 23:10:55 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:04:49 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:04:49 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:12:22 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:12:22 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:14:28 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:14:28 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:15:05 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:15:05 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:15:07 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:15:07 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:15:41 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:15:41 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:16:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:16:00 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:16:05 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:16:05 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:16:08 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:16:08 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:16:18 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:16:18 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:16:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:16:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:16:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:16:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:17:49 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:17:49 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:17:55 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:17:55 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:17:56 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:17:56 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:18:48 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:18:48 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:20:20 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:20:20 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:20:56 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:20:56 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:21:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:21:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:22:26 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:22:26 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:22:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:22:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:22:52 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:22:52 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:24:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:24:00 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:24:13 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:24:13 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:24:15 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:24:15 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:24:18 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:24:18 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:24:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:24:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:25:11 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:25:11 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:26:59 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:26:59 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:27:59 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:27:59 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:28:34 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:28:34 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:28:44 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:28:44 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:28:48 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:28:48 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:29:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:29:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:31:08 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:31:08 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:32:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:32:19 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:35:58 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:35:58 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:36:48 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:36:48 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:37:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:37:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:52:51 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:52:51 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:52:55 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:52:55 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:53:02 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:53:02 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:56:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:56:37 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:56:40 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:56:40 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:57:23 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:57:23 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:57:30 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:57:30 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:57:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:57:37 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:57:40 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:57:40 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 01:57:43 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 01:57:43 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:00:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:00:36 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:05:28 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:05:28 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:05:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:05:36 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:05:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:05:57 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:06:02 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:06:02 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:09:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:09:00 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:09:05 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:09:05 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:09:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:09:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:09:39 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:09:39 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:18:22 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:18:22 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:21:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:21:00 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:21:05 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:21:05 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:21:14 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:21:14 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:21:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:21:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:21:49 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:21:49 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:21:51 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:21:51 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:21:55 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:21:55 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:22:46 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:22:46 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:22:46 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Components\Notification" not found in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php:79
+Stack trace:
+#0 D:\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\AuthController::login()
+#1 D:\DUAN-1\DuAn1_Nhom\index.php(184): App\Route::dispatch()
+#2 {main}
+  thrown in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 79
+[24-Nov-2024 02:22:59 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:22:59 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:22:59 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Components\Notification" not found in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php:79
+Stack trace:
+#0 D:\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\AuthController::login()
+#1 D:\DUAN-1\DuAn1_Nhom\index.php(184): App\Route::dispatch()
+#2 {main}
+  thrown in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 79
+[24-Nov-2024 02:23:02 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:23:02 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:23:02 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Components\Notification" not found in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\HomeController.php:34
+Stack trace:
+#0 D:\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\HomeController::index()
+#1 D:\DUAN-1\DuAn1_Nhom\index.php(184): App\Route::dispatch()
+#2 {main}
+  thrown in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\HomeController.php on line 34
+[24-Nov-2024 02:24:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:24:32 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:24:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:24:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:24:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:24:36 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:24:40 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:24:40 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:25:29 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:25:29 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:27:34 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:27:34 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:27:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:27:37 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:27:47 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:27:47 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:30:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:30:19 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:30:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type bool in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 116
+[24-Nov-2024 02:30:58 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:30:58 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:31:02 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:31:02 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:31:06 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:31:06 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:31:12 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:31:12 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:38:11 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:38:11 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:41:09 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:41:09 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:41:12 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:41:12 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:41:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:41:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:41:28 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:41:28 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:41:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:41:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:41:51 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:41:51 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:41:54 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:41:54 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:47:10 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\AuthController::login() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
+Stack trace:
+#0 D:\DUAN-1\DuAn1_Nhom\index.php(184): App\Route::dispatch()
+#1 {main}
+  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
+[24-Nov-2024 02:47:55 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\AuthController::login() in D:\DUAN-1\DuAn1_Nhom\App\Route.php:82
+Stack trace:
+#0 D:\DUAN-1\DuAn1_Nhom\index.php(184): App\Route::dispatch()
+#1 {main}
+  thrown in D:\DUAN-1\DuAn1_Nhom\App\Route.php on line 82
+[24-Nov-2024 02:50:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:50:57 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:51:06 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:51:06 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 02:53:50 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 02:53:50 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:01:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:01:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:01:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:01:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:05:05 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:05:05 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:05:07 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:05:07 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:05:12 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:05:12 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:08:34 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:08:34 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:08:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:08:37 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:09:59 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:09:59 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:09:59 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:09:59 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:10:02 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:10:02 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:10:29 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:10:29 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:10:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:10:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:10:38 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:10:38 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:12:07 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:12:07 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:12:20 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:12:20 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:12:23 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:12:23 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:12:29 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:12:29 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:12:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:12:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:13:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:13:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:13:13 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:13:13 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:13:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:13:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:13:39 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:13:39 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:13:48 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:13:48 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:13:51 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:13:51 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:14:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:14:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:14:28 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:14:28 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:15:42 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:15:42 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:15:45 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:15:45 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:16:05 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:16:05 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:16:08 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:16:08 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:16:43 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:16:43 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:16:46 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:16:46 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:17:01 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:17:01 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:17:04 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:17:04 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:17:13 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:17:13 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:17:16 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:17:16 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:17:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:17:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:17:42 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:17:42 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:19:07 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:19:07 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:19:11 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:19:11 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:21:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:21:00 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:21:03 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:21:03 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:22:04 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:22:04 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:22:07 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:22:07 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:22:09 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:22:09 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:22:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:22:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:22:40 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:22:40 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:22:42 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:22:42 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:22:52 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:22:52 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:22:53 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:22:53 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:25:23 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:25:23 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:25:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:25:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:26:23 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:26:23 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:26:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:26:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:26:29 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:26:29 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:26:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:26:32 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:26:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:26:36 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:27:48 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:27:48 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:27:51 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:27:51 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:27:55 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:27:55 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:27:59 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:27:59 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:28:06 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:28:06 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:28:08 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:28:08 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:28:12 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:28:12 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:28:17 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:28:17 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:28:22 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:28:22 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:31:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:31:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:31:41 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:31:41 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:31:44 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:31:44 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:31:47 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:31:47 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:31:51 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:31:51 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:31:54 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:31:54 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:34:17 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:34:17 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:34:23 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:34:23 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:35:52 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:35:52 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:35:54 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:35:54 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:35:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:35:57 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:36:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:36:00 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:36:03 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:36:03 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:36:06 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:36:06 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:36:09 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:36:09 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:37:09 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:37:09 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:37:13 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:37:13 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:40:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:40:57 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:41:13 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:41:13 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:41:16 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:41:16 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:41:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:41:37 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:42:15 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:42:15 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:42:31 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:42:31 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:42:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:42:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:46:47 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:46:47 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:46:50 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:46:50 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:47:21 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:47:21 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:47:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:47:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:47:28 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:47:28 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:47:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:47:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:48:06 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:48:06 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:48:29 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:48:29 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:48:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:48:32 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:49:14 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:49:14 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:49:34 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:49:34 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:49:43 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:49:43 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:49:52 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:49:52 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:50:18 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:50:18 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:50:21 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:50:21 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:50:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:50:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:51:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:51:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:51:10 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "error" in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Notification.php on line 43
+[24-Nov-2024 03:51:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Notification.php on line 43
+[24-Nov-2024 03:51:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:51:19 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:51:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:51:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:51:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:51:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:51:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:51:37 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:52:08 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:52:08 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:52:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:52:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:52:14 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:52:14 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:52:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:52:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:53:03 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:53:03 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:53:07 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:53:07 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 03:59:58 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 03:59:58 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 04:00:02 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 04:00:02 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:24:04 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:24:04 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:24:08 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:24:08 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:24:20 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:24:20 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:24:23 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:24:23 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:24:26 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:24:26 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:29:21 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:29:21 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:29:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:29:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:29:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:29:36 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:29:41 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:29:41 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:30:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:30:36 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:30:39 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:30:39 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:30:45 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:30:45 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:30:48 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:30:48 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:32:02 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:32:02 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:32:04 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:32:04 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:34:08 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:34:08 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:34:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:34:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:34:16 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:34:16 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:39:40 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:39:40 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:39:42 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:39:42 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:39:45 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:39:45 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:39:50 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:39:50 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:39:51 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:39:51 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:39:54 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:39:54 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:40:20 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:40:20 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:40:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:40:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:40:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:40:37 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:41:18 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:41:18 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:41:46 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:41:46 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:42:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:42:19 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:42:22 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:42:22 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:43:59 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:43:59 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:44:02 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:44:02 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:44:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:44:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:46:18 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:46:18 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:46:22 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:46:22 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:46:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:46:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:47:40 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:47:40 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:47:50 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:47:50 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:49:29 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:49:29 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:51:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:51:57 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:53:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:53:00 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:53:05 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:53:05 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:53:43 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:53:43 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:54:30 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:54:30 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:54:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:54:32 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:54:41 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:54:41 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:54:45 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:54:45 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:55:01 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:55:01 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:55:04 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:55:04 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:55:53 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:55:53 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:56:00 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:56:00 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:56:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:56:32 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:56:38 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:56:38 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:56:41 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:56:41 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:56:47 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:56:47 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:57:21 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:57:21 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:57:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:57:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 10:57:31 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 10:57:31 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:00:09 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:00:09 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:00:11 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:00:11 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:00:21 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:00:21 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:00:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:00:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:00:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:00:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:00:47 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:00:47 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:00:52 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:00:52 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:00:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:00:57 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:01:03 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:01:03 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:02:55 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:02:55 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:02:55 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Components\Notification" not found in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php:79
+Stack trace:
+#0 D:\DUAN-1\DuAn1_Nhom\App\Route.php(82): App\Controllers\Client\AuthController::login()
+#1 D:\DUAN-1\DuAn1_Nhom\index.php(184): App\Route::dispatch()
+#2 {main}
+  thrown in D:\DUAN-1\DuAn1_Nhom\App\Controllers\Client\AuthController.php on line 79
+[24-Nov-2024 11:03:20 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:03:20 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:03:26 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:03:26 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:15:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:15:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:15:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:15:32 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:15:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:15:36 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:15:43 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:15:43 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:15:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:15:57 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:16:02 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:16:02 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:16:06 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:16:06 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:16:11 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:16:11 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:23:49 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:23:49 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:23:52 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:23:52 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:24:01 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:24:01 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:25:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:25:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:25:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:25:36 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:25:43 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:25:43 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:25:54 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:25:54 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:29:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:29:37 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:30:01 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:30:01 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:30:02 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:30:02 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:30:13 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:30:13 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:30:41 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:30:41 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:30:56 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:30:56 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:31:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:31:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:32:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:32:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:32:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:32:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:32:29 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:32:29 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:32:42 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:32:42 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:32:55 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:32:55 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:32:59 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:32:59 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:33:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:33:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:33:38 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:33:38 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:34:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:34:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:34:19 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "adderss" in D:\DUAN-1\DuAn1_Nhom\App\Models\User.php on line 63
+[24-Nov-2024 11:34:19 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "date_of_birth" in D:\DUAN-1\DuAn1_Nhom\App\Models\User.php on line 64
+[24-Nov-2024 11:34:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:34:19 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:34:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:34:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:35:06 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:35:06 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:35:09 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:35:09 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:35:11 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:35:11 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:35:12 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:35:12 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:35:22 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:35:22 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:35:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "adderss" in D:\DUAN-1\DuAn1_Nhom\App\Models\User.php on line 63
+[24-Nov-2024 11:35:28 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "date_of_birth" in D:\DUAN-1\DuAn1_Nhom\App\Models\User.php on line 64
+[24-Nov-2024 11:35:28 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:35:28 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:35:53 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:35:53 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:35:54 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:35:54 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:36:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:36:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:36:18 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:36:18 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:36:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:36:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:36:31 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "adderss" in D:\DUAN-1\DuAn1_Nhom\App\Models\User.php on line 63
+[24-Nov-2024 11:36:31 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "date_of_birth" in D:\DUAN-1\DuAn1_Nhom\App\Models\User.php on line 64
+[24-Nov-2024 11:36:32 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:36:32 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:36:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:36:36 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:38:59 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:38:59 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:39:08 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:39:08 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:39:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:39:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:40:08 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:40:08 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:40:10 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:40:10 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:42:34 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:42:34 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:43:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:43:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:43:31 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:43:31 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:44:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:44:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:44:27 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "password" in D:\DUAN-1\DuAn1_Nhom\App\Validations\AuthValidation.php on line 280
+[24-Nov-2024 11:44:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:44:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:45:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:45:37 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:45:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "password" in D:\DUAN-1\DuAn1_Nhom\App\Validations\AuthValidation.php on line 280
+[24-Nov-2024 11:45:44 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:45:44 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:45:57 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "password" in D:\DUAN-1\DuAn1_Nhom\App\Validations\AuthValidation.php on line 280
+[24-Nov-2024 11:45:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:45:57 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:47:18 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:47:18 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:47:20 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:47:20 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:47:23 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:47:23 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:47:27 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:47:27 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:47:34 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:47:34 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:47:36 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:47:36 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:47:54 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:47:54 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:48:58 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:48:58 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:49:21 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:49:21 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:49:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:49:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:49:34 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:49:34 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:50:42 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "adderss" in D:\DUAN-1\DuAn1_Nhom\App\Models\User.php on line 63
+[24-Nov-2024 11:50:42 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "date_of_birth" in D:\DUAN-1\DuAn1_Nhom\App\Models\User.php on line 64
+[24-Nov-2024 11:50:42 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:50:42 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:50:53 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:50:53 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:50:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:50:57 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:51:01 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:51:01 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:51:17 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "adderss" in D:\DUAN-1\DuAn1_Nhom\App\Models\User.php on line 63
+[24-Nov-2024 11:51:17 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "date_of_birth" in D:\DUAN-1\DuAn1_Nhom\App\Models\User.php on line 64
+[24-Nov-2024 11:51:17 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:51:17 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:51:24 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:51:24 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15
+[24-Nov-2024 11:51:29 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 209
+[24-Nov-2024 11:51:29 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in D:\DUAN-1\DuAn1_Nhom\App\Views\Client\Components\Category.php on line 15

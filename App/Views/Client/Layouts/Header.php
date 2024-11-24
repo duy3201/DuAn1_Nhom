@@ -159,6 +159,7 @@ class Header extends BaseView
                                                         <!-- <a class="dropdown-item" href="#">Action</a> -->
                                                         <a class="dropdown-item"
                                                             href="/users/<?= $_SESSION['user']['id'] ?>">Hi,<?= $_SESSION['user']['name'] ?></a>
+                                                            <a class="dropdown-item" href="/change-password">Đổi mật khẩu</a>
                                                         <a class="dropdown-item" href="/logout">Đăng Xuất</a>
                                                     </div>
                                                 </li>

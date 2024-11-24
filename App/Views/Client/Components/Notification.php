@@ -10,7 +10,7 @@ class Notification extends BaseView
     {
         // Hiển thị thông báo thành công với SweetAlert2
         if (isset($_SESSION['success'])):
-            foreach ($_SESSION['success'] as $value):
+            foreach ($_SESSION['success'] as $key => $value):
                 ?>
                 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
                 <script>
@@ -73,7 +73,7 @@ class Notification extends BaseView
 ?>
 
 <!-- Khởi tạo tất cả các Toast -->
-<script>
+<!-- <script>
     document.addEventListener('DOMContentLoaded', function () {
         var toastElements = document.querySelectorAll('.toast');
         toastElements.forEach(function (toastEl) {
@@ -81,4 +81,4 @@ class Notification extends BaseView
             toast.show(); // Hiển thị toast khi trang được tải
         });
     });
-</script>
+</script> -->

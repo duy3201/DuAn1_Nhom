@@ -159,7 +159,7 @@ class AuthValidation {
             return false;
         }
     
-        // Đường dẫn thư mục lưu hình ảnh
+        // nơi lưu trữ Đường dẫn thư mục lưu hình ảnh
         $target_dir = $_SERVER['DOCUMENT_ROOT'] . '/public/assets/client/img/';
     
         // Kiểm tra xem thư mục có tồn tại không, nếu không thì tạo mới
@@ -177,7 +177,7 @@ class AuthValidation {
         if (!in_array($imageFileType, $allowed_types)) {
             NotificationHelper::error('type_upload', 'Chỉ nhận file ảnh JPG, PNG, JPEG, GIF, WEBP');
             return false;
-        }
+        }   
     
         // Kiểm tra dung lượng file
         $maxFileSize = 5 * 1024 * 1024; // 5MB
@@ -189,7 +189,7 @@ class AuthValidation {
         // Thay đổi tên file thành dạng năm tháng ngày giờ phút giây và mã hash để tránh trùng
         $nameImage = date('YmdHis') . uniqid() . '.' . $imageFileType;
     
-        // Đường dẫn đầy đủ để di chuyển file
+        // Đường dẫn đầy đủ để di chuyển file   
         $target_file = $target_dir . $nameImage;
     
         // Di chuyển file từ tmp đến thư mục đích
