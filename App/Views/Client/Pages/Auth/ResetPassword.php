@@ -9,6 +9,7 @@ class ResetPassword extends BaseView
     public static function render($data = null)
     {
 ?>
+
         <!-- code giao diện -->
         <div class="container mt-5">
             <div class="row">
@@ -22,6 +23,8 @@ class ResetPassword extends BaseView
                                 <input type="password" name="password" id="password" class="form-control mb-3" placeholder="Nhập mật khẩu">
                                 <small class="text-danger" id="passwordError"></small>
                                 <p id="password-strength" class="mt-2 text-warning" style="font-size: 12px;"></p>
+
+                                
                             </div>
                             <div class="form-group">
                                 <label for="re_password">Nhập lại mật khẩu*</label>
@@ -47,73 +50,80 @@ class ResetPassword extends BaseView
 
         <!-- JavaScript kiểm tra mật khẩu mạnh -->
         <script>
-            document.getElementById("resetPasswordForm").addEventListener("submit", function (e) {
-                let hasError = false;
+    // Lắng nghe sự kiện 'input' khi người dùng nhập vào ô mật khẩu
+    document.getElementById("password").addEventListener('input', function () {
+        const password = this.value.trim();
+        const passwordStrengthIndicator = document.getElementById("password-strength");
+        const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
 
-                // Lấy giá trị input
-                const password = document.getElementById("password").value.trim();
-                const rePassword = document.getElementById("re_password").value.trim();
+        // Kiểm tra độ mạnh mật khẩu
+        function checkPasswordStrength(password) {
+            if (password.length < 6) {
+                return "Weak";  // Mật khẩu yếu nếu dài dưới 6 ký tự
+            }
+            if (passwordPattern.test(password)) {
+                return "Strong";  // Mật khẩu mạnh nếu đáp ứng tất cả yêu cầu (chữ hoa, chữ thường, số và ký tự đặc biệt)
+            }
+            return "Medium";  // Nếu mật khẩu dài và có một số yếu tố nhưng chưa đủ mạnh
+        }
 
-                // Xóa thông báo lỗi cũ
-                document.getElementById("passwordError").textContent = "";
-                document.getElementById("rePasswordError").textContent = "";
-                document.getElementById("password-strength").textContent = "";
+        const strength = checkPasswordStrength(password);
+        console.log("Password strength:", strength); // Kiểm tra xem hàm trả về gì
+        
+        // Cập nhật thông báo độ mạnh mật khẩu và màu sắc
+        if (strength === "Weak") {
+            passwordStrengthIndicator.textContent = "Độ mạnh: Yếu (Mật khẩu phải có ít nhất 6 ký tự, bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt)";
+            passwordStrengthIndicator.style.setProperty("color", "red", "important");  // Màu đỏ cho mật khẩu yếu
+        } else if (strength === "Medium") {
+            passwordStrengthIndicator.textContent = "Độ mạnh: Trung bình (Bạn nên sử dụng thêm ký tự đặc biệt để tăng độ mạnh)";
+            passwordStrengthIndicator.style.setProperty("color", "orange", "important");
+  // Màu cam cho mật khẩu trung bình
+        } else if (strength === "Strong") {
+            passwordStrengthIndicator.textContent = "Độ mạnh: Mạnh";
+            passwordStrengthIndicator.style.setProperty("color", "green", "important");
+  // Màu xanh cho mật khẩu mạnh
+        }
+        
+    });
 
-                // Kiểm tra mật khẩu
-                if (password === "") {
-                    document.getElementById("passwordError").textContent = "Vui lòng nhập mật khẩu.";
-                    hasError = true;
-                } else if (password.length < 6) {
-                    document.getElementById("passwordError").textContent = "Mật khẩu phải ít nhất 6 ký tự.";
-                    hasError = true;
-                }
+    // Kiểm tra mật khẩu khi form được submit
+    document.getElementById("resetPasswordForm").addEventListener("submit", function (e) {
+        let hasError = false;
 
-                // Kiểm tra nhập lại mật khẩu
-                if (rePassword === "") {
-                    document.getElementById("rePasswordError").textContent = "Vui lòng nhập lại mật khẩu.";
-                    hasError = true;
-                } else if (password !== rePassword) {
-                    document.getElementById("rePasswordError").textContent = "Mật khẩu nhập lại không khớp.";
-                    hasError = true;
-                }
+        // Lấy giá trị input
+        const password = document.getElementById("password").value.trim();
+        const rePassword = document.getElementById("re_password").value.trim();
 
-                // Ngăn form submit nếu có lỗi
-                if (hasError) {
-                    e.preventDefault();
-                }
-            });
+        // Xóa thông báo lỗi cũ
+        document.getElementById("passwordError").textContent = "";
+        document.getElementById("rePasswordError").textContent = "";
+        document.getElementById("password-strength").textContent = "";
 
-            // Kiểm tra độ mạnh mật khẩu
-            document.getElementById("password").addEventListener('input', function () {
-                const password = this.value.trim();
-                const passwordStrengthIndicator = document.getElementById("password-strength");
-                const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
+        // Kiểm tra mật khẩu
+        if (password === "") {
+            document.getElementById("passwordError").textContent = "Vui lòng nhập mật khẩu.";
+            hasError = true;
+        } else if (password.length < 6) {
+            document.getElementById("passwordError").textContent = "Mật khẩu phải ít nhất 6 ký tự.";
+            hasError = true;
+        }
 
-                // Kiểm tra độ mạnh mật khẩu
-                function checkPasswordStrength(password) {
-                    if (password.length < 6) {
-                        return "Weak";
-                    }
-                    if (passwordPattern.test(password)) {
-                        return "Strong";
-                    }
-                    return "Medium";
-                }
+        // Kiểm tra nhập lại mật khẩu
+        if (rePassword === "") {
+            document.getElementById("rePasswordError").textContent = "Vui lòng nhập lại mật khẩu.";
+            hasError = true;
+        } else if (password !== rePassword) {
+            document.getElementById("rePasswordError").textContent = "Mật khẩu nhập lại không khớp.";
+            hasError = true;
+        }
 
-                const strength = checkPasswordStrength(password);
+        // Ngăn form submit nếu có lỗi
+        if (hasError) {
+            e.preventDefault();
+        }
+    });
+</script>
 
-                if (strength === "Weak") {
-                    passwordStrengthIndicator.textContent = "Độ mạnh: Yếu (Mật khẩu phải có ít nhất 6 ký tự, bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt)";
-                    passwordStrengthIndicator.style.color = "red";
-                } else if (strength === "Medium") {
-                    passwordStrengthIndicator.textContent = "Độ mạnh: Trung bình (Bạn nên sử dụng thêm ký tự đặc biệt để tăng độ mạnh)";
-                    passwordStrengthIndicator.style.color = "orange";
-                } else if (strength === "Strong") {
-                    passwordStrengthIndicator.textContent = "Độ mạnh: Mạnh";
-                    passwordStrengthIndicator.style.color = "green";
-                }
-            });
-        </script>
 <?php
     }
 }

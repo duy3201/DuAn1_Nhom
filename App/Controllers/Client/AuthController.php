@@ -60,9 +60,9 @@ class AuthController
         // $date_of_birth = $_POST['date_of_birth'] ?? null;
         $name = $_POST['name'] ?? null;
         $name = $_POST['name'] ?? 'Anonymous';
-        if (empty($date_of_birth)) {
-            die("Ngày sinh không được để trống");
-        }
+        // if (empty($date_of_birth)) {
+        //     die("Ngày sinh không được để trống");
+        // }
         
         $email = $_POST['email'];
 

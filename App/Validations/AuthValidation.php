@@ -189,7 +189,7 @@ class AuthValidation {
         // Thay đổi tên file thành dạng năm tháng ngày giờ phút giây và mã hash để tránh trùng
         $nameImage = date('YmdHis') . uniqid() . '.' . $imageFileType;
     
-        // Đường dẫn đầy đủ để di chuyển file   
+        // Đường dẫn đầy đủ để di chuyển file       
         $target_file = $target_dir . $nameImage;
     
         // Di chuyển file từ tmp đến thư mục đích

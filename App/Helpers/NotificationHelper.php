@@ -9,9 +9,10 @@ class NotificationHelper{
         
     }
 
-    public static function error($key, $message){
+    public static function error($key, $message) {
         $_SESSION['success'][$key] = $message;
     }
+    
 
     public static function unset(){
         unset($_SESSION['success']);

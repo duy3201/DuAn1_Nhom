@@ -40,6 +40,9 @@ class Header extends BaseView
         <link rel="stylesheet" href="/public/assets/client/css copy/jquery-ui.min.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/slicknav.min.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/style.css" type="text/css">
+        <!-- Tải jQuery -->
+
+
 
         <script src="/path-to-your-project/sweetalert2.min.js"></script>
 
