@@ -167,19 +167,28 @@ class AuthController
     }
 
 
-
-
-
     public static function edit($id)
     {
         $result = AuthHelper::edit($id);
+        $category = new Category();
+        $categories = $category->getAllCategoryByStatus();
+        $categoriesmenu = $category->getAllCategoryByStatus();
+
+        $product = new Product();
+        $products = $product->getAllProductByStatus();
+
+        $data = [
+            'products' => $products,
+            'categories' => $categories,
+            'categoriesmenu' => $categoriesmenu
+        ];
 
         if (!$result) {
             if (isset($_SESSION['error']['login'])) {
                 header('location: /login');
                 exit;
             }
-            if (isset($_SESSION['error']['user_id'])) {
+            if (isset($_SESSION['error']['id_user'])) {
                 $data = $_SESSION['user'];
                 $user_id = $data['id'];
                 header("location: /user/$user_id");
@@ -187,11 +196,11 @@ class AuthController
             }
         }
 
-        $data = $_SESSION['user'];
-        Header::render();
+        $data1 = $_SESSION['user'];
+        Header::render($data);
         Notification::render();
         NotificationHelper::unset();
-        Edit::render($data);
+        Edit::render($data1);
         Footer::render();
     }
 

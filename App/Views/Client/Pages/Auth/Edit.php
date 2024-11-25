@@ -9,7 +9,7 @@ class Edit extends BaseView
     public static function render($data = null)
     {
 ?>
-        <div class="container mt-5">
+        <div class="container mt-5 mb-3">
             <div class="row">
                 <div class="offset-md-1 col-md-3">
                     <?php

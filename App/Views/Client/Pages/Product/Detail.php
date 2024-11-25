@@ -60,7 +60,7 @@ class Detail extends BaseView
                             <div class="col-lg-6">
                                 <div class="product-pic-zoom">
 
-                                    <img class="product-big-img" src="<?= APP_URL ?>/public/assets/admin/img/<?= $data['products']['img'] ?>" alt="">
+                                    <img class="product" src="<?= APP_URL ?>/public/assets/admin/img/<?= $data['products']['img'] ?>" alt="">
                                     <!-- <div class="zoom-icon">
                                         <i class="fa fa-search-plus"></i>
                                     </div> -->
@@ -157,7 +157,7 @@ class Detail extends BaseView
                                         <a data-toggle="tab" href="#tab-2" role="tab">Chi tiết</a>
                                     </li>
                                     <li>
-                                        <a data-toggle="tab" href="#tab-3" role="tab">Đánh giá của khách hàng (02)</a>
+                                        <a data-toggle="tab" href="#tab-3" role="tab">Đánh giá của khách hàng</a>
                                     </li>
                                 </ul>
                             </div>
@@ -304,7 +304,7 @@ class Detail extends BaseView
                                                                             <input type="hidden" name="id_product" value="<?= htmlspecialchars($data['products']['id']) ?>">
                                                                             <input type="hidden" name="id_user" value="<?= htmlspecialchars($_SESSION['user']['id']) ?>">
                                                                             <textarea class="form-control rounded-0" name="content" rows="3" placeholder="Nhập bình luận..." required></textarea>
-                                                                            <button type="submit" class="btn btn-primary btn-sm mt-2">Gửi</button>
+                                                                            <button type="submit" class="btn btn-warning btn-sm mt-2">Gửi</button>
                                                                         </form>
                                                                     </div>
                                                                 </div>

@@ -65,7 +65,7 @@ class Header extends BaseView
                     <div class="row">
                         <div class="col-lg-2 col-md-2">
                             <div class="logo">
-                                <a href=".">
+                                <a href="/">
                                     <img src="/public/assets/client/img/logo1.png" alt="Logo">
                                 </a>
                             </div>

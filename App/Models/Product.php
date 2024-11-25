@@ -46,51 +46,53 @@ class Product extends BaseModel
     // }
 
     public function getAllProductByStatus()
-{
-    $result = [];
-    try {
-        $sql = "
-        SELECT 
-            products.*, 
-            product_variants.quality, 
-            product_variants.price 
-        FROM 
-            products 
-        INNER JOIN 
-            categories ON products.id_category = categories.id 
-        INNER JOIN 
-            product_variants ON products.id = product_variants.id_product
-        WHERE 
-            products.status = " . self::STATUS_ENABLE . " 
-        AND 
-            categories.status = " . self::STATUS_ENABLE;
-        
-        $result = $this->_conn->MySQLi()->query($sql);
-        return $result->fetch_all(MYSQLI_ASSOC);
-    } catch (\Throwable $th) {
-        error_log('Lỗi khi hiển thị tất cả dữ liệu: ' . $th->getMessage());
-        return $result;
-    }
-}
+    {
+        $result = [];
+        try {
+            $sql = "
+            SELECT 
+                products.*, 
+                MAX(product_variants.quality) AS quality, 
+                MIN(product_variants.price) AS price
+            FROM 
+                products 
+            INNER JOIN 
+                categories ON products.id_category = categories.id 
+            INNER JOIN 
+                product_variants ON products.id = product_variants.id_product
+            WHERE 
+                products.status = " . self::STATUS_ENABLE . " 
+            AND 
+                categories.status = " . self::STATUS_ENABLE . "
+            GROUP BY 
+                products.id";
 
-public function getAllProductByIsfeature(){
-    $result = [];
-    try {
-        $sql = "SELECT products.*, categories.name AS category_name, product_variants.quality as product_quality, 
+            $result = $this->_conn->MySQLi()->query($sql);
+            return $result->fetch_all(MYSQLI_ASSOC);
+        } catch (\Throwable $th) {
+            error_log('Lỗi khi hiển thị tất cả dữ liệu: ' . $th->getMessage());
+            return $result;
+        }
+    }
+
+    public function getAllProductByIsfeature()
+    {
+        $result = [];
+        try {
+            $sql = "SELECT products.*, categories.name AS category_name, product_variants.quality as product_quality, 
             product_variants.price as product_price
         FROM products 
         INNER JOIN categories ON products.id_category = categories.id 
         INNER JOIN 
             product_variants ON products.id = product_variants.id_product
         WHERE products.is_featured =1;";
-        $result = $this->_conn->MySQLi()->query($sql);
-        return $result->fetch_all(MYSQLI_ASSOC);
-    } catch (\Throwable $th) {
-        error_log('Lỗi khi hiển thị dữ liệu: '. $th->getMessage());
-        return $result;
+            $result = $this->_conn->MySQLi()->query($sql);
+            return $result->fetch_all(MYSQLI_ASSOC);
+        } catch (\Throwable $th) {
+            error_log('Lỗi khi hiển thị dữ liệu: ' . $th->getMessage());
+            return $result;
+        }
     }
-
-}
 
 
 
@@ -196,16 +198,16 @@ ON
         INNER JOIN 
             product_variants ON products.id = product_variants.id_product
                 WHERE products.id = ? ";
-                $conn = $this->_conn->MySQLi();
-                $stmt = $conn->prepare($sql);
-    
-                $stmt->bind_param('i', $id);
-                $stmt->execute();
-                return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
-            } catch (\Throwable $th) {
-                error_log('Lỗi khi hiển thị dữ liệu: ' . $th->getMessage());
-                return $result;
-            }
+            $conn = $this->_conn->MySQLi();
+            $stmt = $conn->prepare($sql);
+
+            $stmt->bind_param('i', $id);
+            $stmt->execute();
+            return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+        } catch (\Throwable $th) {
+            error_log('Lỗi khi hiển thị dữ liệu: ' . $th->getMessage());
+            return $result;
+        }
     }
 
     public function countTotalProduct()

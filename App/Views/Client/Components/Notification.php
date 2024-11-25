@@ -13,9 +13,6 @@ class Notification extends BaseView
         if (isset($_SESSION['success'])):
             foreach ($_SESSION['success'] as $key => $value):
 ?>
-             <div class="alter alert-text-danger">
-                    <?= $value ?>
-                </div>
                 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
                 <script>
                     Swal.fire({
