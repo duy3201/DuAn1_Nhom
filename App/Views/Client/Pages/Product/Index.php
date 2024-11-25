@@ -2,16 +2,16 @@
 
 namespace App\Views\Client\Pages\Product;
 
+use App\Models\CartModel;
 use App\Views\BaseView;
 use App\Views\Client\Components\Category;
-use App\Views\Client\Components\ProductIsFeatured;
 
 class Index extends BaseView
 {
     public static function render($data = null)
     {
         $searchKeyword = isset($_GET['search']) ? trim($_GET['search']) : '';
-    
+
         // Lọc danh sách sản phẩm theo từ khóa tìm kiếm
         $filteredProducts = [];
         if (!empty($searchKeyword)) {
@@ -23,7 +23,29 @@ class Index extends BaseView
         } else {
             $filteredProducts = $data['products'];
         }
-        ?>
+
+        // Lấy thông tin giỏ hàng từ cookie
+        $cartModel = new CartModel();
+        $cartItems = $cartModel->getAllCartItems();
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_cart'])) {
+            $productId = $_POST['id_product'];
+            $price = $_POST['price'];
+            $quantity = $_POST['quantity'] ?? 1;
+
+            // Thêm sản phẩm vào giỏ hàng (cookie)
+            $cartModel->addToCart([
+                'id_product' => $productId,
+                'quantity' => $quantity,
+                'price' => $price,
+            ]);
+
+            // Chuyển hướng lại trang sau khi thêm vào giỏ hàng
+            header('Location: ' . $_SERVER['REQUEST_URI']);
+            exit;
+        }
+
+?>
         <section class="product-shop spad">
             <div class="container">
                 <div class="row">
@@ -41,21 +63,36 @@ class Index extends BaseView
                                         <div class="col-lg-4 col-sm-6">
                                             <div class="product-item">
                                                 <div class="pi-pic">
-                                                    <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="">
+                                                    <?php if (!empty($item['img'])): ?>
+                                                        <img src="/public/assets/admin/img/<?= htmlspecialchars($item['img']); ?>" alt="Product Image">
+                                                    <?php else: ?>
+                                                        <img src="/public/assets/admin/img/default.jpg" alt="Default Image"> <!-- Thay bằng hình ảnh mặc định -->
+                                                    <?php endif; ?>
                                                     <ul>
-                                                        <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                                        <li class="quick-view"><a href="/products/<?= $item['id'] ?>">+ Xem nhanh</a></li>
-                                                        <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                                        <li class="w-icon active">
+                                                            <a href="#"><i class="icon_bag_alt"></i></a>
+                                                        </li>
+                                                        <li class="quick-view">
+                                                            <a href="/products/<?= htmlspecialchars($item['id']); ?>">+ Xem nhanh</a>
+                                                        </li>
+                                                        <li class="w-icon">
+                                                            <a href="#"><i class="fa fa-random"></i></a>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                                 <div class="pi-text">
-                                                    <div class="catagory-name"><?= $item['name'] ?></div>
-                                                    <a href="#">
-                                                        <h5><?= $item['name'] ?></h5>
-                                                    </a>
-                                                    <div class="product-price">
-                                                        <?= $item['price'] ?> VNĐ
+                                                    <div class="catagory-name"><?= htmlspecialchars($item['name']); ?></div>
+                                                    <a href="#"><?= htmlspecialchars($item['name']); ?></a>
+                                                    <div class="price">
+                                                        <?= !empty($item['price']) ? number_format($item['price'], 0, ',', '.') . ' VNĐ' : 'Liên hệ'; ?>
                                                     </div>
+                                                    <form action="cart/add" method="POST">
+                                                        <input type="hidden" name="method" value="POST">
+                                                        <input type="hidden" name="id_product" value="<?= htmlspecialchars($item['id']); ?>">
+                                                        <input type="hidden" name="price" value="<?= htmlspecialchars($item['price'] ?? 0); ?>">
+                                                        <input type="hidden" name="quantity" value="1">
+                                                        <button type="submit" name="add_to_cart" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -69,8 +106,7 @@ class Index extends BaseView
                 </div>
             </div>
         </section>
-        <?php
+<?php
     }
-    
 }
 ?>

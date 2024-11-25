@@ -2,78 +2,55 @@
 
 namespace App\Controllers\Client;
 
+use App\Views\Client\Layouts\Footer;
+use App\Views\Client\Layouts\Header;
+use App\Views\Client\Pages\Cart;
+
 class CartController
 {
-    public static function addToCart()
+    public function addToCart()
     {
-        // Khởi động session nếu chưa được khởi động
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
+        $productId = $_POST['id_product'];
+        $price = $_POST['price'];
+        $quantity = intval($_POST['quantity']);
 
-        // Lấy thông tin sản phẩm từ request (POST hoặc GET)
-        $productId = $_POST['product_id'] ?? null;
-        $productName = $_POST['product_name'] ?? null;
-        $productPrice = $_POST['product_price'] ?? null;
-        $quantity = $_POST['quantity'] ?? 1;
+        // Lấy giỏ hàng từ cookie
+        $cart = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
 
-        // Kiểm tra nếu dữ liệu sản phẩm hợp lệ
-        if (!$productId || !$productName || !$productPrice) {
-            $_SESSION['cart_message'] = 'Dữ liệu sản phẩm không hợp lệ!';
-            header('Location: /products');
-            exit();
-        }
-
-        // Tạo mảng giỏ hàng nếu chưa tồn tại
-        if (!isset($_SESSION['cart'])) {
-            $_SESSION['cart'] = [];
-        }
-
-        // Kiểm tra xem sản phẩm đã tồn tại trong giỏ hàng chưa
-        if (isset($_SESSION['cart'][$productId])) {
-            // Nếu có, tăng số lượng
-            $_SESSION['cart'][$productId]['quantity'] += $quantity;
+        // Kiểm tra nếu sản phẩm đã có trong giỏ
+        if (isset($cart[$productId])) {
+            $cart[$productId] += $quantity;
         } else {
-            // Nếu chưa, thêm sản phẩm mới
-            $_SESSION['cart'][$productId] = [
-                'name' => $productName,
-                'price' => $productPrice,
-                'quantity' => $quantity,
-            ];
+            $cart[$productId] = $quantity;
         }
 
-        // Thông báo và chuyển hướng về trang giỏ hàng
-        $_SESSION['cart_message'] = 'Sản phẩm đã được thêm vào giỏ hàng!';
+        // Cập nhật cookie
+        setcookie('carts_detail', json_encode($cart), time() + (86400 * 30), "/"); // 30 ngày
+
         header('Location: /cart');
-        exit();
+        exit;
     }
 
-    public static function viewCart()
-    {
-        // Lấy giỏ hàng từ session
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
 
-        $cart = $_SESSION['cart'] ?? [];
-        include '../../Views/Client/Pages/Cart/index.php'; // Hiển thị giao diện giỏ hàng
+
+    public function viewCart()
+    {
+        $cartItems = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
+        // Hiển thị trang giỏ hàng
+        Header::render();
+        Cart::render($cartItems);
+        Footer::render();
     }
-    
-
-    public static function removeFromCart($productId)
+    public function removeFromCart()
     {
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
+        $productId = $_POST['id_product'];
 
-        // Xóa sản phẩm khỏi giỏ hàng
-        if (isset($_SESSION['cart'][$productId])) {
-            unset($_SESSION['cart'][$productId]);
-        }
+        $cart = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
+        unset($cart[$productId]);
 
-        // Thông báo và chuyển hướng
-        $_SESSION['cart_message'] = 'Sản phẩm đã được xóa khỏi giỏ hàng!';
+        setcookie('carts_detail', json_encode($cart), time() + (86400 * 30), "/");
+
         header('Location: /cart');
-        exit();
+        exit;
     }
 }

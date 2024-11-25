@@ -6,6 +6,10 @@ error_reporting(E_ALL);
 ini_set('log_errors', TRUE); 
 ini_set('error_log', './logs/php/php-errors.log');
 
+if (!isset($_COOKIE['carts_detail'])) {
+    setcookie('carts_detail', json_encode([]), time() + (86400 * 30 * 12), "/"); // Cookie tồn tại 365 ngày
+}
+
 use App\Helpers\AuthHelper;
 use App\Route;
 
@@ -31,6 +35,19 @@ Route::get('/', 'App\Controllers\Client\HomeController@index');
 Route::get('/products', 'App\Controllers\Client\ProductController@index');
 Route::get('/products/{id}', 'App\Controllers\Client\ProductController@detail');
 Route::get('/products/categories/{id}', 'App\Controllers\Client\ProductController@getProductByCategory');
+// Thêm route cho việc thêm sản phẩm vào giỏ hàng
+// Thêm sản phẩm vào giỏ
+Route::post('/cart/add', 'App\Controllers\Client\CartController@addToCart');
+
+// Hiển thị giỏ hàng
+Route::get('/cart', 'App\Controllers\Client\CartController@viewCart');
+
+// Xóa sản phẩm khỏi giỏ hàng
+Route::post('/cart/remove', 'App\Controllers\Client\CartController@removeFromCart');
+
+// Cập nhật số lượng sản phẩm
+Route::post('/cart/update', 'App\Controllers\Client\CartController@updateCart');
+
 
 Route::get('/register','App\Controllers\Client\AuthController@register');
 Route::post('/register','App\Controllers\Client\AuthController@registerAction');
@@ -47,10 +64,6 @@ Route::put('/forgot-password','App\Controllers\Client\AuthController@resetPasswo
 
 Route::get('/reset-password','App\Controllers\Client\AuthController@resetPassword');
 Route::put('/reset-password','App\Controllers\Client\AuthController@resetPasswordAction');
-
-
-
-Route::get('/cart','App\Controllers\Client\HomeController@cart');
 
 Route::get('/contact','App\controllers\Client\PostController@Contact');
 Route::post('/contact','App\controllers\Client\PostController@PostContact');
