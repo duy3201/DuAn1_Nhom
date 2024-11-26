@@ -30822,3 +30822,44 @@ div.tagsinput span.tag a {
   height: 500px !important;
   color: black;
 }
+
+/* Định dạng card */
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: center
+}
+
+/* Tiêu đề */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Dropdown chọn biểu đồ */
+.form-select {
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+  color: #495057;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.form-select:hover {
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+/* Canvas biểu đồ */
+.chart-canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.preview-list {
+  padding: 20px 0;
+}

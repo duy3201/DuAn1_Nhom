@@ -38,6 +38,8 @@ class Footer extends BaseView
                         document.body.appendChild(tempDiv);
                         console.log("Can Scroll Now:", document.body.scrollHeight > document.body.clientHeight);
                 </script> -->
+
+                
                 </body>
 
                 </html>
