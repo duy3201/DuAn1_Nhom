@@ -82,7 +82,7 @@ class Index extends BaseView
                                                 </div>
                                                 <div class="pi-text">
                                                     <div class="catagory-name"><?= htmlspecialchars($item['name']); ?></div>
-                                                    <a href="#"><?= htmlspecialchars($item['name']); ?></a>
+                                                    <p><?= htmlspecialchars($item['name']); ?></p>
                                                     <div class="price">
                                                         <?= !empty($item['price']) ? number_format($item['price'], 0, ',', '.') . ' VNĐ' : 'Liên hệ'; ?>
                                                     </div>
@@ -91,7 +91,7 @@ class Index extends BaseView
                                                         <input type="hidden" name="id_product" value="<?= htmlspecialchars($item['id']); ?>">
                                                         <input type="hidden" name="price" value="<?= htmlspecialchars($item['price'] ?? 0); ?>">
                                                         <input type="hidden" name="quantity" value="1">
-                                                        <button type="submit" name="add_to_cart" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                                                        <button type="submit" name="add_to_cart" class="btn btn-warning">Thêm vào giỏ hàng</button>
                                                     </form>
                                                 </div>
                                             </div>

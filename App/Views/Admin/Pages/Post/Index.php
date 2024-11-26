@@ -8,6 +8,8 @@ class Index extends BaseView
 {
     public static function render($data = null)
     {
+        // Get search query from the URL
+        $searchQuery = isset($_GET['search']) ? $_GET['search'] : '';
 ?>
         <div class="page-wrapper">
             <!-- ============================================================== -->
@@ -34,12 +36,33 @@ class Index extends BaseView
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Danh sách bài viết</h5>
+                            <div class="row mb-2">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Danh sách bài viết</h5>
+                                    </div>
+                                    <div class="col-6">
+                                        <form method="get" action="">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Tìm kiếm người dùng" name="search" value="<?= htmlspecialchars($searchQuery) ?>">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-warning" type="submit">Tìm kiếm</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                                 <?php
                                 if (count($data)) :
+                                    // Filter data based on search query
+                                    if ($searchQuery) {
+                                        $data = array_filter($data, function($item) use ($searchQuery) {
+                                            return stripos($item['title'], $searchQuery) !== false || 
+                                                   stripos($item['categories_post_name'], $searchQuery) !== false;
+                                        });
+                                    }
                                 ?>
                                     <div class="table-responsive">
-                                        <table id="" class="table table-striped ">
+                                        <table id="" class="table table-striped">
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
@@ -54,11 +77,11 @@ class Index extends BaseView
                                                 <?php foreach ($data as $item) : ?>
                                                     <tr>
                                                         <td><?= $item['id'] ?></td>
-                                                        <td >
-                                                                <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="Hình bài viết" class="img-fluid ">
+                                                        <td>
+                                                            <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="Hình bài viết" class="img-fluid">
                                                         </td>
                                                         <td><?= $item['title'] ?></td>
-                                                       <td><?= $item['categories_post_name'] ?></td>
+                                                        <td><?= $item['categories_post_name'] ?></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hiển thị' : 'Ẩn' ?></td>
                                                         <td>
                                                             <a href="/admin/posts/<?= $item['id'] ?>" class="btn btn-primary">Sửa</a>
@@ -84,22 +107,13 @@ class Index extends BaseView
                     </div>
                 </div>
                 <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
+                <!-- End Page Content -->
                 <!-- ============================================================== -->
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
-            <!-- ============================================================== -->
-
-
-    <?php
+        </div>
+<?php
     }
 }

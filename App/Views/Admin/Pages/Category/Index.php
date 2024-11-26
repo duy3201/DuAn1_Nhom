@@ -8,6 +8,8 @@ class Index extends BaseView
 {
     public static function render($data = null)
     {
+        // Get search query from URL
+        $searchQuery = isset($_GET['search']) ? $_GET['search'] : '';
 ?>
         <div class="page-wrapper">
             <!-- ============================================================== -->
@@ -32,12 +34,31 @@ class Index extends BaseView
                 <!-- ============================================================== -->
                 <div class="row">
                     <div class="col-12">
-
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Danh sách loại sản phẩm</h5>
+                            <div class="row mb-2">
+                                    <div class="col-6">
+                                    <h5 class="card-title">Danh sách danh mục sản phẩm</h5>
+                                    </div>
+                                    <div class="col-6">
+                                        <form method="get" action="">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Tìm kiếm người dùng" name="search" value="<?= htmlspecialchars($searchQuery) ?>">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-warning" type="submit">Tìm kiếm</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                                 <?php
                                 if (count($data)) :
+                                    // Filter categories based on search query
+                                    if ($searchQuery) {
+                                        $data = array_filter($data, function($item) use ($searchQuery) {
+                                            return stripos($item['name'], $searchQuery) !== false;
+                                        });
+                                    }
                                 ?>
                                     <div class="table-striped">
                                         <table id="" class="table table-striped">
@@ -60,51 +81,38 @@ class Index extends BaseView
                                                         <td><img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="Hình danh mục" class="img-fluid"></td>
                                                         <td><?= ($item['status'] == 1) ? 'Hiển thị' : 'Ẩn' ?></td>
                                                         <td>
-                                                            <a href="/admin/categoryproduct/<?= $item['id'] ?>" class="btn btn-primary ">Sửa</a>
+                                                            <a href="/admin/categoryproduct/<?= $item['id'] ?>" class="btn btn-primary">Sửa</a>
                                                             <form action="/admin/categoryproduct/<?= $item['id'] ?>" method="post" style="display: inline-block;" onsubmit="return confirm('Chắc chưa?')">
-                                                                <input type="hidden" name="method" value="DELETE" id="">
+                                                                <input type="hidden" name="method" value="DELETE">
                                                                 <button type="submit" class="btn btn-danger text-white">Xoá</button>
                                                             </form>
                                                         </td>
                                                     </tr>
                                                 <?php
                                                 endforeach;
-
-
                                                 ?>
                                             </tbody>
                                         </table>
                                     </div>
                                 <?php
                                 else :
-
                                 ?>
                                     <h4 class="text-center text-danger">Không có dữ liệu</h4>
                                 <?php
                                 endif;
-
                                 ?>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
+                <!-- End Page Content -->
                 <!-- ============================================================== -->
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
-            <!-- ============================================================== -->
-
-
-    <?php
+        </div>
+<?php
     }
 }
