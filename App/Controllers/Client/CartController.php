@@ -27,7 +27,7 @@ class CartController
         // Cập nhật cookie
         setcookie('carts_detail', json_encode($cart), time() + (86400 * 30), "/"); // 30 ngày
 
-        header('Location: /cart');
+        header('Location: ' .$_SERVER['HTTP_REFERER']);
         exit;
     }
 

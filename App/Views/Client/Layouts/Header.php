@@ -3,6 +3,7 @@
 namespace App\Views\Client\Layouts;
 
 use App\Helpers\AuthHelper;
+use App\Models\Product;
 use App\Views\BaseView;
 use App\Views\Client\Components\Category as ComponentsCategory;
 use App\Views\Client\Components\CategoryMenu;
@@ -12,11 +13,8 @@ class Header extends BaseView
     public static function render($data = null)
     {
         $is_login = AuthHelper::checkLogin();
-        // unset($_SESSION['user']);
-
-        //    var_dump($_SESSION['user']);
-
-        //      var_dump(json_decode($_COOKIE['user']));
+        $cartItems = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
+        $total = 0;
 
 ?>
 
@@ -98,43 +96,50 @@ class Header extends BaseView
                                 <li class="cart-icon">
                                     <a href="#">
                                         <i class="icon_bag_alt"></i>
-                                        <span>3</span>
                                     </a>
                                     <div class="cart-hover">
-                                        <div class="select-items">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="si-pic"><img
-                                                                src="/public/assets/client/img/select-product-1.jpg" alt="">
-                                                        </td>
-                                                        <td class="si-text">
-                                                            <div class="product-selected">
-                                                                <p>60.000 VNĐ x 1</p>
-                                                                <h6>Bàn cạnh giường Kabino</h6>
-                                                            </div>
-                                                        </td>
-                                                        <td class="si-close"><i class="ti-close"></i></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="si-pic"><img
-                                                                src="/public/assets/client/img/select-product-2.jpg" alt="">
-                                                        </td>
-                                                        <td class="si-text">
-                                                            <div class="product-selected">
-                                                                <p>60.00 VNĐ x 1</p>
-                                                                <h6>Bàn cạnh giường Kabino</h6>
-                                                            </div>
-                                                        </td>
-                                                        <td class="si-close"><i class="ti-close"></i></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="select-total">
-                                            <span>Tổng cộng:</span>
-                                            <h5>120.000 VNĐ</h5>
-                                        </div>
+                                        <?php if (!empty($cartItems)): ?>
+                                            <div class="select-items">
+                                                <table>
+                                                    <tbody>
+                                                        <?php foreach ($cartItems as $productId => $quantity): ?>
+                                                            <?php
+                                                            // Lấy thông tin sản phẩm từ database
+                                                            $productModel = new Product();
+                                                            $product = $productModel->getOneProductByStatus($productId);
+
+                                                            if (!$product) {
+                                                                // Nếu sản phẩm không tồn tại (hoặc bị xóa), bỏ qua sản phẩm này
+                                                                continue;
+                                                            }
+
+                                                            $totalItemPrice = $quantity * $product['product_price'];
+                                                            $total += $totalItemPrice;
+                                                            ?>
+                                                            <tr>
+                                                                <td class="si-pic"><img
+                                                                        src="/public/assets/admin/img/<?= htmlspecialchars($product['img']); ?>" alt="<?= htmlspecialchars($product['name']); ?>" alt="" style="max-width: 80px; max-height: 80px;">
+                                                                </td>
+                                                                <td class="si-text">
+                                                                    <div class="product-selected">
+                                                                        <p class="text-warning"> <?= number_format($product['product_price'], 0, ',', '.') . ' VNĐ'; ?> x <?= $quantity; ?></p>
+                                                                        <h6><?= htmlspecialchars($product['name']); ?></h6>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="si-close"><i class="ti-close"></i></td>
+                                                            </tr>
+                                                        <?php endforeach; ?>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                            <div class="select-total">
+                                                <span>Tổng cộng:</span>
+                                                <h5><?= number_format($total, 0, ',', '.') . ' VNĐ'; ?></h5>
+                                            </div>
+                                        <?php else: ?>
+                                            <p class="text-center">Giỏ hàng của bạn đang trống. <a href="/products">Tiếp tục mua sắm</a></p>
+                                        <?php endif; ?>
                                         <div class="select-button">
                                             <a href="/cart" class="primary-btn view-card">Xem giỏ hàng</a>
                                             <a href="/CheckOut" class="primary-btn checkout-btn">Thanh toán</a>
@@ -159,7 +164,7 @@ class Header extends BaseView
                                                         <!-- <a class="dropdown-item" href="#">Action</a> -->
                                                         <a class="dropdown-item"
                                                             href="/users/<?= $_SESSION['user']['id'] ?>">Hi,<?= $_SESSION['user']['name'] ?></a>
-                                                            <a class="dropdown-item" href="/change-password">Đổi mật khẩu</a>
+                                                        <a class="dropdown-item" href="/change-password">Đổi mật khẩu</a>
                                                         <a class="dropdown-item" href="/logout">Đăng Xuất</a>
                                                     </div>
                                                 </li>
@@ -205,7 +210,7 @@ class Header extends BaseView
                             <i class="ti-menu"></i>
 
                             <span>Danh mục sản phẩm <span>
-                            <ul class="depart-hover">
+                                    <ul class="depart-hover">
                                         <?php
                                         CategoryMenu::render($data['categories']);
                                         ?>

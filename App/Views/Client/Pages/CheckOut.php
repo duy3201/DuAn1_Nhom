@@ -2,12 +2,16 @@
 
 namespace App\Views\Client\Pages;
 
+use App\Models\Product;
 use App\Views\BaseView;
 
 class CheckOut extends BaseView
 {
     public static function render($data = null)
     {
+        // Lấy thông tin giỏ hàng từ cookie
+        $cartItems = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
+        $total = 0;
 
 ?>
         <section class="checkout-section spad">
@@ -63,73 +67,91 @@ class CheckOut extends BaseView
                                 </div>
                             </div>
                         </div>
-                         <!-- <div class="col-lg-6">
+                        <!-- <div class="col-lg-6">
                             <div class="checkout-content">
                                 <input type="text" placeholder="Enter Your Coupon Code">
                             </div>  -->
                         <div class="place-order mx-5">
-                            <h4 class="">Đơn hàng của bạn</h4>
-                            <div class="order-total mt-5">
-                                <ul class="order-table">
-                                    <li>Sản phẩm <span>Tổng cộng</span></li>
-                                    <li class="fw-normal">Combination x 1 <span>250.000VNĐ</span></li>
-                                    <li class="fw-normal">Combination x 1 <span>250.000VNĐ</span></li>
-                                    <li class="fw-normal">Combination x 1 <span>250.000VNĐ</span></li>
-                                    <!-- <li class="fw-normal">Tổng cộng <span>250.000VNĐ</span></li> -->
-                                    <li class="total-price">Tổng cộng <span>750.000VNĐ</span></li>
-                                </ul>
-                                
-                                <H4 class="text-center"> Thanh toán Quốc Tế</H4>
+                            <?php if (!empty($cartItems)): ?>
+                                <h4 class="">Đơn hàng của bạn</h4>
+                                <div class="order-total mt-5">
+                                    <ul class="order-table">
+                                        <li>Sản phẩm <span>Tổng cộng</span></li>
+                                        <?php foreach ($cartItems as $productId => $quantity): ?>
+                                            <?php
+                                            // Lấy thông tin sản phẩm từ database
+                                            $productModel = new Product();
+                                            $product = $productModel->getOneProductByStatus($productId);
 
-                                <div class="container">
-                                    <div class="row justify-content-between align-items-center">
-                                        <div class="col-3">
-                                            <img src="/public/img/PayPal.png" class="img-fluid glow-toggle" alt="">
-                                        </div>
-                                        <div class="col-3">
-                                            <img src="/public/img/ApplePay.png" class="img-fluid glow-toggle" alt="">
-                                        </div>
-                                        <div class="col-3">
-                                            <img src="/public/img/Visa.png" class="img-fluid glow-toggle" alt="">
-                                        </div>
-                                        <div class="col-3">
-                                            <img src="/public/img/Mastercard.png" class="img-fluid glow-toggle" alt="">
+                                            if (!$product) {
+                                                // Nếu sản phẩm không tồn tại (hoặc bị xóa), bỏ qua sản phẩm này
+                                                continue;
+                                            }
+
+                                            $totalItemPrice = $quantity * $product['product_price'];
+                                            $total += $totalItemPrice;
+                                            ?>
+
+                                            <li class="fw-normal"><?= htmlspecialchars($product['name']); ?> x <?= $quantity; ?> <span><?= number_format($totalItemPrice, 0, ',', '.') . ' VNĐ'; ?></span></li>
+                                        <?php endforeach; ?>
+                                        <li class="total-price">Tổng cộng <span><?= number_format($total, 0, ',', '.') . ' VNĐ'; ?></span></li>
+
+                                    <?php else: ?>
+                                        <p class="text-center">Giỏ hàng của bạn đang trống. <a href="/products">Tiếp tục mua sắm</a></p>
+                                    <?php endif; ?>
+                                    </ul>
+
+                                    <H4 class="text-center"> Thanh toán Quốc Tế</H4>
+
+                                    <div class="container">
+                                        <div class="row justify-content-between align-items-center">
+                                            <div class="col-3">
+                                                <img src="/public/img/PayPal.png" class="img-fluid glow-toggle" alt="">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/public/img/ApplePay.png" class="img-fluid glow-toggle" alt="">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/public/img/Visa.png" class="img-fluid glow-toggle" alt="">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="/public/img/Mastercard.png" class="img-fluid glow-toggle" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <style>
-                                    .glow-toggle {
-                                        transition: filter 0.3s, transform 0.3s;
-                                    }
+                                    <style>
+                                        .glow-toggle {
+                                            transition: filter 0.3s, transform 0.3s;
+                                        }
 
-                                    .glow-active {
-                                        filter: brightness(1.3);
-                                        /* Tăng độ sáng */
-                                        transform: scale(1.05);
-                                        /* Phóng to nhẹ */
-                                    }
-                                </style>
+                                        .glow-active {
+                                            filter: brightness(1.3);
+                                            /* Tăng độ sáng */
+                                            transform: scale(1.05);
+                                            /* Phóng to nhẹ */
+                                        }
+                                    </style>
 
-                                <script>
-                                    // Lấy tất cả các ảnh có lớp 'glow-toggle'
-                                    const images = document.querySelectorAll(".glow-toggle");
+                                    <script>
+                                        // Lấy tất cả các ảnh có lớp 'glow-toggle'
+                                        const images = document.querySelectorAll(".glow-toggle");
 
-                                    // Thêm sự kiện click cho từng ảnh
-                                    images.forEach(image => {
-                                        image.addEventListener("click", function() {
-                                            // Loại bỏ lớp 'glow-active' khỏi tất cả các ảnh khác
-                                            images.forEach(img => img.classList.remove("glow-active"));
-                                            // Thêm lớp 'glow-active' vào ảnh được nhấn
-                                            this.classList.add("glow-active");
+                                        // Thêm sự kiện click cho từng ảnh
+                                        images.forEach(image => {
+                                            image.addEventListener("click", function() {
+                                                // Loại bỏ lớp 'glow-active' khỏi tất cả các ảnh khác
+                                                images.forEach(img => img.classList.remove("glow-active"));
+                                                // Thêm lớp 'glow-active' vào ảnh được nhấn
+                                                this.classList.add("glow-active");
+                                            });
                                         });
-                                    });
-                                </script>
+                                    </script>
 
 
-                                <H4 class="text-center m-4"> Phương thức thanh toán</H4>
+                                    <H4 class="text-center m-4"> Phương thức thanh toán</H4>
 
-                                <!-- <div class="container">
+                                    <!-- <div class="container">
     <div class="row justify-content-between align-items-center">
         <div class="col-3">
             <img src="/public/img/Momo.jpg" class="img-fluid w-75" alt="">
@@ -146,33 +168,33 @@ class CheckOut extends BaseView
     </div>
 </div> -->
 
-                                <div class="payment-check m-4">
-                                    <div class="pc-item">
-                                        <label for="pc-check">
-                                            Thanh toán khi nhận hàng
-                                            <input type="radio" id="pc-check" name="payment-method">
-                                            <span class="checkmark"></span>
-                                        </label>
+                                    <div class="payment-check m-4">
+                                        <div class="pc-item">
+                                            <label for="pc-check">
+                                                Thanh toán khi nhận hàng
+                                                <input type="radio" id="pc-check" name="payment-method">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+
+                                        <div class="pc-item">
+                                            <label for="pc-paypal">
+                                                Thẻ ATM nội địa / Internet Banking
+                                                <input type="radio" id="pc-paypal" name="payment-method">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+
+                                        <div class="pc-item">
+                                            <label for="pc-tem">
+                                                Thẻ tín dụng / Ghi nợ
+                                                <input type="radio" id="pc-tem" name="payment-method">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
                                     </div>
 
-                                    <div class="pc-item">
-                                        <label for="pc-paypal">
-                                            Thẻ ATM nội địa / Internet Banking
-                                            <input type="radio" id="pc-paypal" name="payment-method">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-
-                                    <div class="pc-item">
-                                        <label for="pc-tem">
-                                            Thẻ tín dụng / Ghi nợ
-                                            <input type="radio" id="pc-tem" name="payment-method">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="payment-check">
+                                    <!-- <div class="payment-check">
                                         <div class="pc-item">
                                             <label for="pc-check">
                                            Thanh toán khi nhận hàng
@@ -187,16 +209,16 @@ class CheckOut extends BaseView
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div> -->
-                            </div>
-                            <div class="text-center order-btn m-4">
-                                <button type="button" class="site-btn place-btn" onclick="placeOrder()">Đặt hàng</button>
-                            </div>
+                                </div>
+                                <div class="text-center order-btn m-4">
+                                    <button type="button" class="site-btn place-btn" onclick="placeOrder()">Đặt hàng</button>
+                                </div>
 
-                            <script>
-                                function placeOrder() {
-                                    alert("Đơn hàng của bạn đã được đặt thành công!");
-                                }
-                            </script>
+                                <script>
+                                    function placeOrder() {
+                                        alert("Đơn hàng của bạn đã được đặt thành công!");
+                                    }
+                                </script>
 
                         </div>
                     </div>
@@ -279,7 +301,7 @@ class CheckOut extends BaseView
                             wards.options[wards.options.length] = new Option(w.Name, w.Id);
                         }
                     }
-                };
+                }
             }
         </script>
 <?php

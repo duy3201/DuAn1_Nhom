@@ -13,7 +13,7 @@ class Cart extends BaseView
         $cartItems = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
         $total = 0;
 
-        ?>
+?>
         <!-- Bắt đầu phần giỏ hàng -->
         <section class="shopping-cart spad">
             <div class="container">
@@ -98,7 +98,7 @@ class Cart extends BaseView
         </section>
         <!-- Kết thúc phần giỏ hàng -->
 
-        <?php
+<?php
     }
 }
 ?>
