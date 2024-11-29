@@ -24,10 +24,25 @@ class Create extends BaseView
                             <div class="card-body">
                                 <h5 class="card-title">Tạo mới sản phẩm đấu giá</h5>
                                 <form method="POST" action="/admin/auctions" enctype="multipart/form-data">
+                                    <input type="hidden" name="method" value="POST">
                                     <div class="form-group">
-                                        <label for="product_name">Tên sản phẩm:</label>
+                                        <label for="product_name">Tên buổi đấu giá:</label>
                                         <input type="text" class="form-control" id="product_name" name="product_name" required>
                                     </div>
+                                    <div class="form-group">
+                                        <label for="product_id">Chọn sản phẩm đấu giá:</label>
+                                        <select class="form-control text-white" id="product_id" name="product_id" required>
+                                            <option value="">Chọn sản phẩm</option>
+                                            <?php
+                                            if ($data) {
+                                                foreach ($data as $product) {
+                                                    echo '<option value="' . $product['id'] . '">' . $product['id'] . '</option>';
+                                                }
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+
                                     <div class="form-group">
                                         <label for="starting_price">Giá khởi điểm:</label>
                                         <input type="number" class="form-control" id="starting_price" name="starting_price" required>
@@ -49,7 +64,7 @@ class Create extends BaseView
                                     </div>
                                     <div class="form-group">
                                         <label for="img">Hình ảnh sản phẩm:</label>
-                                        <input type="file" class="form-control" id="img" name="img" accept="img/*" required>
+                                        <input type="file" class="form-control" id="img" name="img" accept="image/*" required>
                                     </div>
                                     <button type="submit" class="btn btn-success">Lưu sản phẩm</button>
                                 </form>

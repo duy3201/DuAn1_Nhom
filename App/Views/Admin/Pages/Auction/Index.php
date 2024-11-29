@@ -51,6 +51,7 @@ class Index extends BaseView
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
+                                                    <th>Tên buổi đấu giá</th>
                                                     <th>Tên sản phẩm</th>
                                                     <th>Giá Khởi điểm</th>
                                                     <th>Thời gian bắt đầu</th>
@@ -67,16 +68,17 @@ class Index extends BaseView
                                                     <tr>
                                                         <td><?= $item['id'] ?></td>
                                                         <td><?= $item['product_name'] ?></td>
+                                                        <td><?= $item['product_id'] ?></td>
                                                         <td><?= number_format($item['starting_price'], 0, ',', '.') ?> VND</td>
                                                         <td><?= date('d/m/Y H:i', strtotime($item['start_time'])) ?></td>
                                                         <td><?= date('d/m/Y H:i', strtotime($item['end_time'])) ?></td>
                                                         <td>
-                                                            <img src="<?= $item['img'] ?>" alt="Hình ảnh sản phẩm" style="width: 80px; height: 80px; object-fit: cover;">
+                                                            <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="Hình ảnh sản phẩm" style="width: 80px; height: 80px; object-fit: cover;">
                                                         </td>
                                                         <td><?= $item['status'] == 0 ? 'Đã đóng' : ($item['status'] == 1 ? 'Đã mở' : 'Đã kết thúc') ?></td>
                                                         <td>
                                                             <a href="/admin/auctions/<?= $item['id'] ?>" class="btn btn-primary">Sửa</a>
-                                                            <form action="/admin/auctions/delete/<?= $item['id'] ?>" method="post" style="display: inline-block;" onsubmit="return confirm('Chắc chắn muốn xóa?')">
+                                                            <form action="/admin/auctions/<?= $item['id'] ?>" method="post" style="display: inline-block;" onsubmit="return confirm('Chắc chắn muốn xóa?')">
                                                                 <input type="hidden" name="method" value="DELETE">
                                                                 <button type="submit" class="btn btn-danger">Xóa</button>
                                                             </form>

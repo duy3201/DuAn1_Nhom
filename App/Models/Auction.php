@@ -7,7 +7,6 @@ class Auction extends BaseModel
     protected $table = 'auctions';
     protected $id = 'id';
 
-    // Các trạng thái đấu giá
     const STATUS_CLOSED = 0;   // Chưa bắt đầu
     const STATUS_OPEN = 1;     // Đã mở
     const STATUS_ENDED = 2;    // Đã kết thúc
@@ -38,39 +37,67 @@ class Auction extends BaseModel
     }
 
     public function updateAuctionStatus()
-{
-    try {
-        $conn = $this->_conn->MySQLi();
-        
-        if (!$conn) {
-            throw new \Exception('Database connection not established.');
+    {
+        try {
+            $conn = $this->_conn->MySQLi();
+            
+            if (!$conn) {
+                throw new \Exception('Database connection not established.');
+            }
+
+            $sqlOpen = "UPDATE $this->table 
+                        SET status = ? 
+                        WHERE start_time <= NOW() AND end_time > NOW() AND status = ?";
+            $stmtOpen = $conn->prepare($sqlOpen);
+            if (!$stmtOpen) {
+                throw new \Exception('SQL prepare failed for opening auction.');
+            }
+            $statusOpen = self::STATUS_OPEN;
+            $statusClosed = self::STATUS_CLOSED;
+            $stmtOpen->bind_param('ii', $statusOpen, $statusClosed);
+            $stmtOpen->execute();
+
+            $sqlClose = "UPDATE $this->table 
+                         SET status = ? 
+                         WHERE end_time <= NOW() AND status = ?";
+            $stmtClose = $conn->prepare($sqlClose);
+            if (!$stmtClose) {
+                throw new \Exception('SQL prepare failed for closing auction.');
+            }
+            $statusEnded = self::STATUS_ENDED;
+            $stmtClose->bind_param('ii', $statusEnded, $statusOpen);
+            $stmtClose->execute();
+
+            return true;
+        } catch (\Throwable $th) {
+            error_log('Error updating auction status: ' . $th->getMessage());
+            return false;
         }
-
-        // Cập nhật đấu giá từ "Đóng" sang "Đã Mở" nếu thời gian bắt đầu <= NOW và thời gian kết thúc > NOW
-        $sqlOpen = "UPDATE $this->table 
-                    SET status = ? 
-                    WHERE start_time <= NOW() AND end_time > NOW() AND status = ?";
-        $stmtOpen = $conn->prepare($sqlOpen);
-        $statusOpen = self::STATUS_OPEN;
-        $statusClosed = self::STATUS_CLOSED;
-        $stmtOpen->bind_param('ii', $statusOpen, $statusClosed);
-        $stmtOpen->execute();
-
-        // Cập nhật đấu giá từ "Đã Mở" sang "Kết Thúc" nếu thời gian kết thúc <= NOW
-        $sqlClose = "UPDATE $this->table 
-                     SET status = ? 
-                     WHERE end_time <= NOW() AND status = ?";
-        $stmtClose = $conn->prepare($sqlClose);
-        $statusEnded = self::STATUS_ENDED;
-        $stmtClose->bind_param('ii', $statusEnded, $statusOpen);
-        $stmtClose->execute();
-
-        return true;
-    } catch (\Throwable $th) {
-        error_log('Error updating auction status: ' . $th->getMessage());
-        return false;
     }
-}
 
+    public function getAuctionWithProductName($id)
+    {
+        try {
+            $conn = $this->_conn->MySQLi();
+
+            $sql = "SELECT auctions.*, products.name AS product_name 
+FROM $this->table
+JOIN products ON auctions.product_id = products.id 
+WHERE auctions.id = ?";
+            $stmt = $conn->prepare($sql);
+            if (!$stmt) {
+                throw new \Exception('SQL prepare failed for fetching auction with product name.');
+            }
+
+            $stmt->bind_param('i', $id);
+            $stmt->execute();
+            $result = $stmt->get_result();
+
+            return $result->fetch_assoc();
+        } catch (\Throwable $th) {
+            error_log('Error fetching auction with product name: ' . $th->getMessage());
+            return false;
+        }
+    }
 }
 ?>

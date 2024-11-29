@@ -6,44 +6,53 @@ use App\Helpers\NotificationHelper;
 
 class AuctionValidation
 {
-    public static function create()
-    {
+
+    public static function create() : bool {
         $is_valid = true;
 
-        if (empty($_POST['product_name'])) {
-            $is_valid['product_name'] = 'Tên sản phẩm không được để trống.';
+        //Tên loại
+        if (!isset($_POST['product_name']) || $_POST['product_name'] === '') {
+            NotificationHelper::error('product_name', 'Không để trống tên sản phẩm');
+            $is_valid = false;
         }
 
-        if (empty($_POST['starting_price'])) {
-            $is_valid['starting_price'] = 'Giá khởi điểm không được để trống.';
-        } elseif (!is_numeric($_POST['starting_price']) || $_POST['starting_price'] <= 0) {
-            $is_valid['starting_price'] = 'Giá khởi điểm phải là số dương.';
+        //id loại sản phẩm
+        if (!isset($_POST['product_id']) || $_POST['product_id'] === '') {
+            NotificationHelper::error('product_id', 'Không để trống giá khởi điểm');
+            $is_valid = false;
         }
 
-        if (empty($_POST['start_time'])) {
-            $is_valid['start_time'] = 'Thời gian bắt đầu không được để trống.';
-        } elseif (!strtotime($_POST['start_time'])) {
-            $is_valid['start_time'] = 'Thời gian bắt đầu không hợp lệ.';
+        //id loại sản phẩm
+        if (!isset($_POST['starting_price']) || $_POST['starting_price'] === '') {
+            NotificationHelper::error('starting_price', 'Không để trống giá khởi điểm');
+            $is_valid = false;
         }
 
-        if (empty($_POST['status'])) {
-            $is_valid['status'] = 'Trang thái không được để trống.';
+        //Người thêm
+        if (!isset($_POST['start_time']) || $_POST['start_time'] === '') {
+            NotificationHelper::error('start_time', 'Không để trống thời gian bắt đầu');
+            $is_valid = false;
         }
 
-        if (empty($_POST['end_time'])) {
-            $is_valid['end_time'] = 'Thời gian kết thúc không được để trống.';
-        } elseif (!strtotime($_POST['end_time'])) {
-            $is_valid['end_time'] = 'Thời gian kết thúc không hợp lệ.';
+        //nổi bậc
+        if (!isset($_POST['end_time']) || $_POST['end_time'] === '') {
+            NotificationHelper::error('end_time', 'Không để trống thời gian kết thúc');
+            $is_valid = false;
         }
 
-        if (!empty($_POST['start_time']) && !empty($_POST['end_time']) && strtotime($_POST['start_time']) >= strtotime($_POST['end_time'])) {
+        //trạng thái
+        if (!isset($_POST['status']) || $_POST['status'] === '') {
+            NotificationHelper::error('status', 'Không để trống trạng thái');
+            $is_valid = false;
+        }
+
+        if (!isset($_POST['start_time']) && !isset($_POST['end_time']) && strtotime($_POST['start_time']) >= strtotime($_POST['end_time'])) {
             $is_valid['time_range'] = 'Thời gian bắt đầu phải trước thời gian kết thúc.';
         }
-
-        return empty($errors) ? true : $errors;
+        return $is_valid;
     }
 
-    public static function edit()
+    public static function edit() : bool
     {
         return self::create();
     }

@@ -4,6 +4,7 @@ namespace App\Controllers\Admin;
 
 use App\Helpers\NotificationHelper;
 use App\Models\Auction;
+use App\Models\Product;
 use App\Validations\AuctionValidation;
 use App\Views\Admin\Layouts\Footer;
 use App\Views\Admin\Layouts\Header;
@@ -16,33 +17,37 @@ class AuctionController
 {
     // Hiển thị danh sách đấu giá
     public static function index()
-    {
-        $auction = new Auction();
-        
-        // Cập nhật trạng thái đấu giá trước khi hiển thị danh sách
-        $auction->updateAuctionStatus();
+{
+    $productModel = new Product();
+    $products = $productModel->getAllProduct();
 
-        $data = $auction->getAllAuction();
-        
-        // Render header, notification, và footer
-        Header::render();
-        Notification::render();
-        NotificationHelper::unset();
-        
-        // Hiển thị danh sách đấu giá
-        Index::render($data);
-        Footer::render();
-    }
+    $auction = new Auction();
+
+    $auction->updateAuctionStatus();
+    $data = $auction->getAllAuction();
+    
+
+    Header::render();
+    Notification::render();
+    NotificationHelper::unset();
+
+    // Hiển thị danh sách đấu giá
+    Index::render($data, $products);
+    Footer::render();
+}
+
 
     // Hiển thị giao diện form thêm đấu giá
     public static function create()
     {
+        $productModel = new Product();
+        $products = $productModel->getAllProduct();
+
         Header::render();
         Notification::render();
         NotificationHelper::unset();
-        
-        // Hiển thị form thêm đấu giá
-        Create::render();
+
+        Create::render($products);
         Footer::render();
     }
 
@@ -61,6 +66,7 @@ class AuctionController
         // Thu thập dữ liệu từ form
         $data = [
             'product_name' => $_POST['product_name'],
+            'product_id' => $_POST['product_id'],
             'starting_price' => $_POST['starting_price'],
             'start_time' => $_POST['start_time'],
             'end_time' => $_POST['end_time'],
@@ -88,24 +94,29 @@ class AuctionController
 
     // Hiển thị giao diện form sửa đấu giá
     public static function edit(int $id)
-    {
-        $auction = new Auction();
-        $data = $auction->getOneAuction($id);
+{
+    $auction = new Auction();
+    $data = $auction->getOneAuction($id);
 
-        if (!$data) {
-            NotificationHelper::error('edit', 'Không tìm thấy phiên đấu giá');
-            header('location: /admin/auctions');
-            exit;
-        }
+    $productModel = new Product();
+    $products = $productModel->getAllProduct();
 
-        Header::render();
-        Notification::render();
-        NotificationHelper::unset();
-        
-        // Hiển thị form sửa đấu giá
-        Edit::render($data);
-        Footer::render();
+    if (!$data) {
+        NotificationHelper::error('edit', 'Không tìm thấy phiên đấu giá');
+        header('location: /admin/auctions');
+        exit;
     }
+    $data['products'] = $products;
+
+    Header::render();
+    Notification::render();
+    NotificationHelper::unset();
+
+    // Hiển thị form sửa đấu giá
+    Edit::render($data);
+    Footer::render();
+}
+
 
     // Xử lý chức năng sửa (cập nhật) đấu giá
     public static function update(int $id)
@@ -120,7 +131,8 @@ class AuctionController
         }
 
         $data = [
-            'product_name'   => $_POST['product_name'],
+            'product_name' => $_POST['product_name'],
+            'product_id'   => $_POST['product_id'],
             'starting_price' => $_POST['starting_price'],
             'start_time'     => $_POST['start_time'],
             'end_time'       => $_POST['end_time'],
