@@ -48,6 +48,7 @@ Route::post('/cart/remove', 'App\Controllers\Client\CartController@removeFromCar
 // Cập nhật số lượng sản phẩm
 Route::post('/cart/update', 'App\Controllers\Client\CartController@updateCart');
 
+Route::post('/order/create', 'App\Controllers\Client\OrderController@create');
 
 Route::get('/register','App\Controllers\Client\AuthController@register');
 Route::post('/register','App\Controllers\Client\AuthController@registerAction');
