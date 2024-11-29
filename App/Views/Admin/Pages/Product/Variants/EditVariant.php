@@ -49,10 +49,6 @@ class EditVariant extends BaseView
                                         <input type="text" class="form-control text-dark" id="id" name="id" value="<?= $data['productvariant']['id'] ?>" disabled>
                                     </div>
                                     <div class="form-group">
-                                        <label for="label">Tên*</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Nhập tên loại biến thể..." name="label" value="<?= $data['productvariant']['label'] ?>" require>
-                                    </div>
-                                    <div class="form-group">
                                         <label for="img">Hình ảnh</label>
                                         <input type="file" class="form-control" id="img" placeholder="Chọn hình biến thể..." name="img">
                                     </div>

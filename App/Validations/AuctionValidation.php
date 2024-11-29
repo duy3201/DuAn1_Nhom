@@ -1,45 +1,50 @@
 <?php
 
-
 namespace App\Validations;
 
 use App\Helpers\NotificationHelper;
 
-class ProductVariantValidation {
-    public static function create() : bool {
+class AuctionValidation
+{
+    public static function create()
+    {
         $is_valid = true;
 
-        // //Tên loại
-        // if (!isset($_POST['label']) || $_POST['label'] === '') {
-        //     NotificationHelper::error('label', 'Không để trống tên biến thể');
-        //     $is_valid = false;
-        // }
-
-        //giá tiền
-        if (!isset($_POST['price']) || $_POST['price'] === '') {
-            NotificationHelper::error('price', 'Không để trống giá tiền');
-            $is_valid = false;
-        } elseif((int) $_POST['price'] <= 0){
-            NotificationHelper::error('price', 'Giá tiền phải lớn hơn 0');
-            $is_valid = false;
+        if (empty($_POST['product_name'])) {
+            $is_valid['product_name'] = 'Tên sản phẩm không được để trống.';
         }
 
-        //id biến thể
-        if (!isset($_POST['id_product']) || $_POST['id_product'] === '') {
-            NotificationHelper::error('id_product', 'Không để trống loại biến thể');
-            $is_valid = false;
+        if (empty($_POST['starting_price'])) {
+            $is_valid['starting_price'] = 'Giá khởi điểm không được để trống.';
+        } elseif (!is_numeric($_POST['starting_price']) || $_POST['starting_price'] <= 0) {
+            $is_valid['starting_price'] = 'Giá khởi điểm phải là số dương.';
         }
 
-        //Số lượng
-        if (!isset($_POST['quanlity']) || $_POST['quanlity'] === '') {
-            NotificationHelper::error('quanlity', 'Không để trống trạng thái');
-            $is_valid = false;
+        if (empty($_POST['start_time'])) {
+            $is_valid['start_time'] = 'Thời gian bắt đầu không được để trống.';
+        } elseif (!strtotime($_POST['start_time'])) {
+            $is_valid['start_time'] = 'Thời gian bắt đầu không hợp lệ.';
         }
 
-        return $is_valid;
+        if (empty($_POST['status'])) {
+            $is_valid['status'] = 'Trang thái không được để trống.';
+        }
+
+        if (empty($_POST['end_time'])) {
+            $is_valid['end_time'] = 'Thời gian kết thúc không được để trống.';
+        } elseif (!strtotime($_POST['end_time'])) {
+            $is_valid['end_time'] = 'Thời gian kết thúc không hợp lệ.';
+        }
+
+        if (!empty($_POST['start_time']) && !empty($_POST['end_time']) && strtotime($_POST['start_time']) >= strtotime($_POST['end_time'])) {
+            $is_valid['time_range'] = 'Thời gian bắt đầu phải trước thời gian kết thúc.';
+        }
+
+        return empty($errors) ? true : $errors;
     }
 
-    public static function edit() : bool {
+    public static function edit()
+    {
         return self::create();
     }
 
@@ -81,4 +86,3 @@ class ProductVariantValidation {
         return $nameimg;
     }
 }
-

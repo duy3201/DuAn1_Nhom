@@ -87,6 +87,21 @@ class Header extends BaseView
                         </div>
                     </li>
                     <li class="nav-item menu-items">
+                        <a class="nav-link" data-toggle="collapse" href="#variant-management" aria-expanded="false" aria-controls="variant-management">
+                            <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </span>
+                            <span class="menu-title">Quản lý biến thể</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="variant-management">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="/admin/productvariants">Biến thể</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/admin/productvariants/createvariant">Thêm biến thể</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item menu-items">
                         <a class="nav-link" data-toggle="collapse" href="#product-management" aria-expanded="false" aria-controls="product-management">
                             <span class="menu-icon">
                                 <i class="fa-solid fa-clipboard-list"></i>
@@ -105,19 +120,18 @@ class Header extends BaseView
                             </ul>
                         </div>
                     </li>
-
                     <li class="nav-item menu-items">
-                        <a class="nav-link" data-toggle="collapse" href="#variant-management" aria-expanded="false" aria-controls="variant-management">
+                        <a class="nav-link" data-toggle="collapse" href="#auctions" aria-expanded="false" aria-controls="auctions">
                             <span class="menu-icon">
                                 <i class="fa-solid fa-clipboard-list"></i>
                             </span>
-                            <span class="menu-title">Quản lý biến thể</span>
+                            <span class="menu-title">Quản lý đấu giá</span>
                             <i class="menu-arrow"></i>
                         </a>
-                        <div class="collapse" id="variant-management">
+                        <div class="collapse" id="auctions">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="/admin/productvariants">Biến thể</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="/admin/productvariants/createvariant">Thêm biến thể</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/admin/auctions">Đấu giá</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/admin/auctions/create">Thêm đấu giá</a></li>
                             </ul>
                         </div>
                     </li>

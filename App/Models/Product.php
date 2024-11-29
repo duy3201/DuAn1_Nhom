@@ -210,6 +210,36 @@ ON
         }
     }
 
+    public function getAllProductByVariant()
+    {
+        $result = [];
+        try {
+            $sql = "
+             SELECT 
+            products.*, 
+            product_variants.quality as product_quality,
+            product_variants.quanlity as product_quanlity, 
+            product_variants.price as product_price,
+            categories.name AS category_name
+                FROM 
+            products 
+        INNER JOIN 
+            categories ON products.id_category = categories.id 
+        INNER JOIN 
+            product_variants ON products.id = product_variants.id_product;
+            ";
+            $conn = $this->_conn->MySQLi();
+            $stmt = $conn->prepare($sql);
+
+            $stmt->bind_param('i', $id);
+            $stmt->execute();
+            return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+        } catch (\Throwable $th) {
+            error_log('Lỗi khi hiển thị dữ liệu: ' . $th->getMessage());
+            return $result;
+        }
+    }
+
     public function countTotalProduct()
     {
         return $this->countTotal();
@@ -246,4 +276,5 @@ ON
     //         return false;
     //     }
     // }
+
 }

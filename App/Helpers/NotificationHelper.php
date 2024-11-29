@@ -10,7 +10,7 @@ class NotificationHelper{
     }
 
     public static function error($key, $message) {
-        $_SESSION['success'][$key] = $message;
+        $_SESSION['danger'][$key] = $message;
     }
     
 

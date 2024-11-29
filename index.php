@@ -207,6 +207,28 @@ Route::put('/admin/users/{id}', 'App\Controllers\Admin\UserController@update');
 // DELETE /users/{id} (delete người dùng với id cụ thể)
 Route::delete('/admin/users/{id}', 'App\Controllers\Admin\UserController@delete');
 
+
+// *** Auctions
+// GET /auctions (lấy danh sách đấu giá)
+Route::get('/admin/auctions', 'App\Controllers\Admin\AuctionController@index');
+
+// GET /auctions/create (hiển thị form thêm đấu giá)
+Route::get('/admin/auctions/create', 'App\Controllers\Admin\AuctionController@create');
+
+// POST /auctions (tạo mới một đấu giá)
+Route::post('/admin/auctions', 'App\Controllers\Admin\AuctionController@store');
+
+// GET /auctions/{id} (lấy chi tiết đấu giá với id cụ thể)
+Route::get('/admin/auctions/{id}', 'App\Controllers\Admin\AuctionController@edit');
+
+// PUT /auctions/{id} (update đấu giá với id cụ thể)
+Route::put('/admin/auctions/{id}', 'App\Controllers\Admin\AuctionController@update');
+
+// DELETE /auctions/{id} (xóa đấu giá với id cụ thể)
+Route::delete('/admin/auctions/{id}', 'App\Controllers\Admin\AuctionController@delete');
+
+
+
 Route::dispatch($_SERVER['REQUEST_URI']);
 
 

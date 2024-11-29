@@ -22,6 +22,7 @@ class ProductController
         $product = new Product();
         $data = $product->getAllProductJoinCategory();
 
+
         Header::render();
         Notification::render();
         NotificationHelper::unset();

@@ -46,7 +46,7 @@ class IndexVariant extends BaseView
                                             <div class="input-group">
                                                 <input type="text" class="form-control" placeholder="Tìm kiếm người dùng" name="search" value="<?= htmlspecialchars($searchQuery) ?>">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-primary" type="submit">Tìm kiếm</button>
+                                                    <button class="btn btn-warning" type="submit">Tìm kiếm</button>
                                                 </div>
                                             </div>
                                         </form>
