@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Views\Client\Pages;
+namespace App\Views\Client\Pages\Blogs;
 
 use App\Views\BaseView;
+use App\Views\Client\Components\CategoryPost;
 
-class Blogs extends BaseView
+class Index extends BaseView
 {
   public static function render($data = null)
   {
@@ -42,11 +43,13 @@ class Blogs extends BaseView
               </div>
               <div class="blog-catagory">
                 <h4>Danh mục</h4>
+
                 <ul>
-                  <li><a href="#">Thời trang</a></li>
+                <?php CategoryPost::render($data['categories_post']); ?>
+                  <!-- <li><a href="#">Thời trang</a></li>
                   <li><a href="#">Du lịch</a></li>
                   <li><a href="#">Dã ngoại</a></li>
-                  <li><a href="#">Mẫu</a></li>
+                  <li><a href="#">Mẫu</a></li> -->
                 </ul>
               </div>
               <!-- <div class="recent-post">
@@ -104,9 +107,34 @@ class Blogs extends BaseView
               </div> -->
             </div>
           </div>
-          <div class="col-lg-9 order-1 order-lg-2">
-            <div class="row">
-              <div class="col-lg-6 col-sm-6">
+         
+            <div class="col-lg-9 order-1 order-lg-2">
+            <?php
+          if (count($data)) :
+          ?>
+              <div class="row">
+                <?php foreach ($data['posts'] as $item) : ?>
+                  <div class="col-lg-6 col-sm-6">
+                    <div class="blog-item">
+                      <div class="bi-pic">
+                      <a href="/blogs/<?= htmlspecialchars($item['id']); ?>"> <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt=""></a>
+                      </div>
+                      <div class="bi-text">
+                        <a href="./blog-details.html">
+                          <h4> <a class="text-dark" href="/blogs/<?= htmlspecialchars($item['id']); ?>">  <?= $item['title'] ?></a></h4>
+                        </a>
+                        <p><?= $item['categories_post_name'] ?><span>- 19 Tháng 5, 2019</span></p>
+                      
+      
+                                                      
+                      </div>
+                    </div>
+                  </div>
+                <?php endforeach; ?>
+
+
+
+                <!-- <div class="col-lg-6 col-sm-6">
                 <div class="blog-item">
                   <div class="bi-pic">
                     <img src="/public/assets/client/img/blog/blog-1.jpg" alt="">
@@ -183,8 +211,8 @@ class Blogs extends BaseView
                     <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
                   </div>
                 </div>
-              </div>
-              <!-- <div class="col-lg-12">
+              </div> -->
+                <!-- <div class="col-lg-12">
                 <div class="loading-more">
                   <i class="icon_loading"></i>
                   <a href="#">
@@ -192,8 +220,15 @@ class Blogs extends BaseView
                   </a>
                 </div>
               </div> -->
+              </div>
+            <?php
+          else :
+            ?>
+              <h4 class="text-center text-danger">Không có dữ liệu</h4>
+            <?php
+          endif;
+            ?>
             </div>
-          </div>
         </div>
       </div>
     </section>

@@ -21,7 +21,7 @@ class Category extends BaseView
                         <div class="filter-widget">
                             <h4 class="fw-title">Danh mục</h4>
                             <?php
-                          ComponentsCategory::render($data['categories']);
+                          ComponentsCategory::render($data['']);
                             ?>
                         </div>
                         <!-- <div class="filter-widget">

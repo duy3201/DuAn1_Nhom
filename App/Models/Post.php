@@ -82,10 +82,10 @@ ON
         $result = [];
         try {
             $sql = "SELECT posts.*, categories_post.name AS categories_post_name 
-                FROM products 
-                INNER JOIN categories_post ON post.id_categories_post = categories_post.id 
-                WHERE products.status = " . self::STATUS_ENABLE . " 
-                AND categories_post.status = " . self::STATUS_ENABLE . " AND post.id_categories_post = ?";
+                FROM posts 
+                INNER JOIN categories_post ON posts.id_categories_post = categories_post.id 
+                WHERE posts.status = " . self::STATUS_ENABLE . " 
+                AND categories_post.status = " . self::STATUS_ENABLE . " AND posts.id_categories_post = ?";
 
             $conn = $this->_conn->MySQLi();
             $stmt = $conn->prepare($sql);
@@ -99,26 +99,32 @@ ON
         }
     }
 
+    
+
     public function getOnePostByStatus(int $id)
     {
         $result = [];
         try {
+            // Sửa tên bảng từ 'post' thành 'posts' để khớp với tên bảng trong cơ sở dữ liệu
             $sql = "SELECT posts.*, categories_post.name AS categories_post_name 
-                FROM posts 
-                INNER JOIN categories_post ON post.id_categories_post = categories_post.id 
-                WHERE posts.status = " . self::STATUS_ENABLE . " 
-                AND categories_post.status = " . self::STATUS_ENABLE . " AND posts.id = ?";
+                    FROM posts 
+                    INNER JOIN categories_post ON posts.id_categories_post = categories_post.id
+                    WHERE posts.status = " . self::STATUS_ENABLE . " 
+                    AND categories_post.status = " . self::STATUS_ENABLE . " 
+                    AND posts.id = ?";
+                    
             $conn = $this->_conn->MySQLi();
             $stmt = $conn->prepare($sql);
-
-            $stmt->bind_param('i', $id);
+    
+            $stmt->bind_param('i', $id); // Liên kết tham số id
             $stmt->execute();
-            return $stmt->get_result()->fetch_assoc();
+            return $stmt->get_result()->fetch_assoc(); // Trả về kết quả
         } catch (\Throwable $th) {
             error_log('Lỗi khi hiển thị chi tiết dữ liệu: ' . $th->getMessage());
-            return $result;
+            return $result; // Trả về mảng rỗng nếu có lỗi
         }
     }
+    
 
     public function countTotalPost()
     {

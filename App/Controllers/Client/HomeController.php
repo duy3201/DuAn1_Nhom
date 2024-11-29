@@ -47,24 +47,24 @@ class HomeController
 
 
     }
-    public static function blogs()
-    {
-        $category = new Category();
-        $categories = $category->getAllCategoryByStatus();
-        $categoriesmenu = $category->getAllCategoryByStatus();
+    // public static function blogs()
+    // {
+    //     $category = new Category();
+    //     $categories = $category->getAllCategoryByStatus();
+    //     $categoriesmenu = $category->getAllCategoryByStatus();
 
-        $product = new Product;
-        $products = $product->getAllProductByStatus();
+    //     $product = new Product;
+    //     $products = $product->getAllProductByStatus();
 
-        $data = [
-            'products' => $products,
-            'categories' => $categories,
-            'categoriesmenu' => $categoriesmenu
-        ];
-        Header::render($data);
-        Blogs::render();
-        Footer::render();
-    }
+    //     $data = [
+    //         'products' => $products,
+    //         'categories' => $categories,
+    //         'categoriesmenu' => $categoriesmenu
+    //     ];
+    //     Header::render($data);
+    //     // Blogs::render();
+    //     Footer::render();
+    // }
     public static function cart()
     {
         $category = new Category();

@@ -35,6 +35,12 @@ Route::get('/', 'App\Controllers\Client\HomeController@index');
 Route::get('/products', 'App\Controllers\Client\ProductController@index');
 Route::get('/products/{id}', 'App\Controllers\Client\ProductController@detail');
 Route::get('/products/categories/{id}', 'App\Controllers\Client\ProductController@getProductByCategory');
+
+//blog
+Route::get('/blogs','App\Controllers\Client\BlogController@index');
+Route::get('/blogs/{id}', 'App\Controllers\Client\BlogController@detail');
+Route::get('/blogs/categories/{id}', 'App\Controllers\Client\BlogController@getPostByCategory');
+
 // Thêm route cho việc thêm sản phẩm vào giỏ hàng
 // Thêm sản phẩm vào giỏ
 Route::post('/cart/add', 'App\Controllers\Client\CartController@addToCart');
@@ -71,7 +77,7 @@ Route::post('/contact','App\controllers\Client\PostController@PostContact');
 
 Route::get('/introduce','App\controllers\Client\HomeController@introduce');
 
-Route::get('/blogs','App\Controllers\Client\HomeController@blogs');
+
 
 Route::get('/detail', 'App\Controllers\Client\ProductController@detail');
 Route::post('/detail', 'App\Controllers\Client\PostController@DetailContact');

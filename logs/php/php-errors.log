@@ -1962,3 +1962,378 @@ Stack trace:
 [24-Nov-2024 20:09:11 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryMenu.php on line 14
 [24-Nov-2024 20:11:35 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 207
 [24-Nov-2024 20:11:35 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryMenu.php on line 14
+[25-Nov-2024 15:49:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 210
+[25-Nov-2024 15:49:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryMenu.php on line 14
+[28-Nov-2024 00:00:25 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Blogs" not found in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Client\HomeController.php:65
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php(84): App\Controllers\Client\HomeController::blogs()
+#1 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(203): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Client\HomeController.php on line 65
+[28-Nov-2024 00:03:04 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Class "App\Views\Client\Pages\Blogs" not found in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Client\HomeController.php:65
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php(84): App\Controllers\Client\HomeController::blogs()
+#1 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#2 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Client\HomeController.php on line 65
+[28-Nov-2024 00:10:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 113
+[28-Nov-2024 00:10:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 113
+[28-Nov-2024 00:10:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 113
+[28-Nov-2024 00:12:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 113
+[28-Nov-2024 00:12:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 119
+[28-Nov-2024 00:12:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 113
+[28-Nov-2024 00:12:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 119
+[28-Nov-2024 00:12:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 113
+[28-Nov-2024 00:12:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 119
+[28-Nov-2024 00:12:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 113
+[28-Nov-2024 00:12:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:12:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 119
+[28-Nov-2024 00:12:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 113
+[28-Nov-2024 00:12:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:12:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 119
+[28-Nov-2024 00:12:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 113
+[28-Nov-2024 00:12:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:12:45 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 119
+[28-Nov-2024 00:14:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 116
+[28-Nov-2024 00:14:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 120
+[28-Nov-2024 00:14:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 122
+[28-Nov-2024 00:14:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 116
+[28-Nov-2024 00:14:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 120
+[28-Nov-2024 00:14:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 122
+[28-Nov-2024 00:14:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 116
+[28-Nov-2024 00:14:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 120
+[28-Nov-2024 00:14:34 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 122
+[28-Nov-2024 00:15:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:15:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:15:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:15:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:15:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:15:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:15:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:15:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:15:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:17:18 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 210
+[28-Nov-2024 00:17:18 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryMenu.php on line 14
+[28-Nov-2024 00:18:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:18:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:18:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:18:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:18:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:18:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:18:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:18:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:18:02 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:18:17 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:18:17 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:18:17 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:18:17 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:18:17 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:18:17 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:18:17 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:18:17 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:18:17 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:19:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:19:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:19:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:19:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:19:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:19:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:19:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:19:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:19:22 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:19:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:19:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:19:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:19:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:19:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:19:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:19:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:19:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:19:50 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:20:01 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:20:01 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:20:01 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:20:01 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:20:01 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:20:01 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:20:01 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:20:01 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:20:01 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:32:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:32:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:32:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:32:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:32:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:32:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:32:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "img" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 117
+[28-Nov-2024 00:32:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "title" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 121
+[28-Nov-2024 00:32:09 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post_name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Index.php on line 123
+[28-Nov-2024 00:42:15 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 17
+[28-Nov-2024 00:42:15 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 17
+[28-Nov-2024 00:42:15 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 17
+[28-Nov-2024 00:42:15 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 17
+[28-Nov-2024 00:42:15 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 17
+[28-Nov-2024 00:42:15 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 17
+[28-Nov-2024 00:42:15 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 17
+[28-Nov-2024 00:42:15 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 17
+[28-Nov-2024 00:42:15 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 17
+[28-Nov-2024 00:42:15 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "name" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 17
+[28-Nov-2024 00:56:09 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 210
+[28-Nov-2024 00:56:09 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryMenu.php on line 14
+[28-Nov-2024 01:47:45 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 01:47:51 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 09:43:37 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 09:43:41 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 09:43:45 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 09:44:09 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 09:47:46 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 09:55:57 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 09:56:02 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 09:57:54 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:01:02 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:01:02 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:01:25 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:01:26 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:02:58 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:03:04 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:04:05 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getAllPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:05:41 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:05:46 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:06:11 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:06:15 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:08:36 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:08:37 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:08:57 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Client\PostController::getPostByCategory() in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php:106
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#1 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php on line 106
+[28-Nov-2024 10:10:26 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Category.php on line 49
+[28-Nov-2024 10:10:26 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 15
+[28-Nov-2024 10:10:43 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Category.php on line 49
+[28-Nov-2024 10:10:43 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 15
+[28-Nov-2024 10:13:45 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown table 'posts'
+[28-Nov-2024 10:13:48 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown table 'posts'
+[28-Nov-2024 10:13:53 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown table 'posts'
+[28-Nov-2024 10:13:55 Asia/Ho_Chi_Minh] Lỗi khi hiển thị dữ liệu: Unknown table 'posts'
+[28-Nov-2024 10:39:30 Asia/Ho_Chi_Minh] Lỗi khi hiển thị chi tiết dữ liệu: Unknown column 'post.id_categories_post' in 'on clause'
+[28-Nov-2024 10:39:37 Asia/Ho_Chi_Minh] Lỗi khi hiển thị chi tiết dữ liệu: Unknown column 'post.id_categories_post' in 'on clause'
+[28-Nov-2024 10:40:24 Asia/Ho_Chi_Minh] Lỗi khi hiển thị chi tiết dữ liệu: Unknown column 'post.id_categories_post' in 'on clause'
+[28-Nov-2024 10:40:28 Asia/Ho_Chi_Minh] Lỗi khi hiển thị chi tiết dữ liệu: Unknown column 'post.id_categories_post' in 'on clause'
+[28-Nov-2024 10:40:49 Asia/Ho_Chi_Minh] Lỗi khi hiển thị chi tiết dữ liệu: Unknown column 'post.id_categories_post' in 'on clause'
+[28-Nov-2024 10:44:03 Asia/Ho_Chi_Minh] Lỗi khi hiển thị chi tiết dữ liệu: Unknown column 'post.id_categories_post' in 'on clause'
+[28-Nov-2024 10:46:13 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 26
+[28-Nov-2024 10:46:13 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 15
+[28-Nov-2024 10:46:13 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "users" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:46:13 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:46:13 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:46:13 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:46:13 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:46:13 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:46:13 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:46:13 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "posts" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 37
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 37
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 37
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "posts" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "posts" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 53
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 53
+[28-Nov-2024 10:48:37 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 53
+[28-Nov-2024 10:50:30 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 26
+[28-Nov-2024 10:50:30 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 15
+[28-Nov-2024 10:50:30 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "users" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:50:30 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:50:30 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:30 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:30 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:30 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:30 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:30 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 26
+[28-Nov-2024 10:50:33 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 15
+[28-Nov-2024 10:50:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "users" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:50:33 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:50:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:33 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:33 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:33 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:33 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 26
+[28-Nov-2024 10:50:39 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 15
+[28-Nov-2024 10:50:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "users" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:50:39 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:50:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:39 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:39 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:39 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:39 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 26
+[28-Nov-2024 10:50:44 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 15
+[28-Nov-2024 10:50:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "users" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:50:44 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:50:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:44 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:44 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:44 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:50:44 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:51:19 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "categories_post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 26
+[28-Nov-2024 10:51:19 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryPost.php on line 15
+[28-Nov-2024 10:51:19 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "users" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:51:19 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:51:19 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:51:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:51:19 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:51:19 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:51:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:51:19 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:51:57 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "users" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:51:57 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:51:57 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:51:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:51:57 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:51:57 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:51:57 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:51:57 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:52:08 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "users" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:52:08 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:52:08 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:52:08 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:52:08 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:52:08 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:52:08 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:52:08 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:54:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "users" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:54:39 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:54:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:54:39 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:54:39 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:54:39 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:54:39 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:54:39 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:55:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "users" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:55:06 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:55:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:55:06 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:55:06 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:55:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:55:06 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:55:06 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:57:19 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "users" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:57:19 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 42
+[28-Nov-2024 10:57:19 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:57:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:57:19 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:57:19 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:57:19 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:57:19 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 48
+[28-Nov-2024 10:57:55 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 43
+[28-Nov-2024 10:57:55 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 43
+[28-Nov-2024 10:57:55 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 43
+[28-Nov-2024 10:57:55 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 43
+[28-Nov-2024 10:57:55 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 43
+[28-Nov-2024 10:57:55 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 43
+[28-Nov-2024 11:06:55 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 210
+[28-Nov-2024 11:06:55 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryMenu.php on line 14
