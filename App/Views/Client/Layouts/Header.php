@@ -35,27 +35,33 @@ class Header extends BaseView
         <link rel="stylesheet" href="/public/assets/client/css copy/elegant-icons.css" type="text/css">
 
         <link rel="stylesheet" href="/public/assets/client/css copy/owl.carousel.min.css" type="text/css">
-        
+
         <link rel="stylesheet" href="/public/assets/client/css copy/nice-select.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/jquery-ui.min.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/slicknav.min.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/style.css" type="text/css">
         <!-- Tải jQuery -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+       /
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
 
 
-
+<!-- 
         <script src="/path-to-your-project/sweetalert2.min.js"></script>
 
         <script src="dist/sweetalert.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+        <link rel="stylesheet" type="text/css" href="dist/sweetalert.css"> -->
 
+        
 
         </head>
-        <style>
+        <!-- <style>
             .navbar .dropdown-toggle i {
                 transition: transform 0.3s ease;
                 /* Hiệu ứng khi icon xoay */
@@ -65,7 +71,7 @@ class Header extends BaseView
                 transform: rotate(0deg);
                 /* Giữ nguyên trạng thái */
             }
-        </style>
+        </style> -->
 
         <!-- Page Preloder -->
         <div id="preloder">
@@ -169,9 +175,8 @@ class Header extends BaseView
                                     </div>
                                 </li>
                                 <!-- Tài khoản -->
-                                <?php
-                                if ($is_login):
-                                    ?>
+                             
+                                <?php if ($is_login): ?>
                                     <li>
                                         <nav class="navbar navbar-expand-lg p-0">
                                             <ul class="navbar-nav">
@@ -181,7 +186,8 @@ class Header extends BaseView
                                                         aria-expanded="false">
                                                         <i class="fa-regular fa-user"></i>
                                                     </a>
-                                                    <div class="dropdown-menu" aria-labelledby="userDropdown">
+                                                    <div class="dropdown-menu dropdown-menu-end keep-open"
+                                                        aria-labelledby="userDropdown">
                                                         <a class="dropdown-item" href="/users/<?= $_SESSION['user']['id'] ?>">Hi,
                                                             <?= $_SESSION['user']['name'] ?></a>
                                                         <a class="dropdown-item" href="/change-password">Đổi mật khẩu</a>
@@ -190,34 +196,31 @@ class Header extends BaseView
                                                 </li>
                                             </ul>
                                         </nav>
-
                                     </li>
-                            </div>
+                                <?php else: ?>
+                                    <li class="dropdown">
+                                        <a href="/login" class="btn dropdown-toggle p-0" id="guestDropdown">
+                                            <i class="fa-regular fa-user"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end keep-open" aria-labelledby="guestDropdown">
+                                            <a href="/login" class="dropdown-item">Đăng nhập</a>
+                                            <a href="/register" class="dropdown-item">Đăng ký</a>
+                                        </div>
+                                    </li>
+                                    <script>
+                                        
+                                    </script>
+                                <?php endif; ?>
 
-                            <?php
-                                else:
+                               
 
-                                    ?>
-                            <li class="heart-icon dropdown">
-                                <a href="/login" class="dropdown-toggle">
-                                    <i class="fa-regular fa-user"></i>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="/login" class="dropdown-item">Đăng nhập</a>
-                                    <a href="/register" class="dropdown-item">Đăng ký</a>
-                                    <!-- <a href="/Logout" class="dropdown-item">Đăng xuất</a> -->
-                                </div>
-                            </li>
 
-                            <?php
-                                endif;
-                                ?>
-                        </ul>
+                            </ul>
+                        </div>
+
+
                     </div>
-
-
                 </div>
-            </div>
 
             </div>
             </div>
