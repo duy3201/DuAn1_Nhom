@@ -43,6 +43,7 @@ Route::get('/blogs/categories/{id}', 'App\Controllers\Client\BlogController@getP
 
 // Thêm route cho việc thêm sản phẩm vào giỏ hàng
 // Thêm sản phẩm vào giỏ
+Route::post('/products/cart/add', 'App\Controllers\Client\CartController@addToCart');
 Route::post('/cart/add', 'App\Controllers\Client\CartController@addToCart');
 
 // Hiển thị giỏ hàng

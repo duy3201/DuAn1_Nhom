@@ -3,6 +3,7 @@
 namespace App\Views\Client\Pages\Product;
 
 use App\Helpers\AuthHelper;
+use App\Models\CartModel;
 use App\Views\BaseView;
 use App\Views\Client\Components\Category;
 
@@ -11,8 +12,26 @@ class Detail extends BaseView
     public static function render($data = null)
     {
         $is_login = AuthHelper::checkLogin();
-        // var_dump($is_login);
-        // Kiểm tra cookie 'user'
+        // Lấy thông tin giỏ hàng từ cookie
+        $cartModel = new CartModel();
+        $cartItems = $cartModel->getAllCartItems();
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_cart'])) {
+            $productId = $_POST['id_product'];
+            $price = $_POST['price'];
+            $quantity = $_POST['quantity'] ?? 1;
+
+            // Thêm sản phẩm vào giỏ hàng (cookie)
+            $cartModel->addToCart([
+                'id_product' => $productId,
+                'quantity' => $quantity,
+                'price' => $price,
+            ]);
+
+            // Chuyển hướng lại trang sau khi thêm vào giỏ hàng
+            header('Location: ' . $_SERVER['REQUEST_URI']);
+            exit;
+        }
 ?>
 
 
@@ -54,7 +73,7 @@ class Detail extends BaseView
                                 </div>
                             </div>
                         </div>-->
-                        </div> 
+                    </div>
                     <div class="col-lg-9">
                         <div class="row">
                             <div class="col-lg-6">
@@ -104,7 +123,13 @@ class Detail extends BaseView
                                         <div class="pro-qty">
                                             <input type="text" value="1">
                                         </div>
-                                        <a href="#" class="primary-btn pd-cart">Thêm giỏ hàng</a>
+                                        <form action="cart/add" method="POST">
+                                            <input type="hidden" name="method" value="POST">
+                                            <input type="hidden" name="id_product" value="<?= htmlspecialchars($data['products']['id']); ?>">
+                                            <input type="hidden" name="price" value="<?= htmlspecialchars($data['products']['price'] ?? 0); ?>">
+                                            <input type="hidden" name="quantity" value="1">
+                                            <button type="submit" name="add_to_cart" class="btn btn-warning">Thêm vào giỏ hàng</button>
+                                        </form>
                                     </div>
 
                                     <div class="filter-widget">
@@ -201,7 +226,7 @@ class Detail extends BaseView
                                                 <tr>
                                                     <td class="p-catagory">Thêm Giỏ Hàng</td>
                                                     <td>
-                                                        <div class="cart-add">+ Thêm giỏ hàng</div>
+                                                        <div class="cart/add">+ Thêm giỏ hàng</div>
                                                     </td>
                                                 </tr>
                                                 <!-- <tr>

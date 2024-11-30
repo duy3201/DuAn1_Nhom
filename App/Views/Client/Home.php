@@ -285,7 +285,6 @@ class Home extends BaseView
                                             </a>
                                             <div class="product-price">
                                                 <?= $item['product_price'] ?> VNĐ
-
                                             </div>
                                         </div>
 
@@ -378,13 +377,13 @@ class Home extends BaseView
                                         <div class="latest-text">
                                             <div class="tag-list">
                                                 <div class="tag-item">
-                                            <i class="fa fa-calendar-o"></i>
-                                            4 Tháng 5, 2019
-                                        </div>
+                                                    <i class="fa fa-calendar-o"></i>
+                                                    4 Tháng 5, 2019
+                                                </div>
                                                 <div class="tag-item">
-                                            <i class="fa fa-comment-o"></i>
-                                            5
-                                        </div>
+                                                    <i class="fa fa-comment-o"></i>
+                                                    5
+                                                </div>
                                             </div>
                                             <a href="#">
                                                 <h4><?= $item['title'] ?></h4>
