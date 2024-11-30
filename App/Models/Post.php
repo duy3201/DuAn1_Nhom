@@ -44,6 +44,26 @@ class Post extends BaseModel
             return $result;
         }
     }
+    public function getAllPostByLimit()
+    {
+        $result = [];
+        try {
+            $sql = "SELECT posts.* 
+                    FROM posts 
+                    INNER JOIN categories_post ON posts.id_categories_post = categories_post.id 
+                    WHERE posts.status = " . self::STATUS_ENABLE . " 
+                    AND categories_post.status = " . self::STATUS_ENABLE . " 
+                    ORDER BY posts.id DESC
+                    LIMIT 3";
+                    
+            $result = $this->_conn->MySQLi()->query($sql);
+            return $result->fetch_all(MYSQLI_ASSOC);
+        } catch (\Throwable $th) {
+            error_log('Lỗi khi hiển thị tất cả dữ liệu: ' . $th->getMessage());
+            return $result;
+        }
+    }
+    
 
 
 
@@ -99,7 +119,8 @@ ON
         }
     }
 
-    
+
+
 
     public function getOnePostByStatus(int $id)
     {
@@ -112,10 +133,10 @@ ON
                     WHERE posts.status = " . self::STATUS_ENABLE . " 
                     AND categories_post.status = " . self::STATUS_ENABLE . " 
                     AND posts.id = ?";
-                    
+
             $conn = $this->_conn->MySQLi();
             $stmt = $conn->prepare($sql);
-    
+
             $stmt->bind_param('i', $id); // Liên kết tham số id
             $stmt->execute();
             return $stmt->get_result()->fetch_assoc(); // Trả về kết quả
@@ -124,7 +145,7 @@ ON
             return $result; // Trả về mảng rỗng nếu có lỗi
         }
     }
-    
+
 
     public function countTotalPost()
     {

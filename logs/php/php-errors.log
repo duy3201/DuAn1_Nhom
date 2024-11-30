@@ -2337,3 +2337,33 @@ Stack trace:
 [28-Nov-2024 10:57:55 Asia/Ho_Chi_Minh] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Blogs\Detail.php on line 43
 [28-Nov-2024 11:06:55 Asia/Ho_Chi_Minh] PHP Warning:  Trying to access array offset on value of type null in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Layouts\Header.php on line 210
 [28-Nov-2024 11:06:55 Asia/Ho_Chi_Minh] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Components\CategoryMenu.php on line 14
+[29-Nov-2024 14:38:02 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE post.status = 1 
+        AND categories_posts.status = 1' at line 6
+[29-Nov-2024 14:39:28 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE post.status = 1 
+        AND categories_posts.status = 1' at line 6
+[29-Nov-2024 14:41:43 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE post.status = 1 
+        AND categories_posts.status = 1' at line 6
+[29-Nov-2024 14:41:46 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE post.status = 1 
+        AND categories_posts.status = 1' at line 6
+[29-Nov-2024 14:42:07 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE post.status = 1 
+        AND categories_posts.status = 1' at line 6
+[29-Nov-2024 14:42:07 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "post" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Home.php on line 372
+[29-Nov-2024 14:42:07 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Home.php:372
+Stack trace:
+#0 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Home.php(372): count()
+#1 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Controllers\Client\HomeController.php(51): App\Views\Client\Home::render()
+#2 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Route.php(84): App\Controllers\Client\HomeController::index()
+#3 C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\index.php(209): App\Route::dispatch()
+#4 {main}
+  thrown in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Home.php on line 372
+[29-Nov-2024 14:42:26 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE post.status = 1 
+        AND categories_posts.status = 1' at line 6
+[29-Nov-2024 14:44:39 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE posts.status = 1 
+        AND categories_posts.status = 1' at line 6
+[29-Nov-2024 15:26:03 Asia/Ho_Chi_Minh] Lỗi khi lấy sản phẩm bằng tên: Table 'duan1_oldstyle.categories' doesn't exist
+[29-Nov-2024 15:26:03 Asia/Ho_Chi_Minh] Lỗi khi lấy sản phẩm bằng tên: Table 'duan1_oldstyle.categories' doesn't exist
+[29-Nov-2024 15:26:03 Asia/Ho_Chi_Minh] Lỗi khi hiển thị tất cả dữ liệu: Table 'duan1_oldstyle.products' doesn't exist
+[29-Nov-2024 15:28:00 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Edit.php on line 99
+[29-Nov-2024 15:28:36 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Edit.php on line 99
+[29-Nov-2024 15:28:44 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Edit.php on line 99
+[29-Nov-2024 15:33:52 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "status" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Admin\Pages\Product\Edit.php on line 99

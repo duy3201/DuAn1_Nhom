@@ -2,6 +2,7 @@
 
 namespace App\Controllers\Client;
 use App\Models\Category;
+use App\Models\Post;
 use App\Models\Product;
 use App\Helpers\NotificationHelper;
 use App\Views\Client\Components\Notification;
@@ -32,10 +33,17 @@ class HomeController
         $product = new Product();
         $products = $product->getAllProductByIsfeature();
 
+        $post = new Post();
+        $posts = $post->getAllPostByLimit();
+
         $data = [
+            'posts' => $posts,
             'products' => $products,
             'categories' => $categories,
             'categoriesmenu' => $categoriesmenu
+            // 'products' => $products,
+            // 'categories' => $categories,
+            // 'categoriesmenu' => $categoriesmenu
         ];
          Header::render($data);
          Notification::render();

@@ -291,7 +291,6 @@ class Home extends BaseView
 
                                     </div>
                                 <?php endforeach; ?>
-
                             <?php else : ?>
                                 <h3 class="text-center text-danger">Không có sản phẩm</h3>
                             <?php endif; ?>
@@ -370,71 +369,38 @@ class Home extends BaseView
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single-latest-blog">
-                                <img src="/public/assets/client/img/latest-1.jpg" alt="">
-                                <div class="latest-text">
-                                    <div class="tag-list">
-                                        <div class="tag-item">
+                    <?php if (count($data) && count($data['posts'])) : ?>
+                        <div class="row">
+                            <?php foreach ($data['posts'] as $item) : ?>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-latest-blog">
+                                        <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="">
+                                        <div class="latest-text">
+                                            <div class="tag-list">
+                                                <div class="tag-item">
                                             <i class="fa fa-calendar-o"></i>
                                             4 Tháng 5, 2019
                                         </div>
-                                        <div class="tag-item">
+                                                <div class="tag-item">
                                             <i class="fa fa-comment-o"></i>
                                             5
                                         </div>
-                                    </div>
-                                    <a href="#">
-                                        <h4>Phong Cách Phố Xá Tốt Nhất Từ Tuần Lễ Thời Trang London</h4>
-                                    </a>
-                                    <p>Khám phá những phong cách nổi bật từ Tuần Lễ Thời Trang London, nơi những xu hướng mới nhất được trình diễn trên các con phố.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single-latest-blog">
-                                <img src="/public/assets/client/img/latest-2.jpg" alt="">
-                                <div class="latest-text">
-                                    <div class="tag-list">
-                                        <div class="tag-item">
-                                            <i class="fa fa-calendar-o"></i>
-                                            4 Tháng 5, 2019
-                                        </div>
-                                        <div class="tag-item">
-                                            <i class="fa fa-comment-o"></i>
-                                            5
+                                            </div>
+                                            <a href="#">
+                                                <h4><?= $item['title'] ?></h4>
+                                            </a>
+                                            <p>
+                                                <?= implode(' ', array_slice(explode(' ', strip_tags($item['content'])), 0, 20)) . '...'; ?>
+                                            </p>
+
                                         </div>
                                     </div>
-                                    <a href="#">
-                                        <h4>Hướng Dẫn Của Vogue Về Giày Mùa Thu/Đông 2019</h4>
-                                    </a>
-                                    <p>Cùng khám phá những đôi giày mới nhất trong mùa Thu/Đông 2019 với hướng dẫn chi tiết từ Vogue, giúp bạn chọn lựa phù hợp.</p>
                                 </div>
-                            </div>
+                            <?php endforeach; ?>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="single-latest-blog">
-                                <img src="/public/assets/client/img/latest-3.jpg" alt="">
-                                <div class="latest-text">
-                                    <div class="tag-list">
-                                        <div class="tag-item">
-                                            <i class="fa fa-calendar-o"></i>
-                                            4 Tháng 5, 2019
-                                        </div>
-                                        <div class="tag-item">
-                                            <i class="fa fa-comment-o"></i>
-                                            5
-                                        </div>
-                                    </div>
-                                    <a href="#">
-                                        <h4>Cách Làm Sáng Tủ Quần Áo Với Một Chút Màu Chanh</h4>
-                                    </a>
-                                    <p>Thêm chút màu sắc tươi mới với màu chanh vào bộ sưu tập quần áo của bạn để tạo nên những bộ trang phục nổi bật và sành điệu hơn.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php else : ?>
+                        <h3 class="text-center text-danger">Không có bài viết mới nào</h3>
+                    <?php endif; ?>
                     <div class="benefit-items">
                         <div class="row">
                             <div class="col-lg-4">
@@ -462,7 +428,7 @@ class Home extends BaseView
                             <div class="col-lg-4">
                                 <div class="single-benefit">
                                     <div class="sb-icon">
-                                        <img src="/public/assets/client/img/icon-1.png" alt="">
+                                        <img src="/public/assets/client/img/icon-3.png" alt="">
                                     </div>
                                     <div class="sb-text">
                                         <h6>Thanh Toán An Toàn</h6>

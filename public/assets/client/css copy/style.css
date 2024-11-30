@@ -1214,6 +1214,13 @@ ol {
 	overflow: hidden;
 	position: relative;
 }
+.pi-pic img {
+    width: 100%;               /* Đảm bảo hình ảnh chiếm đầy chiều rộng container */
+    height: 250px;             /* Chiều cao cố định */
+    object-fit: contain;       /* Thu nhỏ hình ảnh, giữ nguyên tỷ lệ và không cắt */
+  
+    border-radius: 8px;        /* Bo góc hình ảnh */
+}
 
 .product-item .pi-pic img {
 	min-width: 100%;
@@ -1444,12 +1451,16 @@ ol {
 	margin-bottom: 55px;
 }
 
-.single-latest-blog {
-	margin-bottom: 25px;
+.single-latest-blog img {
+    width: 100%;              /* Đảm bảo hình ảnh bao phủ toàn bộ chiều rộng */
+    height: 250px;           /* Chiều cao cố định */
+    object-fit: cover;       /* Giữ hình ảnh tỷ lệ đúng và cắt phần dư */     /* Tùy chọn: Bo góc */
 }
 
-.single-latest-blog img {
-	min-width: 100%;
+
+
+.single-latest-blog {
+	margin-bottom: 25px;
 }
 
 .single-latest-blog .latest-text {
