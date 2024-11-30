@@ -16,7 +16,7 @@ class Header extends BaseView
         $cartItems = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
         $total = 0;
 
-?>
+        ?>
 
 
         <title>Old Style Store</title>
@@ -33,12 +33,18 @@ class Header extends BaseView
         <link rel="stylesheet" href="/public/assets/client/css copy/font-awesome.min.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/themify-icons.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/elegant-icons.css" type="text/css">
+
         <link rel="stylesheet" href="/public/assets/client/css copy/owl.carousel.min.css" type="text/css">
+        
         <link rel="stylesheet" href="/public/assets/client/css copy/nice-select.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/jquery-ui.min.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/slicknav.min.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/style.css" type="text/css">
         <!-- Tải jQuery -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
@@ -49,7 +55,17 @@ class Header extends BaseView
 
 
         </head>
+        <style>
+            .navbar .dropdown-toggle i {
+                transition: transform 0.3s ease;
+                /* Hiệu ứng khi icon xoay */
+            }
 
+            .navbar .dropdown-toggle[aria-expanded="true"] i {
+                transform: rotate(0deg);
+                /* Giữ nguyên trạng thái */
+            }
+        </style>
 
         <!-- Page Preloder -->
         <div id="preloder">
@@ -118,11 +134,16 @@ class Header extends BaseView
                                                             ?>
                                                             <tr>
                                                                 <td class="si-pic"><img
-                                                                        src="/public/assets/admin/img/<?= htmlspecialchars($product['img']); ?>" alt="<?= htmlspecialchars($product['name']); ?>" alt="" style="max-width: 80px; max-height: 80px;">
+                                                                        src="/public/assets/admin/img/<?= htmlspecialchars($product['img']); ?>"
+                                                                        alt="<?= htmlspecialchars($product['name']); ?>" alt=""
+                                                                        style="max-width: 80px; max-height: 80px;">
                                                                 </td>
                                                                 <td class="si-text">
                                                                     <div class="product-selected">
-                                                                        <p class="text-warning"> <?= number_format($product['product_price'], 0, ',', '.') . ' VNĐ'; ?> x <?= $quantity; ?></p>
+                                                                        <p class="text-warning">
+                                                                            <?= number_format($product['product_price'], 0, ',', '.') . ' VNĐ'; ?>
+                                                                            x <?= $quantity; ?>
+                                                                        </p>
                                                                         <h6><?= htmlspecialchars($product['name']); ?></h6>
                                                                     </div>
                                                                 </td>
@@ -138,7 +159,8 @@ class Header extends BaseView
                                                 <h5><?= number_format($total, 0, ',', '.') . ' VNĐ'; ?></h5>
                                             </div>
                                         <?php else: ?>
-                                            <p class="text-center">Giỏ hàng của bạn đang trống. <a href="/products">Tiếp tục mua sắm</a></p>
+                                            <p class="text-center">Giỏ hàng của bạn đang trống. <a href="/products">Tiếp tục mua
+                                                    sắm</a></p>
                                         <?php endif; ?>
                                         <div class="select-button">
                                             <a href="/cart" class="primary-btn view-card">Xem giỏ hàng</a>
@@ -149,50 +171,48 @@ class Header extends BaseView
                                 <!-- Tài khoản -->
                                 <?php
                                 if ($is_login):
-                                ?>
+                                    ?>
                                     <li>
                                         <nav class="navbar navbar-expand-lg p-0">
-                                            <!-- <div class="collapse  navbar-collapse justify-content-end" id=""> -->
                                             <ul class="navbar-nav">
                                                 <li class="dropdown m-0">
-                                                    <a class="btn dropdown-toggle p-0 " style="height: 30px;"
-                                                        href="#" id="" role="button  " data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false"> <i
-                                                            class="fa-regular fa-user"></i>
+                                                    <a class="btn dropdown-toggle p-0" style="height: 30px;" href="#"
+                                                        id="userDropdown" role="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <i class="fa-regular fa-user"></i>
                                                     </a>
-                                                    <div class="dropdown-menu" aria-labelledby="">
-                                                        <!-- <a class="dropdown-item" href="#">Action</a> -->
-                                                        <a class="dropdown-item"
-                                                            href="/users/<?= $_SESSION['user']['id'] ?>">Hi,<?= $_SESSION['user']['name'] ?></a>
+                                                    <div class="dropdown-menu" aria-labelledby="userDropdown">
+                                                        <a class="dropdown-item" href="/users/<?= $_SESSION['user']['id'] ?>">Hi,
+                                                            <?= $_SESSION['user']['name'] ?></a>
                                                         <a class="dropdown-item" href="/change-password">Đổi mật khẩu</a>
                                                         <a class="dropdown-item" href="/logout">Đăng Xuất</a>
                                                     </div>
                                                 </li>
                                             </ul>
-                                            <!-- </div> -->
                                         </nav>
-                                    </li>
-                        </div>
 
-                    <?php
+                                    </li>
+                            </div>
+
+                            <?php
                                 else:
 
-                    ?>
-                        <li class="heart-icon dropdown">
-                            <a href="/login" class="dropdown-toggle">
-                                <i class="fa-regular fa-user"></i>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a href="/login" class="dropdown-item">Đăng nhập</a>
-                                <a href="/register" class="dropdown-item">Đăng ký</a>
-                                <!-- <a href="/Logout" class="dropdown-item">Đăng xuất</a> -->
-                            </div>
-                        </li>
+                                    ?>
+                            <li class="heart-icon dropdown">
+                                <a href="/login" class="dropdown-toggle">
+                                    <i class="fa-regular fa-user"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="/login" class="dropdown-item">Đăng nhập</a>
+                                    <a href="/register" class="dropdown-item">Đăng ký</a>
+                                    <!-- <a href="/Logout" class="dropdown-item">Đăng xuất</a> -->
+                                </div>
+                            </li>
 
-                    <?php
+                            <?php
                                 endif;
-                    ?>
-                    </ul>
+                                ?>
+                        </ul>
                     </div>
 
 
@@ -248,7 +268,7 @@ class Header extends BaseView
         </header>
         <!-- Header End -->
 
-<?php
+        <?php
 
 
     }

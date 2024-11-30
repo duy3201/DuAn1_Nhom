@@ -33,8 +33,8 @@ class Home extends BaseView
                         </div>
                     </div>
                 </div>
-                <div class="single-hero-items set-bg" data-setbg="/public/assets/client/img/hero-2.jpg">
-                    <div class="container">
+                <div class="single-hero-items set-bg" data-setbg="/public/assets/client/img/KHOA1.PNG">
+                    <!-- <div class="container">
                         <div class="row">
                             <div class="col-lg-5">
                                 <span>Túi xách, trẻ em</span>
@@ -47,7 +47,7 @@ class Home extends BaseView
                                 <h2>Giảm giá <span>50%</span></h2>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
         </section>
         <!-- Phần Hero Kết Thúc -->
