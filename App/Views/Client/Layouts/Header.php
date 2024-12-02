@@ -16,7 +16,7 @@ class Header extends BaseView
         $cartItems = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
         $total = 0;
 
-        ?>
+?>
 
 
         <title>Old Style Store</title>
@@ -48,16 +48,16 @@ class Header extends BaseView
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        
 
 
-<!-- 
+
+        <!-- 
         <script src="/path-to-your-project/sweetalert2.min.js"></script>
 
         <script src="dist/sweetalert.min.js"></script>
         <link rel="stylesheet" type="text/css" href="dist/sweetalert.css"> -->
 
-        
+
 
         </head>
         <!-- <style>
@@ -95,7 +95,7 @@ class Header extends BaseView
                                 <form action="/products" method="GET" class="input-group">
                                     <input type="text" name="search" placeholder="Bạn cần gì?"
                                         value="<?= isset($_GET['search']) ? htmlspecialchars($_GET['search']) : '' ?>"
-                                        class="form-control"> 
+                                        class="form-control">
                                     <button type="submit">
                                         <i class="ti-search"></i>
                                     </button>
@@ -152,7 +152,12 @@ class Header extends BaseView
                                                                         <h6><?= htmlspecialchars($product['name']); ?></h6>
                                                                     </div>
                                                                 </td>
-                                                                <td class="si-close"><i class="ti-close"></i></td>
+                                                                <td class="si-close">
+                                                                    
+                                                                    <a href="#" onclick="return confirmDelete(<?= $productId ?>)" class="text-dark" title="Xóa">
+                                                                    <i class="ti-close"></i>
+                                                                    </a>
+                                                                </td>
                                                             </tr>
                                                         <?php endforeach; ?>
                                                     </tbody>
@@ -174,7 +179,7 @@ class Header extends BaseView
                                     </div>
                                 </li>
                                 <!-- Tài khoản -->
-                             
+
                                 <?php if ($is_login): ?>
                                     <li>
                                         <nav class="navbar navbar-expand-lg p-0">
@@ -207,11 +212,11 @@ class Header extends BaseView
                                         </div>
                                     </li>
                                     <script>
-                                        
+
                                     </script>
                                 <?php endif; ?>
 
-                               
+
 
 
                             </ul>
@@ -269,8 +274,16 @@ class Header extends BaseView
 
         </header>
         <!-- Header End -->
+        <script>
+            function confirmDelete(productId) {
+                if (confirm('Bạn có chắc chắn muốn xóa sản phẩm này?')) {
+                    window.location.href = '/cart/remove/' + productId;
+                }
+                return false;
+            }
+        </script>
 
-        <?php
+<?php
 
 
     }

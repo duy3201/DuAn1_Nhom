@@ -13,7 +13,9 @@ class Cart extends BaseView
         $cartItems = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
         $total = 0;
 
-        ?>
+
+?>
+
         <!-- Bắt đầu phần giỏ hàng -->
         <section class="shopping-cart spad">
             <div class="container">
@@ -76,10 +78,9 @@ class Cart extends BaseView
                                                 </td>
                                                 <!-- Xóa sản phẩm -->
                                                 <td class="close-td">
-                                                    <a href="/cart/remove/<?= $productId; ?>" class="btn btn-danger btn-sm" title="Xóa">
-                                                        <i class="fas fa-trash-alt"></i> <!-- Font Awesome icon -->
+                                                    <a href="#" onclick="return confirmDelete(<?= $productId ?>)" class="text-dark" title="Xóa">
+                                                        <i class="fas fa-trash-alt"></i>
                                                     </a>
-
                                                 </td>
                                             </tr>
                                         <?php endforeach; ?>
@@ -110,8 +111,16 @@ class Cart extends BaseView
             </div>
         </section>
         <!-- Kết thúc phần giỏ hàng -->
+        <script>
+            function confirmDelete(productId) {
+                if (confirm('Bạn có chắc chắn muốn xóa sản phẩm này?')) {
+                    window.location.href = '/cart/remove/' + productId;
+                }
+                return false;
+            }
+        </script>
 
-        <?php
+<?php
     }
 }
 ?>

@@ -27,7 +27,7 @@ class CartController
         // Cập nhật cookie
         setcookie('carts_detail', json_encode($cart), time() + (86400 * 30), "/"); // 30 ngày
 
-        header('Location: ' .$_SERVER['HTTP_REFERER']);
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit;
     }
 
@@ -41,16 +41,21 @@ class CartController
         Cart::render($cartItems);
         Footer::render();
     }
-    public function removeFromCart()
+    public function removeFromCart($productId)
     {
-        $productId = $_POST['id_product'];
+        // Lấy thông tin giỏ hàng từ cookie
+        $cartItems = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
 
-        $cart = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
-        unset($cart[$productId]);
+        // Xóa sản phẩm khỏi giỏ hàng
+        if (isset($cartItems[$productId])) {
+            unset($cartItems[$productId]);
 
-        setcookie('carts_detail', json_encode($cart), time() + (86400 * 30), "/");
+            // Lưu lại cookie với giỏ hàng mới
+            setcookie('carts_detail', json_encode($cartItems), time() + (86400 * 30), "/"); // Cookie hết hạn sau 30 ngày
+        }
 
+        // Redirect về trang giỏ hàng
         header('Location: /cart');
-        exit;
+        exit();
     }
 }

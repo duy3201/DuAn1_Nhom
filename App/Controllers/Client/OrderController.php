@@ -1,18 +1,22 @@
 <?php
+
 namespace App\Controllers\Client;
 
 use App\Models\OrderModel;
+use App\Views\Client\Layouts\Footer;
+use App\Views\Client\Layouts\Header;
+use App\Views\Client\Pages\ThankYou;
 
 class OrderController
 {
     public function create()
     {
         $order_id = $_POST['orderId'];
-        
+
         $vnp_TmnCode = "HYWQZOQG";
         $vnp_HashSecret = "CQ8VSL317Y9BQ90JTZTU8RBLS11N9DBA";
         $vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-        $vnp_Returnurl = "http://127.0.0.1:8080/";
+        $vnp_Returnurl = "http://127.0.0.1:8080/order/thankyou";
 
         $vnp_TxnRef = $order_id;
         $vnp_OrderInfo = "Thanh toán đơn hàng tại OldStyle";
@@ -60,12 +64,18 @@ class OrderController
         }
 
         $returnData = array('code' => '00', 'massage' => 'success', 'data' => $vnp_Url);
-        
+
         if (isset($_POST['redirect'])) {
             header('Location: ' . $vnp_Url);
             die();
         } else {
             echo json_encode($returnData);
         }
+    }
+    public function thankyou()
+    {
+        Header::render();
+        ThankYou::render();
+        Footer::render();
     }
 }

@@ -51,12 +51,13 @@ Route::post('/cart/add', 'App\Controllers\Client\CartController@addToCart');
 Route::get('/cart', 'App\Controllers\Client\CartController@viewCart');
 
 // Xóa sản phẩm khỏi giỏ hàng
-Route::post('/cart/remove', 'App\Controllers\Client\CartController@removeFromCart');
+Route::get('/cart/remove/{id}', 'App\Controllers\Client\CartController@removeFromCart');
 
 // Cập nhật số lượng sản phẩm
 Route::post('/cart/update', 'App\Controllers\Client\CartController@updateCart');
 
 Route::post('/order/create', 'App\Controllers\Client\OrderController@create');
+Route::get('/order/thankyou', 'App\Controllers\Client\OrderController@thankyou');
 
 Route::get('/register','App\Controllers\Client\AuthController@register');
 Route::post('/register','App\Controllers\Client\AuthController@registerAction');
