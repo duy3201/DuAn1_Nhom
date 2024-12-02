@@ -25,10 +25,6 @@ class Edit extends BaseView
                                 <h5 class="card-title">Chỉnh sửa sản phẩm đấu giá</h5>
                                 <form method="POST" action="/admin/auctions/<?= $data['id'] ?>" enctype="multipart/form-data">
                                     <input type="hidden" name="method" value="POST">
-                                    <div class="form-group">
-                                        <label for="product_name">Tên buổi đấu giá:</label>
-                                        <input type="text" class="form-control" id="product_name" name="product_name" value="<?= htmlspecialchars($data['product_name']) ?>" required>
-                                    </div>
                                     <div class="form-group text-white">
                                         <label for="product_id">Loại sản phẩm:</label>
                                         <select class="form-control text-white" id="product_id" name="product_id" required>

@@ -10,12 +10,6 @@ class AuctionValidation
     public static function create() : bool {
         $is_valid = true;
 
-        //Tên loại
-        if (!isset($_POST['product_name']) || $_POST['product_name'] === '') {
-            NotificationHelper::error('product_name', 'Không để trống tên sản phẩm');
-            $is_valid = false;
-        }
-
         //id loại sản phẩm
         if (!isset($_POST['product_id']) || $_POST['product_id'] === '') {
             NotificationHelper::error('product_id', 'Không để trống giá khởi điểm');

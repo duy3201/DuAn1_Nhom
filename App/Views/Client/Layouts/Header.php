@@ -95,7 +95,7 @@ class Header extends BaseView
                                 <form action="/products" method="GET" class="input-group">
                                     <input type="text" name="search" placeholder="Bạn cần gì?"
                                         value="<?= isset($_GET['search']) ? htmlspecialchars($_GET['search']) : '' ?>"
-                                        class="form-control">
+                                        class="form-control"> 
                                     <button type="submit">
                                         <i class="ti-search"></i>
                                     </button>

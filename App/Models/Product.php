@@ -111,17 +111,17 @@ class Product extends BaseModel
             $sql = "SELECT 
     products.*, 
     categories.name AS category_name, 
-    users.name AS user_name
+    users.name AS user_name,
+    product_variants.*
 FROM 
     products
-INNER JOIN 
-    categories 
-ON 
-    products.id_category = categories.id
-INNER JOIN 
-    users
-ON 
-    products.id_user = users.id;
+INNER JOIN categories
+    ON products.id_category = categories.id
+INNER JOIN users
+    ON products.id_user = users.id
+INNER JOIN product_variants
+    ON products.id = product_variants.id_product;
+
 ";
             $result = $this->_conn->MySQLi()->query($sql);
             return $result->fetch_all(MYSQLI_ASSOC);

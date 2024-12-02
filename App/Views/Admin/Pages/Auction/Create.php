@@ -26,10 +26,6 @@ class Create extends BaseView
                                 <form method="POST" action="/admin/auctions" enctype="multipart/form-data">
                                     <input type="hidden" name="method" value="POST">
                                     <div class="form-group">
-                                        <label for="product_name">Tên buổi đấu giá:</label>
-                                        <input type="text" class="form-control" id="product_name" name="product_name" required>
-                                    </div>
-                                    <div class="form-group">
                                         <label for="product_id">Chọn sản phẩm đấu giá:</label>
                                         <select class="form-control text-white" id="product_id" name="product_id" required>
                                             <option value="">Chọn sản phẩm</option>

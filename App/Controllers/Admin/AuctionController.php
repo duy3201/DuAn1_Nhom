@@ -65,7 +65,6 @@ class AuctionController
 
         // Thu thập dữ liệu từ form
         $data = [
-            'product_name' => $_POST['product_name'],
             'product_id' => $_POST['product_id'],
             'starting_price' => $_POST['starting_price'],
             'start_time' => $_POST['start_time'],
@@ -131,7 +130,6 @@ class AuctionController
         }
 
         $data = [
-            'product_name' => $_POST['product_name'],
             'product_id'   => $_POST['product_id'],
             'starting_price' => $_POST['starting_price'],
             'start_time'     => $_POST['start_time'],

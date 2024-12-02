@@ -51,7 +51,6 @@ class Index extends BaseView
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Tên buổi đấu giá</th>
                                                     <th>Tên sản phẩm</th>
                                                     <th>Giá Khởi điểm</th>
                                                     <th>Thời gian bắt đầu</th>
@@ -67,7 +66,6 @@ class Index extends BaseView
                                                 ?>
                                                     <tr>
                                                         <td><?= $item['id'] ?></td>
-                                                        <td><?= $item['product_name'] ?></td>
                                                         <td><?= $item['product_id'] ?></td>
                                                         <td><?= number_format($item['starting_price'], 0, ',', '.') ?> VND</td>
                                                         <td><?= date('d/m/Y H:i', strtotime($item['start_time'])) ?></td>
