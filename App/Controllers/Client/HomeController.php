@@ -1,11 +1,13 @@
 <?php
 
 namespace App\Controllers\Client;
+use App\Models\Auction;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\Product;
 use App\Helpers\NotificationHelper;
 use App\Views\Client\Components\Notification;
+use App\Views\Client\DetailAuction;
 use App\Views\Client\Home;
 use App\Views\Client\Layouts\Footer;
 use App\Views\Client\Layouts\Header;
@@ -35,8 +37,12 @@ class HomeController
 
         $post = new Post();
         $posts = $post->getAllPostByLimit();
+        $auction = new Auction();
+        $auctions = $auction->getAllAuctionJoinProductName();
+  
 
         $data = [
+            'auctions' => $auctions,
             'posts' => $posts,
             'products' => $products,
             'categories' => $categories,
@@ -55,24 +61,28 @@ class HomeController
 
 
     }
-    // public static function blogs()
-    // {
-    //     $category = new Category();
-    //     $categories = $category->getAllCategoryByStatus();
-    //     $categoriesmenu = $category->getAllCategoryByStatus();
+   // detailAucotion
+    public static function detailAuction($id)
+    {
+        $category = new Category();
+        $categories = $category->getAllCategoryByStatus();
+        $categoriesmenu = $category->getAllCategoryByStatus();
 
-    //     $product = new Product;
-    //     $products = $product->getAllProductByStatus();
+        $auction = new Auction();
+        $auctions_detail = $auction->getOneAuctionByStatus($id);
+        $auctionHistory = $auction->getAuctionHistory($id);
+       
+        $data = [
+            'auctions' => $auctions_detail,
+            'auction_history' => $auctionHistory,
+            'categories' => $categories,
+            'categoriesmenu' => $categoriesmenu
+        ];
+        Header::render($data);
+        DetailAuction::render($data);
+        Footer::render();
 
-    //     $data = [
-    //         'products' => $products,
-    //         'categories' => $categories,
-    //         'categoriesmenu' => $categoriesmenu
-    //     ];
-    //     Header::render($data);
-    //     // Blogs::render();
-    //     Footer::render();
-    // }
+    }
     public static function cart()
     {
         $category = new Category();

@@ -70,9 +70,6 @@ class ProductController
         NotificationHelper::unset();
         Detail::render($data);
         Footer::render();
-    
-
-    
 }
 
 

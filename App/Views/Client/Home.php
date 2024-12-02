@@ -202,45 +202,6 @@ class Home extends BaseView
             </div>
         </section> -->
         <!-- Phần Banner Nữ Kết Thúc -->
-
-
-        <!-- Phần Deal Của Tuần Bắt Đầu -->
-        <section class="deal-of-week set-bg spad" data-setbg="/public/assets/client/img/time-bg.jpg">
-            <div class="container">
-                <div class="col-lg-6 text-center">
-                    <div class="section-title">
-                        <h2>Ưu Đãi Trong Tuần</h2>
-                        <p>Khám phá những sản phẩm tuyệt vời với ưu đãi hấp dẫn trong tuần này. Đừng bỏ lỡ cơ hội sở hữu chúng!</p>
-                        <div class="product-price">
-                            350.000 VNĐ
-                            <span>/ Túi xách</span>
-                        </div>
-                    </div>
-
-                    <div class="countdown-timer" id="countdown">
-                        <div class="cd-item">
-                            <span>56</span>
-                            <p>Ngày</p>
-                        </div>
-                        <div class="cd-item">
-                            <span>12</span>
-                            <p>Giờ</p>
-                        </div>
-                        <div class="cd-item">
-                            <span>40</span>
-                            <p>Phút</p>
-                        </div>
-                        <div class="cd-item">
-                            <span>52</span>
-                            <p>Giây</p>
-                        </div>
-                    </div>
-                    <a href="#" class="primary-btn">Mua Ngay</a>
-                </div>
-            </div>
-        </section>
-        <!-- Phần Deal Của Tuần Kết Thúc -->
-
         <!-- Phần Banner Nam Bắt Đầu -->
         <section class="man-banner spad">
             <div class="container">
@@ -314,6 +275,65 @@ class Home extends BaseView
             
         </div>
     </div> -->
+            <div id="auctionCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <?php $isActive = true; ?>
+                    <?php foreach ($data['auctions'] as $item) : ?>
+                        <div class="carousel-item <?= $isActive ? 'active' : '' ?>">
+                            <section class="deal-of-week set-bg spad" data-setbg="/public/assets/client/img/time-bg1.jpg">
+                                <div class="container">
+                                    <div class="row">
+                                        <!-- Cột bên trái chứa thông tin sản phẩm -->
+                                        <div class="col-md-6 text-center">
+                                            <div class="section-title">
+                                                <h2>Đấu giá sản phẩm <?= $item['products_name'] ?></h2>
+                                                <p><?= $item['product_description'] ?></p>
+                                                <div class="product-price">
+                                                    <h5 class="text-dark mb-2">Giá khởi điểm:</h5>
+                                                    <h4 class="text-warning"><?= number_format($item['starting_price'], 0, ',', '.') ?> VNĐ</h4>
+                                                </div>
+                                            </div>
+
+                                            <!-- Thêm thông tin ngày giờ bắt đầu và kết thúc -->
+                                            <div class="time-info mb-4 d-flex justify-content-center align-items-center">
+                                                <div class="time-item me-5">
+                                                    <h5 class="text-dark"><?= date('d/m/Y H:i', strtotime($item['start_time'])) ?></h5>
+                                                    <p class="text-muted">Bắt đầu</p>
+                                                </div>
+                                                <div class="time-item">
+                                                    <h5 class="text-dark"><?= date('d/m/Y H:i', strtotime($item['end_time'])) ?></h5>
+                                                    <p class="text-muted">Kết thúc</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Nút Đấu Giá -->
+                                            <a href="/<?= htmlspecialchars($item['id']); ?>" class="primary-btn">Đấu giá</a>
+                                        </div>
+
+                                        <!-- Cột bên phải chứa hình ảnh sản phẩm -->
+                                        <div class="col-md-6 text-center">
+                                            <img src="/public/assets/admin/img/<?= $item['product_img'] ?>" alt="Ảnh Sản phẩm" class="img-fluid" style="max-height: 400px; object-fit: cover;">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+                        <?php $isActive = false; ?>
+                    <?php endforeach; ?>
+                </div>
+
+                <!-- Điều khiển carousel -->
+                <a class="carousel-control-prev" href="#auctionCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#auctionCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
 
 
 
@@ -357,6 +377,7 @@ class Home extends BaseView
                 </div>
             </div>
             <!-- Phần Instagram Kết Thúc -->
+
 
             <!-- Phần Blog Mới Nhất Bắt Đầu -->
             <section class="latest-blog spad">
@@ -441,6 +462,7 @@ class Home extends BaseView
             </section>
 
             <!-- Phần Blog Mới Nhất Kết Thúc -->
+            <script></script>
 
     <?php
     }

@@ -80,7 +80,7 @@ class Auction extends BaseModel
         try {
             $conn = $this->_conn->MySQLi();
 
-            $sql = "SELECT auctions.*, products.name AS product_name 
+            $sql = "SELECT auctions.*, products.name AS products_name
 FROM $this->table
 JOIN products ON auctions.product_id = products.id 
 WHERE auctions.id = ?";
@@ -99,5 +99,102 @@ WHERE auctions.id = ?";
             return false;
         }
     }
+    // public function getAllAuctionJoinProductName()
+    // {
+    //     try {
+    //         $conn = $this->_conn->MySQLi();
+
+    //         $sql = "SELECT auctions.*, products.name AS products_name
+    //         FROM $this->table
+    //        JOIN products ON auctions.product_id = products.id";
+    //         $stmt = $conn->prepare($sql);
+    //         if (!$stmt) {
+    //             throw new \Exception('SQL prepare failed for fetching auction with product name.');
+    //         }
+
+    //         // $stmt->bind_param('i', $id);
+    //         $stmt->execute();
+    //         $result = $stmt->get_result();
+
+    //         return $result->fetch_assoc();
+    //     } catch (\Throwable $th) {
+    //         error_log('Error fetching auction with product name: ' . $th->getMessage());
+    //         return false;
+    //     }
+    // }
+
+     public function getAllAuctionJoinProductName()
+    {
+        $result = [];
+        try {
+            // $sql = "SELECT * FROM $this->table";
+            $sql = "SELECT auctions.*, products.name AS products_name, products.img AS product_img, products.description AS product_description
+           FROM auctions
+          JOIN products ON auctions.product_id = products.id";
+            $result = $this->_conn->MySQLi()->query($sql);
+            return $result->fetch_all(MYSQLI_ASSOC);
+        } catch (\Throwable $th) {
+            error_log('Lỗi khi hiển thị tất cả dữ liệu: ' . $th->getMessage());
+            return $result;
+        }
+    }
+    public function getOneAuctionByStatus(int $id)
+    {
+        $result = [];
+        try {
+            $sql = "
+                SELECT 
+                    auctions.*, 
+                    products.name AS products_name,
+                    products.img AS products_img,
+                    products.description AS products_description,
+                    categories.name AS category_name
+                FROM 
+                    auctions
+                INNER JOIN 
+                    products ON auctions.product_id = products.id
+                INNER JOIN 
+                    categories ON products.id_category = categories.id
+                WHERE 
+                 auctions.id = ?";
+            
+            $conn = $this->_conn->MySQLi();
+            $stmt = $conn->prepare($sql);
+            
+            $stmt->bind_param('i', $id);
+            $stmt->execute();
+            return $stmt->get_result()->fetch_assoc();
+        } catch (\Throwable $th) {
+            error_log('Lỗi khi hiển thị chi tiết đấu giá: ' . $th->getMessage());
+            return $result;
+        }
+    }
+    // Trong model Auction.php
+public function getAuctionHistory(int $auctionId)
+{
+    $result = [];
+    try {
+        $sql = "
+            SELECT user_name, bid_price, bid_time
+            FROM auction_bids
+            WHERE auction_id = ?
+            ORDER BY bid_time DESC
+        ";
+
+        $conn = $this->_conn->MySQLi();
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param('i', $auctionId);  // Liên kết ID đấu giá vào câu truy vấn
+        $stmt->execute();
+
+        // Lấy kết quả và trả về dưới dạng mảng
+        $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+    } catch (\Throwable $th) {
+        error_log('Lỗi khi lấy lịch sử đấu giá: ' . $th->getMessage());
+    }
+    return $result;
+}
+
+
+
 }
 ?>
