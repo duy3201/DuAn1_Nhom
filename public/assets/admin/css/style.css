@@ -24850,6 +24850,7 @@ select.border-dark.tt-hint:focus {
 }
 
 .form-group label {
+  color: white;
   font-size: 0.875rem;
   line-height: 1;
   vertical-align: top;

@@ -70,29 +70,23 @@ class Index extends BaseView
                                                     <?php endif; ?>
                                                     <ul>
                                                         <li class="w-icon active">
-                                                            <a href="#"><i class="icon_bag_alt"></i></a>
+                                                            <!-- <a href="#"><i class="icon_bag_alt"></i></a> -->
                                                         </li>
                                                         <li class="quick-view">
-                                                            <a href="/products/<?= htmlspecialchars($item['id']); ?>">+ Xem nhanh</a>
+                                                            <a href="/products/<?= htmlspecialchars($item['id']); ?>"> Xem chi tiết</a>
                                                         </li>
                                                         <li class="w-icon">
-                                                            <a href="#"><i class="fa fa-random"></i></a>
+                                                            <!-- <a href="#"><i class="fa fa-random"></i></a> -->
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="pi-text">
                                                     <div class="catagory-name"><?= htmlspecialchars($item['name']); ?></div>
                                                     <p><?= htmlspecialchars($item['name']); ?></p>
-                                                    <div class="price">
+                                                    <div class="price text-warning"">
                                                         <?= !empty($item['price']) ? number_format($item['price'], 0, ',', '.') . ' VNĐ' : 'Liên hệ'; ?>
                                                     </div>
-                                                    <form action="cart/add" method="POST">
-                                                        <input type="hidden" name="method" value="POST">
-                                                        <input type="hidden" name="id_product" value="<?= htmlspecialchars($item['id']); ?>">
-                                                        <input type="hidden" name="price" value="<?= htmlspecialchars($item['price'] ?? 0); ?>">
-                                                        <input type="hidden" name="quantity" value="1">
-                                                        <button type="submit" name="add_to_cart" class="btn btn-warning">Thêm vào giỏ hàng</button>
-                                                    </form>
+                                                 
                                                 </div>
                                             </div>
                                         </div>

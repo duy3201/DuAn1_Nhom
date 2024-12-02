@@ -17,19 +17,19 @@ class Home extends BaseView
         <section class="hero-section">
             <div class="hero-items owl-carousel">
                 <!-- <div class="single-hero-items set-bg" data-setbg="/public/assets/client/img/hero-1.jpg"> -->
-                <div class="single-hero-items set-bg" data-setbg="/public/assets/client/img/hero-1.jpg">
+                <div class="single-hero-items set-bg" data-setbg="/public/assets/client/img/oke3..png">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-5">
-                                <span>Túi xách, trẻ em</span>
-                                <h1>Black Friday</h1>
-                                <p>Hãy khám phá những sản phẩm tuyệt vời với mức giá ưu đãi trong dịp Black Friday.</p>
-                                <a href="#" class="primary-btn">Mua ngay</a>
+                            <div class="col-lg-5 text-white">
+                                <span class ="text-white"> Đồ giảm giá</span>
+                                <h1 class ="text-white">Sale</h1>
+                                <p class ="text-white">Hãy khám phá những sản phẩm tuyệt vời với mức giá ưu đãi trong dịp Black Friday.</p>
+                                <a href="/products" class="primary-btn">Mua ngay</a>
                             </div>
 
                         </div>
                         <div class="off-card">
-                            <h2>Giảm giá <span>50%</span></h2>
+                            <h2 >Giảm giá <span>50%</span></h2>
                         </div>
                     </div>
                 </div>
@@ -57,27 +57,35 @@ class Home extends BaseView
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="single-banner">
-                            <img src="/public/assets/client/img/banner-1.jpg" alt="">
+                        <a href="/products/categories/3">
+                        <div class="single-banner" >
+                            <!-- <img src="/public/assets/client/img/banner-1.jpg" alt=""> -->
+                            <img src="/public/assets/client/img/anhnam.jpg" alt="">
+                            
                             <div class="inner-text">
                                 <h4>Nam</h4>
                             </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4">
+                        <a href="/products/categories/4">
                         <div class="single-banner">
-                            <img src="/public/assets/client/img/banner-2.jpg" alt="">
+                            <img src="/public/assets/client/img/anh1.jpg" alt="">
                             <div class="inner-text">
                                 <h4>Nữ</h4>
                             </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="single-banner">
-                            <img src="/public/assets/client/img/banner-3.jpg" alt="">
+                            <a href="/products/categories/5">
+                            <img src="/public/assets/client/img/phukien.jpg" alt="">
                             <div class="inner-text">
-                                <h4>Trẻ em</h4>
+                                <h4>Phụ kiện</h4>
                             </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -231,12 +239,12 @@ class Home extends BaseView
                                             <img src=" <?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="">
                                             <!-- <div class="sale">Giảm giá</div> -->
                                             <div class="icon">
-                                                <i class="icon_heart_alt"></i>
+                                                <!-- <i class="icon_heart_alt"></i> -->
                                             </div>
                                             <ul>
-                                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                                <li class="quick-view"><a href="/products/<?= $item['id'] ?>">+ Xem nhanh</a></li>
-                                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                                <!-- <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li> -->
+                                                <li class="quick-view"><a href="/products/<?= $item['id'] ?>"> Xem chi tiết</a></li>
+                                                <!-- <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li> -->
                                             </ul>
                                         </div>
                                         <div class="pi-text">
@@ -244,9 +252,9 @@ class Home extends BaseView
                                             <a href="#">
                                                 <h5><?= $item['name'] ?></h5>
                                             </a>
-                                            <div class="product-price">
-                                                <?= $item['product_price'] ?> VNĐ
-                                            </div>
+                                            <div class="price text-warning ">
+                                                        <?= !empty($item['product_price']) ? number_format($item['product_price'], 0, ',', '.') . ' VNĐ' : 'Liên hệ'; ?>
+                                                    </div>
                                         </div>
 
                                     </div>
@@ -338,44 +346,44 @@ class Home extends BaseView
 
 
             <!-- Phần Instagram Bắt Đầu -->
-            <div class="instagram-photo">
+             <div class="instagram-photo">
                 <div class="insta-item set-bg" data-setbg="/public/assets/client/img/insta-1.jpg">
                     <div class="inside-text">
                         <i class="ti-instagram"></i>
-                        <h5><a href="#">colorlib_Collection</a></h5>
+                        <h5><a href="#">Xem thêm</a></h5>
                     </div>
                 </div>
                 <div class="insta-item set-bg" data-setbg="/public/assets/client/img/insta-2.jpg">
                     <div class="inside-text">
                         <i class="ti-instagram"></i>
-                        <h5><a href="#">colorlib_Collection</a></h5>
+                        <h5><a href="#">Xem thêm</a></h5>
                     </div>
                 </div>
                 <div class="insta-item set-bg" data-setbg="/public/assets/client/img/insta-3.jpg">
                     <div class="inside-text">
                         <i class="ti-instagram"></i>
-                        <h5><a href="#">colorlib_Collection</a></h5>
+                        <h5><a href="#">Xem thêm</a></h5>
                     </div>
                 </div>
                 <div class="insta-item set-bg" data-setbg="/public/assets/client/img/insta-4.jpg">
                     <div class="inside-text">
                         <i class="ti-instagram"></i>
-                        <h5><a href="#">colorlib_Collection</a></h5>
+                        <h5><a href="#">Xem thêm</a></h5>
                     </div>
                 </div>
                 <div class="insta-item set-bg" data-setbg="/public/assets/client/img/insta-5.jpg">
                     <div class="inside-text">
                         <i class="ti-instagram"></i>
-                        <h5><a href="#">colorlib_Collection</a></h5>
+                        <h5><a href="#">Xem thêm</a></h5>
                     </div>
                 </div>
                 <div class="insta-item set-bg" data-setbg="/public/assets/client/img/insta-6.jpg">
                     <div class="inside-text">
                         <i class="ti-instagram"></i>
-                        <h5><a href="#">colorlib_Collection</a></h5>
+                        <h5><a href="#">Xem thêm</a></h5>
                     </div>
                 </div>
-            </div>
+            </div> 
             <!-- Phần Instagram Kết Thúc -->
 
 
