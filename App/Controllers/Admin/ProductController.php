@@ -5,14 +5,16 @@ namespace App\Controllers\Admin;
 use App\Helpers\NotificationHelper;
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\ProductVariant;
 use App\Validations\ProductValidation;
 use App\Views\Admin\Layouts\Footer;
-use App\Views\Admin\Layouts\Header;
+
 use App\Views\Admin\Components\Notification;
 use App\Views\Admin\Pages\Product\Create;
 use App\Views\Admin\Pages\Product\Edit;
 use App\Views\Admin\Pages\Product\Index;
 use App\Models\User;
+use App\Views\Client\Layouts\Header;
 
 class ProductController
 {
@@ -36,11 +38,13 @@ class ProductController
     {
         $category = new Category();
         $user = new User();
+        $product_variants = new ProductVariant();
 
         // Lấy tất cả danh mục và người dùng
         $data = [
             'categories' => $category->getAllCategory(),
             'users' => $user->getAllUser(),
+            'product_variants' => $product_variants->getAllProductVariant(),
         ];
 
         Header::render();
