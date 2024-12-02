@@ -1,292 +1,245 @@
 <?php
 
-namespace App\Views\Client\Layouts;
+namespace App\Views\Admin\Layouts;
 
 use App\Helpers\AuthHelper;
-use App\Models\Product;
 use App\Views\BaseView;
-use App\Views\Client\Components\Category as ComponentsCategory;
-use App\Views\Client\Components\CategoryMenu;
 
 class Header extends BaseView
 {
     public static function render($data = null)
     {
         $is_login = AuthHelper::checkLogin();
-        $cartItems = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
-        $total = 0;
-
 ?>
+        ?>
 
+        <!-- Required meta tags -->
 
-        <title>Old Style Store</title>
+        <!-- plugins:css -->
+        <link rel="stylesheet" href="/public/assets/admin/vendors/mdi/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="/public/assets/admin/vendors/css/vendor.bundle.base.css">
+        <!-- endinject -->
+        <!-- Plugin css for this page -->
+        <link rel="stylesheet" href="/public/assets/admin/vendors/jvectormap/jquery-jvectormap.css">
+        <link rel="stylesheet" href="/public/assets/admin/vendors/flag-icon-css/css/flag-icon.min.css">
+        <link rel="stylesheet" href="/public/assets/admin/vendors/owl-carousel-2/owl.carousel.min.css">
+        <link rel="stylesheet" href="/public/assets/admin/vendors/owl-carousel-2/owl.theme.default.min.css">
+        <!-- End plugin css for this page -->
+        <!-- inject:css -->
+        <!-- endinject -->
+        <!-- Layout styles -->
+        <link rel="stylesheet" href="/public/assets/admin/css/style.css">
+        <!-- End layout styles -->
+        <link rel="shortcut icon" href="/public/assets/admin/images/favicon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- Google Font -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet"> -->
-
-        <!-- Css Styles -->
-        <!-- Google Font -->
-
-        <!-- Css Styles -->
-        <link rel="stylesheet" href="/public/assets/client/css copy/style.css">
-        <link rel="stylesheet" href="/public/assets/client/css copy/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="/public/assets/client/css copy/font-awesome.min.css" type="text/css">
-        <link rel="stylesheet" href="/public/assets/client/css copy/themify-icons.css" type="text/css">
-        <link rel="stylesheet" href="/public/assets/client/css copy/elegant-icons.css" type="text/css">
-
-        <link rel="stylesheet" href="/public/assets/client/css copy/owl.carousel.min.css" type="text/css">
-
-        <link rel="stylesheet" href="/public/assets/client/css copy/nice-select.css" type="text/css">
-        <link rel="stylesheet" href="/public/assets/client/css copy/jquery-ui.min.css" type="text/css">
-        <link rel="stylesheet" href="/public/assets/client/css copy/slicknav.min.css" type="text/css">
-        <link rel="stylesheet" href="/public/assets/client/css copy/style.css" type="text/css">
-        <!-- Tải jQuery -->
-        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
 
-        <!-- 
-        <script src="/path-to-your-project/sweetalert2.min.js"></script>
-
-        <script src="dist/sweetalert.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="dist/sweetalert.css"> -->
 
 
-
-        </head>
-        <!-- <style>
-            .navbar .dropdown-toggle i {
-                transition: transform 0.3s ease;
-                /* Hiệu ứng khi icon xoay */
-            }
-
-            .navbar .dropdown-toggle[aria-expanded="true"] i {
-                transform: rotate(0deg);
-                /* Giữ nguyên trạng thái */
-            }
-        </style> -->
-
-        <!-- Page Preloder -->
-        <div id="preloder">
-            <div class="loader"></div>
-        </div>
-
-        <!-- Header Section Begin -->
-        <header class="header-section">
-            <div class="container">
-                <div class="inner-header">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-2">
-                            <div class="logo">
-                                <a href="/">
-                                    <img src="/public/assets/client/img/logo1.png" alt="Logo">
-                                </a>
+        <div class="container-scroller">
+            <!-- partial:../../partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+                    <a class="sidebar-brand brand-logo" href="/admin"><img src="/public/assets/admin/images/logo2.png" alt="logo" /></a>
+                    <a class="sidebar-brand brand-logo-mini" href="/admin"><img src="/public/assets/admin/images/logo-mini.svg" alt="logo" /></a>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item profile">
+                        <div class="profile-desc">
+                            <div class="profile-pic">
+                                <div class="count-indicator">
+                                    <i class="fa-solid fa-user"></i>
+                                    <!-- <span class="count bg-success"></span> -->
+                                </div>
+                                <div class="profile-name">
+                                    <h5 class="mb-0 font-weight-normal">Admin</h5>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-9 col-md-7 d-flex justify-content-center align-items-center">
-                            <div class="advanced-search w-75">
-                                <button type="button" class="category-btn">Sản phẩm mới</button>
-                                <form action="/products" method="GET" class="input-group">
-                                    <input type="text" name="search" placeholder="Bạn cần gì?"
-                                        value="<?= isset($_GET['search']) ? htmlspecialchars($_GET['search']) : '' ?>"
-                                        class="form-control">
-                                    <button type="submit">
-                                        <i class="ti-search"></i>
-                                    </button>
-                                </form>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-1 col-md-3 d-flex justify-content-center align-items-center">
-                            <ul class="nav-right d-flex justify-content-start">
-                                <!-- Yêu thích -->
-                                <li class="heart-icon">
-                                    <a href="#">
-                                        <i class="icon_heart_alt"></i>
-                                        <span>1</span>
-                                    </a>
-                                </li>
-
-                                <!-- Giỏ hàng -->
-                                <li class="cart-icon">
-                                    <a href="#">
-                                        <i class="icon_bag_alt"></i>
-                                    </a>
-                                    <div class="cart-hover">
-                                        <?php if (!empty($cartItems)): ?>
-                                            <div class="select-items">
-                                                <table>
-                                                    <tbody>
-                                                        <?php foreach ($cartItems as $productId => $quantity): ?>
-                                                            <?php
-                                                            // Lấy thông tin sản phẩm từ database
-                                                            $productModel = new Product();
-                                                            $product = $productModel->getOneProductByStatus($productId);
-
-                                                            if (!$product) {
-                                                                // Nếu sản phẩm không tồn tại (hoặc bị xóa), bỏ qua sản phẩm này
-                                                                continue;
-                                                            }
-
-                                                            $totalItemPrice = $quantity * $product['product_price'];
-                                                            $total += $totalItemPrice;
-                                                            ?>
-                                                            <tr>
-                                                                <td class="si-pic"><img
-                                                                        src="/public/assets/admin/img/<?= htmlspecialchars($product['img']); ?>"
-                                                                        alt="<?= htmlspecialchars($product['name']); ?>" alt=""
-                                                                        style="max-width: 80px; max-height: 80px;">
-                                                                </td>
-                                                                <td class="si-text">
-                                                                    <div class="product-selected">
-                                                                        <p class="text-warning">
-                                                                            <?= number_format($product['product_price'], 0, ',', '.') . ' VNĐ'; ?>
-                                                                            x <?= $quantity; ?>
-                                                                        </p>
-                                                                        <h6><?= htmlspecialchars($product['name']); ?></h6>
-                                                                    </div>
-                                                                </td>
-                                                                <td class="si-close">
-
-                                                                    <a href="#" onclick="return confirmDelete(<?= $productId ?>)" class="btn btn-danger btn-sm" title="Xóa">
-                                                                        <i class="ti-close"></i>
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                        <?php endforeach; ?>
-                                                    </tbody>
-                                                </table>
-
-                                            </div>
-                                            <div class="select-total">
-                                                <span>Tổng cộng:</span>
-                                                <h5><?= number_format($total, 0, ',', '.') . ' VNĐ'; ?></h5>
-                                            </div>
-                                        <?php else: ?>
-                                            <p class="text-center">Giỏ hàng của bạn đang trống. <a href="/products">Tiếp tục mua
-                                                    sắm</a></p>
-                                        <?php endif; ?>
-                                        <div class="select-button">
-                                            <a href="/cart" class="primary-btn view-card">Xem giỏ hàng</a>
-                                            <a href="/CheckOut" class="primary-btn checkout-btn">Thanh toán</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <!-- Tài khoản -->
-
-                                <?php if ($is_login): ?>
-                                    <li>
-                                        <nav class="navbar navbar-expand-lg p-0">
-                                            <ul class="navbar-nav">
-                                                <li class="dropdown m-0">
-                                                    <a class="btn dropdown-toggle p-0" style="height: 30px;" href="#"
-                                                        id="userDropdown" role="button" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
-                                                        <i class="fa-regular fa-user"></i>
-                                                    </a>
-                                                    <div class="dropdown-menu dropdown-menu-end keep-open"
-                                                        aria-labelledby="userDropdown">
-                                                        <a class="dropdown-item" href="/users/<?= $_SESSION['user']['id'] ?>">Hi,
-                                                            <?= $_SESSION['user']['name'] ?></a>
-                                                        <a class="dropdown-item" href="/change-password">Đổi mật khẩu</a>
-                                                        <a class="dropdown-item" href="/logout">Đăng Xuất</a>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </li>
-                                <?php else: ?>
-                                    <li class="dropdown">
-                                        <a href="/login" class="btn dropdown-toggle p-0" id="guestDropdown">
-                                            <i class="fa-regular fa-user"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end keep-open" aria-labelledby="guestDropdown">
-                                            <a href="/login" class="dropdown-item">Đăng nhập</a>
-                                            <a href="/register" class="dropdown-item">Đăng ký</a>
-                                        </div>
-                                    </li>
-                                    <script>
-
-                                    </script>
-                                <?php endif; ?>
-
-
-
-
+                    </li>
+                    <li class="nav-item nav-category">
+                        <span class="nav-link">Điều hướng</span>
+                    </li>
+                    <li class="nav-item menu-items">
+                        <a class="nav-link" href="/admin">
+                            <span class="menu-icon">
+                                <i class="mdi mdi-speedometer"></i>
+                            </span>
+                            <span class="menu-title">Chi tiết thống kê</span>
+                        </a>
+                    </li>
+                    <li class="nav-item menu-items">
+                        <a class="nav-link" data-toggle="collapse" href="#product-category" aria-expanded="false" aria-controls="product-category">
+                            <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </span>
+                            <span class="menu-title">Danh mục sản phẩm</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="product-category">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="/admin/categoryproduct">Danh mục</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/admin/categoryproduct/createcategory">Thêm danh mục</a></li>
                             </ul>
                         </div>
-
-
-                    </div>
-                </div>
-
-            </div>
-            </div>
-            </div>
-
-            <div class="nav-item">
-                <div class="container">
-                    <div class="nav-depart">
-                        <div class="depart-btn">
-                            <i class="ti-menu"></i>
-
-                            <span>Danh mục sản phẩm <span>
-                                    <ul class="depart-hover">
-                                        <?php
-                                        CategoryMenu::render($data['categories']);
-                                        ?>
-                                    </ul>
+                    </li>
+                    <li class="nav-item menu-items">
+                        <a class="nav-link" data-toggle="collapse" href="#variant-management" aria-expanded="false" aria-controls="variant-management">
+                            <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </span>
+                            <span class="menu-title">Quản lý biến thể</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="variant-management">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="/admin/productvariants">Biến thể</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/admin/productvariants/createvariant">Thêm biến thể</a></li>
+                            </ul>
                         </div>
+                    </li>
+                    <li class="nav-item menu-items">
+                        <a class="nav-link" data-toggle="collapse" href="#product-management" aria-expanded="false" aria-controls="product-management">
+                            <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </span>
+                            <span class="menu-title">Quản lý sản phẩm</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="product-management">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/admin/products">Sản phẩm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/admin/products/createproduct">Thêm sản phẩm</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item menu-items">
+                        <a class="nav-link" data-toggle="collapse" href="#auctions" aria-expanded="false" aria-controls="auctions">
+                            <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </span>
+                            <span class="menu-title">Quản lý đấu giá</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="auctions">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="/admin/auctions">Đấu giá</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/admin/auctions/create">Thêm đấu giá</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item menu-items">
+                        <a class="nav-link" data-toggle="collapse" href="#post-category" aria-expanded="false" aria-controls="post-category">
+                            <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </span>
+                            <span class="menu-title">Danh mục bài viết</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="post-category">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="/admin/categoryiespost">Danh sách danh mục</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/admin/categoryiespost/createcategorypost">Thêm danh mục</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item menu-items">
+                        <a class="nav-link" data-toggle="collapse" href="#post-management" aria-expanded="false" aria-controls="post-management">
+                            <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </span>
+                            <span class="menu-title">Quản lý bài viết</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="post-management">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="/admin/posts">Danh sách bài viết</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/admin/posts/createpost">Thêm bài viết</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item menu-items">
+                        <a class="nav-link" data-toggle="collapse" href="#comments" aria-expanded="false" aria-controls="comments">
+                            <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </span>
+                            <span class="menu-title">Quản lý bình luận</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="comments">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="/admin/comments">Danh sách bình luận</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item menu-items">
+                        <a class="nav-link" data-toggle="collapse" href="#user-management" aria-expanded="false" aria-controls="user-management">
+                            <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </span>
+                            <span class="menu-title">Quản lý người dùng</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="user-management">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="/admin/users">Người dùng</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/admin/users/createuser">Thêm người dùng</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="container-fluid">
+                <!-- partial:../../partials/_navbar.html -->
+                <nav class="navbar p-0 fixed-top d-flex flex-row">
+                    <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+                        <a class="navbar-brand brand-logo-mini" href="/admin"><img src="/public/assets/admin/images/logo-mini.svg" alt="logo" /></a>
                     </div>
-
-                    <nav class="nav-menu mobile-menu">
-                        <ul>
-                            <li class="active"><a href="/">Trang chủ</a></li>
-                            <li><a href="/products">Cửa hàng</a></li>
-                            <li><a href="/introduce">Giới thiệu</a>
-
+                    <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+                        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                            <span class="mdi mdi-menu"></span>
+                        </button>
+                        <ul class="navbar-nav navbar-nav-right">
+                            <li class="nav-item dropdown">
+                                <?php if (!empty($_SESSION['user'])) : ?>
+                                    <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                                        <div class="navbar-profile">
+                                            <i class="fa-solid fa-user"></i>
+                                            <p class="mb-0 d-none d-sm-block navbar-profile-name"><?php echo htmlspecialchars($_SESSION['user']['username']); ?></p>
+                                            <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                                        <a class="dropdown-item preview-item" href="/logout">
+                                            <div class="preview-thumbnail">
+                                                <div class="preview-icon bg-dark rounded-circle">
+                                                    <i class="mdi mdi-logout text-danger"></i>
+                                                </div>
+                                            </div>
+                                            <div class="preview-item-content">
+                                                <p class="preview-subject mb-1">Đăng Xuất</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                <?php endif; ?>
                             </li>
-                            <li><a href="/blogs">Bài viết</a></li>
-                            <li><a href="/contact">Liên hệ</a></li>
-                            <!-- <li><a href="#">Trang</a>
-                                <ul class="dropdown">
-                                    <li><a href="./blog-details.html">Chi tiết Blog</a></li>
-                                    <li><a href="./shopping-cart.html">Giỏ hàng</a></li>
-                                    <li><a href="./check-out.html">Thanh toán</a></li>
-                                    <li><a href="./faq.html">Câu hỏi thường gặp</a></li>
-                                    <li><a href="./register.html">Đăng ký</a></li>
-                                    <li><a href="./login.html">Đăng nhập</a></li>
-                                </ul>
-                            </li> -->
                         </ul>
-                    </nav>
-                    <div id="mobile-menu-wrap"></div>
-                </div>
-            </div>
-            <script src="/path-to-your-project/sweetalert2.min.js"></script>
-
-        </header>
-        <!-- Header End -->
-        <script>
-            function confirmDelete(productId) {
-                if (confirm('Bạn có chắc chắn muốn xóa sản phẩm này?')) {
-                    window.location.href = '/cart/remove/' + productId;
-                }
-                return false;
-            }
-        </script>
-
-<?php
-
+                        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                            <span class="mdi mdi-format-line-spacing"></span>
+                        </button>
+                    </div>
+                </nav>
+        <?php
 
     }
 }
 
-
-?>
+        ?>
