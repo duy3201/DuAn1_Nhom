@@ -6,35 +6,29 @@ class OrderModel extends BaseModel
 {
     public function createOrder($orderId)
     {
-        var_dump($_POST['orderId']);
-        exit;
-        // Nối các giá trị địa chỉ thành một trường duy nhất
-        $fullAddress = implode(', ', array_filter([
-            $_POST['address'] ?? '',
-            $_POST['ward'] ?? '',
-            $_POST['district'] ?? '',
-            $_POST['city'] ?? '',
-        ]));
-
         try {
-            // Tạo câu lệnh SQL INSERT
-            $sql = "INSERT INTO orders (id_user,id_order, ,sub_tel, sub_name, sub_address, email, payment_method) 
-                    VALUES (:id_user,:id_order, ':sub_tel', ':sub_name', ':sub_address', ':email', ':bank_code')";
-            
+            // Câu lệnh SQL INSERT (bỏ cột `id` nếu là auto-increment)
+            $sql = "INSERT INTO `orders`(`id_user`, `sub_address`, `sub_tel`, `sub_name`, `email`, `payment_method`) 
+                VALUES (?, ?, ?, ?, ?, ?);";
+
             $conn = $this->_conn->MySQLi(); // Kết nối database
             $stmt = $conn->prepare($sql);
 
+            if (!$stmt) {
+                error_log('Lỗi chuẩn bị truy vấn: ' . $conn->error);
+                return null;
+            }
+
+            // Kiểm tra và cung cấp giá trị mặc định cho các tham số
+            $idUser = isset($_POST['id_user']) ? (int)$_POST['id_user'] : 0;
+            $subAddress = $_POST['address'] ?? '';
+            $subTel = $_POST['sub_tel'] ?? '';
+            $subName = $_POST['sub_name'] ?? '';
+            $email = $_POST['email'] ?? '';
+            $bankCode = $_POST['bank_code'] ?? '';
+
             // Gắn dữ liệu vào câu lệnh SQL
-            $stmt->bind_param(
-                "iissssss",
-                (int)$_POST['id_user'],
-                (int)$_POST['orderId'],
-                $_POST['sub_tel'],
-                $_POST['sub_name'],
-                $fullAddress,
-                $_POST['email'],
-                $_POST['bank_code']
-            );
+            $stmt->bind_param("isssss", $idUser, $subAddress, $subTel, $subName, $email, $bankCode);
 
             // Thực thi câu lệnh SQL
             if ($stmt->execute()) {
@@ -51,19 +45,20 @@ class OrderModel extends BaseModel
             return null;
         }
     }
+
     // Hàm lấy thông tin đơn hàng theo order_id
     public function getOrderId($orderId)
     {
         try {
             // Tạo câu lệnh SQL SELECT
             $sql = "SELECT id_order FROM orders WHERE id_order = :id_order LIMIT 1";
-            
+
             $conn = $this->_conn->MySQLi(); // Kết nối database
             $stmt = $conn->prepare($sql);
-            
+
             // Gắn tham số vào câu lệnh SQL
             $stmt->bind_param("i", $orderId);
-            
+
             // Thực thi câu lệnh SQL
             $stmt->execute();
             $result = $stmt->get_result();

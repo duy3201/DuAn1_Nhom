@@ -10,6 +10,8 @@ class OrderController
     public function create()
     {
         $order_id = $_POST['orderId'];
+        $order = new OrderModel();
+        $order->createOrder($order_id);
 
         $vnp_TmnCode = "HYWQZOQG";
         $vnp_HashSecret = "CQ8VSL317Y9BQ90JTZTU8RBLS11N9DBA";
@@ -72,8 +74,9 @@ class OrderController
     }
     public function thankyou()
     {
-        Header::render();
+        if (isset($_COOKIE['carts_detail'])) {
+            setcookie('carts_detail', '', time() - 3600, '/');
+        }
         ThankYou::render();
-        Footer::render();
     }
 }
