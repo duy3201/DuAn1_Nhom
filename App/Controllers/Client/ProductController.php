@@ -96,4 +96,7 @@ class ProductController
         CheckOut::render();
         Footer::render();
     }
+   
+    
+    
 }

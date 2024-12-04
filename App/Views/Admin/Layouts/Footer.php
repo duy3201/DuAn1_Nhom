@@ -24,7 +24,7 @@ class Footer extends BaseView
                 <!-- End plugin js for this page -->
                 <!-- inject:js -->
                 <script src="/public/assets/admin/js/off-canvas.js"></script>
-                <script src="/public/assets/admin/js/hoverable-collapse.js"></script>
+                <!-- <script src="/public/assets/admin/js/hoverable-collapse.js"></script> -->
                 <script src="/public/assets/admin/js/misc.js"></script>
                 <script src="/public/assets/admin/js/settings.js"></script>
                 <script src="/public/assets/admin/js/todolist.js"></script>

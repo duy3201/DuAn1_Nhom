@@ -152,9 +152,9 @@ class Header extends BaseView
                                                                     </div>
                                                                 </td>
                                                                 <td class="si-close">
-                                                                    
+
                                                                     <a href="#" onclick="return confirmDelete(<?= $productId ?>)" class="text-dark" title="Xóa">
-                                                                    <i class="ti-close"></i>
+                                                                        <i class="ti-close"></i>
                                                                     </a>
                                                                 </td>
                                                             </tr>
@@ -213,10 +213,6 @@ class Header extends BaseView
 
                                     </script>
                                 <?php endif; ?>
-
-
-
-
                             </ul>
                         </div>
 
@@ -227,7 +223,6 @@ class Header extends BaseView
             </div>
             </div>
             </div>
-
             <div class="nav-item">
                 <div class="container">
                     <div class="nav-depart">

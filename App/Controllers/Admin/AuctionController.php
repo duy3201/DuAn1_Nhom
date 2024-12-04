@@ -24,6 +24,9 @@ class AuctionController
         $auction = new Auction();
         $data = $auction->getAllAuction();
 
+        $auction->updateAuctionStatus();
+        $data = $auction->getAllAuctionJoinProductName();
+
 
         Header::render();
         Notification::render();

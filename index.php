@@ -142,6 +142,9 @@ Route::delete('/admin/posts/{id}', 'App\Controllers\Admin\PostController@delete'
 // GET /Products (lấy danh sách loại sản phẩm)
 Route::get('/admin/products', 'App\Controllers\Admin\ProductController@index');
 
+
+
+
 // GET /products/create (hiển thị form thêm loại sản phẩm)
 Route::get('/admin/products/createproduct', 'App\Controllers\Admin\ProductController@create');
 

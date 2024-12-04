@@ -225,26 +225,55 @@ document.querySelectorAll('input[name="product_quality"]').forEach((radio) => {
     $(".language_drop").msDropdown({roundedBorder:false});
         $("#tech").data("dd");
     });
+    
     /*-------------------
-		Range Slider
-	--------------------- */
-	var rangeSlider = $(".price-range"),
-		minamount = $("#minamount"),
-		maxamount = $("#maxamount"),
-		minPrice = rangeSlider.data('min'),
-		maxPrice = rangeSlider.data('max');
-	    rangeSlider.slider({
-		range: true,
-		min: minPrice,
-        max: maxPrice,
-		values: [minPrice, maxPrice],
-		slide: function (event, ui) {
-			minamount.val('$' + ui.values[0]);
-			maxamount.val('$' + ui.values[1]);
-		}
-	});
-	minamount.val('$' + rangeSlider.slider("values", 0));
-    maxamount.val('$' + rangeSlider.slider("values", 1));
+    Range Slider
+--------------------- */
+
+var rangeSlider = $(".price-range"),
+minamount = $("#minamount"),
+maxamount = $("#maxamount"),
+minPrice = rangeSlider.data('min'),
+maxPrice = rangeSlider.data('max');
+
+rangeSlider.slider({
+range: true,
+min: minPrice,
+max: maxPrice,
+values: [minPrice, maxPrice],
+slide: function (event, ui) {
+    minamount.val(ui.values[0].toLocaleString() + ' VNĐ');
+    maxamount.val(ui.values[1].toLocaleString() + ' VNĐ');
+}
+});
+
+// Hiển thị giá trị mặc định khi trang tải
+minamount.val(rangeSlider.slider("values", 0).toLocaleString() + ' VNĐ');
+maxamount.val(rangeSlider.slider("values", 1).toLocaleString() + ' VNĐ');
+
+// Lọc sản phẩm theo giá khi bấm nút "Lọc"
+$("#filter-btn").click(function (event) {
+event.preventDefault();
+
+// Lấy giá trị từ slider
+var minPrice = rangeSlider.slider("values", 0);
+var maxPrice = rangeSlider.slider("values", 1);
+
+// Gửi yêu cầu AJAX để lọc sản phẩm
+$.ajax({
+    url: window.location.href,  // Gửi yêu cầu đến chính trang hiện tại
+    method: 'GET',
+    data: {
+        min_price: minPrice,
+        max_price: maxPrice,
+        search: $('#search').val()  // Nếu có tìm kiếm thêm
+    },
+    success: function(response) {
+        // Cập nhật lại nội dung sản phẩm sau khi lọc
+        $('.product-list').html($(response).find('.product-list').html());
+    }
+});
+});
 
     /*-------------------
 		Radio Btn

@@ -66,12 +66,12 @@ class Index extends BaseView
                                                 ?>
                                                     <tr>
                                                         <td><?= $item['id'] ?></td>
-                                                        <td><?= $item['product_id'] ?></td>
+                                                        <td><?= $item['products_name'] ?></td>
                                                         <td><?= number_format($item['starting_price'], 0, ',', '.') ?> VND</td>
                                                         <td><?= date('d/m/Y H:i', strtotime($item['start_time'])) ?></td>
                                                         <td><?= date('d/m/Y H:i', strtotime($item['end_time'])) ?></td>
                                                         <td>
-                                                            <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt="Hình ảnh sản phẩm" style="width: 80px; height: 80px; object-fit: cover;">
+                                                            <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['product_img'] ?>" alt="Hình ảnh sản phẩm" style="width: 80px; height: 80px; object-fit: cover;">
                                                         </td>
                                                         <td><?= $item['status'] == 0 ? 'Đã đóng' : ($item['status'] == 1 ? 'Đã mở' : 'Đã kết thúc') ?></td>
                                                         <td>

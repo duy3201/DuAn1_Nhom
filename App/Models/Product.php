@@ -238,6 +238,7 @@ INNER JOIN
             return $result;
         }
     }
+    
 
     public function countTotalProduct()
     {

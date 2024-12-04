@@ -7,6 +7,8 @@ class Route
 
     private static $routes = [];
 
+
+
     public static function get($url, $controllerMethod)
     {
         if ($_SERVER['REQUEST_METHOD'] == 'GET')
