@@ -124,13 +124,13 @@ class CheckOut extends BaseView
                                             <select name="bank_code" id="bank_code" class="form-select">
                                                 <option value="">Chọn ngân hàng</option>
                                                 <option value="NCB">NCB</option>
-                                                <!-- <option value="VIETCOMBANK">Vietcombank</option>
+                                                <option value="VIETCOMBANK">Vietcombank</option>
                                                 <option value="TECHCOMBANK">Techcombank</option>
                                                 <option value="BIDV">BIDV</option>
                                                 <option value="AGRIBANK">Agribank</option>
                                                 <option value="MBBANK">MB Bank</option>
                                                 <option value="ACB">ACB</option>
-                                                <option value="VPBANK">VPBank</option> -->
+                                                <option value="VPBANK">VPBank</option>
                                             </select>
                                         </div>
                                     </div>

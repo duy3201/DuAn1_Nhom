@@ -3,8 +3,6 @@
 namespace App\Controllers\Client;
 
 use App\Models\OrderModel;
-use App\Views\Client\Layouts\Footer;
-use App\Views\Client\Layouts\Header;
 use App\Views\Client\Pages\ThankYou;
 
 class OrderController
@@ -23,7 +21,7 @@ class OrderController
         $vnp_OrderType = 'billpayment';
         $vnp_Amount = $_POST['amount'] * 100;
         $vnp_Locale = 'vn';
-        $vnp_BankCode = 'NCB';
+        $vnp_BankCode = $_POST['bankCode'];
         $vnp_IpAddr = $_SERVER['REMOTE_ADDR'];
 
         $inputData = array(
