@@ -14,7 +14,7 @@ use App\Views\Admin\Pages\Product\Create;
 use App\Views\Admin\Pages\Product\Edit;
 use App\Views\Admin\Pages\Product\Index;
 use App\Models\User;
-use App\Views\Client\Layouts\Header;
+use App\Views\Admin\Layouts\Header;
 
 class ProductController
 {
@@ -44,7 +44,6 @@ class ProductController
         $data = [
             'categories' => $category->getAllCategory(),
             'users' => $user->getAllUser(),
-            'product_variants' => $product_variants->getAllProductVariant(),
         ];
 
         Header::render();

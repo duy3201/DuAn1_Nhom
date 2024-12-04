@@ -55,8 +55,7 @@ class CartController
         }
 
         // Redirect về trang giỏ hàng
-        header('Location: /cart');
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit();
     }
-    
 }

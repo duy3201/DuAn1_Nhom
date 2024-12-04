@@ -101,7 +101,6 @@ class Header extends BaseView
                                     </button>
                                 </form>
                             </div>
-
                         </div>
                         <div class="col-lg-1 col-md-3 d-flex justify-content-center align-items-center">
                             <ul class="nav-right d-flex justify-content-start">
@@ -162,7 +161,6 @@ class Header extends BaseView
                                                         <?php endforeach; ?>
                                                     </tbody>
                                                 </table>
-
                                             </div>
                                             <div class="select-total">
                                                 <span>Tổng cộng:</span>

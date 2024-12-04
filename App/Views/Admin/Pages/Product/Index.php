@@ -54,7 +54,6 @@ class Index extends BaseView
                                 </div>
                             <?php
                             if (count($data)) :
-                                // If search query exists, filter the data
                                 if ($searchQuery) {
                                     $data = array_filter($data, function($item) use ($searchQuery) {
                                         return stripos($item['name'], $searchQuery) !== false;

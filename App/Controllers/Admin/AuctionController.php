@@ -17,24 +17,22 @@ class AuctionController
 {
     // Hiển thị danh sách đấu giá
     public static function index()
-{
-    $productModel = new Product();
-    $products = $productModel->getAllProduct();
+    {
+        $productModel = new Product();
+        $products = $productModel->getAllProduct();
 
-    $auction = new Auction();
+        $auction = new Auction();
+        $data = $auction->getAllAuction();
 
-    $auction->updateAuctionStatus();
-    $data = $auction->getAllAuction();
-    
 
-    Header::render();
-    Notification::render();
-    NotificationHelper::unset();
+        Header::render();
+        Notification::render();
+        NotificationHelper::unset();
 
-    // Hiển thị danh sách đấu giá
-    Index::render($data, $products);
-    Footer::render();
-}
+        // Hiển thị danh sách đấu giá
+        Index::render($data, $products);
+        Footer::render();
+    }
 
 
     // Hiển thị giao diện form thêm đấu giá
@@ -93,28 +91,28 @@ class AuctionController
 
     // Hiển thị giao diện form sửa đấu giá
     public static function edit(int $id)
-{
-    $auction = new Auction();
-    $data = $auction->getOneAuction($id);
+    {
+        $auction = new Auction();
+        $data = $auction->getOneAuction($id);
 
-    $productModel = new Product();
-    $products = $productModel->getAllProduct();
+        $productModel = new Product();
+        $products = $productModel->getAllProduct();
 
-    if (!$data) {
-        NotificationHelper::error('edit', 'Không tìm thấy phiên đấu giá');
-        header('location: /admin/auctions');
-        exit;
+        if (!$data) {
+            NotificationHelper::error('edit', 'Không tìm thấy phiên đấu giá');
+            header('location: /admin/auctions');
+            exit;
+        }
+        $data['products'] = $products;
+
+        Header::render();
+        Notification::render();
+        NotificationHelper::unset();
+
+        // Hiển thị form sửa đấu giá
+        Edit::render($data);
+        Footer::render();
     }
-    $data['products'] = $products;
-
-    Header::render();
-    Notification::render();
-    NotificationHelper::unset();
-
-    // Hiển thị form sửa đấu giá
-    Edit::render($data);
-    Footer::render();
-}
 
 
     // Xử lý chức năng sửa (cập nhật) đấu giá

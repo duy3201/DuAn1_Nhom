@@ -46,8 +46,9 @@ class Create extends BaseView
                                     <div class="form-group">
                                         <label for="status">Trạng thái:</label>
                                         <select class="form-control text-white" id="status" name="status" required>
-                                            <option value="1">Mở đấu giá</option>
                                             <option value="0">Đóng đấu giá</option>
+                                            <option value="1">Mở đấu giá</option>
+                                            <option value="2">Đã kết thúc</option>
                                         </select>
                                     </div>
                                     <div class="form-group">

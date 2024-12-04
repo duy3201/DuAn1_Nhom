@@ -10,6 +10,7 @@ class DetailAuction extends BaseView
 {
     public static function render($data = null)
     {
+        $is_login = AuthHelper::checkLogin();
 ?>
         <section class="auction-details mt-5">
             <div class="container">
@@ -39,50 +40,47 @@ class DetailAuction extends BaseView
 
                             <!-- Form đấu giá -->
                             <form action="/auction/bid" method="POST">
-    <input type="hidden" name="auction_id" value="<?= $data['auctions']['id'] ?>">
-    <input type="hidden" name="user_id" value=""> <!-- Lấy ID người dùng hiện tại -->
-    <div class="form-group">
-        <label for="bid_price">Nhập giá đấu giá</label>
-        <input type="number" class="form-control" name="bid_price" min="<?= $data['auctions']['starting_price'] + 1 ?>" placeholder="Nhập số tiền đấu giá" required>
-    </div>
-    <button type="submit" class="btn btn-warning btn-lg">Đấu giá</button>
-</form>
+                                <input type="hidden" name="auction_id" value="<?= $data['auctions']['id'] ?>">
+                                <input type="hidden" name="user_id" value=""> <!-- Lấy ID người dùng hiện tại -->
+                                <div class="form-group">
+                                    <label for="bid_price">Nhập giá đấu giá</label>
+                                    <input type="number" class="form-control" name="bid_price" min="<?= $data['auctions']['starting_price'] + 1 ?>" placeholder="Nhập số tiền đấu giá" required>
+                                </div>
+                                <button type="submit" class="btn btn-warning btn-lg">Đấu giá</button>
+                            </form>
 
                         </div>
                     </div>
                 </div>
 
                 <!-- Lịch sử đấu giá -->
-<div class="auction-history my-5">
-    <h4>Lịch sử đấu giá</h4>
-    <table class="table table-bordered mt-2">
-        <thead>
-            <tr>
-                <th>Tên Người Dùng</th>
-                <th>Thời Gian</th>
-                <th>Số Tiền Đấu Giá</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php if (!empty($data['auction_history'])): ?>
-                <?php foreach ($data['auction_history'] as $bid): ?>
-                    <tr>
-                        <td><strong><?= htmlspecialchars($bid['user_name']) ?></strong></td>
-                        <td><span class="text-muted"><?= date('d/m/Y H:i', strtotime($bid['bid_time'])) ?></span></td>
-                        <td><strong class="text-success"><?= number_format($bid['bid_price'], 0, ',', '.') ?> VNĐ</strong></td>
-                    </tr>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <tr>
-                    <td colspan="3" class="text-center">Chưa có đấu giá nào</td>
-                </tr>
-            <?php endif; ?>
-        </tbody>
-    </table>
-</div>
-
-
-
+                <div class="auction-history my-5">
+                    <h4>Lịch sử đấu giá</h4>
+                    <table class="table table-bordered mt-2">
+                        <thead>
+                            <tr>
+                                <th>Tên Người Dùng</th>
+                                <th>Thời Gian</th>
+                                <th>Số Tiền Đấu Giá</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php if (!empty($data['auction_history'])): ?>
+                                <?php foreach ($data['auction_history'] as $bid): ?>
+                                    <tr>
+                                        <td><strong><?= htmlspecialchars($bid['user_name']) ?></strong></td>
+                                        <td><span class="text-muted"><?= date('d/m/Y H:i', strtotime($bid['bid_time'])) ?></span></td>
+                                        <td><strong class="text-success"><?= number_format($bid['bid_price'], 0, ',', '.') ?> VNĐ</strong></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php else: ?>
+                                <tr>
+                                    <td colspan="3" class="text-center">Chưa có đấu giá nào</td>
+                                </tr>
+                            <?php endif; ?>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
 <?php

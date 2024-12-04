@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers\Client;
+
 use App\Models\Auction;
 use App\Models\Category;
 use App\Models\Post;
@@ -19,7 +20,7 @@ use App\Views\Client\Pages\Introduce;
 // use App\Views\Client\Pages\Product\Category as ProductCategory;
 use App\Views\Client\Pages\Product\Detail;
 // use App\Views\Client\Pages\Product\Index;
-use App\Views\Client\Pages\Product\Category AS ProductCategory;
+use App\Views\Client\Pages\Product\Category as ProductCategory;
 use App\Views\Client\Pages\CheckOut;
 use App\Views\Client\Pages\Product\Index;
 
@@ -37,31 +38,34 @@ class HomeController
 
         $post = new Post();
         $posts = $post->getAllPostByLimit();
+
         $auction = new Auction();
-        $auctions = $auction->getAllAuctionJoinProductName();
-  
+        $allAuctions = $auction->getAllAuctionJoinProductName();
+
+        // Cập nhật trạng thái của các phiên đấu giá
+        $auction->updateAuctionStatus();
+
+        // Lọc các phiên đấu giá có trạng thái "Đã mở"
+        $openAuctions = array_filter($allAuctions, function ($auction) {
+            return $auction['status'] == Auction::STATUS_OPEN;
+        });
 
         $data = [
-            'auctions' => $auctions,
+            'auctions' => $openAuctions,
             'posts' => $posts,
             'products' => $products,
             'categories' => $categories,
             'categoriesmenu' => $categoriesmenu
-            // 'products' => $products,
-            // 'categories' => $categories,
-            // 'categoriesmenu' => $categoriesmenu
         ];
-         Header::render($data);
-         Notification::render();
-         NotificationHelper::unset();
-         Home::render($data);
-         Footer::render();
-        
 
-
-
+        Header::render($data);
+        Notification::render();
+        NotificationHelper::unset();
+        Home::render($data);
+        Footer::render();
     }
-   // detailAucotion
+
+    // detailAucotion
     public static function detailAuction($id)
     {
         $category = new Category();
@@ -71,7 +75,7 @@ class HomeController
         $auction = new Auction();
         $auctions_detail = $auction->getOneAuctionByStatus($id);
         $auctionHistory = $auction->getAuctionHistory($id);
-       
+
         $data = [
             'auctions' => $auctions_detail,
             'auction_history' => $auctionHistory,
@@ -81,7 +85,6 @@ class HomeController
         Header::render($data);
         DetailAuction::render($data);
         Footer::render();
-
     }
     public static function cart()
     {
@@ -101,7 +104,7 @@ class HomeController
         Cart::render();
         Footer::render();
     }
-    
+
 
     public static function contact()
     {

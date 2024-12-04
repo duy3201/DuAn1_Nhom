@@ -51,12 +51,13 @@ class AuthHelper {
 
         if ($data['remember']) {
             self::updateCookie($is_exist['id']);
-        }else {
+        } else {
             self::updateSession($is_exist['id']);
         }
-        NotificationHelper::success('login','Đăng nhập thành công');
+        NotificationHelper::success('login', 'Đăng nhập thành công');
         return true;
     }
+
     public static function updateCookie(int $id) {
         $user = new User();
         $result = $user->getOneUser($id);
@@ -83,8 +84,8 @@ class AuthHelper {
         }
     }
 
-   public static function checkLogin():bool{
-        if (isset($_COOKIE['user'])){
+    public static function checkLogin(): bool {
+        if (isset($_COOKIE['user'])) {
             $user = $_COOKIE['user'];
             $user_data = json_decode($user);
 
@@ -92,25 +93,24 @@ class AuthHelper {
 
             return true;
         }
-        if (isset($_SESSION['user'])){
+        if (isset($_SESSION['user'])) {
             return true;
         }
         return false;
     }
 
-    public static function logout(){
-        if(isset($_SESSION['user'])){
-           unset($_SESSION['user']); 
+    public static function logout() {
+        if (isset($_SESSION['user'])) {
+            unset($_SESSION['user']);
         }
 
-        if(isset($_COOKIE['user'])){
+        if (isset($_COOKIE['user'])) {
             setcookie('user', '', time() - 3600 * 24 * 30 * 12, '/');
         }
-        
     }
 
-    public static function edit($id){
-        if(!self::checkLogin()){
+    public static function edit($id) {
+        if (!self::checkLogin()) {
             NotificationHelper::error('login', 'Vui lòng đăng nhập để xem thông tin');
             return false;
         }
@@ -118,7 +118,7 @@ class AuthHelper {
         $data = $_SESSION['user'];
         $user_id = $data['id'];
 
-        if($user_id!=$id){
+        if ($user_id != $id) {
             NotificationHelper::error('user_id', 'Không có quyền xem thông tin tài khoản này');
             return false;
         }
@@ -126,20 +126,20 @@ class AuthHelper {
         return true;
     }
 
-    public static function update($id, $data){
+    public static function update($id, $data) {
         $user = new User();
         $result = $user->update($id, $data);
 
-        if(!$result){
+        if (!$result) {
             NotificationHelper::error('update_user', 'Cập nhật thông tin tài khoản thất bại');
             return false;
         }
 
-        if($_SESSION['user']){
+        if ($_SESSION['user']) {
             self::updateSession($id);
         }
 
-        if($_COOKIE['user']){
+        if ($_COOKIE['user']) {
             self::updateCookie($id);
         }
 
@@ -147,18 +147,17 @@ class AuthHelper {
         return true;
     }
 
-    public static function changePassword($id, $data){
-        
+    public static function changePassword($id, $data) {
         $user = new User();
         $result = $user->getOneUser($id);
 
-        if(!$result){
+        if (!$result) {
             NotificationHelper::error('account', 'Tài khoản không tồn tại');
             return false;
         }
 
         //kiểm tra mật khẩu cũ có trùng với database ko
-        if(!password_verify($data['old_password'], $result['password'])){
+        if (!password_verify($data['old_password'], $result['password'])) {
             NotificationHelper::error('password_verify', 'Mật khẩu cũ không chính xác');
             return false;
         }
@@ -167,13 +166,13 @@ class AuthHelper {
         $hash_password = password_hash($data['new_password'], PASSWORD_DEFAULT);
 
         $data_update = [
-            'password' =>$hash_password,
+            'password' => $hash_password,
         ];
 
         $result_update = $user->updateUser($id, $data_update);
 
-        if($result_update){
-            if(isset($_COOKIE['user'])){
+        if ($result_update) {
+            if (isset($_COOKIE['user'])) {
                 self::updateCookie($id);
             }
 
@@ -181,13 +180,13 @@ class AuthHelper {
 
             NotificationHelper::success('change-password', 'Đổi mật khẩu thành công');
             return true;
-        }else{
+        } else {
             NotificationHelper::success('change-password', 'Đổi mật khẩu thất bại');
             return false;
         }
     }
 
-    public static function forgotPassword($data){
+    public static function forgotPassword($data) {
         $user = new User();
 
         $result = $user->getOneUserByUsername($data['username']);
@@ -201,31 +200,31 @@ class AuthHelper {
         return $result;
     }
 
-    public static function middleware(){
+    public static function middleware() {
         // var_dump($_SERVER['REQUEST_URI']);
         $admin = explode('/', $_SERVER['REQUEST_URI']);
         // var_dump($admin);
         $admin = $admin[1];
 
-        if($admin=='admin'){
+        if ($admin == 'admin') {
             // if(!isset($_SESSION['user']) || $_SESSION['user']['role'] != 1){
             //     NotificationHelper::error('admin', 'Tài khoản này không có quyền truy cập');
             //     header('location: /login');
             //     exit;
             // }
 
-            if(!isset($_SESSION['user'])){
+            if (!isset($_SESSION['user'])) {
                 NotificationHelper::error('admin', 'Vui lòng đăng nhập');
                 header('location: /login');
-                exit; 
+                exit;
             }
 
-            if($_SESSION['user']['role'] != 1){
+            if ($_SESSION['user']['role'] != 1) {
                 NotificationHelper::error('admin', 'Tài khoản này không có quyền truy cập');
                 header('location: /login');
                 exit;
             }
         }
     }
-    
 }
+?>

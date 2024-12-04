@@ -21,15 +21,15 @@ class Home extends BaseView
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-5 text-white">
-                                <span class ="text-white"> Đồ giảm giá</span>
-                                <h1 class ="text-white">Sale</h1>
-                                <p class ="text-white">Hãy khám phá những sản phẩm tuyệt vời với mức giá ưu đãi trong dịp Black Friday.</p>
+                                <span class="text-white"> Đồ giảm giá</span>
+                                <h1 class="text-white">Sale</h1>
+                                <p class="text-white">Hãy khám phá những sản phẩm tuyệt vời với mức giá ưu đãi trong dịp Black Friday.</p>
                                 <a href="/products" class="primary-btn">Mua ngay</a>
                             </div>
 
                         </div>
                         <div class="off-card">
-                            <h2 >Giảm giá <span>50%</span></h2>
+                            <h2>Giảm giá <span>50%</span></h2>
                         </div>
                     </div>
                 </div>
@@ -58,38 +58,38 @@ class Home extends BaseView
                 <div class="row">
                     <div class="col-lg-4">
                         <a href="/products/categories/3">
-                        <div class="single-banner" >
-                            <!-- <img src="/public/assets/client/img/banner-1.jpg" alt=""> -->
-                            <img src="/public/assets/client/img/anhnam.jpg" alt="">
-                            
-                            <div class="inner-text">
-                                <h4>Nam</h4>
-                            </div>
-                            </a>
-                        </div>
+                            <div class="single-banner">
+                                <!-- <img src="/public/assets/client/img/banner-1.jpg" alt=""> -->
+                                <img src="/public/assets/client/img/anhnam.jpg" alt="">
+
+                                <div class="inner-text">
+                                    <h4>Nam</h4>
+                                </div>
+                        </a>
                     </div>
-                    <div class="col-lg-4">
-                        <a href="/products/categories/4">
+                </div>
+                <div class="col-lg-4">
+                    <a href="/products/categories/4">
                         <div class="single-banner">
                             <img src="/public/assets/client/img/anh1.jpg" alt="">
                             <div class="inner-text">
                                 <h4>Nữ</h4>
                             </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-banner">
-                            <a href="/products/categories/5">
-                            <img src="/public/assets/client/img/phukien.jpg" alt="">
-                            <div class="inner-text">
-                                <h4>Phụ kiện</h4>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
+            <div class="col-lg-4">
+                <div class="single-banner">
+                    <a href="/products/categories/5">
+                        <img src="/public/assets/client/img/phukien.jpg" alt="">
+                        <div class="inner-text">
+                            <h4>Phụ kiện</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
         </div>
         <!-- Phần Banner Kết Thúc -->
 
@@ -253,8 +253,8 @@ class Home extends BaseView
                                                 <h5><?= $item['name'] ?></h5>
                                             </a>
                                             <div class="price text-warning ">
-                                                        <?= !empty($item['product_price']) ? number_format($item['product_price'], 0, ',', '.') . ' VNĐ' : 'Liên hệ'; ?>
-                                                    </div>
+                                                <?= !empty($item['product_price']) ? number_format($item['product_price'], 0, ',', '.') . ' VNĐ' : 'Liên hệ'; ?>
+                                            </div>
                                         </div>
 
                                     </div>
@@ -291,18 +291,15 @@ class Home extends BaseView
                             <section class="deal-of-week set-bg spad" data-setbg="/public/assets/client/img/time-bg1.jpg">
                                 <div class="container">
                                     <div class="row">
-                                        <!-- Cột bên trái chứa thông tin sản phẩm -->
                                         <div class="col-md-6 text-center">
                                             <div class="section-title">
-                                                <h2>Đấu giá sản phẩm <?= $item['products_name'] ?></h2>
-                                                <p><?= $item['product_description'] ?></p>
+                                                <h2>Đấu giá sản phẩm <?= htmlspecialchars($item['products_name']) ?></h2>
+                                                <p><?= htmlspecialchars($item['product_description']) ?></p>
                                                 <div class="product-price">
                                                     <h5 class="text-dark mb-2">Giá khởi điểm:</h5>
                                                     <h4 class="text-warning"><?= number_format($item['starting_price'], 0, ',', '.') ?> VNĐ</h4>
                                                 </div>
                                             </div>
-
-                                            <!-- Thêm thông tin ngày giờ bắt đầu và kết thúc -->
                                             <div class="time-info mb-4 d-flex justify-content-center align-items-center">
                                                 <div class="time-item me-5">
                                                     <h5 class="text-dark"><?= date('d/m/Y H:i', strtotime($item['start_time'])) ?></h5>
@@ -313,24 +310,19 @@ class Home extends BaseView
                                                     <p class="text-muted">Kết thúc</p>
                                                 </div>
                                             </div>
-
-                                            <!-- Nút Đấu Giá -->
                                             <a href="/<?= htmlspecialchars($item['id']); ?>" class="primary-btn">Đấu giá</a>
                                         </div>
-
-                                        <!-- Cột bên phải chứa hình ảnh sản phẩm -->
                                         <div class="col-md-6 text-center">
-                                            <img src="/public/assets/admin/img/<?= $item['product_img'] ?>" alt="Ảnh Sản phẩm" class="img-fluid" style="max-height: 400px; object-fit: cover;">
+                                            <img src="/public/assets/admin/img/<?= htmlspecialchars($item['product_img']) ?>" alt="Ảnh Sản phẩm" class="img-fluid" style="max-height: 400px; object-fit: cover;">
                                         </div>
                                     </div>
                                 </div>
-
                             </section>
                         </div>
                         <?php $isActive = false; ?>
                     <?php endforeach; ?>
                 </div>
-
+                
                 <!-- Điều khiển carousel -->
                 <a class="carousel-control-prev" href="#auctionCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -346,7 +338,7 @@ class Home extends BaseView
 
 
             <!-- Phần Instagram Bắt Đầu -->
-             <div class="instagram-photo">
+            <div class="instagram-photo">
                 <div class="insta-item set-bg" data-setbg="/public/assets/client/img/insta-1.jpg">
                     <div class="inside-text">
                         <i class="ti-instagram"></i>
@@ -383,7 +375,7 @@ class Home extends BaseView
                         <h5><a href="#">Xem thêm</a></h5>
                     </div>
                 </div>
-            </div> 
+            </div>
             <!-- Phần Instagram Kết Thúc -->
 
 

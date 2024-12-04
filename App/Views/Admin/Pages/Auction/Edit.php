@@ -23,14 +23,14 @@ class Edit extends BaseView
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Chỉnh sửa sản phẩm đấu giá</h5>
-                                <form method="POST" action="/admin/auctions/<?= $data['id'] ?>" enctype="multipart/form-data">
-                                    <input type="hidden" name="method" value="POST">
-                                    <div class="form-group text-white">
+                                <form method="POST" action="/admin/auctions/<?= $data['id'] ?>" enctype="multipart/form-data" autocomplete="off">
+                                    <input type="hidden" name="method" value="PUT">
+                                    <div class="form-group">
                                         <label for="product_id">Loại sản phẩm:</label>
-                                        <select class="form-control text-white" id="product_id" name="product_id" required>
+                                        <select class="form-control" id="product_id" name="product_id" required>
                                             <?php foreach ($data['products'] as $product): ?>
                                                 <option value="<?= $product['id'] ?>" <?= $product['id'] == $data['product_id'] ? 'selected' : '' ?>>
-                                                    <?= htmlspecialchars($product['id']) ?>
+                                                    <?= htmlspecialchars($product['name']) ?>
                                                 </option>
                                             <?php endforeach; ?>
                                         </select>
@@ -41,9 +41,10 @@ class Edit extends BaseView
                                     </div>
                                     <div class="form-group">
                                         <label for="status">Trạng thái:</label>
-                                        <select class="form-control" id="status" name="status" required>
-                                            <option value="1" <?= $data['status'] == 1 ? 'selected' : '' ?>>Mở đấu giá</option>
+                                        <select class="form-control text-white" id="status" name="status" required>
                                             <option value="0" <?= $data['status'] == 0 ? 'selected' : '' ?>>Đóng đấu giá</option>
+                                            <option value="1" <?= $data['status'] == 1 ? 'selected' : '' ?>>Mở đấu giá</option>
+                                            <option value="2" <?= $data['status'] == 2 ? 'selected' : '' ?>>Đã kết thúc</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
@@ -57,8 +58,6 @@ class Edit extends BaseView
                                     <div class="form-group">
                                         <label for="img">Hình ảnh sản phẩm:</label>
                                         <input type="file" class="form-control" id="img" name="img" accept="image/*">
-                                        <p>Hình ảnh hiện tại:</p>
-                                        <img src="<?= $data['img'] ?>" alt="Hình ảnh sản phẩm" style="width: 150px; height: auto;">
                                     </div>
                                     <button type="submit" class="btn btn-success">Cập nhật sản phẩm</button>
                                 </form>

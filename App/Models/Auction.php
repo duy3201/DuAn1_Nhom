@@ -39,30 +39,37 @@ class Auction extends BaseModel
     public function updateAuctionStatus()
     {
         try {
+            date_default_timezone_set('Asia/Ho_Chi_Minh');
+
             $conn = $this->_conn->MySQLi();
-            
+
             if (!$conn) {
-                throw new \Exception('Database connection not established.');
+                throw new \Exception('Không thể kết nối cơ sở dữ liệu.');
             }
 
+            // Thiết lập múi giờ MySQL nếu cần
+            $conn->query("SET time_zone = '+07:00';");
+
+            // Cập nhật trạng thái "Đã mở"
             $sqlOpen = "UPDATE $this->table 
-                        SET status = ? 
-                        WHERE start_time <= NOW() AND end_time > NOW() AND status = ?";
+                    SET status = ? 
+                    WHERE start_time <= NOW() AND end_time > NOW() AND status = ?";
             $stmtOpen = $conn->prepare($sqlOpen);
             if (!$stmtOpen) {
-                throw new \Exception('SQL prepare failed for opening auction.');
+                throw new \Exception('Lỗi khi chuẩn bị câu lệnh SQL để mở đấu giá.');
             }
             $statusOpen = self::STATUS_OPEN;
             $statusClosed = self::STATUS_CLOSED;
             $stmtOpen->bind_param('ii', $statusOpen, $statusClosed);
             $stmtOpen->execute();
 
+            // Cập nhật trạng thái "Đã kết thúc"
             $sqlClose = "UPDATE $this->table 
-                         SET status = ? 
-                         WHERE end_time <= NOW() AND status = ?";
+                     SET status = ? 
+                     WHERE end_time <= NOW() AND status = ?";
             $stmtClose = $conn->prepare($sqlClose);
             if (!$stmtClose) {
-                throw new \Exception('SQL prepare failed for closing auction.');
+                throw new \Exception('Lỗi khi chuẩn bị câu lệnh SQL để kết thúc đấu giá.');
             }
             $statusEnded = self::STATUS_ENDED;
             $stmtClose->bind_param('ii', $statusEnded, $statusOpen);
@@ -70,60 +77,38 @@ class Auction extends BaseModel
 
             return true;
         } catch (\Throwable $th) {
-            error_log('Error updating auction status: ' . $th->getMessage());
+            error_log('Lỗi khi cập nhật trạng thái đấu giá: ' . $th->getMessage());
             return false;
         }
     }
 
-    public function getAuctionWithProductName($id)
+    public function getAuctionsByStatus(int $status)
     {
+        $result = [];
         try {
+            $sql = "
+        SELECT auctions.*, 
+               products.name AS products_name, 
+               products.img AS product_img, 
+               products.description AS product_description
+        FROM auctions
+        JOIN products ON auctions.product_id = products.id
+        WHERE auctions.status = ?
+        ";
+
             $conn = $this->_conn->MySQLi();
-
-            $sql = "SELECT auctions.*, products.name AS products_name
-FROM $this->table
-JOIN products ON auctions.product_id = products.id 
-WHERE auctions.id = ?";
             $stmt = $conn->prepare($sql);
-            if (!$stmt) {
-                throw new \Exception('SQL prepare failed for fetching auction with product name.');
-            }
-
-            $stmt->bind_param('i', $id);
+            $stmt->bind_param('i', $status);
             $stmt->execute();
-            $result = $stmt->get_result();
 
-            return $result->fetch_assoc();
+            $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
         } catch (\Throwable $th) {
-            error_log('Error fetching auction with product name: ' . $th->getMessage());
-            return false;
+            error_log('Lỗi khi lấy danh sách đấu giá theo trạng thái: ' . $th->getMessage());
         }
+        return $result;
     }
-    // public function getAllAuctionJoinProductName()
-    // {
-    //     try {
-    //         $conn = $this->_conn->MySQLi();
 
-    //         $sql = "SELECT auctions.*, products.name AS products_name
-    //         FROM $this->table
-    //        JOIN products ON auctions.product_id = products.id";
-    //         $stmt = $conn->prepare($sql);
-    //         if (!$stmt) {
-    //             throw new \Exception('SQL prepare failed for fetching auction with product name.');
-    //         }
-
-    //         // $stmt->bind_param('i', $id);
-    //         $stmt->execute();
-    //         $result = $stmt->get_result();
-
-    //         return $result->fetch_assoc();
-    //     } catch (\Throwable $th) {
-    //         error_log('Error fetching auction with product name: ' . $th->getMessage());
-    //         return false;
-    //     }
-    // }
-
-     public function getAllAuctionJoinProductName()
+    public function getAllAuctionJoinProductName()
     {
         $result = [];
         try {
@@ -157,10 +142,10 @@ WHERE auctions.id = ?";
                     categories ON products.id_category = categories.id
                 WHERE 
                  auctions.id = ?";
-            
+
             $conn = $this->_conn->MySQLi();
             $stmt = $conn->prepare($sql);
-            
+
             $stmt->bind_param('i', $id);
             $stmt->execute();
             return $stmt->get_result()->fetch_assoc();
@@ -170,31 +155,28 @@ WHERE auctions.id = ?";
         }
     }
     // Trong model Auction.php
-public function getAuctionHistory(int $auctionId)
-{
-    $result = [];
-    try {
-        $sql = "
+    public function getAuctionHistory(int $auctionId)
+    {
+        $result = [];
+        try {
+            $sql = "
             SELECT user_name, bid_price, bid_time
             FROM auction_bids
             WHERE auction_id = ?
             ORDER BY bid_time DESC
         ";
 
-        $conn = $this->_conn->MySQLi();
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param('i', $auctionId);  // Liên kết ID đấu giá vào câu truy vấn
-        $stmt->execute();
+            $conn = $this->_conn->MySQLi();
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param('i', $auctionId);
+            $stmt->execute();
 
-        // Lấy kết quả và trả về dưới dạng mảng
-        $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
-    } catch (\Throwable $th) {
-        error_log('Lỗi khi lấy lịch sử đấu giá: ' . $th->getMessage());
+            // Lấy kết quả và trả về dưới dạng mảng
+            $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+        } catch (\Throwable $th) {
+            error_log('Lỗi khi lấy lịch sử đấu giá: ' . $th->getMessage());
+        }
+        return $result;
     }
-    return $result;
-}
-
-
 
 }
-?>
