@@ -66,6 +66,9 @@ Route::post('/login','App\Controllers\Client\AuthController@loginAction');
 Route::get('/logout','App\Controllers\Client\AuthController@logout');
 Route::get('/users/{id}','App\Controllers\Client\AuthController@edit');
 Route::put('/users/{id}','App\Controllers\Client\AuthController@update');
+// GET 
+Route::get('/transaction_history/{id}', 'App\Controllers\Client\AuthController@transaction_history');
+
 Route::get('/change-password','App\Controllers\Client\AuthController@changePassword');
 Route::put('/change-password','App\Controllers\Client\AuthController@changePasswordAction');
 
@@ -207,6 +210,9 @@ Route::post('/admin/users', 'App\Controllers\Admin\UserController@store');
 // GET /users/{id} (lấy chi tiết người dùng với id cụ thể)
 Route::get('/admin/users/{id}', 'App\Controllers\Admin\UserController@edit');
 
+
+
+
 // PUT /users/{id} (update người dùng với id cụ thể)
 Route::put('/admin/users/{id}', 'App\Controllers\Admin\UserController@update');
 
@@ -215,6 +221,7 @@ Route::delete('/admin/users/{id}', 'App\Controllers\Admin\UserController@delete'
 
 
 // *** Auctions
+
 // GET /auctions (lấy danh sách đấu giá)
 Route::get('/admin/auctions', 'App\Controllers\Admin\AuctionController@index');
 

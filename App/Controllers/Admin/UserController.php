@@ -183,4 +183,7 @@ class UserController
        header('location: /admin/users');
 
     }
+
+    // hiển thị giao diện form sửa
+  
 }

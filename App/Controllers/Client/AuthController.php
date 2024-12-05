@@ -7,6 +7,7 @@ use App\Helpers\AuthHelper;
 use App\Helpers\NotificationHelper;
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\User;
 use App\Validations\AuthValidation;
 use App\Views\Client\Layouts\Footer;
 use App\Views\Client\Layouts\Header;
@@ -17,6 +18,7 @@ use App\Views\Client\Pages\Auth\ChangePassword;
 use App\Views\Client\Pages\Auth\Edit;
 use App\Views\Client\Pages\Auth\ForgotPassword;
 use App\Views\Client\Pages\Auth\ResetPassword;
+use App\Views\Client\Pages\Auth\TransactionHistory;
 
 class AuthController
 {
@@ -375,4 +377,39 @@ class AuthController
             header('location: /reset-password');
         }
     }
+    public static function transaction_history($id) {
+        // Xác minh người dùng đã đăng nhập
+        if (!isset($_SESSION['user'])) {
+            header('Location: /login');
+            exit;
+        }
+
+        // Lấy thông tin người dùng từ session
+        $user = $_SESSION['user'];
+        $user_id = $user['id'];
+
+        // Lấy danh sách giao dịch của người dùng
+        $transactionModel = new User();
+        $transactions = $transactionModel->getUserTransactions($user_id);
+
+        // Lấy các dữ liệu khác (danh mục, sản phẩm)
+        $categoryModel = new Category();
+        $categories = $categoryModel->getAllCategoryByStatus();
+
+        $productModel = new Product();
+        $products = $productModel->getAllProductByStatus();
+
+        // Tạo dữ liệu để gửi tới giao diện
+        $data = [
+            'transactions' => $transactions,
+            'categories' => $categories,
+            'products' => $products
+        ];
+
+        // Gọi các thành phần hiển thị giao diện
+        Header::render($data);
+        TransactionHistory::render($data); // Hiển thị lịch sử giao dịch
+        Footer::render();
+    }
+   
 }

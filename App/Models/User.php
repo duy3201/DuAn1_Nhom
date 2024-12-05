@@ -80,4 +80,26 @@ class User extends BaseModel
     public function countTotalUser(){
         return $this->countTotal();
     }
+    public function getUserTransactions($user_id)
+{
+    $result = [];
+    try {
+        // Câu lệnh SQL để lấy giao dịch của người dùng đăng nhập
+        $sql = "SELECT * FROM orders WHERE id_user = ? ORDER BY id DESC";
+        $conn = $this->_conn->MySQLi(); // Kết nối MySQLi
+        $stmt = $conn->prepare($sql);
+
+        // Ràng buộc tham số
+        $stmt->bind_param('i', $user_id);
+
+        // Thực thi truy vấn
+        $stmt->execute();
+        $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC); // Lấy kết quả dưới dạng mảng liên kết
+    } catch (\Throwable $th) {
+        // Ghi log lỗi nếu xảy ra lỗi
+        error_log('Lỗi khi lấy giao dịch người dùng: ' . $th->getMessage());
+    }
+    return $result;
+}
+
 }
