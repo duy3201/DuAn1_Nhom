@@ -88,9 +88,13 @@ class AuthHelper {
         if (isset($_COOKIE['user'])) {
             $user = $_COOKIE['user'];
             $user_data = json_decode($user);
-
+            
             $_SESSION['user'] = (array) $user_data;
-
+            
+            if (isset($user_data->id)) {
+                setcookie('id_user', $user_data->id, time() + 3600 * 24 * 30 * 12, '/');
+            }
+            
             return true;
         }
         if (isset($_SESSION['user'])) {
@@ -98,17 +102,20 @@ class AuthHelper {
         }
         return false;
     }
-
+    
     public static function logout() {
         if (isset($_SESSION['user'])) {
             unset($_SESSION['user']);
         }
-
+    
         if (isset($_COOKIE['user'])) {
             setcookie('user', '', time() - 3600 * 24 * 30 * 12, '/');
         }
+        
+        if (isset($_COOKIE['id_user'])) {
+            setcookie('id_user', '', time() - 3600 * 24 * 30 * 12, '/');
+        }
     }
-
     public static function edit($id) {
         if (!self::checkLogin()) {
             NotificationHelper::error('login', 'Vui lòng đăng nhập để xem thông tin');
