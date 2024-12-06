@@ -9,6 +9,7 @@ class Home extends BaseView
 {
     public static function render($data = null)
     {
+        
 ?>
 
 
@@ -56,38 +57,22 @@ class Home extends BaseView
         <div class="banner-section spad">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-4">
-                        <a href="/products/categories/3">
-                            <div class="single-banner">
-                                <!-- <img src="/public/assets/client/img/banner-1.jpg" alt=""> -->
-                                <img src="/public/assets/client/img/anhnam.jpg" alt="">
+                      <?php foreach ($data['categories'] as $category) : ?>
+    <div class="col-lg-4">
+        <a href="/products/categories/<?= htmlspecialchars($category['id']); ?>">
+            <div class="single-banner">
+                <img src="<?= APP_URL ?>/public/assets/client/img/<?= htmlspecialchars($category['img']); ?>" alt="">
 
-                                <div class="inner-text">
-                                    <h4>Nam</h4>
-                                </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <a href="/products/categories/4">
-                        <div class="single-banner">
-                            <img src="/public/assets/client/img/anh1.jpg" alt="">
-                            <div class="inner-text">
-                                <h4>Nữ</h4>
-                            </div>
-                    </a>
+
+                <div class="inner-text">
+                    <h4><?= htmlspecialchars($category['name']); ?></h4>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="single-banner">
-                    <a href="/products/categories/5">
-                        <img src="/public/assets/client/img/phukien.jpg" alt="">
-                        <div class="inner-text">
-                            <h4>Phụ kiện</h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
+        </a>
+    </div>
+
+  
+<?php endforeach; ?>
         </div>
         </div>
         </div>
@@ -230,7 +215,7 @@ class Home extends BaseView
                         </div>
 
                         <?php if (count($data) && count($data['products'])) : ?>
-
+                            
                             <div class="product-slider owl-carousel">
                                 <?php foreach ($data['products'] as $item) : ?>
                                     <div class="product-item">

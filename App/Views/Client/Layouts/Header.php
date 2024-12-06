@@ -13,6 +13,7 @@ class Header extends BaseView
     public static function render($data = null)
     {
         $is_login = AuthHelper::checkLogin();
+
         $cartItems = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
         $total = 0;
 
@@ -202,17 +203,16 @@ class Header extends BaseView
                                     </li>
                                 <?php else: ?>
                                     <li class="dropdown">
-                                        <a href="/login" class="btn dropdown-toggle p-0" id="guestDropdown">
-                                            <i class="fa-regular fa-user"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end keep-open" aria-labelledby="guestDropdown">
-                                            <a href="/login" class="dropdown-item">Đăng nhập</a>
-                                            <a href="/register" class="dropdown-item">Đăng ký</a>
-                                        </div>
-                                    </li>
-                                    <script>
+    <a class="btn dropdown-toggle p-0" href="#" id="guestDropdown" role="button" 
+       data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-regular fa-user"></i>
+    </a>
+    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="guestDropdown">
+        <a href="/login" class="dropdown-item">Đăng nhập</a>
+        <a href="/register" class="dropdown-item">Đăng ký</a>
+    </div>
+</li>
 
-                                    </script>
                                 <?php endif; ?>
                             </ul>
                         </div>

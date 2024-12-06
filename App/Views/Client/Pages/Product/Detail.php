@@ -5,6 +5,7 @@ namespace App\Views\Client\Pages\Product;
 use App\Helpers\AuthHelper;
 use App\Models\CartModel;
 use App\Views\BaseView;
+
 use App\Views\Client\Components\Category;
 
 class Detail extends BaseView
@@ -337,6 +338,8 @@ class Detail extends BaseView
                                                                 <p class="text-center text-danger">Vui lòng đăng nhập để bình luận</p>
                                                             <?php endif; ?>
 
+                                                            
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -347,9 +350,16 @@ class Detail extends BaseView
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
-        </section>
+            
+
+
+
+        <!-- sản phẩm nổi bậc -->
+                   
+        
 <?php
 
     }

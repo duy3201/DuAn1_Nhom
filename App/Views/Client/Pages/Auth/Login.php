@@ -48,9 +48,7 @@ class Login extends BaseView
                             </div>
 
                             <!-- Nút Đăng nhập với Google -->
-                            <div class="social-login">
-                                <a href="https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile&response_type=token&redirect_uri=http://127.0.0.1:8080/&client_id=207158970806-3kme29diqj31cuj2etgqsj06344e4tp1.apps.googleusercontent.com" class="btn btn-google"><i class="fa fa-google"></i> Đăng nhập với Google</a>
-                            </div>
+                          
                         </div>
                     </div>
                 </div>

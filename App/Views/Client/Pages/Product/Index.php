@@ -115,11 +115,10 @@ class Index extends BaseView
                                     <?php endforeach; ?>
                                 </div>
                             <?php else : ?>
-                                <h3 class="text-center text-danger">Không tìm thấy sản phẩm nào!</h3>
+<h3 class="text-center text-danger">Không tìm thấy sản phẩm nào!</h3>
                             <?php endif; ?>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
 <?php
