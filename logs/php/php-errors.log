@@ -3150,3 +3150,8 @@ Stack trace:
 [05-Dec-2024 00:04:35 Asia/Ho_Chi_Minh] PHP Warning:  htmlspecialchars(): Charset &quot;,&quot; is not supported, assuming UTF-8 in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Auth\TransactionHistory.php on line 18
 [05-Dec-2024 00:04:35 Asia/Ho_Chi_Minh] PHP Warning:  htmlspecialchars(): Charset &quot;,&quot; is not supported, assuming UTF-8 in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Auth\TransactionHistory.php on line 18
 [05-Dec-2024 00:04:35 Asia/Ho_Chi_Minh] PHP Warning:  htmlspecialchars(): Charset &quot;,&quot; is not supported, assuming UTF-8 in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\Pages\Auth\TransactionHistory.php on line 18
+[06-Dec-2024 22:10:46 Asia/Ho_Chi_Minh] Lỗi khi lấy lịch sử đấu giá: Table 'duan1_oldstyle.auction_bids' doesn't exist
+[06-Dec-2024 22:19:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "bid_time" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\DetailAuction.php on line 72
+[06-Dec-2024 22:19:06 Asia/Ho_Chi_Minh] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\DetailAuction.php on line 72
+[06-Dec-2024 22:19:06 Asia/Ho_Chi_Minh] PHP Warning:  Undefined array key "bid_price" in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\DetailAuction.php on line 73
+[06-Dec-2024 22:19:06 Asia/Ho_Chi_Minh] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\Users\ASUS_A1403Z\OneDrive\Máy tính\DUAN1\DuAn1_Nhom\App\Views\Client\DetailAuction.php on line 73

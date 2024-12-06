@@ -70,8 +70,8 @@ class DetailAuction extends BaseView
                                 <?php foreach ($data['auction_history'] as $bid): ?>
                                     <tr>
                                         <td><strong><?= htmlspecialchars($bid['user_name']) ?></strong></td>
-                                        <td><span class="text-muted"><?= date('d/m/Y H:i', strtotime($bid['bid_time'])) ?></span></td>
-                                        <td><strong class="text-success"><?= number_format($bid['bid_price'], 0, ',', '.') ?> VNĐ</strong></td>
+                                        <td><span class="text-muted"><?= date('d/m/Y H:i', strtotime($bid['created_at'])) ?></span></td>
+                                        <td><strong class="text-success"><?= number_format($bid['bid_amount'], 0, ',', '.') ?> VNĐ</strong></td>
                                     </tr>
                                 <?php endforeach; ?>
                             <?php else: ?>

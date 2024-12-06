@@ -160,10 +160,19 @@ class Auction extends BaseModel
         $result = [];
         try {
             $sql = "
-            SELECT user_name, bid_price, bid_time
-            FROM auction_bids
-            WHERE auction_id = ?
-            ORDER BY bid_time DESC
+                    SELECT 
+                bids.*, 
+                users.name AS user_name
+            FROM 
+                bids
+            JOIN 
+                users 
+            ON 
+                bids.user_id = users.id
+            WHERE 
+                auction_id = ?
+            ORDER BY 
+                bid_amount DESC;
         ";
 
             $conn = $this->_conn->MySQLi();
