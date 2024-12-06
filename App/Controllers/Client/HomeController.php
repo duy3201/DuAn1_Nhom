@@ -2,11 +2,13 @@
 
 namespace App\Controllers\Client;
 
+use App\Helpers\AuthHelper;
 use App\Models\Auction;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\Product;
 use App\Helpers\NotificationHelper;
+use App\Models\Bid;
 use App\Views\Client\Components\Notification;
 use App\Views\Client\DetailAuction;
 use App\Views\Client\Home;
@@ -143,4 +145,75 @@ class HomeController
         Introduce::render();
         Footer::render();
     }
+
+    public static function placeBid()
+{
+    // Kiểm tra nếu người dùng đã đăng nhập
+    if (!AuthHelper::checkLogin()) {
+        echo "Vui lòng đăng nhập để thực hiện đấu giá.";
+        exit;
+    }
+
+    // Kiểm tra dữ liệu POST
+    if (!isset($_POST['auction_id']) || !isset($_POST['bid_price'])) {
+        echo "Dữ liệu không hợp lệ.";
+        exit;
+    }
+
+    // Lấy dữ liệu từ form
+    $auction_id = $_POST['auction_id'];
+    $user_id = AuthHelper::checkLogin(); // Lấy ID người dùng
+    $bid_amount = $_POST['bid_price']; // Số tiền đấu giá
+
+    // Kiểm tra nếu giá đấu hợp lệ
+    if (!is_numeric($bid_amount) || $bid_amount <= 0) {
+        echo "Số tiền đấu giá không hợp lệ.";
+        exit;
+    }
+
+    // Lấy chi tiết đấu giá từ model
+    $auctionModel = new Auction();
+    $auction = $auctionModel->getOneAuction($auction_id);
+
+    // Kiểm tra nếu đấu giá tồn tại
+    if (!$auction) {
+        echo "Phiên đấu giá không tồn tại.";
+        exit;
+    }
+
+    // Kiểm tra nếu giá đấu lớn hơn giá khởi điểm
+    if ($bid_amount <= $auction['starting_price']) {
+        echo "Giá đấu phải lớn hơn giá khởi điểm.";
+        exit;
+    }
+
+    // Kiểm tra nếu đấu giá đã kết thúc
+    $currentTime = date('Y-m-d H:i:s');
+    if ($auction['end_time'] < $currentTime) {
+        echo "Phiên đấu giá đã kết thúc.";
+        exit;
+    }
+
+    // Tạo bid mới
+    $bidModel = new Bid();
+    $data = [
+        'user_id' => $user_id,
+        'auction_id' => $auction_id,
+        'bid_amount' => $bid_amount,
+        'created_at' => date('Y-m-d H:i:s')
+    ];
+
+    $result = $bidModel->createBid($data);
+
+    // Kiểm tra nếu tạo bid thành công
+    if ($result) {
+        // Chuyển hướng đến trang chi tiết đấu giá
+        header("Location: /auction/{$auction_id}");
+        exit;
+    } else {
+        // Thông báo lỗi và giữ lại trang đấu giá
+        echo "Có lỗi khi tạo đấu giá. Vui lòng thử lại.";
+    }
+}
+
 }

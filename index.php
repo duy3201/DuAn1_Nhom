@@ -32,10 +32,11 @@ require_once 'config.php';
 
 // *** Client
 Route::get('/', 'App\Controllers\Client\HomeController@index');
-Route::get('/{id}', 'App\Controllers\Client\HomeController@detailAuction');
 Route::get('/products', 'App\Controllers\Client\ProductController@index');
 Route::get('/products/{id}', 'App\Controllers\Client\ProductController@detail');
 Route::get('/products/categories/{id}', 'App\Controllers\Client\ProductController@getProductByCategory');
+Route::get('/auction/{id}', 'App\Controllers\Client\HomeController@detailAuction');
+Route::post('/auction/{id}', 'App\Controllers\Client\HomeController@placeBid');
 
 //blog
 Route::get('/blogs','App\Controllers\Client\BlogController@index');

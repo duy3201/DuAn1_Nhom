@@ -39,7 +39,8 @@ class DetailAuction extends BaseView
                             </div>
 
                             <!-- Form đấu giá -->
-                            <form action="/auction/bid" method="POST">
+                            <form action="/auction/<?= htmlspecialchars($data['auctions']['id']); ?>" method="POST">
+                            <input type="hidden" name="method" value="POST">
                                 <input type="hidden" name="auction_id" value="<?= $data['auctions']['id'] ?>">
                                 <input type="hidden" name="user_id" value=""> <!-- Lấy ID người dùng hiện tại -->
                                 <div class="form-group">

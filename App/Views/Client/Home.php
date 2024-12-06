@@ -295,7 +295,7 @@ class Home extends BaseView
                                                     <p class="text-muted">Kết thúc</p>
                                                 </div>
                                             </div>
-                                            <a href="/<?= htmlspecialchars($item['id']); ?>" class="primary-btn">Đấu giá</a>
+                                            <a href="/auction/<?= htmlspecialchars($item['id']); ?>" class="primary-btn">Đấu giá</a>
                                         </div>
                                         <div class="col-md-6 text-center">
                                             <img src="/public/assets/admin/img/<?= htmlspecialchars($item['product_img']) ?>" alt="Ảnh Sản phẩm" class="img-fluid" style="max-height: 400px; object-fit: cover;">
