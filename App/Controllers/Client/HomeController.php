@@ -213,6 +213,7 @@ class HomeController
     } else {
         // Thông báo lỗi và giữ lại trang đấu giá
         echo "Có lỗi khi tạo đấu giá. Vui lòng thử lại.";
+        
     }
 }
 

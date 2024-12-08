@@ -150,7 +150,7 @@ class AuthController
 
         if ($result) {
             //nếu đúng sẽ dẫn tới trang chủ
-            NotificationHelper::success('login', 'Chào mừng bạn quay trở lại. Chúc bạn một ngày tốt lành.');
+            NotificationHelper::success('login', 'Chào mừng bạn quay trở lại. ');
             // $db = $_SESSION['user'];
             // self::handleUserLogin($db['id'], $db);
             header('location: /');
@@ -164,7 +164,7 @@ class AuthController
     public static function logout()
     {
         AuthHelper::logout();
-        NotificationHelper::success('logout', 'Đăng xuất thành công.<br> Mong sớm gặp lại bạn!');
+        NotificationHelper::success('logout', 'Đăng xuất thành công Mong sớm gặp lại bạn!');
         header('location: /');
     }
 

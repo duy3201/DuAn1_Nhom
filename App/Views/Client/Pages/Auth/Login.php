@@ -9,13 +9,30 @@ class Login extends BaseView
     public static function render($data = null)
     {
 ?>
+<body>
+<style>
+    body {
+        background: url(/public/assets/client/img/test5.jpg) no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+    }
+
+    header {
+        background-color: rgba(255, 255, 255, 1); /* Nền trắng mờ */
+        position: relative;
+        z-index: 10; /* Đảm bảo header nằm trên hình nền */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng cho header */
+    }
+</style>
+
 
         <div class="register-login-section spad">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 offset-lg-3">
                         <div class="login-form">
-                            <h2>Đăng nhập</h2>
+                            <h2 style="color: #E7AB3C;">Đăng nhập</h2>
 
                             <!-- Hiển thị lỗi -->
                             <?php if (!empty($data['error'])): ?>
@@ -54,7 +71,7 @@ class Login extends BaseView
                 </div>
             </div>
         </div>
-
+ </body>
 <?php
     }
 }

@@ -8,56 +8,69 @@ class Notification extends BaseView
 {
     public static function render($data = null)
     {
+        // Đảm bảo SweetAlert2 được tải
+        ?>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <?php
 
-        // Hiển thị thông báo thành công với SweetAlert2
-        if (isset($_SESSION['success'])):
-            foreach ($_SESSION['success'] as $key => $value):
-?>
-                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        // Hiển thị thông báo thành công
+        if (isset($_SESSION['success'])) :
+            foreach ($_SESSION['success'] as $key => $value) :
+        ?>
                 <script>
                     Swal.fire({
-                        title: "<?= $value ?>",
-                       div:"<?= $value ?>", // Nội dung thông báo
-                        icon: "success", // Biểu tượng thông báo
-                        confirmButtonText: "OK", // Văn bản của nút
+                        title: "Thành công",
+                        text: "<?= $value ?>",
+                        icon: "success",
+                        confirmButtonText: "OK",
                         customClass: {
-                            confirmButton: 'swal2-warning-btn' // Lớp tùy chỉnh cho nút OK
+                            confirmButton: 'swal2-success-btn'
                         }
                     });
                 </script>
                 <style>
-                    .swal2-warning-btn {
-                        background-color: #ffc107 !important;
-                        /* Màu vàng warning */
+                    .swal2-success-btn {
+                        background-color: #28a745 !important;
                         color: #fff !important;
-                        /* Chữ trắng */
                     }
 
-                    .swal2-warning-btn:hover {
-                        background-color: #e0a800 !important;
-                        /* Màu vàng đậm hơn khi hover */
+                    .swal2-success-btn:hover {
+                        background-color: #218838 !important;
                     }
                 </style>
-            <?php
+        <?php
             endforeach;
+            unset($_SESSION['success']); // Xóa thông báo sau khi hiển thị
         endif;
 
+        // Hiển thị thông báo lỗi
+        if (isset($_SESSION['error'])) :
+            foreach ($_SESSION['error'] as $key => $value) :
+        ?>
+                <script>
+                    Swal.fire({
+                        title: "Lỗi",
+                        text: "<?= $value ?>",
+                        icon: "error",
+                        confirmButtonText: "OK",
+                        customClass: {
+                            confirmButton: 'swal2-error-btn'
+                        }
+                    });
+                </script>
+                <style>
+                    .swal2-error-btn {
+                        background-color: #dc3545 !important;
+                        color: #fff !important;
+                    }
 
-        if (isset($_SESSION['error'])):
-            ?>
-            <!-- Chèn CSS và JS của Bootstrap -->
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
-            <?php foreach ($_SESSION['error'] as $value): ?>
-
-                
-
-            <?php endforeach; ?>
-            </div>
-<?php
-            unset($_SESSION['error']);
+                    .swal2-error-btn:hover {
+                        background-color: #c82333 !important;
+                    }
+                </style>
+        <?php
+            endforeach;
+            unset($_SESSION['error']); // Xóa thông báo sau khi hiển thị
         endif;
     }
 }
-?>

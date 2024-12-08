@@ -10,7 +10,7 @@ class Introduce extends BaseView
     {
 ?>
 
-        <header class="bg-primary text-white text-center py-5" style="background: url('/public/assets/client/images/hannah-morgan-ycvfts5ma4s-unsplash-2.jpg') no-repeat center center/cover; height: 70vh; background-position: center;">
+        <header class="bg-primary text-white text-center py-5" style="background: url('/public/assets/client/img/gioithiu.jpg') no-repeat center center/cover; height: 70vh; background-position: center;">
             <div class="container">
                 <h1 class="display-4">Secondhand Chic Boutique</h1>
                 <p class="lead">Phong cách tái chế - Độc đáo và bền vững</p>
