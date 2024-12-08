@@ -85,7 +85,11 @@ class User extends BaseModel
     $result = [];
     try {
         // Câu lệnh SQL để lấy giao dịch của người dùng đăng nhập
-        $sql = "SELECT * FROM orders WHERE id_user = ? ORDER BY id DESC";
+        $sql = "SELECT orders.*, orders_detail.price AS orders_detail_price, products.name AS products_name  
+         FROM orders
+         JOIN orders_detail ON orders.id = orders_detail.id_order
+        JOIN products ON orders_detail.id_product = products.id
+        WHERE orders.id_user = ? ORDER BY id DESC";
         $conn = $this->_conn->MySQLi(); // Kết nối MySQLi
         $stmt = $conn->prepare($sql);
 

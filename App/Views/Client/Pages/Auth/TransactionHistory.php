@@ -19,6 +19,8 @@ class TransactionHistory extends BaseView
                             <th scope="col">Người đặt</th>
                             <th scope="col">Số điện thoại</th>
                             <th scope="col">Ngân hàng</th>
+                            <th scope="col">Sản phẩm</th>
+                            <th scope="col">Giá</th>
                             <th scope="col">Trạng thái</th>
                         </tr>
                     </thead>
@@ -30,6 +32,8 @@ class TransactionHistory extends BaseView
                                 <td><?= htmlspecialchars($transaction['sub_name']) ?></td>
                                 <td><?= htmlspecialchars($transaction['sub_tel']) ?></td>
                                 <td><?= htmlspecialchars($transaction['payment_method']) ?></td>
+                                <td><?= htmlspecialchars($transaction['products_name']) ?></td>
+                                <td><?= number_format($transaction['orders_detail_price'], 0, ',', '.')?> VND</td>
                                 <td>
                                     <span class="badge <?= $transaction['status'] ? 'badge-success' : 'badge-warning' ?>">
                                         <?= $transaction['status'] ? 'Đã thanh toán' : 'Chưa thanh toán' ?>
