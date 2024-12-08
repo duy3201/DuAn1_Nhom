@@ -27,13 +27,18 @@ class CartModel
     // Thêm sản phẩm vào giỏ hàng
     public function addToCart($data)
     {
+        var_dump($_POST);
+        exit;
         $cartData = $this->getAllCartItems();
+        
 
         // Kiểm tra nếu sản phẩm đã tồn tại
         $exists = false;
-        foreach ($cartData as &$item) {
+        foreach ($cartData as $item) {
             if ($item['id_product'] == $data['id_product']) {
                 $item['quantity'] += $data['quantity'];
+                $item['price'] == $data['price'];
+                $item['quality'] == $data['quality'];
                 $exists = true;
                 break;
             }

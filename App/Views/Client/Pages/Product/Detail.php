@@ -19,13 +19,15 @@ class Detail extends BaseView
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_cart'])) {
             $productId = $_POST['id_product'];
-            $price = $_POST['price'];
+            $price = $_POST['quality-prices'];
+            $quality = $_POST['quality'];
             $quantity = $_POST['quantity'] ?? 1;
 
             // Thêm sản phẩm vào giỏ hàng (cookie)
             $cartModel->addToCart([
                 'id_product' => $productId,
                 'quantity' => $quantity,
+                'quality' => $quality,
                 'price' => $price,
             ]);
 
@@ -48,32 +50,6 @@ class Detail extends BaseView
                                 ?>
                             </ul>
                         </div>
-                        <!-- <div class="filter-widget">
-                            <h4 class="fw-title">Chất lượng</h4>
-                            <div class="fw-brand-check">
-                                <div class="bc-item">
-                                    <label for="bc-calvin">
-                                        New Like
-                                        <input type="checkbox" id="bc-calvin">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="bc-item">
-                                    <label for="bc-diesel">
-                                        Good
-                                        <input type="checkbox" id="bc-diesel">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="bc-item">
-                                    <label for="bc-polo">
-                                        Acceptable
-                                        <input type="checkbox" id="bc-polo">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>-->
                     </div>
                     <div class="col-lg-9">
                         <div class="row">
@@ -119,20 +95,6 @@ class Detail extends BaseView
 
                                         <h4 id="priceDisplay"><?= number_format($data['products']['product_price'], 0, ',', '.') ?> VNĐ </h4>
                                     </div>
-
-                                    <div class="quantity">
-                                        <div class="pro-qty">
-                                            <input type="text" value="1">
-                                        </div>
-                                        <form action="cart/add" method="POST">
-                                            <input type="hidden" name="method" value="POST">
-                                            <input type="hidden" name="id_product" value="<?= htmlspecialchars($data['products']['id']); ?>">
-                                            <input type="hidden" name="price" value="<?= htmlspecialchars($data['products']['price'] ?? 0); ?>">
-                                            <input type="hidden" name="quantity" value="1">
-                                            <button type="submit" name="add_to_cart" class="btn btn-warning">Thêm vào giỏ hàng</button>
-                                        </form>
-                                    </div>
-
                                     <div class="filter-widget">
                                         <h4 class="fw-title">Chọn chất lượng sản phẩm:</h4>
                                         <div class="fw-size-choose">
@@ -156,8 +118,26 @@ class Detail extends BaseView
                                         <input
                                             type="hidden"
                                             id="quality-prices"
+                                            name="quality-prices"
                                             value='<?= json_encode($data['quality'], JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP) ?>'>
                                     </div>
+
+                                    <div class="quantity">
+                                        <div class="pro-qty">
+                                            <input type="text" value="1">
+                                        </div>
+                                        <form action="cart/add" method="POST">
+                                            <input type="hidden" name="method" value="POST">
+                                            <input type="hidden" name="id_product" value="<?= htmlspecialchars($data['products']['id']); ?>">
+                                            <input type="hidden" name="price" value="<?= htmlspecialchars($data['products']['price'] ?? 0); ?>">
+                                            <input type="hidden" name="quality-prices" value="<?= htmlspecialchars( $item['product_quality']  ?? 0); ?>">
+                                            <input type="hidden" name="quality" value="<?= $item['product_quality'] ?>">
+                                            <input type="hidden" name="quantity" value="1">
+                                            <button type="submit" name="add_to_cart" class="btn btn-warning">Thêm vào giỏ hàng</button>
+                                        </form>
+                                    </div>
+
+                                    
 
                                     <ul class="pd-tags">
                                         <li><span>LOẠI: </span><?= $data['products']['category_name'] ?></li>

@@ -12,7 +12,9 @@ class CartController
     {
         $productId = $_POST['id_product'];
         $price = $_POST['price'];
+        $quality = $_POST['quality'];
         $quantity = intval($_POST['quantity']);
+        
 
         // Lấy giỏ hàng từ cookie
         $cart = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
