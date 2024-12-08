@@ -36,7 +36,7 @@ class Detail extends BaseView
 ?>
 
 
-        <section class="product-shop spad page-details">
+        <section class="product-shop spad page-details pb-0">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">

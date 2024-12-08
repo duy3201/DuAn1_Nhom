@@ -7,87 +7,147 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
+
 class EmailController
 {
-    public static function sendEmail($message, $to, $name)
+    private static function configureMailer()
     {
         $mail = new PHPMailer();
 
         try {
-            //Server settings
-            $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-            $mail->isSMTP();
-            $mail->Host       = 'smtp.gmail.com';
-            $mail->SMTPAuth   = true;
-            $mail->Username   = 'huynhvuduykg2005@gmail.com';
-            $mail->Password   = 'mwld dcxk jwhw cqem';
-            // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; 
-            $mail->SMTPSecure = 'tls';
-            $mail->Port       = '587';
-
-            //Recipients
-            $mail->setFrom('huynhvuduykg2005@gmail.com', 'OldStyle');
-            $mail->addAddress($to, $name);
-            $mail->addReplyTo('huynhvuduykg2005@gmail.com', 'OldStyle');
-
-            //Content
-            $mail->isHTML(true);
-            $mail->Subject = 'Thu phan hoi cua OldStyle Store';
-            $mail->Body    = " <p>Kính gửi <strong>$name</strong>,</p>
-            <p>Cảm ơn quý vị đã gửi thư và thông tin phản hồi. Tôi rất trân trọng sự quan tâm và đóng góp của quý vị. Những ý kiến của quý vị sẽ giúp chúng tôi cải thiện và nâng cao chất lượng dịch vụ hơn nữa.</p>
-            <p>Về vấn đề mà quý vị đã nêu ra, chúng tôi xin chân thành xin lỗi về sự bất tiện đã gây ra. Chúng tôi đã xem xét và sẽ có những điều chỉnh cần thiết để đảm bảo tình trạng tương tự không xảy ra trong tương lai.</p>
-            <p>Chúng tôi luôn mong muốn mang lại sự hài lòng tuyệt đối cho khách hàng, và phản hồi của quý vị là yếu tố quan trọng giúp chúng tôi phát triển.</p>
-            <p>Nếu có bất kỳ câu hỏi hoặc yêu cầu nào khác, xin đừng ngần ngại liên hệ lại với chúng tôi. Chúng tôi rất mong có cơ hội tiếp tục phục vụ quý vị trong tương lai.</p>
-            <p>Chân thành cảm ơn sự hợp tác và hỗ trợ của quý vị.</p>
-            <p>Trân trọng,</p>
-            <p>OldStyle Store</p>";
-            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-            $mail->send();
-        } catch (\Exception $e) {
-            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-        }
-        return true;
-    }
-    public static function sendEmailToAdmin($name, $email, $message)
-    {
-        $mail = new PHPMailer();
-
-        try {
-            // Server settings
-            $mail->SMTPDebug = SMTP::DEBUG_OFF;
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->Username = 'huynhvuduykg2005@gmail.com';
-            $mail->Password = 'mwld dcxk jwhw cqem'; // Thay bằng mật khẩu email
+            $mail->Password = 'mwld dcxk jwhw cqem';
             $mail->SMTPSecure = 'tls';
-            $mail->Port = 587;
+            $mail->Port = '587';
+            $mail->CharSet = 'UTF-8';
 
-            // Recipients
-            $mail->setFrom('huynhvuduykg2005@gmail.com', 'OldStyle Store');
-            $mail->addAddress('huynhvuduykg2005@gmail.com', 'Admin OldStyle'); // Email admin nhận thông báo
+            $mail->setFrom('huynhvuduykg2005@gmail.com', 'OldStyle');
+
+            return $mail;
+        } catch (Exception $e) {
+            error_log("Mailer Configuration Error: " . $e->getMessage());
+            return null;
+        }
+    }
+
+    public static function sendEmail($message, $to, $name)
+    {
+        $mail = self::configureMailer();
+        if (!$mail) return false;
+
+        try {
+            $mail->addAddress($to, $name);
+            $mail->addReplyTo('huynhvuduykg2005@gmail.com', 'OldStyle');
+
+            $mail->isHTML(true);
+            $mail->Subject = 'Thu phan hoi cua OldStyle Store';
+            $mail->Body = "
+                <div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #f7f7f7; padding: 20px; border: 1px solid #ddd; border-radius: 10px;'>
+                    <div style='text-align: center; margin-bottom: 20px;'>
+                        <img src='http://127.0.0.1:8080/public/img/OldStyleLogo.png' alt='OldStyle Store' style='max-width: 150px;'>
+                    </div>
+                    <h2 style='color: #333; text-align: center;'>Cảm ơn quý khách đã liên hệ</h2>
+                    <p>Kính gửi <strong>$name</strong>,</p>
+                    <p>Chúng tôi rất cảm kích khi nhận được phản hồi từ quý khách. Tại <strong>OldStyle Store</strong>, chúng tôi luôn đặt trải nghiệm của khách hàng lên hàng đầu.</p>
+                    <p>Phản hồi của quý khách đã được ghi nhận và sẽ giúp chúng tôi cải thiện dịch vụ tốt hơn trong tương lai.</p>
+
+                    <div style='background-color: #fff; padding: 15px; border-radius: 5px; border: 1px solid #ddd; margin: 20px 0;'>
+                        <p style='margin: 0;'>Chúng tôi sẽ liên hệ lại sớm nhất nếu cần thêm thông tin từ quý khách.</p>
+                    </div>
+
+                    <p style='text-align: center;'>Trân trọng cảm ơn,</p>
+                    <p style='text-align: center; font-weight: bold;'>Đội ngũ OldStyle Store</p>
+                </div>
+            ";
+
+
+            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+            return $mail->send();
+        } catch (Exception $e) {
+            error_log("Email Sending Error: " . $e->getMessage());
+            return false;
+        }
+    }
+
+    public static function sendEmailToAdmin($name, $email, $message)
+    {
+        $mail = self::configureMailer();
+        if (!$mail) return false;
+
+        try {
+            $mail->SMTPDebug = SMTP::DEBUG_OFF;
+            $mail->addAddress('huynhvuduykg2005@gmail.com', 'Admin OldStyle');
             $mail->addReplyTo($email, $name);
 
-            // Content
             $mail->isHTML(true);
             $mail->Subject = 'Phan hoi tu khach hang: ' . $name;
             $mail->Body = "
-                <p>Kính gửi Admin,</p>
-                <p>Khách hàng <strong>$name</strong> đã gửi phản hồi qua form liên hệ.</p>
-                <p>Email: $email</p>
-                <p>Nội dung:</p>
-                <blockquote>$message</blockquote>
-                <p>Vui lòng kiểm tra và phản hồi sớm nhất.</p>
-                <p>Trân trọng,</p>
-                <p>Hệ thống OldStyle Store</p>
+                <div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #f7f7f7; padding: 20px; border: 1px solid #ddd; border-radius: 10px;'>
+                    <div style='text-align: center; margin-bottom: 20px;'>
+                        <img src='http://127.0.0.1:8080/public/img/OldStyleLogo.png' alt='OldStyle Store' style='max-width: 150px;'>
+                    </div>
+                    <h2 style='color: #333; text-align: center;'>Phản hồi khách hàng</h2>
+                    <p>Kính gửi Admin,</p>
+                    <p>Khách hàng <strong>$name</strong> đã gửi phản hồi qua form liên hệ.</p>
+                    <p><strong>Email:</strong> $email</p>
+                    <p><strong>Nội dung:</strong></p>
+                    <blockquote style='background-color: #fff; padding: 15px; border-radius: 5px; border: 1px solid #ddd;'>$message</blockquote>
+
+                    <p style='text-align: center;'>Vui lòng kiểm tra và phản hồi sớm nhất.</p>
+                    <p style='text-align: center; font-weight: bold;'>Hệ thống OldStyle Store</p>
+                </div>
             ";
+
             $mail->AltBody = "Khách hàng $name đã gửi phản hồi: $message (Email: $email)";
 
-            $mail->send();
-            return true;
+            return $mail->send();
         } catch (Exception $e) {
-            echo "Không thể gửi email đến admin. Lỗi: {$mail->ErrorInfo}";
+            error_log("Admin Email Error: " . $e->getMessage());
+            return false;
+        }
+    }
+
+    public static function sendPaymentConfirmation($customerEmail, $customerName, $orderDetails)
+    {
+        $mail = self::configureMailer();
+        if (!$mail) return false;
+
+        try {
+            $mail->addAddress($customerEmail, $customerName);
+            $mail->addReplyTo('huynhvuduykg2005@gmail.com', 'OldStyle');
+
+            $mail->isHTML(true);
+            $mail->Subject = 'Xác nhận thanh toán thành công - OldStyle Store';
+            $mail->Body = "
+                <div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;'>
+                    <h2 style='color: #333;'>Xác nhận thanh toán thành công</h2>
+                    <p>Kính gửi <strong>$customerName</strong>,</p>
+                    <p>Cảm ơn bạn đã mua hàng tại OldStyle Store. Đơn hàng của bạn đã được xác nhận và thanh toán thành công.</p>
+                    
+                    <div style='background-color: #f8f9fa; padding: 15px; margin: 20px 0; border-radius: 5px;'>
+                        <h3 style='color: #333; margin-top: 0;'>Chi tiết đơn hàng:</h3>
+                        $orderDetails
+                    </div>
+
+                    <p>Nếu bạn có bất kỳ thắc mắc nào về đơn hàng, xin vui lòng liên hệ với chúng tôi qua:</p>
+                    <ul>
+                        <li>Email: huynhvuduykg2005@gmail.com</li>
+                        <li>Hotline: 0943240047</li>
+                    </ul>
+
+                    <p>Trân trọng,</p>
+                    <p><strong>OldStyle Store</strong></p>
+                </div>
+            ";
+            $mail->AltBody = strip_tags($orderDetails);
+
+            return $mail->send();
+        } catch (Exception $e) {
+            error_log("Payment Confirmation Email Error: " . $e->getMessage());
             return false;
         }
     }

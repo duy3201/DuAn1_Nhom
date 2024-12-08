@@ -12,8 +12,8 @@ class Header extends BaseView
 {
     public static function render($data = null)
     {
+        ob_start();
         $is_login = AuthHelper::checkLogin();
-
         $cartItems = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
         $total = 0;
 
@@ -21,14 +21,6 @@ class Header extends BaseView
 
 
         <title>Old Style Store</title>
-
-        <!-- Google Font -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet"> -->
-
-        <!-- Css Styles -->
-        <!-- Google Font -->
-
-        <!-- Css Styles -->
         <link rel="stylesheet" href="/public/assets/client/css copy/style.css">
         <link rel="stylesheet" href="/public/assets/client/css copy/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="/public/assets/client/css copy/font-awesome.min.css" type="text/css">
@@ -105,13 +97,13 @@ class Header extends BaseView
                         </div>
                         <div class="col-lg-1 col-md-3 d-flex justify-content-center align-items-center">
                             <ul class="nav-right d-flex justify-content-start">
-                                <!-- Yêu thích -->
+                                <!-- Yêu thích
                                 <li class="heart-icon">
                                     <a href="#">
                                         <i class="icon_heart_alt"></i>
                                         <span>1</span>
                                     </a>
-                                </li>
+                                </li> -->
 
                                 <!-- Giỏ hàng -->
                                 <li class="cart-icon">
@@ -281,6 +273,7 @@ class Header extends BaseView
 
 
     }
+    
 }
 
 

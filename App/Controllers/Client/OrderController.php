@@ -3,10 +3,19 @@
 namespace App\Controllers\Client;
 
 use App\Models\OrderModel;
+use App\Views\Client\Pages\PaymentFailed;
 use App\Views\Client\Pages\ThankYou;
 
 class OrderController
 {
+    protected $mailer;
+
+    public function __construct()
+    {
+        // Lấy instance của PostController để tái sử dụng cấu hình
+        // $postController = new PostController();
+        // $this->mailer = $postController->getMailer(); // Giả sử có method getMailer() trong PostController
+    }
     public function create()
     {
         $order_id = $_POST['orderId'];
@@ -74,9 +83,40 @@ class OrderController
     }
     public function thankyou()
     {
-        if (isset($_COOKIE['carts_detail'])) {
-            setcookie('carts_detail', '', time() - 3600, '/');
+        // Kiểm tra trạng thái thanh toán từ VNPAY trả về
+        $paymentStatus = $_GET['vnp_ResponseCode'] ?? null; // Mã phản hồi từ VNPAY
+        if ($paymentStatus === "00") {
+            // Thanh toán thành công
+
+            // Xóa cookie giỏ hàng
+            if (isset($_COOKIE['carts_detail'])) {
+                setcookie('carts_detail', '', time() - 3600, '/');
+            }
+
+            // Lấy thông tin khách hàng
+            $customerEmail = $_COOKIE['email_user'] ?? null;
+            $customerName = $_COOKIE['name_user'] ?? "Khách hàng";
+            $orderDetails = $_POST['orderDetails'] ?? "Không có chi tiết";
+
+            // Gửi email xác nhận
+            if ($customerEmail) {
+                $emailSent = EmailController::sendPaymentConfirmation($customerEmail, $customerName, $orderDetails);
+                if (!$emailSent) {
+                    error_log("Failed to send payment confirmation email to $customerEmail");
+                }
+            }
+
+            // Hiển thị trang cảm ơn
+            ThankYou::render();
+        } else {
+            // Thanh toán thất bại
+            $this->paymentFailed();
         }
-        ThankYou::render();
+    }
+
+    public function paymentfailed()
+    {
+        // Hiển thị trang thanh toán thất bại
+        PaymentFailed::render();
     }
 }

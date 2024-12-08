@@ -94,6 +94,12 @@ class AuthHelper {
             if (isset($user_data->id)) {
                 setcookie('id_user', $user_data->id, time() + 3600 * 24 * 30 * 12, '/');
             }
+            if (isset($user_data->name)) {
+                setcookie('name_user', $user_data->name, time() + 3600 * 24 * 30 * 12, '/');
+            }
+            if (isset($user_data->email)) {
+                setcookie('email_user', $user_data->email, time() + 3600 * 24 * 30 * 12, '/');
+            }
             
             return true;
         }
@@ -114,6 +120,12 @@ class AuthHelper {
         
         if (isset($_COOKIE['id_user'])) {
             setcookie('id_user', '', time() - 3600 * 24 * 30 * 12, '/');
+        }
+        if (isset($_COOKIE['name_user'])) {
+            setcookie('id_user', '', time() - 3600 * 24 * 30 * 12, '/');
+        }
+        if (isset($_COOKIE['email_user'])) {
+            setcookie('email_user', '', time() - 3600 * 24 * 30 * 12, '/');
         }
     }
     public static function edit($id) {

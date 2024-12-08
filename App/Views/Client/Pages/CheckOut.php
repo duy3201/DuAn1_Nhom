@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Views\Client\Pages;
 
 use App\Models\Product;
@@ -11,10 +12,10 @@ class CheckOut extends BaseView
         // Lấy thông tin giỏ hàng từ cookie
         $cartItems = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
         $total = 0;
-        
+
         // Tạo id_order ngẫu nhiên
-        $orderId = random_int(1,10000);
-        
+        $orderId = random_int(1, 10000);
+
 ?>
         <section class="checkout-section spad">
             <div class="container">
@@ -24,13 +25,12 @@ class CheckOut extends BaseView
                         <div class="col-lg-6">
                             <h4>Chi tiết thanh toán</h4>
                             <div class="row">
-                            <div class="col-lg-12" style="display: none;">
-                                    <label for="id_user">Tên<span>*</span></label>
-                                    <input type="text" id="id_user" name="id_user" value="<?= $_COOKIE['id_user']?>">
+                                <div class="col-lg-12" style="display: none;">
+                                    <input type="text" id="id_user" name="id_user" value="<?= $_COOKIE['id_user'] ?>">
                                 </div>
                                 <div class="col-lg-12" style="display: none;">
                                     <label for="orderId"></label>
-                                    <input type="text" id="orderId" name="orderId" value="<?= $orderId?>">
+                                    <input type="text" id="orderId" name="orderId" value="<?= $orderId ?>">
                                 </div>
                                 <div class="col-lg-12">
                                     <label for="sub_name">Tên<span>*</span></label>
@@ -78,15 +78,18 @@ class CheckOut extends BaseView
                                     <div class="order-total mt-5">
                                         <ul class="order-table">
                                             <li>Sản phẩm <span>Tổng cộng</span></li>
-                                            <?php foreach ($cartItems as $productId => $quantity): 
+                                            <?php foreach ($cartItems as $productId => $quantity):
                                                 $productModel = new Product();
-                                                $product = $productModel->getOneProductByStatus($productId);
-                                                
+                                                $product = $productModel->getOneProductByStatus($productId); ?>
+                                                <input type="hidden" id="productId" name="productId" value="<?= $productId ?>">
+                                                <input type="hidden" id="quantity" name="quantity" value="<?= $quantity ?>">
+                                                <?php
+
                                                 if (!$product) continue;
-                                                
+
                                                 $totalItemPrice = $quantity * $product['product_price'];
                                                 $total += $totalItemPrice;
-                                            ?>
+                                                ?>
                                                 <li class="fw-normal">
                                                     <?= htmlspecialchars($product['name']); ?> x <?= $quantity; ?>
                                                     <span><?= number_format($totalItemPrice, 0, ',', '.') . ' VNĐ'; ?></span>
@@ -137,7 +140,7 @@ class CheckOut extends BaseView
                                     <div class="text-center order-btn m-4">
                                         <button type="submit" class="site-btn place-btn" name="redirect">Đặt hàng</button>
                                     </div>
-                                </div>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -152,13 +155,13 @@ class CheckOut extends BaseView
             var citis = document.getElementById("city");
             var districts = document.getElementById("district");
             var wards = document.getElementById("ward");
-            
+
             var Parameter = {
                 url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json",
                 method: "GET",
                 responseType: "application/json",
             };
-            
+
             axios(Parameter).then(function(result) {
                 renderCity(result.data);
             });
@@ -167,7 +170,7 @@ class CheckOut extends BaseView
                 for (const x of data) {
                     citis.options[citis.options.length] = new Option(x.Name, x.Id);
                 }
-                
+
                 citis.onchange = function() {
                     district.length = 1;
                     ward.length = 1;
@@ -178,7 +181,7 @@ class CheckOut extends BaseView
                         }
                     }
                 };
-                
+
                 district.onchange = function() {
                     ward.length = 1;
                     const dataCity = data.filter((n) => n.Id === citis.value);
@@ -206,7 +209,7 @@ class CheckOut extends BaseView
             // // Xử lý form submit
             // document.getElementById('checkoutForm').addEventListener('submit', function(e) {
             //     e.preventDefault();
-                
+
             //     const paymentMethod = document.querySelector('input[name="payment_method"]:checked').value;
             //     const formData = new FormData(this);
 
