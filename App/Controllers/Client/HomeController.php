@@ -163,7 +163,7 @@ class HomeController
         }
 
         $auction_id = $_POST['auction_id'];
-        $user_id = AuthHelper::checkLogin();  // Nếu đã đăng nhập, lấy user_id từ AuthHelper
+        $user_id = AuthHelper::checkLogin(); // Nếu đã đăng nhập, lấy user_id từ AuthHelper
         $bid_amount = $_POST['bid_price'];
 
         // Kiểm tra tính hợp lệ của giá đấu
@@ -198,6 +198,16 @@ class HomeController
         }
 
         $bidModel = new Bid();
+
+        // Kiểm tra xem giá đấu đã tồn tại hay chưa
+        $existingBid = $bidModel->getBidByAmount($auction_id, $bid_amount);
+        if ($existingBid) {
+            NotificationHelper::error('duplicate_bid', 'Giá đấu đã tồn tại. Vui lòng nhập giá khác.');
+            header("Location: /auction/{$auction_id}");
+            exit;
+        }
+
+        // Thêm giá đấu
         $data = [
             'user_id' => $user_id,
             'auction_id' => $auction_id,
@@ -205,7 +215,6 @@ class HomeController
             'created_at' => date('Y-m-d H:i:s')
         ];
 
-        // Thêm giá đấu
         $result = $bidModel->createBid($data);
 
         if ($result) {
