@@ -39,21 +39,23 @@ class DetailAuction extends BaseView
                             </div>
 
                             <!-- Form đấu giá -->
-                            <form action="/auction/<?= htmlspecialchars($data['auctions']['id']); ?>" method="POST">
-                            <input type="hidden" name="method" value="POST">
-                                <input type="hidden" name="auction_id" value="<?= $data['auctions']['id'] ?>">
-                                <input type="hidden" name="user_id" value=""> <!-- Lấy ID người dùng hiện tại -->
-                                <div class="form-group">
-                                    <label for="bid_price">Nhập giá đấu giá</label>
-                                    <input type="number" class="form-control" name="bid_price" min="<?= $data['auctions']['starting_price'] + 1 ?>" placeholder="Nhập số tiền đấu giá" required>
-                                </div>
-                                <button type="submit" class="btn btn-warning btn-lg">Đấu giá</button>
-                            </form>
-
+                            <?php if (strtotime($data['auctions']['end_time']) <= time()): ?>
+                                <div class="alert alert-danger">Phiên đấu giá đã kết thúc.</div>
+                            <?php else: ?>
+                                <form action="/auction/<?= htmlspecialchars($data['auctions']['id']); ?>" method="POST">
+                                    <input type="hidden" name="method" value="POST">
+                                    <input type="hidden" name="auction_id" value="<?= $data['auctions']['id'] ?>">
+                                    <input type="hidden" name="user_id" value=""> <!-- Lấy ID người dùng hiện tại -->
+                                    <div class="form-group">
+                                        <label for="bid_price">Nhập giá đấu giá</label>
+                                        <input type="number" class="form-control" name="bid_price" min="<?= $data['auctions']['starting_price'] + 1 ?>" placeholder="Nhập số tiền đấu giá" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning btn-lg">Đấu giá</button>
+                                </form>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
-
                 <!-- Lịch sử đấu giá -->
                 <div class="auction-history my-5">
                     <h4>Lịch sử đấu giá</h4>
@@ -67,11 +69,27 @@ class DetailAuction extends BaseView
                         </thead>
                         <tbody>
                             <?php if (!empty($data['auction_history'])): ?>
+                                <?php
+                                // Kiểm tra người chiến thắng (người có giá đấu cao nhất)
+                                $highest_bid = null;
+                                if (strtotime($data['auctions']['end_time']) <= time()) {
+                                    $highest_bid = max(array_column($data['auction_history'], 'bid_amount'));
+                                }
+                                ?>
                                 <?php foreach ($data['auction_history'] as $bid): ?>
                                     <tr>
-                                        <td><strong><?= htmlspecialchars($bid['user_name']) ?></strong></td>
-                                        <td><span class="text-muted"><?= date('d/m/Y H:i', strtotime($bid['created_at'])) ?></span></td>
-                                        <td><strong class="text-success"><?= number_format($bid['bid_amount'], 0, ',', '.') ?> VNĐ</strong></td>
+                                        <td>
+                                            <strong><?= htmlspecialchars($bid['user_name']) ?></strong>
+                                            <?php if ($highest_bid && $bid['bid_amount'] == $highest_bid): ?>
+                                                <span class="badge bg-success ms-2">Đã chiến thắng</span>
+                                            <?php endif; ?>
+                                        </td>
+                                        <td>
+                                            <span class="text-muted"><?= date('d/m/Y H:i', strtotime($bid['created_at'])) ?></span>
+                                        </td>
+                                        <td>
+                                            <strong class="text-success"><?= number_format($bid['bid_amount'], 0, ',', '.') ?> VNĐ</strong>
+                                        </td>
                                     </tr>
                                 <?php endforeach; ?>
                             <?php else: ?>

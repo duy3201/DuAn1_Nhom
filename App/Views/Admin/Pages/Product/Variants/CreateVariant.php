@@ -42,7 +42,13 @@ class CreateVariant extends BaseView
                                     <input type="hidden" name="method" id="" value="POST">
                                     <div class="form-group">
                                         <label for="label">Tên</label>
-                                        <input type="text" class="form-control" id="label" placeholder="Nhập tên biến thể..." name="label" require>
+                                        <select class="form-control text-white" id="label" name="label">
+                                            <?php foreach ($data as $variant): ?>
+                                                <option value="<?= htmlspecialchars($variant['id']) ?>">
+                                                    <?= htmlspecialchars($variant['name']) ?>
+                                                </option>
+                                            <?php endforeach; ?>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="img">Hình ảnh</label>

@@ -130,14 +130,14 @@ class Detail extends BaseView
                                             <input type="hidden" name="method" value="POST">
                                             <input type="hidden" name="id_product" value="<?= htmlspecialchars($data['products']['id']); ?>">
                                             <input type="hidden" name="price" value="<?= htmlspecialchars($data['products']['price'] ?? 0); ?>">
-                                            <input type="hidden" name="quality-prices" value="<?= htmlspecialchars( $item['product_quality']  ?? 0); ?>">
+                                            <input type="hidden" name="quality-prices" value="<?= htmlspecialchars($item['product_quality']  ?? 0); ?>">
                                             <input type="hidden" name="quality" value="<?= $item['product_quality'] ?>">
                                             <input type="hidden" name="quantity" value="1">
                                             <button type="submit" name="add_to_cart" class="btn btn-warning">Thêm vào giỏ hàng</button>
                                         </form>
                                     </div>
 
-                                    
+
 
                                     <ul class="pd-tags">
                                         <li><span>LOẠI: </span><?= $data['products']['category_name'] ?></li>
@@ -153,194 +153,185 @@ class Detail extends BaseView
                                 </div>
                             </div>
                         </div>
-                        <div class="product-tab">
-                            <div class="tab-item">
-                                <ul class="nav" role="tablist">
-                                    <li>
-                                        <a class="active" data-toggle="tab" href="#tab-1" role="tab">Mô tả</a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="tab" href="#tab-2" role="tab">Chi tiết</a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="tab" href="#tab-3" role="tab">Đánh giá của khách hàng</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-item-content">
-                                <div class="tab-content">
-                                    <div class="tab-pane fade-in active" id="tab-1" role="tabpanel">
-                                        <div class="product-content">
-                                            <div class="row">
-                                                <div class="col-lg-7">
 
-                                                    <p><?= $data['products']['description'] ?></p>
-                                                </div>
-                                                <div class="col-lg-5">
-                                                    <img src="img/product-single/tab-desc.jpg" alt="">
-                                                </div>
+                    </div>
+                    <div class="product-tab">
+                        <div class="tab-item">
+                            <ul class="nav" role="tablist">
+                                <li>
+                                    <a class="active" data-toggle="tab" href="#tab-1" role="tab">Mô tả</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#tab-2" role="tab">Chi tiết</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#tab-3" role="tab">Đánh giá của khách hàng</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-item-content">
+                            <div class="tab-content">
+                                <div class="tab-pane fade-in active" id="tab-1" role="tabpanel">
+                                    <div class="product-content">
+                                        <div class="row">
+                                            <div class="col-lg-7">
+
+                                                <p><?= $data['products']['description'] ?></p>
+                                            </div>
+                                            <div class="col-lg-5">
+                                                <img src="img/product-single/tab-desc.jpg" alt="">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="tab-2" role="tabpanel">
-                                        <div class="specification-table">
-                                            <table>
-                                                <tr>
-                                                    <td class="p-catagory">Đánh giá của khách hàng</td>
-                                                    <td>
-                                                        <div class="pd-rating">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <span>(5)</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-catagory">Giá</td>
-                                                    <td>
-                                                        <div class="p-price"><?= $data['products']['product_price'] ?>VNĐ</div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-catagory">Thêm Giỏ Hàng</td>
-                                                    <td>
-                                                        <div class="cart/add">+ Thêm giỏ hàng</div>
-                                                    </td>
-                                                </tr>
-                                                <!-- <tr>
+                                </div>
+                                <div class="tab-pane fade" id="tab-2" role="tabpanel">
+                                    <div class="specification-table">
+                                        <table>
+                                            <tr>
+                                                <td class="p-catagory">Đánh giá của khách hàng</td>
+                                                <td>
+                                                    <div class="pd-rating">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <span>(5)</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-catagory">Giá</td>
+                                                <td>
+                                                    <div class="p-price"><?= $data['products']['product_price'] ?>VNĐ</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-catagory">Thêm Giỏ Hàng</td>
+                                                <td>
+                                                    <div class="cart/add">+ Thêm giỏ hàng</div>
+                                                </td>
+                                            </tr>
+                                            <!-- <tr>
                                                     <td class="p-catagory">sẵn có</td>
                                                     <td>
                                                         <div class="p-stock">22 trong kho</div>
                                                     </td>
                                                 </tr> -->
-                                                <tr>
-                                                    <td class="p-catagory">Cân nặng</td>
-                                                    <td>
-                                                        <div class="p-weight">1,3kg</div>
-                                                    </td>
-                                                </tr>
-                                                <!-- <tr>
+                                            <tr>
+                                                <td class="p-catagory">Cân nặng</td>
+                                                <td>
+                                                    <div class="p-weight">1,3kg</div>
+                                                </td>
+                                            </tr>
+                                            <!-- <tr>
                                                     <td class="p-catagory">Kích thước</td>
                                                     <td>
                                                         <div class="p-size">Xxl</div>
                                                     </td>
                                                 </tr> -->
-                                                <!-- <tr>
+                                            <!-- <tr>
                                                     <td class="p-catagory">Màu</td>
                                                     <td><span class="cs-color"></span></td>
                                                 </tr>
                                                 <tr> -->
-                                                <td class="p-catagory">Mã</td>
-                                                <td>
-                                                    <div class="p-code"><?= $data['products']['id'] ?></div>
-                                                </td>
-                                                </tr>
-                                            </table>
-                                        </div>
+                                            <td class="p-catagory">Mã</td>
+                                            <td>
+                                                <div class="p-code"><?= $data['products']['id'] ?></div>
+                                            </td>
+                                            </tr>
+                                        </table>
                                     </div>
-                                    <div class="tab-pane fade" id="tab-3" role="tabpanel">
-                                        <div class="customer-review-option">
-                                            <div class="row d-flex justify-content-center mt-4 mb-4">
-                                                <div class="col-lg-12">
-                                                    <div class="card">
-                                                        <div class="card-header bg-light text-white text-center d-flex align-items-center justify-content-center" style="height: 100px;">
-                                                            <h4 class="card-title m-0">Bình luận mới nhất</h4>
-                                                        </div>
-
-                                                        <div class="card-body comment-widgets">
-                                                            <!-- Hiển thị danh sách bình luận -->
-                                                            <?php if (isset($data['comments']) && $data['comments']) : ?>
-                                                                <?php foreach ($data['comments'] as $item) : ?>
-                                                                    <div class="d-flex flex-row comment-row my-3 p-2 border-bottom">
-                                                                        <div class="p-2">
-                                                                            <img src="<?= $item['avatar'] ? APP_URL . '/public/assets/client/img/' . $item['avatar'] : APP_URL . '/public/assets/client/img/banner-1.jpg' ?>"
-                                                                                alt="user" height="45" width="50" class="rounded-circle">
-                                                                        </div>
-                                                                        <div class="comment-text w-100">
-                                                                            <h6 class="font-medium"><?= htmlspecialchars($item['name']) ?> (<?= htmlspecialchars($item['username']) ?>)</h6>
-                                                                            <p class="m-b-15"><?= htmlspecialchars($item['content']) ?></p>
-                                                                            <div class="comment-footer d-flex justify-content-between">
-                                                                                <span class="text-muted"><?= $item['date'] ?></span>
-                                                                                <?php if ($is_login && $_SESSION['user']['id'] == $item['id_user']) : ?>
-                                                                                    <div>
-                                                                                        <!-- Nút sửa -->
-                                                                                        <button type="button" class="btn btn-warning btn-sm" data-toggle="collapse"
-                                                                                            data-target="#editComment<?= $item['id'] ?>">Sửa</button>
-
-                                                                                        <!-- Nút xóa -->
-                                                                                        <form action="/comments/<?= $item['id'] ?>" method="post"
-                                                                                            onsubmit="return confirm('Bạn chắc chắn muốn xóa bình luận này?')"
-                                                                                            style="display:inline-block">
-                                                                                            <input type="hidden" name="method" value="DELETE">
-                                                                                            <input type="hidden" name="id_product" value="<?= $data['products']['id'] ?>">
-                                                                                            <button type="submit" class="btn btn-danger btn-sm">Xoá</button>
-                                                                                        </form>
-                                                                                    </div>
-                                                                                <?php endif; ?>
-                                                                            </div>
-
-                                                                            <!-- Form sửa bình luận -->
-                                                                            <div class="collapse mt-2" id="editComment<?= $item['id'] ?>">
-                                                                                <form action="/comments/<?= $item['id'] ?>" method="post">
-                                                                                    <input type="hidden" name="method" value="PUT">
-                                                                                    <input type="hidden" name="id_product" value="<?= $data['products']['id'] ?>">
-                                                                                    <textarea class="form-control" name="content" rows="3"><?= htmlspecialchars($item['content']) ?></textarea>
-                                                                                    <button type="submit" class="btn btn-success btn-sm mt-2">Cập nhật</button>
-                                                                                </form>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                <?php endforeach; ?>
-                                                            <?php else : ?>
-                                                                <p class="text-center text-danger">Chưa có bình luận nào</p>
-                                                            <?php endif; ?>
-
-                                                            <?php if ($is_login && isset($_SESSION['user']['id'])) : ?>
-                                                                <div class="d-flex flex-row comment-row mt-4">
+                                </div>
+                                <div class="tab-pane fade" id="tab-3" role="tabpanel">
+                                    <div class="customer-review-option">
+                                        <div class="row d-flex justify-content-center mt-5 mb-5">
+                                            <div class="col-lg-12">
+                                                <div class="card shadow-sm border-0 rounded-lg">
+                                                    <div class="card-body comment-widgets" style="background: #fafafa; padding-top: 25px; border-radius: 0 0 10px 10px;">
+                                                        <!-- Hiển thị danh sách bình luận -->
+                                                        <?php if (isset($data['comments']) && $data['comments']) : ?>
+                                                            <?php foreach ($data['comments'] as $item) : ?>
+                                                                <div class="d-flex flex-row comment-row my-3 p-3 border-bottom">
                                                                     <div class="p-2">
-                                                                        <img src="<?= $_SESSION['user']['avatar'] ? APP_URL . '/public/assets/client/img/' . $_SESSION['user']['avatar'] : APP_URL . '/public/assets/admin/img/default.png' ?>"
-                                                                            alt="user" height="45" width="50" class="rounded-circle">
+                                                                        <img src="<?= $item['avatar'] ? APP_URL . '/public/assets/client/img/' . $item['avatar'] : APP_URL . '/public/assets/client/img/banner-1.jpg' ?>"
+                                                                            alt="user" height="45" width="45" class="rounded-circle border border-secondary">
                                                                     </div>
-                                                                    <div class="comment-text w-100">
-                                                                        <form action="/comments/" method="post">
-                                                                            <input type="hidden" name="method" value="POST">
-                                                                            <input type="hidden" name="id_product" value="<?= htmlspecialchars($data['products']['id']) ?>">
-                                                                            <input type="hidden" name="id_user" value="<?= htmlspecialchars($_SESSION['user']['id']) ?>">
-                                                                            <textarea class="form-control rounded-0" name="content" rows="3" placeholder="Nhập bình luận..." required></textarea>
-                                                                            <button type="submit" class="btn btn-warning btn-sm mt-2">Gửi</button>
-                                                                        </form>
+                                                                    <div class="comment-text w-100 ml-2">
+                                                                        <h6 class="font-weight-bold text-dark"><?= htmlspecialchars($item['name']) ?></h6>
+                                                                        <p class="text-muted mb-1"><?= htmlspecialchars($item['content']) ?></p>
+                                                                        <div class="d-flex justify-content-between">
+                                                                            <span class="text-muted" style="font-size: 0.9rem;"><?= $item['date'] ?></span>
+                                                                            <?php if ($is_login && $_SESSION['user']['id'] == $item['id_user']) : ?>
+                                                                                <div>
+                                                                                    <!-- Nút sửa -->
+                                                                                    <button type="button" class="btn btn-sm btn-outline-warning" data-toggle="collapse" data-target="#editComment<?= $item['id'] ?>"><i class="fas fa-pencil-alt"></i> Sửa</button>
+
+                                                                                    <!-- Nút xóa -->
+                                                                                    <form action="/comments/<?= $item['id'] ?>" method="post" onsubmit="return confirm('Bạn chắc chắn muốn xóa bình luận này?')" class="d-inline-block">
+                                                                                        <input type="hidden" name="method" value="DELETE">
+                                                                                        <input type="hidden" name="id_product" value="<?= $data['products']['id'] ?>">
+                                                                                        <button type="submit" class="btn btn-sm btn-outline-danger"><i class="fas fa-trash-alt"></i> Xoá</button>
+                                                                                    </form>
+                                                                                </div>
+                                                                            <?php endif; ?>
+                                                                        </div>
+
+                                                                        <!-- Form sửa bình luận -->
+                                                                        <div class="collapse mt-2" id="editComment<?= $item['id'] ?>">
+                                                                            <form action="/comments/<?= $item['id'] ?>" method="post">
+                                                                                <input type="hidden" name="method" value="PUT">
+                                                                                <input type="hidden" name="id_product" value="<?= $data['products']['id'] ?>">
+                                                                                <textarea class="form-control w-100" name="content" rows="3" placeholder="Sửa bình luận"><?= htmlspecialchars($item['content']) ?></textarea>
+                                                                                <button type="submit" class="btn btn-sm btn-outline-success mt-2"><i class="fas fa-check-circle"></i> Cập nhật</button>
+                                                                            </form>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            <?php else : ?>
-                                                                <p class="text-center text-danger">Vui lòng đăng nhập để bình luận</p>
-                                                            <?php endif; ?>
+                                                            <?php endforeach; ?>
+                                                        <?php else : ?>
+                                                            <p class="text-center text-muted">Chưa có bình luận nào</p>
+                                                        <?php endif; ?>
 
-                                                            
-
-                                                        </div>
+                                                        <?php if ($is_login && isset($_SESSION['user']['id'])) : ?>
+                                                            <div class="d-flex flex-row comment-row mt-4">
+                                                                <div class="p-2">
+                                                                    <img src="<?= $_SESSION['user']['avatar'] ? APP_URL . '/public/assets/client/img/' . $_SESSION['user']['avatar'] : APP_URL . '/public/assets/admin/img/default.png' ?>"
+                                                                        alt="user" height="45" width="45" class="rounded-circle border border-secondary">
+                                                                </div>
+                                                                <div class="comment-text w-100 ml-2">
+                                                                    <form action="/comments/" method="post">
+                                                                        <input type="hidden" name="method" value="POST">
+                                                                        <input type="hidden" name="id_product" value="<?= htmlspecialchars($data['products']['id']) ?>">
+                                                                        <input type="hidden" name="id_user" value="<?= htmlspecialchars($_SESSION['user']['id']) ?>">
+                                                                        <textarea class="form-control w-100 rounded-0" name="content" rows="3" placeholder="Nhập bình luận..." required></textarea>
+                                                                        <button type="submit" class="btn btn-sm btn-outline-info mt-3"><i class="fas fa-paper-plane"></i> Gửi</button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        <?php else : ?>
+                                                            <p class="text-center text-danger">Vui lòng đăng nhập để bình luận</p>
+                                                        <?php endif; ?>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
-            
 
 
 
-        <!-- sản phẩm nổi bậc -->
-                   
-        
-<?php
+
+            <!-- sản phẩm nổi bậc -->
+
+
+    <?php
 
     }
 }

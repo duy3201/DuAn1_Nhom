@@ -2554,10 +2554,6 @@ ol {
 	border-radius: 50%;
 }
 
-.customer-review-option {
-	padding-top: 55px;
-}
-
 .customer-review-option h4 {
 	color: #292f3b;
 	font-weight: 700;
@@ -4384,3 +4380,5 @@ ol {
 		padding-right: 15px;
 	}
 }
+
+

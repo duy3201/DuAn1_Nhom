@@ -53,7 +53,7 @@ class AuctionValidation
 
     public static function uploadimg() {
         if (!isset($_FILES['img']) || $_FILES['img']['error'] !== UPLOAD_ERR_OK) {
-            NotificationHelper::error('upload', 'Lỗi trong quá trình tải ảnh lên');
+            NotificationHelper::success('upload', 'Lỗi trong quá trình tải ảnh lên');
             return false;
         }
 
