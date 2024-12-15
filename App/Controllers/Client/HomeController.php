@@ -150,7 +150,7 @@ class HomeController
     {
         // Kiểm tra xem người dùng đã đăng nhập chưa
         if (!AuthHelper::checkLogin()) {
-            NotificationHelper::error('login_auction', 'Vui lòng đăng nhập để thực hiện đấu giá.');
+            Notification::render('login_auction', 'Vui lòng đăng nhập để thực hiện đấu giá.');
             header('Location: /login');
             exit;
         }

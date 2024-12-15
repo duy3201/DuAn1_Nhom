@@ -112,7 +112,7 @@ class Index extends BaseView
                                     </div>
 
                                     <!-- Pagination -->
-                                    <nav>
+                                    <nav class="mt-3">
                                         <ul class="pagination justify-content-center">
                                             <?php
                                             $paginationRange = 2; // Number of pages to display before and after the current page

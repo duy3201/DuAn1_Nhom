@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Views\Client\Pages\Product;
 
 use App\Models\CartModel;
@@ -11,58 +10,54 @@ class Index extends BaseView
     public static function render($data = null)
     {
         $searchKeyword = isset($_GET['search']) ? trim($_GET['search']) : '';
-        $minPrice = isset($_GET['min_price']) ? (int) $_GET['min_price'] : 0;
-        $maxPrice = isset($_GET['max_price']) ? (int) $_GET['max_price'] : PHP_INT_MAX;
+        $minPrice = isset($_GET['min_price']) ? (int)$_GET['min_price'] : 0;
+        $maxPrice = isset($_GET['max_price']) ? (int)$_GET['max_price'] : PHP_INT_MAX;
 
-        // Lọc danh sách sản phẩm theo từ khóa tìm kiếm và giá
-        $filteredProducts = [];
-        foreach ($data['products'] as $product) {
+        $currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+        $itemsPerPage = 9;
+        $products = isset($data['products']) ? $data['products'] : [];
+        $categories = isset($data['categories']) ? $data['categories'] : [];
+
+        $filteredProducts = array_filter($products, function ($product) use ($searchKeyword, $minPrice, $maxPrice) {
             $productPrice = $product['price'];
+            return (empty($searchKeyword) || stripos($product['name'], $searchKeyword) !== false)
+                && ($productPrice >= $minPrice && $productPrice <= $maxPrice);
+        });
 
-            // Lọc theo từ khóa tìm kiếm và giá
-            if ((empty($searchKeyword) || stripos($product['name'], $searchKeyword) !== false) &&
-                ($productPrice >= $minPrice && $productPrice <= $maxPrice)
-            ) {
-                $filteredProducts[] = $product;
-            }
-        }
-
-        // Lấy thông tin giỏ hàng từ cookie
         $cartModel = new CartModel();
-        $cartItems = $cartModel->getAllCartItems();
+        $cartItems = $cartModel->getAllCartItems() ?? [];
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_cart'])) {
             $productId = $_POST['id_product'];
             $price = $_POST['price'];
             $quantity = $_POST['quantity'] ?? 1;
 
-            // Thêm sản phẩm vào giỏ hàng (cookie)
             $cartModel->addToCart([
                 'id_product' => $productId,
                 'quantity' => $quantity,
                 'price' => $price,
             ]);
 
-            // Chuyển hướng lại trang sau khi thêm vào giỏ hàng
             header('Location: ' . $_SERVER['REQUEST_URI']);
             exit;
         }
 
-?>
+        $totalItems = count($filteredProducts);
+        $totalPages = ceil($totalItems / $itemsPerPage);
+        ?>
         <section class="product-shop spad">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1 produts-sidebar-filter">
                         <div class="filter-widget">
                             <h4 class="fw-title">Danh mục</h4>
-                            <?php Category::render($data['categories']); ?>
+                            <?php Category::render($categories); ?>
                         </div>
                         <div class="filter-widget">
                             <h4 class="fw-title">Giá</h4>
                             <div class="filter-range-wrap">
                                 <div class="range-slider">
                                     <div class="price-input">
-                                        <!-- Thêm placeholder cho người dùng dễ hiểu hơn -->
                                         <input type="text" id="minamount" placeholder="Giá thấp nhất" readonly>
                                         <input type="text" id="maxamount" placeholder="Giá cao nhất" readonly>
                                     </div>
@@ -85,43 +80,68 @@ class Index extends BaseView
                                         <div class="col-lg-4 col-sm-6">
                                             <div class="product-item">
                                                 <div class="pi-pic">
-                                                    <?php if (!empty($item['img'])): ?>
-                                                        <img src="/public/assets/admin/img/<?= htmlspecialchars($item['img']); ?>" alt="Product Image">
-                                                    <?php else: ?>
-                                                        <img src="/public/assets/admin/img/default.jpg" alt="Default Image"> <!-- Thay bằng hình ảnh mặc định -->
-                                                    <?php endif; ?>
+                                                    <img src="/public/assets/admin/img/<?= htmlspecialchars($item['img'] ?? 'default.jpg'); ?>" alt="Product Image">
                                                     <ul>
-                                                        <li class="w-icon active">
-                                                            <!-- <a href="#"><i class="icon_bag_alt"></i></a> -->
-                                                        </li>
                                                         <li class="quick-view">
                                                             <a href="/products/<?= htmlspecialchars($item['id']); ?>"> Xem chi tiết</a>
-                                                        </li>
-                                                        <li class="w-icon">
-                                                            <!-- <a href="#"><i class="fa fa-random"></i></a> -->
                                                         </li>
                                                     </ul>
                                                 </div>
                                                 <div class="pi-text">
                                                     <div class="catagory-name"><?= htmlspecialchars($item['name']); ?></div>
-                                                    <p><?= htmlspecialchars($item['name']); ?></p>
                                                     <div class="price text-warning">
                                                         <?= !empty($item['price']) ? number_format($item['price'], 0, ',', '.') . ' VNĐ' : 'Liên hệ'; ?>
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>
                                     <?php endforeach; ?>
                                 </div>
+                                <nav>
+                                    <ul class="pagination justify-content-center">
+                                        <?php
+                                        $paginationRange = 2;
+                                        $startPage = max(1, $currentPage - $paginationRange);
+                                        $endPage = min($totalPages, $currentPage + $paginationRange);
+
+                                        if ($currentPage > 1) {
+                                            echo '<li class="page-item"><a class="page-link" href="?page=' . ($currentPage - 1) . '&search=' . htmlspecialchars($searchKeyword) . '">&laquo;</a></li>';
+                                        } else {
+                                            echo '<li class="page-item disabled"><span class="page-link">&laquo;</span></li>';
+                                        }
+
+                                        if ($startPage > 2) {
+                                            echo '<li class="page-item"><a class="page-link" href="?page=1&search=' . htmlspecialchars($searchKeyword) . '">1</a></li>';
+                                            echo '<li class="page-item disabled"><span class="page-link">...</span></li>';
+                                        }
+
+                                        for ($i = $startPage; $i <= $endPage; $i++) {
+                                            $activeClass = ($i == $currentPage) ? 'active' : '';
+                                            echo '<li class="page-item ' . $activeClass . '"><a class="page-link" href="?page=' . $i . '&search=' . htmlspecialchars($searchKeyword) . '">' . $i . '</a></li>';
+                                        }
+
+                                        if ($endPage < $totalPages - 1) {
+                                            echo '<li class="page-item disabled"><span class="page-link">...</span></li>';
+                                            echo '<li class="page-item"><a class="page-link" href="?page=' . $totalPages . '&search=' . htmlspecialchars($searchKeyword) . '">' . $totalPages . '</a></li>';
+                                        }
+
+                                        if ($currentPage < $totalPages) {
+                                            echo '<li class="page-item"><a class="page-link" href="?page=' . ($currentPage + 1) . '&search=' . htmlspecialchars($searchKeyword) . '">&raquo;</a></li>';
+                                        } else {
+                                            echo '<li class="page-item disabled"><span class="page-link">&raquo;</span></li>';
+                                        }
+                                        ?>
+                                    </ul>
+                                </nav>
                             <?php else : ?>
-<h3 class="text-center text-danger">Không tìm thấy sản phẩm nào!</h3>
+                                <h3 class="text-center text-danger">Không tìm thấy sản phẩm nào!</h3>
                             <?php endif; ?>
                         </div>
                     </div>
+                </div>
             </div>
         </section>
-<?php
+        <?php
     }
 }
 ?>

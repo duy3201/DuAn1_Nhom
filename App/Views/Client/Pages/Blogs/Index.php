@@ -7,236 +7,131 @@ use App\Views\Client\Components\CategoryPost;
 
 class Index extends BaseView
 {
-  public static function render($data = null)
-  {
-?>
+    public static function render($data = null)
+    {
+        $postsPerPage = 6;
+        $totalPosts = count($data['posts']);
+        $totalPages = ceil($totalPosts / $postsPerPage);
+        $currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+        $currentPage = max(1, min($currentPage, $totalPages));
+        $startIndex = ($currentPage - 1) * $postsPerPage;
 
+        // Lấy từ khóa tìm kiếm từ GET request
+        $searchKeyword = isset($_GET['search']) ? $_GET['search'] : '';
+        
+        // Lọc các bài viết theo từ khóa tìm kiếm
+        $filteredPosts = array_filter($data['posts'], function($post) use ($searchKeyword) {
+            return empty($searchKeyword) || strpos(strtolower($post['title']), strtolower($searchKeyword)) !== false;
+        });
 
+        $totalFilteredPosts = count($filteredPosts);
+        $totalFilteredPages = ceil($totalFilteredPosts / $postsPerPage);
+        $currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+        $currentPage = max(1, min($currentPage, $totalFilteredPages));
 
-    <!-- Breadcrumb Section Begin -->
-    <div class="breacrumb-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="breadcrumb-text">
-              <a href="/"><i class="fa fa-home"></i> Trang chủ</a>
-              <span>Bài viết</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Breadcrumb Section End -->
+        $startIndex = ($currentPage - 1) * $postsPerPage;
+        $currentPosts = array_slice($filteredPosts, $startIndex, $postsPerPage);
 
-    <!-- Blog Section Begin -->
-    <section class="blog-section spad">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1">
-            <div class="blog-sidebar">
-              <div class="search-form">
-                <h4>Tìm kiếm</h4>
-                <form action="#">
-                  <input type="text" placeholder="Tìm kiếm . . .  ">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-              </div>
-              <div class="blog-catagory">
-                <h4>Danh mục</h4>
-
-                <ul>
-                <?php CategoryPost::render($data['categories_post']); ?>
-                  <!-- <li><a href="#">Thời trang</a></li>
-                  <li><a href="#">Du lịch</a></li>
-                  <li><a href="#">Dã ngoại</a></li>
-                  <li><a href="#">Mẫu</a></li> -->
-                </ul>
-              </div>
-              <!-- <div class="recent-post">
-                <h4>Bài viết gần đây</h4>
-                <div class="recent-blog">
-                  <a href="#" class="rb-item">
-                    <div class="rb-pic">
-                      <img src="/public/assets/client/img/blog/recent-1.jpg" alt="">
+        ?>
+        <div class="breacrumb-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="breadcrumb-text">
+                            <a href="/"><i class="fa fa-home"></i> Trang chủ</a>
+                            <span>Bài viết</span>
+                        </div>
                     </div>
-                    <div class="rb-text">
-                      <h6>Đặc điểm tính cách khiến mọi người hạnh phúc hơn...</h6>
-                      <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
-                    </div>
-                  </a>
-                  <a href="#" class="rb-item">
-                    <div class="rb-pic">
-                      <img src="/public/assets/client/img/blog/recent-2.jpg" alt="">
-                    </div>
-                    <div class="rb-text">
-                      <h6>Đặc điểm tính cách khiến mọi người hạnh phúc hơn...</h6>
-                      <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
-                    </div>
-                  </a>
-                  <a href="#" class="rb-item">
-                    <div class="rb-pic">
-                      <img src="/public/assets/client/img/blog/recent-3.jpg" alt="">
-                    </div>
-                    <div class="rb-text">
-                      <h6>Đặc điểm tính cách khiến mọi người hạnh phúc hơn...</h6>
-                      <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
-                    </div>
-                  </a>
-                  <a href="#" class="rb-item">
-                    <div class="rb-pic">
-                      <img src="/public/assets/client/img/blog/recent-4.jpg" alt="">
-                    </div>
-                    <div class="rb-text">
-                      <h6>Đặc điểm tính cách khiến mọi người hạnh phúc hơn...</h6>
-                      <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
-                    </div>
-                  </a>
                 </div>
-              </div> -->
-              <!-- <div class="blog-tags">
-                <h4>Tags sản phẩm</h4>
-                <div class="tag-item">
-                  <a href="#">Khăn tắm</a>
-                  <a href="#">Giày</a>
-                  <a href="#">Áo khoác</a>
-                  <a href="#">Váy</a>
-                  <a href="#">Quần</a>
-                  <a href="#">Mũ nam</a>
-                  <a href="#">Ba lô</a>
-                </div>
-              </div> -->
-            </div>
-          </div>
-         
-            <div class="col-lg-9 order-1 order-lg-2">
-            <?php
-          if (count($data)) :
-          ?>
-              <div class="row">
-                <?php foreach ($data['posts'] as $item) : ?>
-                  <div class="col-lg-6 col-sm-6">
-                    <div class="blog-item">
-                      <div class="bi-pic">
-                      <a href="/blogs/<?= htmlspecialchars($item['id']); ?>"> <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt=""></a>
-                      </div>
-                      <div class="bi-text">
-                        <a href="./blog-details.html">
-                          <h4> <a class="text-dark" href="/blogs/<?= htmlspecialchars($item['id']); ?>">  <?= $item['title'] ?></a></h4>
-                        </a>
-                        <p><?= $item['categories_post_name'] ?><span>- 19 Tháng 5, 2019</span></p>
-                      
-      
-                                                      
-                      </div>
-                    </div>
-                  </div>
-                <?php endforeach; ?>
-
-
-
-                <!-- <div class="col-lg-6 col-sm-6">
-                <div class="blog-item">
-                  <div class="bi-pic">
-                    <img src="/public/assets/client/img/blog/blog-1.jpg" alt="">
-                  </div>
-                  <div class="bi-text">
-                    <a href="./blog-details.html">
-                      <h4>Đặc điểm tính cách khiến mọi người hạnh phúc hơn</h4>
-                    </a>
-                    <p>Du lịch <span>- 19 Tháng 5, 2019</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <div class="blog-item">
-                  <div class="bi-pic">
-                    <img src="/public/assets/client/img/blog/blog-2.jpg" alt="">
-                  </div>
-                  <div class="bi-text">
-                    <a href="./blog-details.html">
-                      <h4>Đây là một trong những ngày đầu tiên của chúng tôi ở Hawaii tuần trước.</h4>
-                    </a>
-                    <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <div class="blog-item">
-                  <div class="bi-pic">
-                    <img src="/public/assets/client/img/blog/blog-3.jpg" alt="">
-                  </div>
-                  <div class="bi-text">
-                    <a href="./blog-details.html">
-                      <h4>Tuần trước tôi có chuyến công tác đầu tiên trong năm đến Sonoma Valley</h4>
-                    </a>
-                    <p>Du lịch <span>- 19 Tháng 5, 2019</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <div class="blog-item">
-                  <div class="bi-pic">
-                    <img src="/public/assets/client/img/blog/blog-4.jpg" alt="">
-                  </div>
-                  <div class="bi-text">
-                    <a href="./blog-details.html">
-                      <h4>Chúc Mừng Năm Mới! Biết là tôi hơi trễ trong bài viết này</h4>
-                    </a>
-                    <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <div class="blog-item">
-                  <div class="bi-pic">
-                    <img src="/public/assets/client/img/blog/blog-5.jpg" alt="">
-                  </div>
-                  <div class="bi-text">
-                    <a href="./blog-details.html">
-                      <h4>Bộ sưu tập Absolue. Đội ngũ Lancome đã làm việc rất chăm chỉ...</h4>
-                    </a>
-                    <p>Mẫu <span>- 19 Tháng 5, 2019</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <div class="blog-item">
-                  <div class="bi-pic">
-                    <img src="/public/assets/client/img/blog/blog-6.jpg" alt="">
-                  </div>
-                  <div class="bi-text">
-                    <a href="./blog-details.html">
-                      <h4>Viết lách luôn là cách giúp tôi thư giãn</h4>
-                    </a>
-                    <p>Thời trang <span>- 19 Tháng 5, 2019</span></p>
-                  </div>
-                </div>
-              </div> -->
-                <!-- <div class="col-lg-12">
-                <div class="loading-more">
-                  <i class="icon_loading"></i>
-                  <a href="#">
-                    Tải thêm
-                  </a>
-                </div>
-              </div> -->
-              </div>
-            <?php
-          else :
-            ?>
-              <h4 class="text-center text-danger">Không có dữ liệu</h4>
-            <?php
-          endif;
-            ?>
             </div>
         </div>
-      </div>
-    </section>
-    <!-- Blog Section End -->
 
+        <section class="blog-section spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1">
+                        <div class="blog-sidebar">
+                            <div class="search-form">
+                                <h4>Tìm kiếm</h4>
+                                <form action="#" method="get">
+                                    <input type="text" name="search" value="<?= htmlspecialchars($searchKeyword) ?>" placeholder="Tìm kiếm . . . ">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                            <div class="blog-catagory">
+                                <h4>Danh mục</h4>
+                                <ul>
+                                    <?php CategoryPost::render($data['categories_post']); ?>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-9 order-1 order-lg-2">
+                        <?php if (count($currentPosts)) : ?>
+                            <div class="row">
+                                <?php foreach ($currentPosts as $item) : ?>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="blog-item">
+                                            <div class="bi-pic">
+                                                <a href="/blogs/<?= htmlspecialchars($item['id']); ?>"> <img src="<?= APP_URL ?>/public/assets/admin/img/<?= $item['img'] ?>" alt=""></a>
+                                            </div>
+                                            <div class="bi-text">
+                                                <a href="/blogs/<?= htmlspecialchars($item['id']); ?>">
+                                                    <h4><?= htmlspecialchars($item['title']) ?></h4>
+                                                </a>
+                                                <p><?= $item['categories_post_name'] ?><span>- 19 Tháng 5, 2019</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
 
-<?php
-  }
+                            <nav>
+                                <ul class="pagination justify-content-center">
+                                    <?php
+                                    $paginationRange = 2;
+                                    $startPage = max(1, $currentPage - $paginationRange);
+                                    $endPage = min($totalFilteredPages, $currentPage + $paginationRange);
+
+                                    if ($currentPage > 1) {
+                                        echo '<li class="page-item"><a class="page-link" href="?page=' . ($currentPage - 1) . '&search=' . urlencode($searchKeyword) . '">&laquo;</a></li>';
+                                    } else {
+                                        echo '<li class="page-item disabled"><span class="page-link">&laquo;</span></li>';
+                                    }
+
+                                    if ($startPage > 2) {
+                                        echo '<li class="page-item"><a class="page-link" href="?page=1&search=' . urlencode($searchKeyword) . '">1</a></li>';
+                                        echo '<li class="page-item disabled"><span class="page-link">...</span></li>';
+                                    }
+
+                                    for ($i = $startPage; $i <= $endPage; $i++) {
+                                        $activeClass = ($i == $currentPage) ? 'active' : '';
+                                        echo '<li class="page-item ' . $activeClass . '"><a class="page-link" href="?page=' . $i . '&search=' . urlencode($searchKeyword) . '">' . $i . '</a></li>';
+                                    }
+
+                                    if ($endPage < $totalFilteredPages - 1) {
+                                        echo '<li class="page-item disabled"><span class="page-link">...</span></li>';
+                                        echo '<li class="page-item"><a class="page-link" href="?page=' . $totalFilteredPages . '&search=' . urlencode($searchKeyword) . '">' . $totalFilteredPages . '</a></li>';
+                                    }
+
+                                    if ($currentPage < $totalFilteredPages) {
+                                        echo '<li class="page-item"><a class="page-link" href="?page=' . ($currentPage + 1) . '&search=' . urlencode($searchKeyword) . '">&raquo;</a></li>';
+                                    } else {
+                                        echo '<li class="page-item disabled"><span class="page-link">&raquo;</span></li>';
+                                    }
+                                    ?>
+                                </ul>
+                            </nav>
+                        <?php else : ?>
+                            <h4 class="text-center text-danger">Không có dữ liệu</h4>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <?php
+    }
 }
 ?>
