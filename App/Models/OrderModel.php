@@ -4,72 +4,94 @@ namespace App\Models;
 
 class OrderModel extends BaseModel
 {
-    public function createOrder($orderId)
-{
-    try {
-        // Câu lệnh SQL INSERT cho bảng `orders`
-        $sqlOrder = "INSERT INTO `orders`(`id_user`, `sub_address`, `sub_tel`, `sub_name`, `email`, `payment_method`) 
-            VALUES (?, ?, ?, ?, ?, ?);";
+    public function createOrder()
+    {
+        // var_dump($_POST);
+        // exit;
+        try {
+            $sqlOrder = "INSERT INTO `orders`(`id_user`, `sub_address`, `sub_tel`, `sub_name`, `email`,`total`, `payment_method`) 
+            VALUES (?, ?, ?,?, ?, ?, ?);";
 
-        $conn = $this->_conn->MySQLi(); // Kết nối database
-        $stmtOrder = $conn->prepare($sqlOrder);
+            $conn = $this->_conn->MySQLi(); // Kết nối database
+            $stmtOrder = $conn->prepare($sqlOrder);
 
-        if (!$stmtOrder) {
-            error_log('Lỗi chuẩn bị truy vấn orders: ' . $conn->error);
-            return null;
-        }
-
-        // Lấy dữ liệu từ POST hoặc gán giá trị mặc định
-        $idUser = isset($_POST['id_user']) ? (int)$_POST['id_user'] : 0;
-        $subAddress = $_POST['address'] ?? '';
-        $subTel = $_POST['sub_tel'] ?? '';
-        $subName = $_POST['sub_name'] ?? $_COOKIE['name_user'];
-        $email = $_POST['email'] ?? '';
-        $paymentMethod = $_POST['bank_code'] ?? '';
-        $amount = $_POST['amount'] ?? '';
-        $productId = $_POST['productId']?? 0;
-        $quantity = $_POST['quantity']?? 1;
-
-        // Gắn dữ liệu vào câu lệnh SQL cho bảng `orders`
-        $stmtOrder->bind_param("isssss", $idUser, $subAddress, $subTel, $subName, $email, $paymentMethod);
-
-        // Thực thi câu lệnh SQL cho bảng `orders`
-        if ($stmtOrder->execute()) {
-            // Lấy mã đơn hàng vừa tạo
-            $newOrderId = $conn->insert_id;
-
-            // Tiếp tục thêm vào bảng `orders_detail`
-            $sqlOrderDetail = "INSERT INTO `orders_detail`(`id_order`, `id_product`, `quantity`, `price`)
-                VALUES (?, ?,?, ?);";
-
-            $stmtDetail = $conn->prepare($sqlOrderDetail);
-
-            if (!$stmtDetail) {
-                error_log('Lỗi chuẩn bị truy vấn orders_detail: ' . $conn->error);
+            if (!$stmtOrder) {
+                error_log('Lỗi chuẩn bị truy vấn orders: ' . $conn->error);
                 return null;
             }
 
+            // Lấy dữ liệu từ POST hoặc cookie
+            $idUser = isset($_POST['id_user']) ? (int)$_POST['id_user'] : 0;
+            $subAddress = $_POST['address'] ?? '';
+            $subTel = $_POST['sub_tel'] ?? '';
+            $subName = $_POST['sub_name'] ?? $_COOKIE['name_user'];
+            $email = $_POST['email'] ?? '';
+            $total = $_POST['amount'];
+            $paymentMethod = $_POST['bank_code'] ?? '';
 
-            // Gắn dữ liệu vào câu lệnh SQL cho bảng `orders_detail`
-            $stmtDetail->bind_param("iiii", $newOrderId, $productId,$quantity, $amount);
+            // Gắn dữ liệu vào câu lệnh SQL cho bảng `orders`
+            $stmtOrder->bind_param("issssis", $idUser, $subAddress, $subTel, $subName, $email, $total, $paymentMethod);
 
-            // Thực thi câu lệnh SQL cho bảng `orders_detail`
-            if ($stmtDetail->execute()) {
+            // Thực thi câu lệnh SQL cho bảng `orders`
+            if ($stmtOrder->execute()) {
+                $newOrderId = $conn->insert_id;
+
+                // Lấy giỏ hàng từ cookie
+                $cart = isset($_COOKIE['carts_detail']) ? json_decode($_COOKIE['carts_detail'], true) : [];
+
+                if (!empty($cart)) {
+                    $sqlOrderDetail = "INSERT INTO `orders_detail`(`id_order`, `id_product`, `quantity`, `price`) 
+                    VALUES (?, ?, ?, ?);";
+
+                    $stmtDetail = $conn->prepare($sqlOrderDetail);
+
+                    if (!$stmtDetail) {
+                        error_log('Lỗi chuẩn bị truy vấn orders_detail: ' . $conn->error);
+                        return null;
+                    }
+
+                    foreach ($cart as $productId => $quantity) {
+                        // Giả sử bạn đã lấy giá sản phẩm từ database (cần truy vấn giá trị tương ứng)
+                        $price = $this->getProductPrice($productId);
+
+                        $stmtDetail->bind_param("iiii", $newOrderId, $productId, $quantity, $price);
+
+                        if (!$stmtDetail->execute()) {
+                            error_log('Lỗi thêm chi tiết đơn hàng: ' . $stmtDetail->error);
+                            return null;
+                        }
+                    }
+                }
+
                 return $newOrderId; // Trả về mã đơn hàng vừa tạo
             } else {
-                error_log('Lỗi thêm chi tiết đơn hàng: ' . $stmtDetail->error);
+                error_log('Lỗi tạo đơn hàng: ' . $stmtOrder->error);
                 return null;
             }
-        } else {
-            error_log('Lỗi tạo đơn hàng: ' . $stmtOrder->error);
+        } catch (\Throwable $th) {
+            error_log('Lỗi ngoại lệ tại createOrder: ' . $th->getMessage() . ' | File: ' . $th->getFile() . ' | Line: ' . $th->getLine());
             return null;
         }
-    } catch (\Throwable $th) {
-        error_log('Lỗi ngoại lệ tại createOrder: ' . $th->getMessage() . ' | File: ' . $th->getFile() . ' | Line: ' . $th->getLine());
-        return null;
     }
-    
-}
+
+    private function getProductPrice($productId)
+    {
+        // Hàm truy vấn giá sản phẩm từ database
+        $sql = "SELECT price FROM product_variants WHERE id_product = ?";
+        $conn = $this->_conn->MySQLi();
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("i", $productId);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            return $row['price'];
+        }
+
+        return 0; // Trả về giá mặc định nếu không tìm thấy
+    }
+
 
 
     // Hàm lấy thông tin đơn hàng theo order_id

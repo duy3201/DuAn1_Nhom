@@ -22,8 +22,8 @@ class OrderController
         $order = new OrderModel();
         $order->createOrder($order_id);
 
-        $vnp_TmnCode = "HYWQZOQG";
-        $vnp_HashSecret = "CQ8VSL317Y9BQ90JTZTU8RBLS11N9DBA";
+        $vnp_TmnCode = "7EVQO9JL";
+        $vnp_HashSecret = "36MUUDG8P2HYF0DQ2ZQPCSNGU7O3BTNH";
         $vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
         $vnp_Returnurl = "http://127.0.0.1:8080/order/thankyou";
 
