@@ -9,6 +9,7 @@ class ForgotPassword extends BaseView
     public static function render($data = null)
     {
 ?>
+
         <!-- code giao diện -->
         <div class="container mt-5 ">
             <div class="row">
@@ -53,7 +54,6 @@ class ForgotPassword extends BaseView
                     document.getElementById("usernameError").textContent = "Vui lòng nhập tên đăng nhập.";
                     hasError = true;
                 }
-
                 // Kiểm tra email
                 if (email === "") {
                     document.getElementById("emailError").textContent = "Vui lòng nhập email.";

@@ -32,10 +32,10 @@ class Header extends BaseView
         <!-- End layout styles -->
         <link rel="shortcut icon" href="/public/assets/admin/images/favicon.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+        
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
 
@@ -162,6 +162,20 @@ class Header extends BaseView
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> <a class="nav-link" href="/admin/posts">Danh sách bài viết</a></li>
                                 <li class="nav-item"> <a class="nav-link" href="/admin/posts/createpost">Thêm bài viết</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item menu-items">
+                        <a class="nav-link" data-toggle="collapse" href="#post-management" aria-expanded="false" aria-controls="post-management">
+                        <span class="menu-icon">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </span>
+                            <span class="menu-title">Quản lý đơn hàng</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="post-management">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="/admin/orders">Danh sách đơn hàng</a></li>
                             </ul>
                         </div>
                     </li>

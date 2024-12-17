@@ -12,6 +12,8 @@ class Footer extends BaseView
 ?>
 
                 <!-- container-scroller -->
+               
+
                 <!-- plugins:js -->
                 <script src="/public/assets/admin/vendors/js/vendor.bundle.base.js"></script>
                 <!-- endinject -->
