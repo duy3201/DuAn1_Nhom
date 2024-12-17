@@ -10,6 +10,7 @@ if (!isset($_COOKIE['carts_detail'])) {
     setcookie('carts_detail', json_encode([]), time() + (86400 * 30 * 12), "/"); // Cookie tồn tại 365 ngày
 }
 
+use App\Controllers\Admin\OrderController;
 use App\Helpers\AuthHelper;
 use App\Route;
 
@@ -142,6 +143,14 @@ Route::post('/admin/posts', 'App\Controllers\Admin\PostController@store');
 Route::get('/admin/posts/{id}', 'App\Controllers\Admin\PostController@edit');
 Route::put('/admin/posts/{id}', 'App\Controllers\Admin\PostController@update');
 Route::delete('/admin/posts/{id}', 'App\Controllers\Admin\PostController@delete');
+
+//  *** Order
+Route::get('/admin/orders', 'App\Controllers\Admin\OrderController@index');
+
+// GET /admin/orders/{id} (lấy chi tiết đơn hàng với id cụ thể)
+Route::get('/admin/orders/{id}', 'App\Controllers\Admin\OrderController@detail');
+
+
 
 
 //  *** Product

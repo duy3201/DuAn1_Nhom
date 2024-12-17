@@ -85,11 +85,25 @@ class User extends BaseModel
     $result = [];
     try {
         // Câu lệnh SQL để lấy giao dịch của người dùng đăng nhập
-        $sql = "SELECT orders.*, orders_detail.price AS orders_detail_price, products.name AS products_name  
-         FROM orders
-         JOIN orders_detail ON orders.id = orders_detail.id_order
-        JOIN products ON orders_detail.id_product = products.id
-        WHERE orders.id_user = ? ORDER BY id DESC";
+        $sql = "SELECT 
+    orders.id AS order_id, 
+    orders.sub_name, 
+    orders.sub_address, 
+    orders.sub_tel,
+    orders.status, 
+    orders.payment_method, 
+    GROUP_CONCAT(products.name SEPARATOR ', ') AS products_name, 
+    GROUP_CONCAT(orders_detail.quantity SEPARATOR ', ') AS quantities, 
+    GROUP_CONCAT(orders_detail.price SEPARATOR ', ') AS prices,
+    orders.date,
+    SUM(orders_detail.price * orders_detail.quantity) AS total_price
+FROM orders
+JOIN orders_detail ON orders.id = orders_detail.id_order
+JOIN products ON orders_detail.id_product = products.id
+WHERE orders.id_user = ?
+GROUP BY orders.id
+ORDER BY orders.id DESC
+";
         $conn = $this->_conn->MySQLi(); // Kết nối MySQLi
         $stmt = $conn->prepare($sql);
 

@@ -124,4 +124,59 @@ class OrderModel extends BaseModel
             return null;
         }
     }
+    //  Lấy toàn bộ danh sách đơn hàng
+    public function getAllOrders(){
+        try {
+            $sql = "SELECT orders.*, users.name as user_name
+             FROM orders Join users on orders.id_user = users.id
+            ";
+            $conn = $this->_conn->MySQLi();
+            $stmt = $conn->prepare($sql);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $orders = [];
+            while($row = $result->fetch_assoc()){
+                $orders[] = $row;
+            }
+            return $orders;
+        } catch (\Throwable $th) {
+            error_log('Loi ngoại lệ tại getAllOrders: '. $th->getMessage().'| File: '. $th->getFile().'| Line: '. $th->getLine());
+            return null;
+        }
+    }
+    
+   // Lấy chi tiết đơn hàng
+   public function getOrderDetail($id)
+   {
+       $sql = "SELECT orders.*, orders_detail.price AS orders_detail_price, products.name AS products_name, orders_detail.quantity  
+               FROM orders
+               JOIN orders_detail ON orders.id = orders_detail.id_order
+               JOIN products ON orders_detail.id_product = products.id
+               WHERE orders.id = ? ORDER BY id DESC";
+       $conn = $this->_conn->MySQLi(); // Kết nối MySQLi
+       $stmt = $conn->prepare($sql);
+       $stmt->bind_param('i', $id);
+       $stmt->execute();
+       $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+       return $result;
+   }
+   public function getOneOrderDetail($id)
+{
+    $sql = "SELECT *
+            FROM orders
+           
+            WHERE orders.id = ?";  
+    $conn = $this->_conn->MySQLi(); // Kết nối MySQLi
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param('i', $id);
+    $stmt->execute();
+    $result = $stmt->get_result()->fetch_assoc();  // Dùng fetch_assoc() thay vì fetch_all() để lấy một kết quả duy nhất
+    return $result;
+}
+
+    
+    
+    
+
+    
 }

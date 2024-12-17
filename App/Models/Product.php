@@ -134,15 +134,30 @@ INNER JOIN
     {
         $result = [];
         try {
-            $sql = "SELECT products.*, categories.name AS category_name,  product_variants.quality as product_quality, 
-            product_variants.price as product_price 
-                FROM products 
-                INNER JOIN categories ON products.id_category = categories.id 
-                 INNER JOIN 
-            product_variants ON products.id = product_variants.id_product
-                WHERE products.status = " . self::STATUS_ENABLE . " 
-                AND categories.status = " . self::STATUS_ENABLE . " AND products.id_category = ?";
-
+            $sql = "
+            SELECT 
+                products.id,
+                products.name,
+                products.description,
+                products.img AS img
+                categories.name AS category_name,
+                MAX(product_variants.quality) AS product_quality,
+                MAX(product_variants.price) AS product_price
+            FROM 
+                products
+            INNER JOIN 
+                categories ON products.id_category = categories.id
+            INNER JOIN 
+                product_variants ON products.id = product_variants.id_product
+            WHERE 
+                products.status = " . self::STATUS_ENABLE . " 
+                AND categories.status = " . self::STATUS_ENABLE . " 
+                AND products.id_category = ?
+            GROUP BY 
+                products.id, products.name, products.description, products.img, categories.name
+            LIMIT 0, 25
+        ";
+        
             $conn = $this->_conn->MySQLi();
             $stmt = $conn->prepare($sql);
 
@@ -238,7 +253,7 @@ INNER JOIN
             return $result;
         }
     }
-    
+
 
     public function countTotalProduct()
     {
